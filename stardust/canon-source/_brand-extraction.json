@@ -1,0 +1,1360 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:reskin/figma-donor.mjs",
+    "writtenAt": "2026-10-21T12:15:01Z",
+    "readArtifacts": [
+      "stardust/canon-source/foundation/",
+      "stardust/reskin/donor-tokens.json",
+      "stardust/reskin/curation-rules.json"
+    ],
+    "synthesizedInputs": [],
+    "note": "DESCRIPTIVE capture of a Figma design system (REST), not browser-rendered"
+  },
+  "site": null,
+  "origins": [
+    {
+      "origin": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60",
+      "role": "design-source",
+      "pagesCaptured": 15,
+      "contributedSignals": [
+        "palette",
+        "type",
+        "motifs"
+      ]
+    }
+  ],
+  "logo": null,
+  "palette": [
+    {
+      "role": "pageBg, darkBandFg",
+      "value": "#ffffff",
+      "occurrences": 274,
+      "sourceSelectors": [],
+      "sources": [
+        "12042:106827",
+        "12194:4769",
+        "12084:109340",
+        "12108:564",
+        "12108:611"
+      ],
+      "usedAs": [
+        "background",
+        "text"
+      ]
+    },
+    {
+      "role": "lightBandBg",
+      "value": "#ebefee",
+      "occurrences": 109,
+      "sourceSelectors": [],
+      "sources": [
+        "12042:106828",
+        "12194:4770",
+        "12084:109341",
+        "12108:510",
+        "12108:735"
+      ],
+      "usedAs": [
+        "background",
+        "border"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#b2b4b4",
+      "occurrences": 73,
+      "sourceSelectors": [],
+      "sources": [
+        "I12042:106828;11974:36428",
+        "I12042:106828;11974:36684",
+        "I12194:4770;11974:36428",
+        "I12194:4770;11974:36684",
+        "I12084:109341;11974:36428"
+      ],
+      "usedAs": [
+        "background",
+        "text",
+        "border"
+      ]
+    },
+    {
+      "role": "bodyFg",
+      "value": "#3c4242",
+      "occurrences": 1333,
+      "sourceSelectors": [],
+      "sources": [
+        "I12042:106828;11974:36427",
+        "I12042:106828;11974:36429",
+        "12072:106982",
+        "12042:106830",
+        "12072:106958"
+      ],
+      "usedAs": [
+        "background",
+        "text",
+        "border"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#c4cfcd",
+      "occurrences": 365,
+      "sourceSelectors": [],
+      "sources": [
+        "I12042:106828;11974:36821;11974:36690",
+        "I12042:106828;11974:36821;11974:36691",
+        "I12042:106828;11974:36821;11974:36692",
+        "I12042:106828;11974:36821;11974:36693",
+        "I12042:106828;11974:36821;11974:36694"
+      ],
+      "usedAs": [
+        "background",
+        "border"
+      ]
+    },
+    {
+      "role": "mutedFg",
+      "value": "#8d8f8f",
+      "occurrences": 281,
+      "sourceSelectors": [],
+      "sources": [
+        "I12042:106828;11974:36467",
+        "12072:106954",
+        "12072:106967",
+        "12072:106973",
+        "12072:106979"
+      ],
+      "usedAs": [
+        "background",
+        "text"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#d8dfde",
+      "occurrences": 86,
+      "sourceSelectors": [],
+      "sources": [
+        "12072:106961",
+        "12072:106968",
+        "12072:106974",
+        "12072:106980",
+        "12072:106988"
+      ],
+      "usedAs": [
+        "background",
+        "border"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#656969",
+      "occurrences": 5,
+      "sourceSelectors": [],
+      "sources": [
+        "12108:634",
+        "12108:854",
+        "I13370:1868;12128:3258",
+        "I13370:2046;12128:3258",
+        "I13370:2093;12128:3258"
+      ],
+      "usedAs": [
+        "background",
+        "text"
+      ]
+    },
+    {
+      "role": "accent",
+      "value": "#d0006f",
+      "occurrences": 427,
+      "sourceSelectors": [],
+      "sources": [
+        "12108:652",
+        "12108:753",
+        "12108:836",
+        "12108:1168",
+        "12108:1215"
+      ],
+      "usedAs": [
+        "background",
+        "text",
+        "border"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#f6cee7",
+      "occurrences": 19,
+      "sourceSelectors": [],
+      "sources": [
+        "12108:744",
+        "12072:107137",
+        "12077:107142",
+        "12157:3274",
+        "12077:107146"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#d8dada",
+      "occurrences": 55,
+      "sourceSelectors": [],
+      "sources": [
+        "12108:809",
+        "I13370:1868;12128:3188",
+        "I13370:2046;12128:3188",
+        "I13370:2093;12128:3188",
+        "I12552:3361;12128:3188"
+      ],
+      "usedAs": [
+        "background",
+        "border"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#e366a9",
+      "occurrences": 1,
+      "sourceSelectors": [],
+      "sources": [
+        "12108:892"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "headingFg, darkBandBg",
+      "value": "#830051",
+      "occurrences": 68,
+      "sourceSelectors": [],
+      "sources": [
+        "12108:1154",
+        "12108:1207",
+        "I12387:11784;12370:10522;12077:108447",
+        "I12387:11836;12370:10522;12077:108447",
+        "I12387:11888;12370:10522;12077:108447"
+      ],
+      "usedAs": [
+        "background",
+        "text",
+        "border"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#4f0031",
+      "occurrences": 1,
+      "sourceSelectors": [],
+      "sources": [
+        "12108:1161"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#f0ab00",
+      "occurrences": 99,
+      "sourceSelectors": [],
+      "sources": [
+        "12108:1175",
+        "I12387:11784;12370:10522;12077:108448",
+        "I12387:11836;12370:10522;12077:108448",
+        "I12387:11888;12370:10522;12077:108448",
+        "I12387:11944;12370:10522;12077:108448"
+      ],
+      "usedAs": [
+        "background",
+        "border"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#9db0ac",
+      "occurrences": 70,
+      "sourceSelectors": [],
+      "sources": [
+        "12108:1182",
+        "I12387:11726;12349:10219",
+        "I12387:11726;12349:10220",
+        "I12387:11727;12349:10234",
+        "I12387:11727;12349:10235"
+      ],
+      "usedAs": [
+        "background",
+        "text"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#d3d3de",
+      "occurrences": 18,
+      "sourceSelectors": [],
+      "sources": [
+        "12108:1303",
+        "12108:1310",
+        "12108:1317",
+        "12108:1324",
+        "12108:1331"
+      ],
+      "usedAs": [
+        "background",
+        "border"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#252359",
+      "occurrences": 3,
+      "sourceSelectors": [],
+      "sources": [
+        "12108:1309",
+        "12108:1344",
+        "12108:1352"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#c4007a",
+      "occurrences": 7,
+      "sourceSelectors": [],
+      "sources": [
+        "12108:1316",
+        "12108:1359",
+        "12108:1366",
+        "12108:1374",
+        "12108:1381"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#f0b323",
+      "occurrences": 6,
+      "sourceSelectors": [],
+      "sources": [
+        "12108:1323",
+        "12108:1330",
+        "12122:2676",
+        "12122:2683",
+        "12122:2727"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#007260",
+      "occurrences": 19,
+      "sourceSelectors": [],
+      "sources": [
+        "12108:1508",
+        "12108:1515",
+        "12108:1522",
+        "12108:1528",
+        "12108:1529"
+      ],
+      "usedAs": [
+        "background",
+        "border"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#ae2573",
+      "occurrences": 8,
+      "sourceSelectors": [],
+      "sources": [
+        "12108:1514",
+        "12108:1549",
+        "12108:1557",
+        "12108:1571",
+        "12108:1579"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#00b398",
+      "occurrences": 2,
+      "sourceSelectors": [],
+      "sources": [
+        "12108:1521",
+        "12108:1535"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#e5f7f5",
+      "occurrences": 1,
+      "sourceSelectors": [],
+      "sources": [
+        "12108:1542"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#c6edf9",
+      "occurrences": 18,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:1644",
+        "12122:1651",
+        "12122:1658",
+        "12122:1665",
+        "12122:1672"
+      ],
+      "usedAs": [
+        "background",
+        "border"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#001663",
+      "occurrences": 6,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:1650",
+        "12122:1685",
+        "12122:1693",
+        "12122:1729",
+        "12122:1737"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#0074e0",
+      "occurrences": 3,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:1657",
+        "12122:1700",
+        "12122:1707"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#a1e602",
+      "occurrences": 4,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:1664",
+        "12122:1671",
+        "12122:1715",
+        "12122:1722"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#fcd9d6",
+      "occurrences": 17,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:1772",
+        "12122:1779",
+        "12122:1786",
+        "12122:1793",
+        "12122:1800"
+      ],
+      "usedAs": [
+        "border"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#ef4130",
+      "occurrences": 6,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:1778",
+        "12122:1813",
+        "12122:1821",
+        "12122:1835",
+        "12122:1843"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#005589",
+      "occurrences": 4,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:1785",
+        "12122:1828",
+        "12122:1865",
+        "12122:1872"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#cbdb2a",
+      "occurrences": 1,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:1792"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#00a5e2",
+      "occurrences": 1,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:1799"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#fdecea",
+      "occurrences": 1,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:1806"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#f5e8ea",
+      "occurrences": 18,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:1898",
+        "12122:1905",
+        "12122:1912",
+        "12122:1919",
+        "12122:1926"
+      ],
+      "usedAs": [
+        "background",
+        "border"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#003262",
+      "occurrences": 4,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:1904",
+        "12122:1939",
+        "12122:1947",
+        "12122:2417"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#ac182e",
+      "occurrences": 5,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:1911",
+        "12122:1954",
+        "12122:1961",
+        "12122:1969",
+        "12122:1976"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#00ae9b",
+      "occurrences": 3,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:1918",
+        "12122:1991",
+        "12122:1998"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#7099d3",
+      "occurrences": 1,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:1925"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#e5f4f2",
+      "occurrences": 18,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2026",
+        "12122:2033",
+        "12122:2040",
+        "12122:2047",
+        "12122:2054"
+      ],
+      "usedAs": [
+        "background",
+        "border"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#003b45",
+      "occurrences": 3,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2032",
+        "12122:2075",
+        "12122:2119"
+      ],
+      "usedAs": [
+        "background",
+        "border"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#00927c",
+      "occurrences": 3,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2039",
+        "12122:2053",
+        "12122:2082"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#c72263",
+      "occurrences": 7,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2046",
+        "12122:2067",
+        "12122:2089",
+        "12122:2097",
+        "12122:2104"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#6810d4",
+      "occurrences": 20,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2152",
+        "12122:2159",
+        "12122:2165",
+        "12122:2166",
+        "12122:2173"
+      ],
+      "usedAs": [
+        "background",
+        "border"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#373a36",
+      "occurrences": 8,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2158",
+        "12122:2201",
+        "12122:2245",
+        "12122:2662",
+        "12122:2705"
+      ],
+      "usedAs": [
+        "background",
+        "border"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#004d74",
+      "occurrences": 5,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2172",
+        "12122:2193",
+        "12122:2215",
+        "12122:2223",
+        "12122:2230"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#b2d234",
+      "occurrences": 2,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2179",
+        "12122:2252"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#e8dbf9",
+      "occurrences": 1,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2186"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#2f5475",
+      "occurrences": 4,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2284",
+        "12122:2319",
+        "12122:2327",
+        "12122:2341"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#ff0000",
+      "occurrences": 7,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2291",
+        "12122:2305",
+        "12122:2334",
+        "12122:2349",
+        "12122:2356"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#97989b",
+      "occurrences": 1,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2298"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#fee5e4",
+      "occurrences": 1,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2312"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#e5f3f4",
+      "occurrences": 17,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2404",
+        "12122:2411",
+        "12122:2418",
+        "12122:2425",
+        "12122:2432"
+      ],
+      "usedAs": [
+        "border"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#56335c",
+      "occurrences": 7,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2410",
+        "12122:2445",
+        "12122:2453",
+        "12122:2467",
+        "12122:2475"
+      ],
+      "usedAs": [
+        "background",
+        "border"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#00838a",
+      "occurrences": 5,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2424",
+        "12122:2431",
+        "12122:2460",
+        "12122:2497",
+        "12122:2504"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#efeaef",
+      "occurrences": 1,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2438"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#003865",
+      "occurrences": 21,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2530",
+        "12122:2536",
+        "12122:2537",
+        "12122:2544",
+        "12122:2551"
+      ],
+      "usedAs": [
+        "background",
+        "border"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#ef6f22",
+      "occurrences": 3,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2543",
+        "12122:2571",
+        "12122:2586"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#dd305d",
+      "occurrences": 6,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2550",
+        "12122:2593",
+        "12122:2601",
+        "12122:2608",
+        "12122:2630"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#e6ecf0",
+      "occurrences": 1,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2564"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#d5f7f3",
+      "occurrences": 18,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2656",
+        "12122:2663",
+        "12122:2670",
+        "12122:2677",
+        "12122:2684"
+      ],
+      "usedAs": [
+        "background",
+        "border"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#2cd5c4",
+      "occurrences": 2,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2669",
+        "12122:2697"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#20a295",
+      "occurrences": 1,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2712"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#8083c7",
+      "occurrences": 17,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2782",
+        "12122:2789",
+        "12122:2796",
+        "12122:2803",
+        "12122:2810"
+      ],
+      "usedAs": [
+        "border"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#250e62",
+      "occurrences": 7,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2788",
+        "12122:2823",
+        "12122:2831",
+        "12122:2845",
+        "12122:2853"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#1da4b0",
+      "occurrences": 5,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2795",
+        "12122:2809",
+        "12122:2838",
+        "12122:2875",
+        "12122:2882"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#f8485e",
+      "occurrences": 1,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2802"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#effcff",
+      "occurrences": 1,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2816"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#e5f0eb",
+      "occurrences": 18,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2908",
+        "12122:2915",
+        "12122:2922",
+        "12122:2929",
+        "12122:2936"
+      ],
+      "usedAs": [
+        "background",
+        "border"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#004122",
+      "occurrences": 5,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2914",
+        "12122:2957",
+        "12122:2993",
+        "12122:3001",
+        "12122:3008"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#fff33b",
+      "occurrences": 3,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2921",
+        "12122:2979",
+        "12122:2986"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#006838",
+      "occurrences": 3,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2928",
+        "12122:2935",
+        "12122:2964"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#f26522",
+      "occurrences": 2,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:2949",
+        "12122:2971"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#dc4405",
+      "occurrences": 20,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:3034",
+        "12122:3040",
+        "12122:3041",
+        "12122:3048",
+        "12122:3055"
+      ],
+      "usedAs": [
+        "background",
+        "border"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#337079",
+      "occurrences": 7,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:3047",
+        "12122:3075",
+        "12122:3097",
+        "12122:3105",
+        "12122:3112"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#ffc72c",
+      "occurrences": 1,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:3054"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#173c54",
+      "occurrences": 2,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:3061",
+        "12122:3090"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#fff9ea",
+      "occurrences": 1,
+      "sourceSelectors": [],
+      "sources": [
+        "12122:3068"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#00000080",
+      "occurrences": 3,
+      "sourceSelectors": [],
+      "sources": [
+        "I12542:1988;12542:2133",
+        "I12552:4008;12542:2133",
+        "I12552:4535;12542:2133"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    },
+    {
+      "role": "unassigned",
+      "value": "#efefef",
+      "occurrences": 3,
+      "sourceSelectors": [],
+      "sources": [
+        "I12542:1988;12542:2134",
+        "I12552:4008;12542:2134",
+        "I12552:4535;12542:2134"
+      ],
+      "usedAs": [
+        "background"
+      ]
+    }
+  ],
+  "type": {
+    "headingFamily": {
+      "name": "Lexia",
+      "stack": "Lexia, Georgia, serif",
+      "weights": [
+        400,
+        500,
+        700
+      ],
+      "sizes": [
+        "56px",
+        "46px",
+        "36px",
+        "26px",
+        "24px",
+        "19px",
+        "16px",
+        "14px",
+        "12px"
+      ],
+      "lineHeights": [
+        1.071,
+        1.087,
+        1.111,
+        1.308,
+        1.167,
+        1.474,
+        1.5,
+        1.143,
+        1.333
+      ],
+      "letterSpacing": [
+        "normal"
+      ],
+      "sourceSelectors": []
+    },
+    "bodyFamily": {
+      "name": "Inter",
+      "stack": "Inter, Arial, sans-serif",
+      "weights": [
+        400,
+        500,
+        700
+      ],
+      "sizes": [
+        "18px",
+        "16px",
+        "14px",
+        "12px"
+      ],
+      "lineHeights": [
+        1.556,
+        1.5,
+        1,
+        1.714,
+        1.333,
+        1.667
+      ],
+      "letterSpacing": [
+        "normal"
+      ],
+      "sourceSelectors": []
+    },
+    "monoFamily": null,
+    "scaleRatio": null,
+    "scaleAudit": null,
+    "loadStrategy": null,
+    "files": []
+  },
+  "spacing": null,
+  "motifs": {
+    "borderRadius": {
+      "primary": "2px",
+      "secondary": "4px",
+      "pill": "9999px"
+    },
+    "shadows": [],
+    "gradients": [],
+    "patterns": [
+      {
+        "name": "Home Hero Branded",
+        "evidence": "canon-source/assets/screenshots/home-hero-branded.png · node 12950:25095: light grey band: logo, plum display heading, Inter subheading, primary CTA, gradient media right"
+      },
+      {
+        "name": "Teaser / Card",
+        "evidence": "canon-source/assets/screenshots/teaser-card.png · node 12436:14799: grid of cards: image, optional italic tag, magenta Lexia title, body, primary CTA"
+      },
+      {
+        "name": "Teaser / Text + Image",
+        "evidence": "canon-source/assets/screenshots/teaser-text-image.png · node 12431:14512: split row: image one side, plum Lexia heading + body + primary CTA the other; alternates sides"
+      },
+      {
+        "name": "CTA Banner",
+        "evidence": "canon-source/assets/screenshots/cta-banner.png · node 13370:2159: bordered band: thumbnail, heading, body, one to three buttons"
+      },
+      {
+        "name": "Block Content",
+        "evidence": "canon-source/assets/screenshots/block-content.png · node 12552:3812: free text column: heading, paragraphs, inline links, button row"
+      },
+      {
+        "name": "Teaser / Home Hero",
+        "evidence": "canon-source/assets/screenshots/teaser-home-hero.png · node 12428:14194: full-bleed image hero with heading + subheading + CTA on a panel"
+      },
+      {
+        "name": "Links",
+        "evidence": "canon-source/assets/screenshots/links.png · node 12929:23940: list of text links with chevron glyphs"
+      },
+      {
+        "name": "Accordion",
+        "evidence": "canon-source/assets/screenshots/accordion.png · node 12473:15780: stacked disclosure rows: title + chevron, body when open"
+      },
+      {
+        "name": "Header",
+        "evidence": "canon-source/assets/screenshots/header.png · node 12387:11725: utility link row; logo, primary nav with dropdown chevrons, search + login button"
+      },
+      {
+        "name": "Footer",
+        "evidence": "canon-source/assets/screenshots/footer.png · node 12406:12683: logo + statement left, two link columns, social icons row, job code"
+      }
+    ]
+  },
+  "componentStyle": null,
+  "systemComponents": [],
+  "iconFont": null,
+  "voice": null,
+  "voiceTable": null,
+  "crossPromo": null,
+  "register": null
+}

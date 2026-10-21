@@ -1,0 +1,79 @@
+{
+  "pages": {
+    "home": {
+      "residuals": [
+        {
+          "gate": "dom-equality",
+          "cause": "renderer",
+          "verdict": "needs-owner",
+          "note": "s05 image is a child of an empty h3 in source; stream-render emits no heading-image child (15 vs 14 images). Split layout tried once (only top-level images) and reverted.",
+          "at": "2026-10-21T12:29:47Z"
+        },
+        {
+          "gate": "figma-ramp",
+          "cause": "donor-conflict",
+          "verdict": "accepted",
+          "note": "M4 CTA Banner body is Inter 16/24 while M1/M2/M3 bodies are 18/28; one type.body role chosen at 18/28 (majority). s05/s07 t2 size+lineHeight 4 fails.",
+          "at": "2026-10-21T12:29:47Z"
+        },
+        {
+          "gate": "figma-geometry",
+          "cause": "renderer",
+          "verdict": "accepted",
+          "note": "s03 split image 520 vs 574: 3 long paragraphs widen the text column of the auto split grid; s09 stack panel 1132 vs 1180 (panel inset 24px each side).",
+          "at": "2026-10-21T12:29:47Z"
+        },
+        {
+          "gate": "figma-type",
+          "cause": "font",
+          "verdict": "accepted",
+          "note": "Lexia (licensed AZ font) and Inter not served by the page; Georgia/Arial fallbacks render. Advisory on every section.",
+          "at": "2026-10-21T12:29:47Z"
+        }
+      ],
+      "eyeball": {
+        "verdict": "pass",
+        "note": "Weakest point: chrome header renders raw (skip links + logo text stack, ligature words visible); body bands read as oneAZ (plum Lexia-fallback headings, magenta buttons, 1180 container).",
+        "at": "2026-10-21T12:29:47Z"
+      },
+      "flags": [],
+      "gates": {
+        "reskin-dom-equality": {
+          "verdict": "FAIL",
+          "report": "stardust/reskin/reports/home-content-gate.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "FAIL",
+          "report": "stardust/reskin/reports/home-slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/reports/home-donor-probe.md"
+        },
+        "mobile-adapt-static": {
+          "verdict": "PASS"
+        },
+        "mobile-adapt-runtime": {
+          "verdict": "PASS"
+        },
+        "figma": {
+          "regime": "local",
+          "figmaVersion": "2408265627482005963",
+          "join": "PASS",
+          "geometry": "FAIL 2/13",
+          "ramp": "FAIL 4/125",
+          "pixel": "s01 n/a: frame content differs, s02 n/a: frame content differs, s03 n/a: frame content differs, s04 n/a: frame content differs, s05 n/a: frame content differs, s06 n/a: frame content differs, s07 n/a: frame content differs, s08 n/a: frame content differs, s09 n/a: frame content differs",
+          "register": "mandated 0 · waived 24 · unmandated 6 · out-of-kit 0 · conflict 14 · pre-existing 0",
+          "coverage": "text styles 15/40 · widths 1180,1440,2817 · waived 24",
+          "literals": 0,
+          "invocation": "figma-gate.mjs all --page home --url stardust/reskin/pages/home.html --dir stardust"
+        }
+      },
+      "status": "failing",
+      "prototypeSha": "ef93143c765d",
+      "prototypePath": "stardust/reskin/pages/home.html",
+      "recordedAt": "2026-10-21T12:30:10Z"
+    }
+  },
+  "handoff": {}
+}

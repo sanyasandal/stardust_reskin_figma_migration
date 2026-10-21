@@ -1,0 +1,59 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:reskin",
+    "writtenAt": "2026-10-21T12:30:10Z",
+    "note": "bounded extract: single archetype page (home) for a benchmark run; see direction.md named deviation D-1",
+    "stardustVersion": "branch figma-reskin-m4-on-m2@1eefc34d"
+  },
+  "site": {
+    "originUrl": "https://fortstreet-h.schools.nsw.gov.au/",
+    "deployUrl": null,
+    "extractedAt": "2026-10-21T12:13:17Z",
+    "pageCap": 1,
+    "totalDiscovered": 1,
+    "crawled": 1
+  },
+  "designSource": {
+    "url": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60",
+    "capturedAt": "2026-10-21T12:15:01Z",
+    "path": "stardust/canon-source/"
+  },
+  "direction": {
+    "resolvedAt": "2026-10-21T12:13:17Z",
+    "phrase": "Stardust migrate a site: https://fortstreet-h.schools.nsw.gov.au/ to AEM using Figma: https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=6400-21997 using the work we did in reskin branch sanyasandal:figma-reskin-m4-on-m2",
+    "directionFile": "stardust/direction.md",
+    "iaFidelity": "verbatim"
+  },
+  "handsOff": true,
+  "flow": "reskin",
+  "flowChosenAt": "2026-10-21T12:13:17Z",
+  "flowSource": "user-phrase",
+  "pages": [
+    {
+      "slug": "home",
+      "url": "https://fortstreet-h.schools.nsw.gov.au/",
+      "title": "Fort Street High School",
+      "type": "landing",
+      "status": "prototyped",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-21T12:13:17Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-21T12:30:06Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-21T12:30:10Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": null,
+      "prototypePath": "stardust/reskin/pages/home.html",
+      "migratedPath": null
+    }
+  ]
+}

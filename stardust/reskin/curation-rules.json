@@ -1,0 +1,354 @@
+{
+  "version": 1,
+  "reference": {
+    "pages": {
+      "frame": "12950:24869",
+      "mode": null,
+      "breakpoint": 1440
+    },
+    "foundation": {
+      "frame": "12042:106827",
+      "mode": null,
+      "breakpoint": 1440
+    }
+  },
+  "roles": {
+    "palette.pageBg": {
+      "from": "colors/rgb-255-255-255",
+      "evidence": "12042:106827"
+    },
+    "palette.bodyFg": {
+      "from": "colors/rgb-60-66-66",
+      "evidence": "I12042:106828;11974:36427"
+    },
+    "palette.headingFg": {
+      "from": "colors/rgb-131-0-81",
+      "evidence": "12108:1154"
+    },
+    "palette.mutedFg": {
+      "from": "colors/rgb-141-143-143",
+      "evidence": "I12042:106828;11974:36467"
+    },
+    "palette.accent": {
+      "from": "colors/rgb-208-0-111",
+      "evidence": "12108:652"
+    },
+    "palette.darkBandBg": {
+      "from": "colors/rgb-131-0-81",
+      "evidence": "12108:1154"
+    },
+    "palette.darkBandFg": {
+      "from": "colors/rgb-255-255-255",
+      "evidence": "12042:106827"
+    },
+    "palette.lightBandBg": {
+      "from": "colors/rgb-235-239-238",
+      "evidence": "12042:106828"
+    },
+    "type.family": {
+      "from": "typography/body-body",
+      "field": "fontFamily",
+      "evidence": "I12042:106828;11974:36428"
+    },
+    "type.headingFamily": {
+      "from": "typography/headings-h1",
+      "field": "fontFamily",
+      "evidence": "12072:106958"
+    },
+    "type.display": {
+      "from": "typography/headings-h1",
+      "evidence": "12072:106958"
+    },
+    "type.h2": {
+      "from": "typography/headings-h2",
+      "evidence": "I12042:106828;11974:36427"
+    },
+    "type.h3": {
+      "from": "typography/headings-h4",
+      "evidence": "12072:106982"
+    },
+    "type.h4": {
+      "from": "typography/headings-h5",
+      "evidence": "12072:106989"
+    },
+    "type.body": {
+      "from": "typography/body-body-large",
+      "evidence": "12431:14243"
+    },
+    "buttons.primary": {
+      "component": "button-medium-primary-with-text",
+      "evidence": "12084:109270"
+    },
+    "buttons.secondary": {
+      "component": "button-medium-secondary-with-text",
+      "evidence": "12084:109276"
+    },
+    "layout.containerMaxWidth": {
+      "from": "spacing/max-width-1180",
+      "evidence": "I12387:11784;12379:10813;12379:10718"
+    },
+    "layout.sectionPaddingY": {
+      "from": "spacing/pad-40",
+      "evidence": "12042:106827"
+    },
+    "layout.columnGap": {
+      "from": "spacing/gap-32",
+      "evidence": "12431:14270"
+    },
+    "radii.button": {
+      "from": "radii/radius-4",
+      "evidence": "12084:109270"
+    },
+    "radii.card": {
+      "absent": "oneAZ teaser cards and text+image media are square-cornered in the kit frames"
+    },
+    "shadows.cardResting": {
+      "absent": "the kit defines no effect styles (foundation/effects.json is empty)"
+    }
+  },
+  "normalizations": [
+    {
+      "id": "heading-lh",
+      "kind": "lineHeightUnitless",
+      "params": {
+        "paths": [
+          "type.display",
+          "type.h2",
+          "type.h3",
+          "type.h4"
+        ]
+      },
+      "why": "heading leading is set as a ratio so it scales with the responsive ramp"
+    },
+    {
+      "id": "body-family",
+      "kind": "familyEquivalence",
+      "params": {
+        "map": {
+          "Inter": "Inter, Arial, sans-serif",
+          "Lexia": "Lexia, Georgia, serif"
+        }
+      },
+      "why": "Lexia is a licensed face not served by this site; Georgia is the closest system serif. Inter falls back to Arial"
+    }
+  ],
+  "curations": [],
+  "suspect": [
+    {
+      "path": "buttons.primary.padding",
+      "why": "the Figma button sets a fixed 40px height with 0px vertical padding; the rendered button gets its height from line-height 24px plus the border"
+    }
+  ],
+  "modules": [
+    {
+      "id": "M1",
+      "name": "Home Hero Branded",
+      "frame": "12950:25095",
+      "family": "pages",
+      "anatomy": "light grey band: logo, plum display heading, Inter subheading, primary CTA, gradient media right",
+      "variants": [
+        "Desktop",
+        "Tablet",
+        "Mobile"
+      ],
+      "components": [
+        "Button",
+        "Image Placeholder",
+        "Brand Logos"
+      ],
+      "status": "include"
+    },
+    {
+      "id": "M2",
+      "name": "Teaser / Card",
+      "frame": "12436:14799",
+      "family": "pages",
+      "anatomy": "grid of cards: image, optional italic tag, magenta Lexia title, body, primary CTA",
+      "variants": [
+        "2-up",
+        "3-up"
+      ],
+      "components": [
+        "Button",
+        "Image Placeholder"
+      ],
+      "status": "include"
+    },
+    {
+      "id": "M3",
+      "name": "Teaser / Text + Image",
+      "frame": "12431:14512",
+      "family": "pages",
+      "anatomy": "split row: image one side, plum Lexia heading + body + primary CTA the other; alternates sides",
+      "variants": [
+        "image-left",
+        "image-right"
+      ],
+      "components": [
+        "Button",
+        "Image Placeholder"
+      ],
+      "status": "include"
+    },
+    {
+      "id": "M4",
+      "name": "CTA Banner",
+      "frame": "13370:2159",
+      "family": "pages",
+      "anatomy": "bordered band: thumbnail, heading, body, one to three buttons",
+      "variants": [
+        "Desktop",
+        "Tablet",
+        "Mobile"
+      ],
+      "components": [
+        "Button"
+      ],
+      "status": "include"
+    },
+    {
+      "id": "M5",
+      "name": "Block Content",
+      "frame": "12552:3812",
+      "family": "pages",
+      "anatomy": "free text column: heading, paragraphs, inline links, button row",
+      "variants": [],
+      "components": [
+        "Button"
+      ],
+      "status": "include"
+    },
+    {
+      "id": "M6",
+      "name": "Teaser / Home Hero",
+      "frame": "12428:14194",
+      "family": "pages",
+      "anatomy": "full-bleed image hero with heading + subheading + CTA on a panel",
+      "variants": [],
+      "components": [
+        "Button",
+        "Image Placeholder"
+      ],
+      "status": "include"
+    },
+    {
+      "id": "M7",
+      "name": "Links",
+      "frame": "12929:23940",
+      "family": "pages",
+      "anatomy": "list of text links with chevron glyphs",
+      "variants": [],
+      "components": [
+        "General Icons"
+      ],
+      "status": "include"
+    },
+    {
+      "id": "M8",
+      "name": "Accordion",
+      "frame": "12473:15780",
+      "family": "pages",
+      "anatomy": "stacked disclosure rows: title + chevron, body when open",
+      "variants": [
+        "closed",
+        "open"
+      ],
+      "components": [
+        "General Icons"
+      ],
+      "status": "include"
+    },
+    {
+      "id": "M9",
+      "name": "Header",
+      "frame": "12387:11725",
+      "family": "chrome",
+      "anatomy": "utility link row; logo, primary nav with dropdown chevrons, search + login button",
+      "variants": [
+        "Desktop",
+        "Tablet",
+        "Mobile"
+      ],
+      "components": [
+        "Brand Logos",
+        "General Icons",
+        "Button"
+      ],
+      "status": "include"
+    },
+    {
+      "id": "M10",
+      "name": "Footer",
+      "frame": "12406:12683",
+      "family": "chrome",
+      "anatomy": "logo + statement left, two link columns, social icons row, job code",
+      "variants": [
+        "Desktop",
+        "Tablet",
+        "Mobile"
+      ],
+      "components": [
+        "Brand Logos",
+        "General Icons"
+      ],
+      "status": "include"
+    },
+    {
+      "name": "Block Content (elements)",
+      "frame": "12601:4858",
+      "status": "excluded",
+      "why": "element specimens for M5, not a composition"
+    },
+    {
+      "name": "Header (variants sheet)",
+      "frame": "12387:11746",
+      "status": "excluded",
+      "why": "variant specimens; M9 is the component composition"
+    }
+  ],
+  "notesForReskin": "sentence-case headings in Lexia (plum for section titles, magenta for card titles); Inter body in dark grey; magenta 4px-rounded primary buttons with bold 16px labels; light grey (#EBEFEE) bands for heroes; 1180px content column",
+  "motifs": [
+    "grey hero band with a soft purple-to-cyan gradient image",
+    "magenta primary action as the single accent per block",
+    "serif headings over a sans body"
+  ],
+  "design": {
+    "displayName": "oneAZ Design System v3.2",
+    "description": "AstraZeneca's oneAZ web kit: Lexia serif headings, Inter body, plum and magenta accents on white and light grey.",
+    "colorNames": {
+      "rgb-255-255-255": "White",
+      "rgb-60-66-66": "Graphite",
+      "rgb-131-0-81": "Plum",
+      "rgb-208-0-111": "Magenta",
+      "rgb-235-239-238": "Mist grey",
+      "rgb-141-143-143": "Muted grey",
+      "rgb-240-171-0": "Gold"
+    },
+    "typography": {
+      "display": "page and hero headlines (Lexia)",
+      "body": "running copy and leads (Inter)"
+    },
+    "narrative": {
+      "northStar": "Clinical clarity with a warm brand accent.",
+      "overview": "White pages with mist-grey hero bands, serif plum headings, and a single magenta action per block.",
+      "keyCharacteristics": [
+        "Lexia + Inter pairing",
+        "plum headings, magenta actions",
+        "1180px column",
+        "square media, 4px buttons"
+      ],
+      "rules": [
+        "one primary button per block",
+        "headings in sentence case"
+      ],
+      "dos": [
+        "keep the gradient imagery soft",
+        "use mist grey for emphasis bands"
+      ],
+      "donts": [
+        "add rounded cards",
+        "introduce a third accent colour"
+      ]
+    }
+  }
+}

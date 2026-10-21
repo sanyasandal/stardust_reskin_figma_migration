@@ -1,0 +1,23 @@
+{"ts":"2026-10-21T12:13:17Z","skill":"stardust:reskin","phase":"setup","event":"end","detail":"flow reskin, hands-off, home archetype"}
+{"ts":"2026-10-21T12:13:21Z","skill":"stardust:reskin","phase":"ingest-donor","event":"start"}
+{"ts":"2026-10-21T12:15:39Z","skill":"stardust:reskin","phase":"content-capture","event":"start"}
+{"ts":"2026-10-21T12:18:19Z","skill":"stardust:reskin","phase":"ingest-donor","event":"end"}
+{"ts":"2026-10-21T12:18:19Z","skill":"stardust:reskin","phase":"content-capture","event":"end"}
+{"ts":"2026-10-21T12:18:19Z","skill":"stardust:reskin","phase":"mapping-brief","event":"start"}
+{"ts":"2026-10-21T12:19:18Z","skill":"stardust:reskin","phase":"mapping-brief","event":"end"}
+{"ts":"2026-10-21T12:19:18Z","skill":"stardust:reskin","phase":"programmatic-render","event":"start"}
+{"ts":"2026-10-21T12:29:47Z","skill":"stardust:reskin","phase":"programmatic-render","event":"end"}
+{"ts":"2026-10-21T12:37:22Z","skill":"stardust:reskin","phase":"gates","event":"start","detail":"Phase 5 (e) deployed leg home"}
+{"ts":"2026-10-21T12:37:22Z","skill":"stardust:deploy","phase":"runtime-probe","event":"start"}
+{"ts":"2026-10-21T12:37:25Z","skill":"stardust:deploy","phase":"runtime-probe","event":"end","artifact":"stardust/runtime-contract.json"}
+{"ts":"2026-10-21T12:37:26Z","skill":"stardust:deploy","phase":"2b-section","event":"start"}
+{"ts":"2026-10-21T12:53:10Z","skill":"stardust:deploy","phase":"2b-section","event":"end","artifact":"stardust/eds-schema/home.json"}
+{"ts":"2026-10-21T12:53:10Z","skill":"stardust:deploy","phase":"3-foundation","event":"start"}
+{"ts":"2026-10-21T12:53:10Z","skill":"stardust:deploy","phase":"3-foundation","event":"end","artifact":"styles/styles.css"}
+{"ts":"2026-10-21T12:53:10Z","skill":"stardust:deploy","phase":"5-lean","event":"start"}
+{"ts":"2026-10-21T12:53:10Z","skill":"stardust:deploy","phase":"5-lean","event":"end","detail":"stock decorateButtons kept (strong=primary, em=secondary)"}
+{"ts":"2026-10-21T12:53:10Z","skill":"stardust:deploy","phase":"6-chrome","event":"start"}
+{"ts":"2026-10-21T12:53:10Z","skill":"stardust:deploy","phase":"6-chrome","event":"end","artifact":"blocks/header/header.js"}
+{"ts":"2026-10-21T12:53:10Z","skill":"stardust:deploy","phase":"7-blocks","event":"start"}
+{"ts":"2026-10-21T12:53:10Z","skill":"stardust:deploy","phase":"7-blocks","event":"end","detail":"hero, cards, columns restyled in-session (no parallel agents: 1 page)"}
+{"ts":"2026-10-21T12:53:10Z","skill":"stardust:deploy","phase":"9-content","event":"start"}
