@@ -2,6 +2,23 @@ main .section:has(.columns.light) {
   background: var(--palette-light-band-bg);
 }
 
+/* dark band: source `background: dark` CTA banners, donor dark-band tokens */
+main .section:has(.columns.dark) {
+  background: var(--palette-dark-band-bg);
+  color: var(--palette-dark-band-fg);
+}
+
+.columns.dark :is(h1, h2, h3, h4, h5, h6),
+.columns.dark a:any-link:not(.button) {
+  color: var(--palette-dark-band-fg);
+}
+
+.columns.dark a.button:any-link {
+  border-color: var(--palette-dark-band-fg);
+  background: var(--palette-dark-band-fg);
+  color: var(--palette-dark-band-bg);
+}
+
 .columns .columns-panel {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -72,12 +89,12 @@ main .section:has(.columns.light) {
   }
 
   /* light bleed band (prototype tone-light bleed): keeps the section padding and pads the panel */
-  main .section:has(.columns.light) {
+  main .section:has(.columns.light, .columns.dark) {
     padding-top: var(--layout-section-padding-y);
     padding-bottom: var(--layout-section-padding-y);
   }
 
-  .columns.light .columns-panel {
+  .columns:is(.light, .dark) .columns-panel {
     padding: 32px 20px;
   }
 }

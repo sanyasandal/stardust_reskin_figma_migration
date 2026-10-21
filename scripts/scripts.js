@@ -162,6 +162,55 @@ function decorateButtons(main) {
   });
 }
 
+const NO_PAGE_LAYOUT = /^\/($|index$|library(\/|$)|nav$|footer$|section-nav$|fragments\/|widgets\/)/;
+
+/**
+ * Inner pages get the source's page chrome: a breadcrumb section and a section-nav sidebar.
+ * @param {Element} main The container element
+ * @returns {boolean} whether the layout blocks were added
+ */
+function buildPageLayoutBlocks(main) {
+  if (main !== document.querySelector('body > main')) return false;
+  if (NO_PAGE_LAYOUT.test(window.location.pathname)) return false;
+  if (!main.querySelector(':scope > div')) return false;
+  const crumbs = document.createElement('div');
+  crumbs.append(buildBlock('breadcrumb', ''));
+  main.prepend(crumbs);
+  const nav = document.createElement('div');
+  nav.append(buildBlock('section-nav', ''));
+  main.append(nav);
+  return true;
+}
+
+/**
+ * Wraps the content sections after the (full-width) hero into a sidebar + main grid.
+ * @param {Element} main The container element
+ */
+function wrapPageLayout(main) {
+  const nav = main.querySelector(':scope > .section.section-nav-container');
+  if (!nav) return;
+  const crumbs = main.querySelector(':scope > .section.breadcrumb-container');
+  const sections = [...main.querySelectorAll(':scope > .section')]
+    .filter((s) => s !== nav && s !== crumbs);
+  const start = sections[0]?.querySelector('.hero') ? 1 : 0;
+  const content = sections.slice(start);
+  if (!content.length) {
+    nav.remove();
+    return;
+  }
+  const layout = document.createElement('div');
+  layout.className = 'page-layout';
+  const aside = document.createElement('aside');
+  aside.className = 'page-aside';
+  const body = document.createElement('div');
+  body.className = 'page-main';
+  aside.append(nav);
+  body.append(...content);
+  layout.append(aside, body);
+  (sections[start - 1] || crumbs || main.firstElementChild).after(layout);
+  document.body.classList.add('has-page-layout');
+}
+
 /**
  * Decorates the main element.
  * @param {Element} main The main element
@@ -170,8 +219,10 @@ function decorateButtons(main) {
 export function decorateMain(main) {
   decorateIcons(main);
   buildAutoBlocks(main);
+  const layout = buildPageLayoutBlocks(main);
   decorateSections(main);
   decorateBlocks(main);
+  if (layout) wrapPageLayout(main);
   decorateButtons(main);
   decorateExternalLinks(main);
 }
@@ -187,7 +238,13 @@ async function loadEager(doc) {
   if (main) {
     decorateMain(main);
     document.body.classList.add('appear');
-    await loadSection(main.querySelector('.section'), waitForFirstImage);
+    const [first, second] = main.querySelectorAll('.section');
+    if (first?.classList.contains('breadcrumb-container') && second) {
+      await loadSection(first);
+      await loadSection(second, waitForFirstImage);
+    } else {
+      await loadSection(first, waitForFirstImage);
+    }
   }
 
   try {

@@ -1,0 +1,30 @@
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.breadcrumb li + li::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin: 0 10px 0 6px;
+  border: solid currentcolor;
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(-45deg);
+}
+
+.breadcrumb a:any-link {
+  color: var(--palette-heading-fg);
+  text-decoration: underline;
+}

@@ -310,12 +310,12 @@ main img {
 }
 
 /* sections */
-main > .section {
+main .section {
   padding-top: var(--layout-section-padding-y);
   padding-bottom: var(--layout-section-padding-y);
 }
 
-main > .section > div {
+main .section > div {
   box-sizing: content-box;
   max-width: var(--layout-container-max-width);
   margin: 0 auto;
@@ -327,7 +327,7 @@ main .section:empty {
 }
 
 @media (width <= 640px) {
-  main > .section {
+  main .section {
     padding-top: 24px;
     padding-bottom: 24px;
   }
@@ -338,11 +338,80 @@ main .section:empty {
   }
 }
 
+/* inner-page chrome: breadcrumb, then a sidebar + main grid after the full-width hero */
+main .section.breadcrumb-container {
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+
+main .section.breadcrumb-container > div {
+  max-width: 1168px;
+  padding: 0 16px;
+}
+
+.page-layout {
+  box-sizing: border-box;
+}
+
+.page-aside {
+  display: none;
+}
+
+@media (width >= 1024px) {
+  .page-layout {
+    display: grid;
+    grid-template-columns: 400px minmax(0, 800px);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .page-layout:not(:has(> .page-aside)) {
+    display: block;
+    max-width: none;
+  }
+
+  .page-aside {
+    display: block;
+    padding: 16px 48px 16px 16px;
+  }
+
+  main .page-aside .section {
+    padding: 0;
+  }
+
+  main .page-aside .section > div {
+    max-width: none;
+    padding: 0;
+  }
+
+  main .page-layout:has(> .page-aside) .page-main .section > div {
+    max-width: none;
+    padding: 0 16px;
+  }
+}
+
 /* section metadata (default-content sections only) */
-main > .section.light {
+main .section.light {
   background: var(--palette-light-band-bg);
   padding-top: var(--layout-section-padding-y);
   padding-bottom: var(--layout-section-padding-y);
+}
+
+/* dark band: source `background: dark` sections, painted with the donor dark-band tokens */
+main .section.dark {
+  background: var(--palette-dark-band-bg);
+  color: var(--palette-dark-band-fg);
+}
+
+main .section.dark :is(h1, h2, h3, h4, h5, h6),
+main .section.dark a:any-link:not(.button) {
+  color: var(--palette-dark-band-fg);
+}
+
+main .section.dark a.button:any-link {
+  border-color: var(--palette-dark-band-fg);
+  background: var(--palette-dark-band-fg);
+  color: var(--palette-dark-band-bg);
 }
 
 /* Experience Workspace edit mode: repaint CTAs from their authored marks */
