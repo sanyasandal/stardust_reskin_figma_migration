@@ -1,0 +1,84 @@
+
+Block round-trip @ 1280px (profile "eds", blocks, styles/styles.css)
+
+■ gallery: 74 finding(s), 0 structural 🔴 — EW editable 52/52, dead 0, duplicated 0, exempt 0
+    proto: 21 text nodes — 0 headings, 0 eyebrows, 0 CTAs, 21 body; 21 img
+    EDS: 53 text nodes — 0 headings, 0 eyebrows, 0 CTAs, 53 body; 21 img
+  🟡 MISSING BODY: proto body "Speech Day In February we held our annual Speech"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Year 11 Life Ready Camp Year 11 attended the Lif"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Year 7 camp The Year 7 Camp was held at Point Wo"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Swimming Carnival The swimming carnival proved t"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Multicultural Day Multicultural Day was held in "… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "IMP Camp IMP camp, held from 21-23 March, was a "… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Great Barrier Reef Tour Year 12 Geography studen"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Athletics Carnival The school athletics carnival"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Cross Country Carnival The whole school Cross Co"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "The SRC Future Leaders Conference The SRC Future"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Reconciliation Week Fort Street celebrated Natio"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Year 10 Commerce Stalls Year 10 students held th"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "World’s Greatest Shave This year, Year 12 proudl"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "The Addams Family Musical The audience laughed, "… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Wear It Purple Day The Diversity Committee plann"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Bronze Duke or Edinburgh All Year 9 students com"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Silver Duke of Edinburgh Award Qualifying Hike S"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Gold Duke of Edinburgh Our Gold Duke of Edinburg"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "German study tour Students from Year 10 and 11 s"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Year 12 Graduation In the students last week at "… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Halloween There was something SPOOKY in the air "… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 EXTRA: EDS body "Speech Day" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "In February we held our annual Speech Day. The g" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Our guest speaker, Professor Margaret Burgess, F" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Additionally, Auslee Pamintuan, the School Dux o" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Year 11 Life Ready Camp" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Year 11 attended the Life Ready Camp at the Sydn" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Year 7 camp" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "The Year 7 Camp was held at Point Wolstoncroft S" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "During the camp, students had the opportunity to" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Swimming Carnival" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "The swimming carnival proved to be a resounding " has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Multicultural Day" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Multicultural Day was held in August with over 2" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "IMP Camp" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "IMP camp, held from 21-23 March, was a huge succ" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Great Barrier Reef Tour" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Year 12 Geography students travelled to Cairns a" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Athletics Carnival" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "The school athletics carnival was held at SOPAC," has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Cross Country Carnival" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "The whole school Cross Country event was a huge " has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "The SRC Future Leaders Conference" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "The SRC Future Leaders Conference was a tremendo" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "th" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "The second session featured a dynamic panel disc" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "This conference was a shining example of student" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Reconciliation Week" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Fort Street celebrated National Reconciliation w" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "The FSHS Reconciliation Action Committee has bee" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Year 10 Commerce Stalls" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Year 10 students held the annual stalls day. The" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "World’s Greatest Shave" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "This year, Year 12 proudly led the school commun" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Fundraising has been taking place throughout the" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Together, we’re proving that small actions can m" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "The Addams Family Musical" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "The audience laughed, cried and were occasionall" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Wear It Purple Day" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "The Diversity Committee planning came into fruit" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Bronze Duke or Edinburgh" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "All Year 9 students completed their adventurous " has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Silver Duke of Edinburgh Award Qualifying Hike" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Students travelled to Nelson Bay and took the To" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Gold Duke of Edinburgh" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Our Gold Duke of Edinburgh group successfully co" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "German study tour" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Students from Year 10 and 11 stayed with host fa" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "They spent a day at a German school, explored th" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Year 12 Graduation" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "In the students last week at school there were m" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Halloween" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "There was something SPOOKY in the air today at t" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Decorations were placed around the school includ" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+
+EW gate: editable 52/52, dead 0, duplicated 0, exempt 0
+
+✓ all blocks: round-trip closed (0 structural 🔴).

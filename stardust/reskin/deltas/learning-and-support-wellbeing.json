@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "blocking": false,
+  "text": {
+    "allow": [
+      {
+        "id": "t1",
+        "from": " keyboard_arrow_down",
+        "to": "",
+        "why": "the source runtime renders each accordion toggle as a Material Symbols ligature span (text 'keyboard_arrow_down', rendered as a chevron glyph); it is not in the source .plain.html (not authored content), so the DA document does not carry it \u2014 the EDS accordion draws its chevron in CSS"
+      },
+      {
+        "id": "t2",
+        "from": " east",
+        "to": "",
+        "why": "the source runtime appends a Material Symbols ligature span (text 'east', rendered as an arrow glyph) to every teaser/quick-link list item; it is not in the source .plain.html (not authored content), so the DA document does not carry it"
+      },
+      {
+        "id": "t3",
+        "from": "(opens in new window) .",
+        "to": "(opens in new window).",
+        "why": "the source runtime's external-link hint is a visually hidden span, so the live capture reads a gap between it and following punctuation; the EDS hint is visible inline (as in the reskin prototype), so the authored '.' follows it directly \u2014 whitespace only, no authored text differs"
+      }
+    ]
+  },
+  "images": "count+alt+width",
+  "links": {
+    "localize": {
+      "sourceHost": "fortstreet-h.schools.nsw.gov.au"
+    }
+  },
+  "metadata": {
+    "ignore": [
+      "canonical",
+      "og:url",
+      "og:image",
+      "og:image:secure_url",
+      "twitter:image"
+    ],
+    "jsonLd": "count-only",
+    "absent": []
+  }
+}

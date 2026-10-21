@@ -1,0 +1,57 @@
+
+Block round-trip @ 1280px (profile "eds", blocks, styles/styles.css)
+
+■ hero: ✓ round-trip closed — EW editable 2/2, dead 0, duplicated 0, exempt 0
+    proto: 2 text nodes — 1 headings, 0 eyebrows, 0 CTAs, 1 body; 1 img
+    EDS: 2 text nodes — 1 headings, 0 eyebrows, 0 CTAs, 1 body; 1 img
+
+■ table[0]: ✓ round-trip closed — EW editable 10/10, dead 0, duplicated 0, exempt 0
+    proto: 10 text nodes — 0 headings, 0 eyebrows, 0 CTAs, 10 body; 0 img
+    EDS: 10 text nodes — 0 headings, 0 eyebrows, 0 CTAs, 10 body; 0 img
+
+■ table[1]: ✓ round-trip closed — EW editable 21/21, dead 0, duplicated 0, exempt 0
+    proto: 21 text nodes — 0 headings, 0 eyebrows, 0 CTAs, 21 body; 0 img
+    EDS: 21 text nodes — 0 headings, 0 eyebrows, 0 CTAs, 21 body; 0 img
+
+■ accordion[0]: 9 finding(s), 0 structural 🔴 — EW editable 58/58, dead 0, duplicated 0, exempt 0
+    proto: 66 text nodes — 6 headings, 0 eyebrows, 34 CTAs, 26 body; 0 img
+    EDS: 67 text nodes — 6 headings, 0 eyebrows, 34 CTAs, 27 body; 0 img
+  🟡 MISSING BODY: proto body "keyboard_arrow_down"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Ms Sintra Zorlu"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "keyboard_arrow_down"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Ms Miori Shino: Monday, Tuesday and Friday Ms Me"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 EXTRA: EDS body "Ms" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Sintra Zorlu" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Ms : Monday, Tuesday and Friday Ms : Wednesday a" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Miori Shino" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Meg Huckstepp-Lowe" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+
+■ accordion[1]: 4 finding(s), 0 structural 🔴 — EW editable 29/29, dead 0, duplicated 0, exempt 0
+    proto: 50 text nodes — 2 headings, 0 eyebrows, 17 CTAs, 31 body; 0 img
+    EDS: 46 text nodes — 2 headings, 0 eyebrows, 17 CTAs, 27 body; 0 img
+  🟡 MISSING BODY: proto body "keyboard_arrow_down"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "keyboard_arrow_down"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "keyboard_arrow_down"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "keyboard_arrow_down"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+
+■ accordion[2]: 2 finding(s), 0 structural 🔴 — EW editable 8/8, dead 0, duplicated 0, exempt 0
+    proto: 10 text nodes — 0 headings, 0 eyebrows, 0 CTAs, 10 body; 0 img
+    EDS: 8 text nodes — 0 headings, 0 eyebrows, 0 CTAs, 8 body; 0 img
+  🟡 MISSING BODY: proto body "keyboard_arrow_down"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "keyboard_arrow_down"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+
+■ columns: ✓ round-trip closed — EW editable 3/3, dead 0, duplicated 0, exempt 0
+    proto: 3 text nodes — 1 headings, 0 eyebrows, 1 CTAs, 1 body; 0 img
+    EDS: 3 text nodes — 1 headings, 0 eyebrows, 1 CTAs, 1 body; 0 img
+
+■ cards: 4 finding(s), 0 structural 🔴 — EW editable 4/4, dead 0, duplicated 0, exempt 0
+    proto: 4 text nodes — 0 headings, 0 eyebrows, 2 CTAs, 2 body; 0 img
+    EDS: 4 text nodes — 0 headings, 0 eyebrows, 2 CTAs, 2 body; 0 img
+  🟡 MISSING BODY: proto body "Find out how we support students with disability"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 MISSING BODY: proto body "Get to know our principal and staff, who work to"… not found in EDS. Often fine (a prototype placeholder rewritten to real copy) — confirm it is not dropped prose.
+  🟡 EXTRA: EDS body "Find out how we support students with disability" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "Get to know our principal and staff, who work to" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+
+EW gate: editable 135/135, dead 0, duplicated 0, exempt 0
+
+✓ all blocks: round-trip closed (0 structural 🔴).

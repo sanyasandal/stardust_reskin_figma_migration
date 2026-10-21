@@ -1,0 +1,47 @@
+ADVISORY content: dom-equality, slot-coverage failed, deltas.blocking is false — advisory, exit 0
+  dom-equality — report stardust/.work/reskin/gates/learning-and-support-wellbeing/deployed/content-dom-equality.md
+    text diverges @11185: src="…ew window) . Student leadership Student leadership helps you…" rnd="…ew window). Student leadership Student leadership helps youn…"
+  slot-coverage — report stardust/.work/reskin/gates/learning-and-support-wellbeing/deployed/content-slot-coverage.md
+    FAIL slot-coverage: s08 text present — Aboriginal student support We are committed to clo
+FAIL tokens 5/48
+  primary button bg: selector "main a.button.primary" matched nothing
+  primary button fg: selector "main a.button.primary" matched nothing
+  primary button radius: selector "main a.button.primary" matched nothing
+  primary button padding (±2px): selector "main a.button.primary" matched nothing
+  primary button font size: selector "main a.button.primary" matched nothing
+  SKIP layout.containerMaxWidth: measured by parity cap-probe
+FAIL parity 1/9
+  pixel @360: 11.79% (bar ≤ 10%)
+  ADVISORY chrome-parity @1440: 17 delta(s): header 5, footer 12
+  header REGION STYLE backgroundColor rgba(0, 0, 0, 0) → rgb(255, 255, 255)
+  header PAIR "search" tag <button> → <a>; Δw -4px (86→82)
+  header PAIR "Show" tag <button> → <a>; Δw -3px (77→74)
+  header PAIR "Search" tag <button> → <a>; Δw -2px (87→85)
+  header ICON icon #0: signature "logo.png" → "media_1d2306b30b47d8695b41bfe097064af3be"
+  footer REGION BOX Δy +95px (11076→11171)
+  footer PAIR "Fort Street High School" Δy +95px (11182→11277)
+  footer PAIR "General enquiries" Δy +95px (11228→11323)
+  footer PAIR "8585 1600" Δy +95px (11274→11369)
+  footer PAIR "620 PARRAMATTA ROAD, NSW 2049 PETERSHAM" Δy +95px (11320→11415)
+  … 7 more in stardust/.work/reskin/gates/learning-and-support-wellbeing/deployed/parity/chrome-parity-1440.json
+PASS sanity
+FAIL inherited 2/3
+  ai-readability 95 < 98
+    strict 95%
+    accordion: 93 of 738 words not in the served HTML
+    footer: 33 of 76 words not in the served HTML
+    header: 15 of 35 words not in the served HTML
+  qa-gate: 28 ok, 2 warn, 3 fail
+    units: "band" #6 → block accordion renders ≥34 — rendered 2 (grid kids 2 / unit headings 0 / tag 0)
+    units: "band" #7 → block columns renders ≥4 — rendered 1 (grid kids 1 / unit headings 0 / tag 0)
+    units: "band" #8 → block cards renders ≥10 — rendered 2 (grid kids 0 / unit headings 0 / tag 2)
+  by deploy (localize-links --check, davids-model-lint, block-roundtrip --ew)
+FAIL figma: join FAIL
+  join: FAIL
+  geometry: not run: section drift
+  ramp: not run: section drift
+  pixel: not run: section drift
+  register: mandated 0 · waived 0 · unmandated 0 · out-of-kit 2 · conflict 177 · pre-existing 0
+  coverage: not run: section drift
+  report: stardust/.work/reskin/gates/learning-and-support-wellbeing/figma-preview/register.md
+summary written: stardust/.work/reskin/gates/learning-and-support-wellbeing/deployed/summary.json (its ledgerFragment is pages.learning-and-support-wellbeing.gates.deployed in ledger.json)

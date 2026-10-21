@@ -1,0 +1,14 @@
+
+Block round-trip @ 1280px (profile "eds", blocks, styles/styles.css)
+
+■ embed[0]: ✓ round-trip closed — EW editable 1/1, dead 0, duplicated 0, exempt 0
+    proto: 1 text nodes — 0 headings, 0 eyebrows, 1 CTAs, 0 body; 0 img
+    EDS: 1 text nodes — 0 headings, 0 eyebrows, 1 CTAs, 0 body; 0 img
+
+■ embed[1]: ✓ round-trip closed — EW editable 1/1, dead 0, duplicated 0, exempt 0
+    proto: 1 text nodes — 0 headings, 0 eyebrows, 1 CTAs, 0 body; 0 img
+    EDS: 1 text nodes — 0 headings, 0 eyebrows, 1 CTAs, 0 body; 0 img
+
+EW gate: editable 2/2, dead 0, duplicated 0, exempt 0
+
+✓ all blocks: round-trip closed (0 structural 🔴).

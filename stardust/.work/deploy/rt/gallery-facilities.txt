@@ -1,0 +1,10 @@
+
+Block round-trip @ 1280px (profile "eds", blocks, styles/styles.css)
+
+■ gallery: ✓ round-trip closed — EW editable 13/13, dead 0, duplicated 0, exempt 0
+    proto: 13 text nodes — 0 headings, 0 eyebrows, 0 CTAs, 13 body; 13 img
+    EDS: 13 text nodes — 0 headings, 0 eyebrows, 0 CTAs, 13 body; 13 img
+
+EW gate: editable 13/13, dead 0, duplicated 0, exempt 0
+
+✓ all blocks: round-trip closed (0 structural 🔴).
