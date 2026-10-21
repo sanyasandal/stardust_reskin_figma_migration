@@ -1,0 +1,69 @@
+{
+  "slug": "school-life",
+  "type": "section",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "M5",
+    "M2"
+  ],
+  "slotsFilled": [
+    "s01",
+    "s02"
+  ],
+  "canonShas": {
+    "header": "a8ad9e05a2e6",
+    "footer": "11083616d207",
+    "css": "b7e359a8ffed"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "School life",
+    "description": "Find out more about school life at Fort Street High School.",
+    "canonical": "https://fortstreet-h.schools.nsw.gov.au/school-life",
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "School life",
+    "description": "Find out more about school life at Fort Street High School.",
+    "url": "https://fortstreet-h.schools.nsw.gov.au/school-life"
+  },
+  "migratedAt": "2026-10-21T14:08:04Z",
+  "designMdSha": "c0ae931d3b54",
+  "designJsonSha": "3ff54e7e981f",
+  "sourceCurrentSha": null,
+  "sourceProposedSha": "3135d99e0630",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "reskin-dom-equality",
+    "reskin-slot-coverage",
+    "reskin-donor-probe",
+    "mobile-adapt-static",
+    "mobile-adapt-runtime",
+    "figma.join",
+    "figma.ramp"
+  ],
+  "gateEvidence": {
+    "reskin-dom-equality": "PASS — stardust/reskin/reports/school-life-content-gate.md",
+    "reskin-slot-coverage": "PASS — stardust/reskin/reports/school-life-slot-coverage.md",
+    "reskin-donor-probe": "PASS — stardust/reskin/reports/school-life-donor-probe.md",
+    "mobile-adapt-static": "PASS",
+    "mobile-adapt-runtime": "PASS",
+    "figma.join": "PASS",
+    "figma.ramp": "PASS"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 17,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "school-life/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "school-life/_meta.json",
+  "driverVersion": "1"
+}

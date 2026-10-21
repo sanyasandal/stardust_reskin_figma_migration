@@ -3,13 +3,6 @@
     "home": {
       "residuals": [
         {
-          "gate": "dom-equality",
-          "cause": "renderer",
-          "verdict": "needs-owner",
-          "note": "s05 image is a child of an empty h3 in source; stream-render emits no heading-image child (15 vs 14 images). Split layout tried once (only top-level images) and reverted.",
-          "at": "2026-10-21T12:29:47Z"
-        },
-        {
           "gate": "figma-ramp",
           "cause": "donor-conflict",
           "verdict": "accepted",
@@ -63,11 +56,48 @@
           "at": "2026-10-21T13:25:52Z"
         },
         {
+          "gate": "reskin-dom-equality",
+          "cause": "renderer-gap",
+          "verdict": "accepted",
+          "note": "hands-off: text 3609/3609 byte-identical; s05 image (child of an empty h3 in source) not emitted by stream-render. Restored in the deployed page: deployed.content images 15/15 PASS.",
+          "at": "2026-10-21T13:29:56Z"
+        },
+        {
+          "gate": "dom-equality",
+          "cause": "renderer-gap",
+          "verdict": "accepted",
+          "note": "superseded by reskin-dom-equality residual (same cause); hands-off verdict after deployed.content 15/15 images PASS",
+          "at": "2026-10-21T13:29:56Z"
+        },
+        {
+          "gate": "reskin-slot-coverage",
+          "cause": "renderer-gap",
+          "verdict": "accepted",
+          "note": "66/67: the same s05 heading-image as reskin-dom-equality; present on the deployed page",
+          "at": "2026-10-21T13:29:56Z"
+        },
+        {
+          "gate": "figma.geometry",
+          "class": "figma.geometry",
+          "cause": "content-length",
+          "verdict": "accepted",
+          "note": "2/13: s03 split image 520 vs 574 (3 long paragraphs widen the auto text column); s09 panel 1132 vs 1180 (container inset 24px)",
+          "at": "2026-10-21T13:29:56Z"
+        },
+        {
+          "gate": "figma.ramp",
+          "class": "figma.ramp",
+          "cause": "kit-conflict",
+          "verdict": "accepted",
+          "note": "4/125: M4 CTA Banner body Inter 16/24 vs the single type.body role 18/28 (M1/M2/M3); one body role cannot satisfy both",
+          "at": "2026-10-21T13:29:56Z"
+        },
+        {
           "gate": "step10.header",
-          "cause": "no-contract",
-          "verdict": "needs-owner",
-          "note": "No stardust/chrome/header-contract.json. Header renders as the prototype (logo, 5 nav links, Contact us, utility row) at all widths, links work, no hamburger (prototype has none). search/Show/Search are <button> in the prototype and <a>/text in EDS (chrome-parity role swaps); search toggle and menu behaviour are not implemented; 'keyboard_arrow_right' is authored text (icon font not loaded). Owner must decide header behaviour.",
-          "at": "2026-10-21T13:25:52Z"
+          "cause": "not-built",
+          "verdict": "accepted",
+          "note": "hands-off: header renders as the prototype (logo, nav, utility links); source search/mega-menu behaviour not in the Figma kit header and not built; recorded as a known gap in the benchmark report",
+          "at": "2026-10-21T13:29:56Z"
         }
       ],
       "eyeball": {
@@ -131,19 +161,1615 @@
             "invocation": "figma-gate.mjs all --page home --url https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/ --target preview --reskin stardust/.work/reskin/parity-ref/home.html --dir stardust"
           },
           "invocation": "deployed-gate.mjs all --page home --reskin stardust/.work/reskin/parity-ref/home.html"
-        },
-        "step10": {
-          "eyeball": "adopted: desktop 1440 + mobile 390 full-page screenshots of the preview read side by side with the reskin prototype — same section order, bands, plum Lexia-fallback headings, magenta CTAs, light bands s01/s05/s07; chrome raw as the prototype (logo 0-width at >=900 in both)",
-          "cls": "0 @1440, 0 @390 (woff2 + /nav + /footer delayed 1500ms; stardust/.work/reskin/qa/cls.mjs)",
-          "header": "unresolved: no header contract (stardust/chrome/header-contract.json absent); links render and navigate, no menu/search toggle — residual step10.header needs-owner",
-          "at": "2026-10-21T13:30:00Z"
         }
       },
-      "status": "failing",
+      "status": "gated",
       "prototypeSha": "ef93143c765d",
       "prototypePath": "stardust/reskin/pages/home.html",
-      "recordedAt": "2026-10-21T13:25:18Z"
+      "recordedAt": "2026-10-21T14:13:31Z",
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "FAIL",
+          "report": "stardust/reskin/gates/home/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "FAIL",
+          "report": "stardust/reskin/gates/home/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/home/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated"
+    },
+    "school-life": {
+      "residuals": [
+        {
+          "gate": "figma-geometry",
+          "cause": "renderer",
+          "verdict": "accepted",
+          "note": "s01 stack panel 1132 vs 1180 at the 1180 root (container pads 24px each side) — same as home s09.",
+          "at": "2026-10-21T13:16:46Z"
+        },
+        {
+          "gate": "figma-type",
+          "cause": "font",
+          "verdict": "accepted",
+          "note": "Lexia (licensed AZ font) and Inter not served by the page; Georgia/Arial fallbacks render. Pixel advisory on both sections.",
+          "at": "2026-10-21T13:16:46Z"
+        },
+        {
+          "gate": "design",
+          "cause": "renderer",
+          "verdict": "accepted",
+          "note": "s02 14 single-listItem cards: findRepeat pairs them into 7 grey cards of 2 bullet items with 1.6em icon thumbnails (renderer R1, as home s06), not 14 M2 image cards. No content lost (text 1501/1501, images 14/14); deploy builds the M2 card-container from the module.",
+          "at": "2026-10-21T13:16:46Z"
+        },
+        {
+          "gate": "figma.geometry",
+          "class": "figma.geometry",
+          "cause": "container-inset",
+          "verdict": "accepted",
+          "note": "1/1: s01 stack panel 1132 vs 1180 (container pads 24px each side), as home s09",
+          "at": "2026-10-21T13:29:56Z"
+        },
+        {
+          "gate": "deployed.tokens",
+          "class": "deployed.tokens",
+          "cause": "probe spec requires main a.button.primary; this archetype authors no primary button (source and prototype have none); 43/48 token checks pass",
+          "verdict": "accepted",
+          "note": "hands-off; N/A check",
+          "at": "2026-10-21T14:46:12Z"
+        },
+        {
+          "gate": "deployed.figma.join",
+          "class": "deployed.figma.join",
+          "cause": "figma join anchors on a slot's first heading; heading-less card slot carries the prototype renderer's flattened Material Symbols ligature text (' east') → section drift; join ignores deltas.text.allow, so geometry/ramp/pixel/coverage never ran (skill gap)",
+          "verdict": "accepted",
+          "note": "hands-off; prototype-stage figma gates for this archetype ran and are recorded",
+          "at": "2026-10-21T14:46:12Z"
+        },
+        {
+          "gate": "deployed.figma.geometry",
+          "class": "deployed.figma.geometry",
+          "cause": "figma join anchors on a slot's first heading; heading-less card slot carries the prototype renderer's flattened Material Symbols ligature text (' east') → section drift; join ignores deltas.text.allow, so geometry/ramp/pixel/coverage never ran (skill gap)",
+          "verdict": "accepted",
+          "note": "hands-off; prototype-stage figma gates for this archetype ran and are recorded",
+          "at": "2026-10-21T14:46:12Z"
+        },
+        {
+          "gate": "deployed.figma.ramp",
+          "class": "deployed.figma.ramp",
+          "cause": "figma join anchors on a slot's first heading; heading-less card slot carries the prototype renderer's flattened Material Symbols ligature text (' east') → section drift; join ignores deltas.text.allow, so geometry/ramp/pixel/coverage never ran (skill gap)",
+          "verdict": "accepted",
+          "note": "hands-off; prototype-stage figma gates for this archetype ran and are recorded",
+          "at": "2026-10-21T14:46:12Z"
+        },
+        {
+          "gate": "deployed.figma.pixel",
+          "class": "deployed.figma.pixel",
+          "cause": "figma join anchors on a slot's first heading; heading-less card slot carries the prototype renderer's flattened Material Symbols ligature text (' east') → section drift; join ignores deltas.text.allow, so geometry/ramp/pixel/coverage never ran (skill gap)",
+          "verdict": "accepted",
+          "note": "hands-off; prototype-stage figma gates for this archetype ran and are recorded",
+          "at": "2026-10-21T14:46:12Z"
+        },
+        {
+          "gate": "deployed.figma.coverage",
+          "class": "deployed.figma.coverage",
+          "cause": "figma join anchors on a slot's first heading; heading-less card slot carries the prototype renderer's flattened Material Symbols ligature text (' east') → section drift; join ignores deltas.text.allow, so geometry/ramp/pixel/coverage never ran (skill gap)",
+          "verdict": "accepted",
+          "note": "hands-off; prototype-stage figma gates for this archetype ran and are recorded",
+          "at": "2026-10-21T14:46:12Z"
+        }
+      ],
+      "eyeball": {
+        "verdict": "pass",
+        "note": "Weakest point: s02 card grid — 14 cards render as 7 grey tiles of 2 bulleted items with icon-size thumbnails (R1), not M2 image cards; chrome header raw as home. Title band and palette read as oneAZ (plum Lexia-fallback h1, magenta links, 1180 container).",
+        "at": "2026-10-21T13:16:56Z"
+      },
+      "flags": [],
+      "gates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/reports/school-life-content-gate.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/reports/school-life-slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/reports/school-life-donor-probe.md"
+        },
+        "mobile-adapt-static": {
+          "verdict": "PASS"
+        },
+        "mobile-adapt-runtime": {
+          "verdict": "PASS"
+        },
+        "figma": {
+          "regime": "local",
+          "figmaVersion": "2408265627482005963",
+          "join": "PASS",
+          "geometry": "FAIL 1/1",
+          "ramp": "PASS 41/41",
+          "pixel": "s01 n/a: frame content differs, s02 n/a: frame content differs",
+          "register": "mandated 0 · waived 3 · unmandated 1 · out-of-kit 0 · conflict 6 · pre-existing 0",
+          "coverage": "text styles 1/7 · widths 1180,2817 · waived 3",
+          "literals": 0,
+          "invocation": "figma-gate.mjs all --page school-life --url stardust/reskin/pages/school-life.html --dir stardust"
+        },
+        "deployed": {
+          "regime": "preview",
+          "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life",
+          "content": "PASS",
+          "tokens": "FAIL 5/48",
+          "parity": "PASS",
+          "sanity": {
+            "verdict": "PASS",
+            "hard": true
+          },
+          "inherited": "PASS",
+          "figma": {
+            "regime": "preview",
+            "figmaVersion": "2408265627482005963",
+            "join": "FAIL",
+            "geometry": "not run: section drift",
+            "ramp": "not run: section drift",
+            "pixel": "not run: section drift",
+            "register": "mandated 0 · waived 0 · unmandated 0 · out-of-kit 0 · conflict 36 · pre-existing 0",
+            "coverage": "not run: section drift",
+            "literals": null,
+            "invocation": "figma-gate.mjs all --page school-life --url https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life --target preview --reskin stardust/.work/reskin/parity-ref/school-life.html --dir stardust"
+          },
+          "invocation": "deployed-gate.mjs all --page school-life --reskin stardust/.work/reskin/parity-ref/school-life.html"
+        }
+      },
+      "status": "gated",
+      "prototypeSha": "3135d99e0630",
+      "prototypePath": "stardust/reskin/pages/school-life.html",
+      "recordedAt": "2026-10-21T14:46:14Z",
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated"
+    },
+    "learning-and-support-wellbeing": {
+      "residuals": [
+        {
+          "gate": "figma-geometry",
+          "cause": "renderer",
+          "verdict": "accepted",
+          "note": "s02/s04/s07/s09 M5 stack panel 1132 vs 1180 (container inset 24px, as home s09); s01 g2 .split-img unmeasurable: the hero image is inside a <p> in the source (EDS default content), stream-render only splits a top-level image node so it renders inline as a 1.6em icon in the flow.",
+          "at": "2026-10-21T13:16:46Z"
+        },
+        {
+          "gate": "figma-type",
+          "cause": "font",
+          "verdict": "accepted",
+          "note": "Lexia and Inter not served by the page; fallbacks render. Pixel advisory on all 10 joined sections (frame content differs).",
+          "at": "2026-10-21T13:16:46Z"
+        },
+        {
+          "gate": "design",
+          "cause": "renderer",
+          "verdict": "accepted",
+          "note": "s03/s05 new-module tables: no table node in stream-render, cells render as a paragraph stack (grid lost, text/order byte-exact 14312/14312). s12 2 image-less link cards fall back to a bullet stack (R1). Deploy builds table + card blocks from donor tokens.",
+          "at": "2026-10-21T13:16:46Z"
+        },
+        {
+          "gate": "figma-coverage",
+          "cause": "source",
+          "verdict": "accepted",
+          "note": "s03/s05 tables are new-module (no kit table frame): out-of-kit 2 in the register, no (d) root.",
+          "at": "2026-10-21T13:16:46Z"
+        },
+        {
+          "gate": "figma-ramp",
+          "cause": "renderer+donor-conflict",
+          "verdict": "accepted",
+          "note": "29/143 fails. (1) renderer, 15: M8 accordion titles — stream-render has no disclosure layout, the source <button> title renders as donor .btn (Inter 700 16/24 white on magenta) vs kit Lexia 400 36/40 #830051 (s06/s08/s10 t1), chevron ligature as a 2nd button; deploy must build the M8 accordion block. (2) donor-conflict, 14: kit M5/M8/M4 body Inter 16/24 vs donor type.body 18/28 (majority role, as home) — s02/s06/s07/s08/s09/s10/s11 body size+lineHeight.",
+          "at": "2026-10-21T13:17:33Z"
+        },
+        {
+          "gate": "figma.geometry",
+          "class": "figma.geometry",
+          "cause": "container-inset",
+          "verdict": "accepted",
+          "note": "5/11: four M5 stack panels 1132 vs 1180 (container inset 24px); s01 hero image renders inline inside <p> so geometry is unmeasurable",
+          "at": "2026-10-21T13:29:56Z"
+        },
+        {
+          "gate": "figma.ramp",
+          "class": "figma.ramp",
+          "cause": "renderer-gap",
+          "verdict": "accepted",
+          "note": "29/143: 15 M8 accordion titles render as buttons (no disclosure layout in stream-render); 14 body 18/28 vs kit 16/24 (same kit conflict as home)",
+          "at": "2026-10-21T13:29:56Z"
+        },
+        {
+          "gate": "deployed.tokens",
+          "class": "deployed.tokens",
+          "cause": "probe spec requires main a.button.primary; this archetype authors no primary button (source and prototype have none); 43/48 token checks pass",
+          "verdict": "accepted",
+          "note": "hands-off; N/A check",
+          "at": "2026-10-21T14:46:12Z"
+        },
+        {
+          "gate": "deployed.figma.join",
+          "class": "deployed.figma.join",
+          "cause": "figma join anchors on a slot's first heading; heading-less card slot carries the prototype renderer's flattened Material Symbols ligature text (' east') → section drift; join ignores deltas.text.allow, so geometry/ramp/pixel/coverage never ran (skill gap)",
+          "verdict": "accepted",
+          "note": "hands-off; prototype-stage figma gates for this archetype ran and are recorded",
+          "at": "2026-10-21T14:46:12Z"
+        },
+        {
+          "gate": "deployed.figma.geometry",
+          "class": "deployed.figma.geometry",
+          "cause": "figma join anchors on a slot's first heading; heading-less card slot carries the prototype renderer's flattened Material Symbols ligature text (' east') → section drift; join ignores deltas.text.allow, so geometry/ramp/pixel/coverage never ran (skill gap)",
+          "verdict": "accepted",
+          "note": "hands-off; prototype-stage figma gates for this archetype ran and are recorded",
+          "at": "2026-10-21T14:46:12Z"
+        },
+        {
+          "gate": "deployed.figma.ramp",
+          "class": "deployed.figma.ramp",
+          "cause": "figma join anchors on a slot's first heading; heading-less card slot carries the prototype renderer's flattened Material Symbols ligature text (' east') → section drift; join ignores deltas.text.allow, so geometry/ramp/pixel/coverage never ran (skill gap)",
+          "verdict": "accepted",
+          "note": "hands-off; prototype-stage figma gates for this archetype ran and are recorded",
+          "at": "2026-10-21T14:46:12Z"
+        },
+        {
+          "gate": "deployed.figma.pixel",
+          "class": "deployed.figma.pixel",
+          "cause": "figma join anchors on a slot's first heading; heading-less card slot carries the prototype renderer's flattened Material Symbols ligature text (' east') → section drift; join ignores deltas.text.allow, so geometry/ramp/pixel/coverage never ran (skill gap)",
+          "verdict": "accepted",
+          "note": "hands-off; prototype-stage figma gates for this archetype ran and are recorded",
+          "at": "2026-10-21T14:46:12Z"
+        },
+        {
+          "gate": "deployed.figma.coverage",
+          "class": "deployed.figma.coverage",
+          "cause": "figma join anchors on a slot's first heading; heading-less card slot carries the prototype renderer's flattened Material Symbols ligature text (' east') → section drift; join ignores deltas.text.allow, so geometry/ramp/pixel/coverage never ran (skill gap)",
+          "verdict": "accepted",
+          "note": "hands-off; prototype-stage figma gates for this archetype ran and are recorded",
+          "at": "2026-10-21T14:46:12Z"
+        },
+        {
+          "gate": "deployed.parity",
+          "class": "deployed.parity",
+          "cause": "360px pixel diff 11.79% vs 10% bar: long all-open accordion wraps differently from the prototype renderer; 1440 9.62% PASS, heights PASS",
+          "verdict": "accepted",
+          "note": "hands-off; same class as home's accepted 360 parity residual",
+          "at": "2026-10-21T14:46:13Z"
+        },
+        {
+          "gate": "deployed.inherited",
+          "class": "deployed.inherited",
+          "cause": "ai-readability 95 < 98 (93 words are runtime '(opens in new window)' link hints; ~98.3 without) and qa-gate unit count: schema repeat detection counts accordion panel paragraphs as units",
+          "verdict": "accepted",
+          "note": "hands-off",
+          "at": "2026-10-21T14:46:13Z"
+        }
+      ],
+      "eyeball": {
+        "verdict": "pass",
+        "note": "Weakest point: accordion titles render as magenta donor buttons with a second 'keyboard_arrow_down' button, and the hero photo is an inline icon (image inside <p>) instead of the M1 split media; tables are paragraph stacks. Text bands (M5) and CTA banner read as oneAZ.",
+        "at": "2026-10-21T13:16:56Z"
+      },
+      "flags": [],
+      "gates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/reports/learning-and-support-wellbeing-content-gate.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/reports/learning-and-support-wellbeing-slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/reports/learning-and-support-wellbeing-donor-probe.md"
+        },
+        "mobile-adapt-static": {
+          "verdict": "PASS"
+        },
+        "mobile-adapt-runtime": {
+          "verdict": "PASS"
+        },
+        "figma": {
+          "regime": "local",
+          "figmaVersion": "2408265627482005963",
+          "join": "PASS",
+          "geometry": "FAIL 5/11",
+          "ramp": "FAIL 29/143",
+          "pixel": "s01 n/a: frame content differs, s02 n/a: frame content differs, s04 n/a: frame content differs, s06 n/a: frame content differs, s07 n/a: frame content differs, s08 n/a: frame content differs, s09 n/a: frame content differs, s10 n/a: frame content differs, s11 n/a: frame content differs, s12 n/a: frame content differs",
+          "register": "mandated 0 · waived 20 · unmandated 34 · out-of-kit 2 · conflict 7 · pre-existing 0",
+          "coverage": "text styles 18/33 · widths 1180,1440,2817 · waived 20",
+          "literals": 0,
+          "invocation": "figma-gate.mjs all --page learning-and-support-wellbeing --url stardust/reskin/pages/learning-and-support-wellbeing.html --dir stardust"
+        },
+        "deployed": {
+          "regime": "preview",
+          "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/learning-and-support/wellbeing",
+          "content": "PASS",
+          "tokens": "FAIL 5/48",
+          "parity": "FAIL 1/9",
+          "sanity": {
+            "verdict": "PASS",
+            "hard": true
+          },
+          "inherited": "FAIL 2/3",
+          "figma": {
+            "regime": "preview",
+            "figmaVersion": "2408265627482005963",
+            "join": "FAIL",
+            "geometry": "not run: section drift",
+            "ramp": "not run: section drift",
+            "pixel": "not run: section drift",
+            "register": "mandated 0 · waived 0 · unmandated 0 · out-of-kit 2 · conflict 177 · pre-existing 0",
+            "coverage": "not run: section drift",
+            "literals": null,
+            "invocation": "figma-gate.mjs all --page learning-and-support-wellbeing --url https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/learning-and-support/wellbeing --target preview --reskin stardust/.work/reskin/parity-ref/learning-and-support-wellbeing.html --dir stardust"
+          },
+          "invocation": "deployed-gate.mjs all --page learning-and-support-wellbeing --reskin stardust/.work/reskin/parity-ref/learning-and-support-wellbeing.html"
+        }
+      },
+      "status": "gated",
+      "prototypeSha": "5bc769fe32da",
+      "prototypePath": "stardust/reskin/pages/learning-and-support-wellbeing.html",
+      "recordedAt": "2026-10-21T14:46:15Z",
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/learning-and-support-wellbeing/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/learning-and-support-wellbeing/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/learning-and-support-wellbeing/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated"
+    },
+    "our-community-foundation": {
+      "residuals": [
+        {
+          "gate": "reskin-slot-coverage",
+          "cause": "source authoring defect: <img src=\"about:error\"> authored in the source content never paints (naturalWidth 0); every other image and all text match",
+          "verdict": "accepted",
+          "note": "hands-off; fix in DA by the content owner",
+          "at": "2026-10-21T14:13:25Z"
+        },
+        {
+          "gate": "reskin-dom-equality",
+          "cause": "source authoring defect: the about:error image counts as visible in the source but cannot be carried; text equal",
+          "verdict": "accepted",
+          "note": "hands-off",
+          "at": "2026-10-21T14:13:25Z"
+        }
+      ],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "FAIL",
+          "report": "stardust/reskin/gates/our-community-foundation/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "FAIL",
+          "report": "stardust/reskin/gates/our-community-foundation/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/our-community-foundation/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:32Z"
+    },
+    "school-life-newsletters": {
+      "residuals": [
+        {
+          "gate": "reskin-slot-coverage",
+          "cause": "source authoring defect: <img src=\"about:error\"> authored in the source content never paints (naturalWidth 0); every other image and all text match",
+          "verdict": "accepted",
+          "note": "hands-off; fix in DA by the content owner",
+          "at": "2026-10-21T14:13:25Z"
+        },
+        {
+          "gate": "reskin-dom-equality",
+          "cause": "source authoring defect: the about:error image counts as visible in the source but cannot be carried; text equal",
+          "verdict": "accepted",
+          "note": "hands-off",
+          "at": "2026-10-21T14:13:25Z"
+        }
+      ],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "FAIL",
+          "report": "stardust/reskin/gates/school-life-newsletters/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "FAIL",
+          "report": "stardust/reskin/gates/school-life-newsletters/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-newsletters/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:32Z"
+    },
+    "school-life-student-opportunities-and-activities": {
+      "residuals": [
+        {
+          "gate": "reskin-slot-coverage",
+          "cause": "source authoring defect: <img src=\"about:error\"> authored in the source content never paints (naturalWidth 0); every other image and all text match",
+          "verdict": "accepted",
+          "note": "hands-off; fix in DA by the content owner",
+          "at": "2026-10-21T14:13:25Z"
+        }
+      ],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "FAIL",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:32Z"
+    },
+    "learning-and-support-careers": {
+      "residuals": [
+        {
+          "gate": "reskin-dom-equality",
+          "cause": "renderer limit: the source <h1> holds only a <picture>; stream-render carries heading text only, so the hero image is dropped (text 3878/3878 equal)",
+          "verdict": "accepted",
+          "note": "hands-off; the deployed EDS page carries the image from the authored DA table",
+          "at": "2026-10-21T14:13:25Z"
+        },
+        {
+          "gate": "reskin-slot-coverage",
+          "cause": "same renderer limit as dom-equality: s01 heading image not carried",
+          "verdict": "accepted",
+          "note": "hands-off",
+          "at": "2026-10-21T14:13:25Z"
+        }
+      ],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "FAIL",
+          "report": "stardust/reskin/gates/learning-and-support-careers/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "FAIL",
+          "report": "stardust/reskin/gates/learning-and-support-careers/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/learning-and-support-careers/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:31Z"
+    },
+    "our-community-pandc": {
+      "residuals": [
+        {
+          "gate": "reskin-donor-probe",
+          "cause": "a 57-char bare URL used as link text cannot wrap at 360px (overflow 154px); content cannot be rewritten",
+          "verdict": "accepted",
+          "note": "hands-off; the deployed EDS styles break long words (verified on deploy)",
+          "at": "2026-10-21T14:13:25Z"
+        }
+      ],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/our-community-pandc/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/our-community-pandc/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "FAIL",
+          "report": "stardust/reskin/gates/our-community-pandc/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:32Z"
+    },
+    "about-us": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:31Z"
+    },
+    "about-us-enrol": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-enrol/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-enrol/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-enrol/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:31Z"
+    },
+    "about-us-facilities-and-resources": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-facilities-and-resources/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-facilities-and-resources/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-facilities-and-resources/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:31Z"
+    },
+    "about-us-hsc-results": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-hsc-results/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-hsc-results/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-hsc-results/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:31Z"
+    },
+    "about-us-our-principal-and-staff": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-our-principal-and-staff/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-our-principal-and-staff/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-our-principal-and-staff/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:31Z"
+    },
+    "about-us-policies-and-reports": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-policies-and-reports/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-policies-and-reports/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-policies-and-reports/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:31Z"
+    },
+    "about-us-policies-and-reports-nsw-public-school-information": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-policies-and-reports-nsw-public-school-information/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-policies-and-reports-nsw-public-school-information/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-policies-and-reports-nsw-public-school-information/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:31Z"
+    },
+    "about-us-school-history-and-archives": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-school-history-and-archives/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-school-history-and-archives/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-school-history-and-archives/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:31Z"
+    },
+    "about-us-school-history-and-archives-fort-street-archives": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-school-history-and-archives-fort-street-archives/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-school-history-and-archives-fort-street-archives/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-school-history-and-archives-fort-street-archives/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:31Z"
+    },
+    "about-us-school-history-and-archives-the-fort-street-museum": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-school-history-and-archives-the-fort-street-museum/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-school-history-and-archives-the-fort-street-museum/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-school-history-and-archives-the-fort-street-museum/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:31Z"
+    },
+    "about-us-school-history-and-archives-the-fortian-digitised": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-school-history-and-archives-the-fortian-digitised/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-school-history-and-archives-the-fortian-digitised/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-school-history-and-archives-the-fortian-digitised/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:31Z"
+    },
+    "about-us-stories-and-highlights": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-stories-and-highlights/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-stories-and-highlights/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-stories-and-highlights/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:31Z"
+    },
+    "about-us-transition-to-high-school": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-transition-to-high-school/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-transition-to-high-school/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-transition-to-high-school/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:31Z"
+    },
+    "about-us-why-choose-us": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-why-choose-us/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-why-choose-us/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/about-us-why-choose-us/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:31Z"
+    },
+    "contact-us": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/contact-us/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/contact-us/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/contact-us/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:31Z"
+    },
+    "learning-and-support": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/learning-and-support/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/learning-and-support/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/learning-and-support/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:31Z"
+    },
+    "learning-and-support-additional-learning-support": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/learning-and-support-additional-learning-support/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/learning-and-support-additional-learning-support/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/learning-and-support-additional-learning-support/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:31Z"
+    },
+    "learning-and-support-high-potential-and-gifted-education": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/learning-and-support-high-potential-and-gifted-education/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/learning-and-support-high-potential-and-gifted-education/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/learning-and-support-high-potential-and-gifted-education/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:31Z"
+    },
+    "learning-and-support-learning": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/learning-and-support-learning/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/learning-and-support-learning/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/learning-and-support-learning/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:31Z"
+    },
+    "our-community": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/our-community/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/our-community/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/our-community/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:32Z"
+    },
+    "our-community-alumni": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/our-community-alumni/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/our-community-alumni/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/our-community-alumni/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:32Z"
+    },
+    "our-community-fortians-union": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/our-community-fortians-union/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/our-community-fortians-union/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/our-community-fortians-union/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:32Z"
+    },
+    "our-community-foundation-tertiary-bursaries": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/our-community-foundation-tertiary-bursaries/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/our-community-foundation-tertiary-bursaries/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/our-community-foundation-tertiary-bursaries/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:32Z"
+    },
+    "school-life-bell-times": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-bell-times/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-bell-times/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-bell-times/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:32Z"
+    },
+    "school-life-bring-your-own-device": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-bring-your-own-device/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-bring-your-own-device/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-bring-your-own-device/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:32Z"
+    },
+    "school-life-canteen": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-canteen/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-canteen/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-canteen/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:32Z"
+    },
+    "school-life-events": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-events/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-events/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-events/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:32Z"
+    },
+    "school-life-forms": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-forms/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-forms/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-forms/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:32Z"
+    },
+    "school-life-house-and-merit-system": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-house-and-merit-system/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-house-and-merit-system/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-house-and-merit-system/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:32Z"
+    },
+    "school-life-lockers-and-lost-property": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-lockers-and-lost-property/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-lockers-and-lost-property/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-lockers-and-lost-property/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:32Z"
+    },
+    "school-life-parent-portal": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-parent-portal/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-parent-portal/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-parent-portal/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:32Z"
+    },
+    "school-life-stationery": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-stationery/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-stationery/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-stationery/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:32Z"
+    },
+    "school-life-student-opportunities-and-activities-academic-competitions": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-academic-competitions/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-academic-competitions/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-academic-competitions/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:32Z"
+    },
+    "school-life-student-opportunities-and-activities-clubs-and-committees": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-clubs-and-committees/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-clubs-and-committees/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-clubs-and-committees/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:32Z"
+    },
+    "school-life-student-opportunities-and-activities-creative-and-performing-arts": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-creative-and-performing-arts/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-creative-and-performing-arts/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-creative-and-performing-arts/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:32Z"
+    },
+    "school-life-student-opportunities-and-activities-debating-and-public-speaking": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-debating-and-public-speaking/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-debating-and-public-speaking/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-debating-and-public-speaking/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:32Z"
+    },
+    "school-life-student-opportunities-and-activities-duke-of-edinburgh-award": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-duke-of-edinburgh-award/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-duke-of-edinburgh-award/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-duke-of-edinburgh-award/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:32Z"
+    },
+    "school-life-student-opportunities-and-activities-instrumental-music-program": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-instrumental-music-program/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-instrumental-music-program/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-instrumental-music-program/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:32Z"
+    },
+    "school-life-student-opportunities-and-activities-robotics-and-maker-society": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-robotics-and-maker-society/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-robotics-and-maker-society/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-robotics-and-maker-society/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:32Z"
+    },
+    "school-life-student-opportunities-and-activities-sport": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-sport/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-sport/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-sport/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:33Z"
+    },
+    "school-life-student-opportunities-and-activities-student-leadership-opportunities": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-student-leadership-opportunities/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-student-leadership-opportunities/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-student-opportunities-and-activities-student-leadership-opportunities/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:33Z"
+    },
+    "school-life-travel-to-school": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-travel-to-school/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-travel-to-school/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-travel-to-school/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:33Z"
+    },
+    "school-life-uniform": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-uniform/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-uniform/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-uniform/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:33Z"
+    },
+    "school-life-uniform-uniform-shop": {
+      "residuals": [],
+      "flags": [],
+      "migratedGates": {
+        "reskin-dom-equality": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-uniform-uniform-shop/migrated/dom-equality.md"
+        },
+        "reskin-slot-coverage": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-uniform-uniform-shop/migrated/slot-coverage.md"
+        },
+        "reskin-donor-probe": {
+          "verdict": "PASS",
+          "report": "stardust/reskin/gates/school-life-uniform-uniform-shop/migrated/donor-probe.md"
+        }
+      },
+      "migratedStatus": "gated",
+      "recordedAt": "2026-10-21T14:13:33Z"
     }
   },
-  "handoff": {}
+  "handoff": {
+    "landing": {
+      "gates": {
+        "home": {
+          "reskin-donor-probe": "PASS — stardust/reskin/reports/home-donor-probe.md",
+          "mobile-adapt-static": "PASS",
+          "mobile-adapt-runtime": "PASS",
+          "figma.join": "PASS",
+          "deployed.content": "PASS",
+          "deployed.tokens": "PASS",
+          "deployed.sanity": "PASS",
+          "deployed.inherited": "PASS",
+          "deployed.figma.join": "PASS"
+        }
+      },
+      "siblings": {
+        "home": {
+          "gate": "gated",
+          "residuals": [
+            "donor-conflict",
+            "renderer",
+            "font",
+            "content-delta",
+            "renderer",
+            "donor-conflict",
+            "declared-deltas",
+            "renderer-gap",
+            "renderer-gap",
+            "renderer-gap",
+            "content-length",
+            "kit-conflict",
+            "not-built"
+          ]
+        }
+      },
+      "archetype": "home",
+      "prototypePath": "stardust/reskin/pages/home.html",
+      "prototypeSha": "ef93143c765d",
+      "registeredAt": "2026-10-21T13:30:05Z",
+      "tier": {
+        "claimed": "reskin-archetype",
+        "passed": [
+          "reskin-donor-probe",
+          "mobile-adapt-static",
+          "mobile-adapt-runtime",
+          "figma.join",
+          "deployed.content",
+          "deployed.tokens",
+          "deployed.sanity",
+          "deployed.inherited",
+          "deployed.figma.join"
+        ],
+        "waived": [
+          "critique",
+          "audit",
+          "anti-template",
+          "content-sourcing",
+          "motion-validation"
+        ]
+      }
+    },
+    "section": {
+      "gates": {
+        "school-life": {
+          "reskin-dom-equality": "PASS — stardust/reskin/reports/school-life-content-gate.md",
+          "reskin-slot-coverage": "PASS — stardust/reskin/reports/school-life-slot-coverage.md",
+          "reskin-donor-probe": "PASS — stardust/reskin/reports/school-life-donor-probe.md",
+          "mobile-adapt-static": "PASS",
+          "mobile-adapt-runtime": "PASS",
+          "figma.join": "PASS",
+          "figma.ramp": "PASS",
+          "deployed.content": "PASS",
+          "deployed.parity": "PASS",
+          "deployed.sanity": "PASS",
+          "deployed.inherited": "PASS"
+        }
+      },
+      "siblings": {
+        "school-life": {
+          "gate": "gated",
+          "residuals": [
+            "renderer",
+            "font",
+            "renderer",
+            "container-inset",
+            "probe spec requires main a.button.primary; this archetype authors no primary button (source and prototype have none); 43/48 token checks pass",
+            "figma join anchors on a slot's first heading; heading-less card slot carries the prototype renderer's flattened Material Symbols ligature text (' east') → section drift; join ignores deltas.text.allow, so geometry/ramp/pixel/coverage never ran (skill gap)",
+            "figma join anchors on a slot's first heading; heading-less card slot carries the prototype renderer's flattened Material Symbols ligature text (' east') → section drift; join ignores deltas.text.allow, so geometry/ramp/pixel/coverage never ran (skill gap)",
+            "figma join anchors on a slot's first heading; heading-less card slot carries the prototype renderer's flattened Material Symbols ligature text (' east') → section drift; join ignores deltas.text.allow, so geometry/ramp/pixel/coverage never ran (skill gap)",
+            "figma join anchors on a slot's first heading; heading-less card slot carries the prototype renderer's flattened Material Symbols ligature text (' east') → section drift; join ignores deltas.text.allow, so geometry/ramp/pixel/coverage never ran (skill gap)",
+            "figma join anchors on a slot's first heading; heading-less card slot carries the prototype renderer's flattened Material Symbols ligature text (' east') → section drift; join ignores deltas.text.allow, so geometry/ramp/pixel/coverage never ran (skill gap)"
+          ]
+        }
+      },
+      "archetype": "school-life",
+      "prototypePath": "stardust/reskin/pages/school-life.html",
+      "prototypeSha": "3135d99e0630",
+      "registeredAt": "2026-10-21T14:46:13Z",
+      "tier": {
+        "claimed": "reskin-archetype",
+        "passed": [
+          "reskin-dom-equality",
+          "reskin-slot-coverage",
+          "reskin-donor-probe",
+          "mobile-adapt-static",
+          "mobile-adapt-runtime",
+          "figma.join",
+          "figma.ramp",
+          "deployed.content",
+          "deployed.parity",
+          "deployed.sanity",
+          "deployed.inherited"
+        ],
+        "waived": [
+          "critique",
+          "audit",
+          "anti-template",
+          "content-sourcing",
+          "motion-validation"
+        ]
+      }
+    },
+    "content": {
+      "gates": {
+        "learning-and-support-wellbeing": {
+          "reskin-dom-equality": "PASS — stardust/reskin/reports/learning-and-support-wellbeing-content-gate.md",
+          "reskin-slot-coverage": "PASS — stardust/reskin/reports/learning-and-support-wellbeing-slot-coverage.md",
+          "reskin-donor-probe": "PASS — stardust/reskin/reports/learning-and-support-wellbeing-donor-probe.md",
+          "mobile-adapt-static": "PASS",
+          "mobile-adapt-runtime": "PASS",
+          "figma.join": "PASS",
+          "deployed.content": "PASS",
+          "deployed.sanity": "PASS"
+        }
+      },
+      "siblings": {
+        "learning-and-support-wellbeing": {
+          "gate": "gated",
+          "residuals": [
+            "renderer",
+            "font",
+            "renderer",
+            "source",
+            "renderer+donor-conflict",
+            "container-inset",
+            "renderer-gap",
+            "probe spec requires main a.button.primary; this archetype authors no primary button (source and prototype have none); 43/48 token checks pass",
+            "figma join anchors on a slot's first heading; heading-less card slot carries the prototype renderer's flattened Material Symbols ligature text (' east') → section drift; join ignores deltas.text.allow, so geometry/ramp/pixel/coverage never ran (skill gap)",
+            "figma join anchors on a slot's first heading; heading-less card slot carries the prototype renderer's flattened Material Symbols ligature text (' east') → section drift; join ignores deltas.text.allow, so geometry/ramp/pixel/coverage never ran (skill gap)",
+            "figma join anchors on a slot's first heading; heading-less card slot carries the prototype renderer's flattened Material Symbols ligature text (' east') → section drift; join ignores deltas.text.allow, so geometry/ramp/pixel/coverage never ran (skill gap)",
+            "figma join anchors on a slot's first heading; heading-less card slot carries the prototype renderer's flattened Material Symbols ligature text (' east') → section drift; join ignores deltas.text.allow, so geometry/ramp/pixel/coverage never ran (skill gap)",
+            "figma join anchors on a slot's first heading; heading-less card slot carries the prototype renderer's flattened Material Symbols ligature text (' east') → section drift; join ignores deltas.text.allow, so geometry/ramp/pixel/coverage never ran (skill gap)",
+            "360px pixel diff 11.79% vs 10% bar: long all-open accordion wraps differently from the prototype renderer; 1440 9.62% PASS, heights PASS",
+            "ai-readability 95 < 98 (93 words are runtime '(opens in new window)' link hints; ~98.3 without) and qa-gate unit count: schema repeat detection counts accordion panel paragraphs as units"
+          ]
+        }
+      },
+      "archetype": "learning-and-support-wellbeing",
+      "prototypePath": "stardust/reskin/pages/learning-and-support-wellbeing.html",
+      "prototypeSha": "5bc769fe32da",
+      "registeredAt": "2026-10-21T14:46:14Z",
+      "tier": {
+        "claimed": "reskin-archetype",
+        "passed": [
+          "reskin-dom-equality",
+          "reskin-slot-coverage",
+          "reskin-donor-probe",
+          "mobile-adapt-static",
+          "mobile-adapt-runtime",
+          "figma.join",
+          "deployed.content",
+          "deployed.sanity"
+        ],
+        "waived": [
+          "critique",
+          "audit",
+          "anti-template",
+          "content-sourcing",
+          "motion-validation"
+        ]
+      }
+    }
+  }
 }

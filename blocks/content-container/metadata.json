@@ -1,0 +1,21 @@
+{
+  "variantName": "content-container",
+  "baseBlock": "content-container",
+  "version": "1.0.0",
+  "created": "2026-10-21T14:55:19.228Z",
+  "visualCharacteristics": {
+    "purpose": "boxed-content",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "single-cell rich text"
+  },
+  "usage": {
+    "pagesUsing": [
+      "school-life/events",
+      "school-life/student-opportunities-and-activities/duke-of-edinburgh-award"
+    ],
+    "reuseCount": 2,
+    "lastUsed": "2026-10-21T14:55:19.228Z"
+  }
+}

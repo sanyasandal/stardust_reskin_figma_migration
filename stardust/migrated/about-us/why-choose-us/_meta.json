@@ -1,0 +1,63 @@
+{
+  "slug": "about-us-why-choose-us",
+  "type": "content",
+  "renderBranch": "A'",
+  "template": "learning-and-support-wellbeing",
+  "modules": [
+    "M1",
+    "M5",
+    "M4",
+    "M2"
+  ],
+  "slotsFilled": [
+    "s01",
+    "s02",
+    "s03",
+    "s04",
+    "s05",
+    "s06",
+    "s07",
+    "s08",
+    "s09",
+    "s10"
+  ],
+  "canonShas": {
+    "header": "a8ad9e05a2e6",
+    "footer": "11083616d207",
+    "css": "b7e359a8ffed"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Why choose us?",
+    "description": "At Fort Street High School, we are proud to be part of a strong public education system and welcome students from all backgrounds and cultures.",
+    "canonical": "https://fortstreet-h.schools.nsw.gov.au/about-us/why-choose-us",
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Why choose us?",
+    "description": "At Fort Street High School, we are proud to be part of a strong public education system and welcome students from all backgrounds and cultures.",
+    "url": "https://fortstreet-h.schools.nsw.gov.au/about-us/why-choose-us"
+  },
+  "migratedAt": "2026-10-21T14:08:04Z",
+  "designMdSha": "c0ae931d3b54",
+  "designJsonSha": "3ff54e7e981f",
+  "sourceCurrentSha": null,
+  "sourceProposedSha": "0df7a954fa97",
+  "fidelityTier": "sibling",
+  "archetypeSource": "learning-and-support-wellbeing",
+  "archetypeSha": "5bc769fe32da",
+  "variants": [],
+  "gatesPassed": [],
+  "gateEvidence": {},
+  "contentDeviations": [],
+  "assetsBundled": 9,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "about-us/why-choose-us/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "about-us/why-choose-us/_meta.json",
+  "driverVersion": "1"
+}

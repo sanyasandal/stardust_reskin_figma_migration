@@ -27,5 +27,11 @@
 {"ts":"2026-10-21T13:05:48Z","skill":"stardust:reskin","phase":"gates","event":"end"}
 {"ts":"2026-10-21T13:06:06Z","skill":"stardust:reskin","phase":"gates","event":"start","detail":"deployed leg: resumed (an early end was logged at 13:05:48 by mistake, before deployed-gate all)"}
 {"ts":"2026-10-21T13:06:06Z","skill":"stardust:deploy","phase":"10-reconcile","event":"start","detail":"deployed-gate all + Step 10"}
+{"ts":"2026-10-21T13:17:02Z","skill":"stardust:reskin","phase":"programmatic-render","event":"end","artifact":"stardust/reskin/pages/learning-and-support-wellbeing.html"}
 {"ts":"2026-10-21T13:27:16Z","skill":"stardust:deploy","phase":"10-reconcile","event":"end","detail":"deployed-gate all (3rd run, parity reference self-contained): content PASS, tokens 48/48, parity FAIL 1/9 (accepted residual), sanity PASS, inherited PASS, figma geometry 1/13 + ramp 4/125 (accepted residuals); step10 eyeball adopted, CLS 0/0, header unresolved (needs-owner)","artifact":"stardust/.work/reskin/gates/home/deployed/summary.json"}
 {"ts":"2026-10-21T13:27:16Z","skill":"stardust:reskin","phase":"gates","event":"end","detail":"Phase 5 (e) deployed leg for home closed; ledger pages.home.gates.deployed + step10 recorded","artifact":"stardust/reskin/ledger.json"}
+{"ts":"2026-10-21T13:33:28Z","skill":"stardust:migrate","phase":"plan","event":"start"}
+{"ts":"2026-10-21T13:33:28Z","skill":"stardust:migrate","phase":"plan","event":"end"}
+{"ts":"2026-10-21T13:33:28Z","skill":"stardust:reskin","phase":"sibling-capture-render","event":"start"}
+{"ts":"2026-10-21T14:05:01Z","skill":"stardust:reskin","phase":"migrate-render","event":"start"}
+{"ts":"2026-10-21T14:13:38Z","skill":"stardust:reskin","phase":"migrate-render","event":"end"}

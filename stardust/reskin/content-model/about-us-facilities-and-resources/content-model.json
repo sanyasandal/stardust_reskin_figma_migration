@@ -1,0 +1,863 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:reskin/capture-content.mjs",
+    "capturedAt": "2026-10-21T13:48:05.883Z",
+    "url": "https://fortstreet-h.schools.nsw.gov.au/about-us/facilities-and-resources",
+    "viewport": "1440x900",
+    "scope": "main > div:nth-child(1) > div:nth-child(1)!,main > div:nth-child(2) > div:nth-child(1)!,main > div:nth-child(2) > div:nth-child(2)!,main > div:nth-child(3) > div:nth-child(1)!,main > div:nth-child(4) > div:nth-child(1)!",
+    "normalize": {
+      "source": "/Users/ssandal/repos/EDS customer repos/copilot-worktrees/stardust_reskin_figma_migration/ssandal-adobe-redesigned-potato/stardust/reskin/normalize/about-us-facilities-and-resources.mjs",
+      "ledger": [
+        {
+          "id": "N-D1",
+          "what": "remove cookie/consent chrome (OneTrust, Cookiebot, Usercentrics, generic cookie-banner ids/classes, any cookie/consent/gdpr-named element inside a fixed/sticky/high-z overlay)",
+          "why": "overlay chrome injected by a CMP, not page content; re-added at deploy time"
+        },
+        {
+          "id": "N-D2",
+          "what": "de-carousel slick/swiper/splide/glide: remove clone slides, force real slides visible+static, drop dots/arrows",
+          "why": "hidden slides are absent from innerText and clones duplicate it — rotating carousels break byte determinism; the reskin renders all slides statically in DOM order"
+        },
+        {
+          "id": "N2",
+          "what": "remove main .back-to-top (floating back-to-top control)",
+          "why": "UI chrome injected by the source theme, no content bytes; donor kit has its own Back to Top module"
+        },
+        {
+          "id": "N3",
+          "what": "expand every main .nsw-accordion: drop hidden=\"until-found\" from .nsw-accordion__content and set the button aria-expanded=\"true\"",
+          "why": "collapsed panels are authored content absent from innerText (hidden); without expansion the byte reference silently drops every accordion body. Same rule as the default de-carousel (N-D2): interactive disclosure is normalized to all-open, and the reskin renders each item title followed by its panel statically in DOM order"
+        },
+        {
+          "id": "N6",
+          "what": "de-carousel the NSW gallery carousel (main .nsw-carousel, not covered by the default N-D2 list): every .nsw-carousel__item made visible and static (aria-hidden dropped, visibility forced visible on the slide and its descendants, list transform cleared and wrapped, container overflow visible); prev/next controls, dot navigation (sr-only \"1\"..\"N\" buttons) and the aria-live status removed",
+          "why": "the carousel hides off-screen slides with visibility:hidden on a timer after init, so innerText and visible images vary between loads (captures of the same page gave 1500 and 3135 gallery chars) — rotating carousels break byte determinism; same rule as the default N-D2: the reskin renders all slides statically in DOM order. Controls and dots are carousel UI, not content"
+        }
+      ]
+    },
+    "nav": {
+      "live": true,
+      "waitUntil": "load",
+      "headed": false
+    }
+  },
+  "metadata": {
+    "title": "Facilities and resources",
+    "description": "At Fort Street High School, we offer a wide range of spaces, tools and resources to support student learning. Our modern facilities help students build skills, try new things and stay engaged. Whether it’s for study, sport, creativity or technology, we give students what they need to succeed.",
+    "canonical": "https://fortstreet-h.schools.nsw.gov.au/about-us/facilities-and-resources",
+    "ogTags": {
+      "og:title": "Facilities and resources",
+      "og:description": "At Fort Street High School, we offer a wide range of spaces, tools and resources to support student learning. Our modern facilities help students build skills, try new things and stay engaged. Whether it’s for study, sport, creativity or technology, we give students what they need to succeed.",
+      "og:url": "https://fortstreet-h.schools.nsw.gov.au/about-us/facilities-and-resources",
+      "og:image": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_1c9f7867e2df4ed6af3fe3bd3c1d6b437a72488f8.jpg?width=1200&format=pjpg&optimize=medium",
+      "og:image:secure_url": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_1c9f7867e2df4ed6af3fe3bd3c1d6b437a72488f8.jpg?width=1200&format=pjpg&optimize=medium",
+      "og:image:alt": "Students"
+    },
+    "twitterTags": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "Facilities and resources",
+      "twitter:description": "At Fort Street High School, we offer a wide range of spaces, tools and resources to support student learning. Our modern facilities help students build skills, try new things and stay engaged. Whether it’s for study, sport, creativity or technology, we give students what they need to succeed.",
+      "twitter:image": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_1c9f7867e2df4ed6af3fe3bd3c1d6b437a72488f8.jpg?width=1200&format=pjpg&optimize=medium"
+    },
+    "jsonLd": [],
+    "lang": "en",
+    "favicon": null
+  },
+  "scope": [
+    {
+      "sel": "main > div:nth-child(1) > div:nth-child(1)",
+      "whole": true
+    },
+    {
+      "sel": "main > div:nth-child(2) > div:nth-child(1)",
+      "whole": true
+    },
+    {
+      "sel": "main > div:nth-child(2) > div:nth-child(2)",
+      "whole": true
+    },
+    {
+      "sel": "main > div:nth-child(3) > div:nth-child(1)",
+      "whole": true
+    },
+    {
+      "sel": "main > div:nth-child(4) > div:nth-child(1)",
+      "whole": true
+    }
+  ],
+  "visibleTextNormalized": "Facilities and resources Our school offers a range of spaces, tools and resources to support student learning. Whether it’s for study, sport, creativity or technology, our learning environments and resources give students what they need to succeed. Our school facilities We offer a range of learning environments. They help students stay engaged, build confidence and enjoy every part of their school day. Our facilities may include: bright and comfortable air conditioned classrooms a modern library for reading, research and study state of art science labs for hands-on experiments sports fields including a large oval, cricket nets as well as basketball, futsal, volleyball and netball courts art, music and performances spaces for creative learning industrial kitchen for food technology robotics laboratory with 3D laser printers air conditioned Memorial hall lecture theatre multiple outdoor covered spaces Resources and technology Our school uses modern technology and digital learning tools. Our resources help students learn, create and stay connected. As a NSW public school, we have access to shared programs and tools available to all schools in the state. Bright and comfortable air conditioned classrooms Well maintained grounds with original buildings blended with new additions Renovated school library providing a welcoming environment with resources and study spaces to meet the teaching and learning needs of our community. Modern and well equipped kitchens for all food technology lessons. Futsal Courts Large oval with soccer nets Cricket Nets Outdoor Volleyball courts Art studios Modern Science labs Well equipped Design and Technology rooms, including 3D printers Lecture Theatre Multiple covered outdoor spaces Hiring our facilities You may apply to use our school’s facilities for appropriate purposes provided your hiring of the facility doesn't interfere with our teaching and learning programs. We assess each application on a case-by-case basis. Find out more at Using school facilities. If you’re interested in hiring our facilities, contact us for details. Learning Discover what students learn in our classrooms and how we help them progress. east Student opportunities and activities Discover clubs, sports and other activities your child can enjoy at school. east",
+  "coverage": {
+    "bodyTextLen": 3316,
+    "scopeTextLen": 2298,
+    "ratio": 0.693,
+    "h1Text": "Facilities and resources",
+    "h1InScope": true
+  },
+  "sections": [
+    {
+      "slot": "s01",
+      "rootTag": "div",
+      "rootClass": "default-content-wrapper",
+      "visibleText": "Facilities and resources Our school offers a range of spaces, tools and resources to support student learning. Whether it’s for study, sport, creativity or technology, our learning environments and resources give students what they need to succeed.",
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Facilities and resources"
+        }
+      ],
+      "paragraphs": [
+        "Our school offers a range of spaces, tools and resources to support student learning. Whether it’s for study, sport, creativity or technology, our learning environments and resources give students what they need to succeed."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": [],
+      "formControls": [],
+      "leftovers": [],
+      "ordered": [
+        {
+          "kind": "heading",
+          "text": "Facilities and resources",
+          "display": "block",
+          "level": "h1",
+          "sep": ""
+        },
+        {
+          "kind": "paragraph",
+          "text": "Our school offers a range of spaces, tools and resources to support student learning. Whether it’s for study, sport, creativity or technology, our learning environments and resources give students what they need to succeed.",
+          "display": "block",
+          "sep": " "
+        }
+      ],
+      "orderedVerified": true
+    },
+    {
+      "slot": "s02",
+      "rootTag": "div",
+      "rootClass": "default-content-wrapper",
+      "visibleText": "Our school facilities We offer a range of learning environments. They help students stay engaged, build confidence and enjoy every part of their school day. Our facilities may include: bright and comfortable air conditioned classrooms a modern library for reading, research and study state of art science labs for hands-on experiments sports fields including a large oval, cricket nets as well as basketball, futsal, volleyball and netball courts art, music and performances spaces for creative learning industrial kitchen for food technology robotics laboratory with 3D laser printers air conditioned Memorial hall lecture theatre multiple outdoor covered spaces Resources and technology Our school uses modern technology and digital learning tools. Our resources help students learn, create and stay connected. As a NSW public school, we have access to shared programs and tools available to all schools in the state.",
+      "headings": [
+        {
+          "level": "h2",
+          "text": "Our school facilities"
+        },
+        {
+          "level": "h2",
+          "text": "Resources and technology"
+        }
+      ],
+      "paragraphs": [
+        "We offer a range of learning environments. They help students stay engaged, build confidence and enjoy every part of their school day. Our facilities may include:",
+        "Our school uses modern technology and digital learning tools. Our resources help students learn, create and stay connected. As a NSW public school, we have access to shared programs and tools available to all schools in the state."
+      ],
+      "listItems": [
+        "bright and comfortable air conditioned classrooms",
+        "a modern library for reading, research and study",
+        "state of art science labs for hands-on experiments",
+        "sports fields including a large oval, cricket nets as well as basketball, futsal, volleyball and netball courts",
+        "art, music and performances spaces for creative learning",
+        "industrial kitchen for food technology",
+        "robotics laboratory with 3D laser printers",
+        "air conditioned Memorial hall",
+        "lecture theatre",
+        "multiple outdoor covered spaces"
+      ],
+      "ctas": [],
+      "images": [],
+      "formControls": [],
+      "leftovers": [],
+      "ordered": [
+        {
+          "kind": "heading",
+          "text": "Our school facilities",
+          "display": "block",
+          "level": "h2",
+          "sep": ""
+        },
+        {
+          "kind": "paragraph",
+          "text": "We offer a range of learning environments. They help students stay engaged, build confidence and enjoy every part of their school day. Our facilities may include:",
+          "display": "block",
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "bright and comfortable air conditioned classrooms",
+          "display": "list-item",
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "a modern library for reading, research and study",
+          "display": "list-item",
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "state of art science labs for hands-on experiments",
+          "display": "list-item",
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "sports fields including a large oval, cricket nets as well as basketball, futsal, volleyball and netball courts",
+          "display": "list-item",
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "art, music and performances spaces for creative learning",
+          "display": "list-item",
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "industrial kitchen for food technology",
+          "display": "list-item",
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "robotics laboratory with 3D laser printers",
+          "display": "list-item",
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "air conditioned Memorial hall",
+          "display": "list-item",
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "lecture theatre",
+          "display": "list-item",
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "multiple outdoor covered spaces",
+          "display": "list-item",
+          "sep": " "
+        },
+        {
+          "kind": "heading",
+          "text": "Resources and technology",
+          "display": "block",
+          "level": "h2",
+          "sep": " "
+        },
+        {
+          "kind": "paragraph",
+          "text": "Our school uses modern technology and digital learning tools. Our resources help students learn, create and stay connected. As a NSW public school, we have access to shared programs and tools available to all schools in the state.",
+          "display": "block",
+          "sep": " "
+        }
+      ],
+      "orderedVerified": true
+    },
+    {
+      "slot": "s03",
+      "rootTag": "div",
+      "rootClass": "gallery-wrapper",
+      "visibleText": "Bright and comfortable air conditioned classrooms Well maintained grounds with original buildings blended with new additions Renovated school library providing a welcoming environment with resources and study spaces to meet the teaching and learning needs of our community. Modern and well equipped kitchens for all food technology lessons. Futsal Courts Large oval with soccer nets Cricket Nets Outdoor Volleyball courts Art studios Modern Science labs Well equipped Design and Technology rooms, including 3D printers Lecture Theatre Multiple covered outdoor spaces",
+      "headings": [],
+      "paragraphs": [
+        "Bright and comfortable air conditioned classrooms",
+        "Well maintained grounds with original buildings blended with new additions",
+        "Renovated school library providing a welcoming environment with resources and study spaces to meet the teaching and learning needs of our community.",
+        "Modern and well equipped kitchens for all food technology lessons.",
+        "Futsal Courts",
+        "Large oval with soccer nets",
+        "Cricket Nets",
+        "Outdoor Volleyball courts",
+        "Art studios",
+        "Modern Science labs",
+        "Well equipped Design and Technology rooms, including 3D printers",
+        "Lecture Theatre",
+        "Multiple covered outdoor spaces"
+      ],
+      "listItems": [
+        "Bright and comfortable air conditioned classrooms",
+        "Well maintained grounds with original buildings blended with new additions",
+        "Renovated school library providing a welcoming environment with resources and study spaces to meet the teaching and learning needs of our community.",
+        "Modern and well equipped kitchens for all food technology lessons.",
+        "Futsal Courts",
+        "Large oval with soccer nets",
+        "Cricket Nets",
+        "Outdoor Volleyball courts",
+        "Art studios",
+        "Modern Science labs",
+        "Well equipped Design and Technology rooms, including 3D printers",
+        "Lecture Theatre",
+        "Multiple covered outdoor spaces"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_1c9f7867e2df4ed6af3fe3bd3c1d6b437a72488f8.jpg?width=750&format=jpg&optimize=medium",
+          "alt": "Students",
+          "w": 750,
+          "h": 501
+        },
+        {
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_1cfe04339cf1ce5d95d506cc665f70d5a0387cebe.jpg?width=750&format=jpg&optimize=medium",
+          "alt": "Students at Memorial Hall",
+          "w": 750,
+          "h": 501
+        },
+        {
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_1bcf48b79d7f154600b41f89191a4f1269dfde8b6.jpg?width=750&format=jpg&optimize=medium",
+          "alt": "students at the library",
+          "w": 750,
+          "h": 500
+        },
+        {
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_16104b7ff0fdd33e2e959412f99a5fa449f7dd566.jpg?width=750&format=jpg&optimize=medium",
+          "alt": "students cooking",
+          "w": 750,
+          "h": 500
+        },
+        {
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_178d1fb0ec6ff8c2dd2ae0ea973bd7d1cc29c99c1.jpg?width=750&format=jpg&optimize=medium",
+          "alt": "students",
+          "w": 750,
+          "h": 500
+        },
+        {
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_1f6f8f44211b036fdc565fa2963d17d459b8a8ed4.jpg?width=750&format=jpg&optimize=medium",
+          "alt": "students playing soccor",
+          "w": 750,
+          "h": 500
+        },
+        {
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_1f0b30f38bed398659af48b62fa1bd416acca4b34.jpg?width=750&format=jpg&optimize=medium",
+          "alt": "student playing cricket",
+          "w": 750,
+          "h": 1125
+        },
+        {
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_180bfa2c976fa17f0bb984c4822746047582f1ced.jpg?width=750&format=jpg&optimize=medium",
+          "alt": "students playing volleyball",
+          "w": 750,
+          "h": 1125
+        },
+        {
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_18c4caba58dcb9539eaa6efc673f6d5b2cca7142d.jpg?width=750&format=jpg&optimize=medium",
+          "alt": "students in the art studio",
+          "w": 750,
+          "h": 500
+        },
+        {
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_14b4946e5ba6efbe070d5c8dd0e867290782b5d05.jpg?width=750&format=jpg&optimize=medium",
+          "alt": "student in a science lab",
+          "w": 750,
+          "h": 501
+        },
+        {
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_134112a9b6bbbd211f969052331c16995fcf3fdf1.jpg?width=750&format=jpg&optimize=medium",
+          "alt": "students and teacher in the Design and Technology rooms",
+          "w": 750,
+          "h": 500
+        },
+        {
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_18b893b13d0bf3a76e2fab13cb90f344f2543034f.jpg?width=750&format=jpg&optimize=medium",
+          "alt": "students in a Lecture Theatre",
+          "w": 750,
+          "h": 500
+        },
+        {
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_18e57c1701b907e158a62adc0530a4ab229126a84.jpg?width=750&format=jpg&optimize=medium",
+          "alt": "students in outdoor space",
+          "w": 750,
+          "h": 500
+        }
+      ],
+      "formControls": [],
+      "leftovers": [],
+      "ordered": [
+        {
+          "kind": "listItem",
+          "text": "Bright and comfortable air conditioned classrooms",
+          "display": "list-item",
+          "children": [
+            {
+              "kind": "image",
+              "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_1c9f7867e2df4ed6af3fe3bd3c1d6b437a72488f8.jpg?width=750&format=jpg&optimize=medium",
+              "alt": "Students",
+              "sep": ""
+            },
+            {
+              "kind": "paragraph",
+              "text": "Bright and comfortable air conditioned classrooms",
+              "display": "block",
+              "sep": ""
+            }
+          ],
+          "sep": ""
+        },
+        {
+          "kind": "listItem",
+          "text": "Well maintained grounds with original buildings blended with new additions",
+          "display": "list-item",
+          "children": [
+            {
+              "kind": "image",
+              "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_1cfe04339cf1ce5d95d506cc665f70d5a0387cebe.jpg?width=750&format=jpg&optimize=medium",
+              "alt": "Students at Memorial Hall",
+              "sep": ""
+            },
+            {
+              "kind": "paragraph",
+              "text": "Well maintained grounds with original buildings blended with new additions",
+              "display": "block",
+              "sep": ""
+            }
+          ],
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "Renovated school library providing a welcoming environment with resources and study spaces to meet the teaching and learning needs of our community.",
+          "display": "list-item",
+          "children": [
+            {
+              "kind": "image",
+              "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_1bcf48b79d7f154600b41f89191a4f1269dfde8b6.jpg?width=750&format=jpg&optimize=medium",
+              "alt": "students at the library",
+              "sep": ""
+            },
+            {
+              "kind": "paragraph",
+              "text": "Renovated school library providing a welcoming environment with resources and study spaces to meet the teaching and learning needs of our community.",
+              "display": "block",
+              "sep": ""
+            }
+          ],
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "Modern and well equipped kitchens for all food technology lessons.",
+          "display": "list-item",
+          "children": [
+            {
+              "kind": "image",
+              "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_16104b7ff0fdd33e2e959412f99a5fa449f7dd566.jpg?width=750&format=jpg&optimize=medium",
+              "alt": "students cooking",
+              "sep": ""
+            },
+            {
+              "kind": "paragraph",
+              "text": "Modern and well equipped kitchens for all food technology lessons.",
+              "display": "block",
+              "sep": ""
+            }
+          ],
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "Futsal Courts",
+          "display": "list-item",
+          "children": [
+            {
+              "kind": "image",
+              "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_178d1fb0ec6ff8c2dd2ae0ea973bd7d1cc29c99c1.jpg?width=750&format=jpg&optimize=medium",
+              "alt": "students",
+              "sep": ""
+            },
+            {
+              "kind": "paragraph",
+              "text": "Futsal Courts",
+              "display": "block",
+              "sep": ""
+            }
+          ],
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "Large oval with soccer nets",
+          "display": "list-item",
+          "children": [
+            {
+              "kind": "image",
+              "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_1f6f8f44211b036fdc565fa2963d17d459b8a8ed4.jpg?width=750&format=jpg&optimize=medium",
+              "alt": "students playing soccor",
+              "sep": ""
+            },
+            {
+              "kind": "paragraph",
+              "text": "Large oval with soccer nets",
+              "display": "block",
+              "sep": ""
+            }
+          ],
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "Cricket Nets",
+          "display": "list-item",
+          "children": [
+            {
+              "kind": "image",
+              "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_1f0b30f38bed398659af48b62fa1bd416acca4b34.jpg?width=750&format=jpg&optimize=medium",
+              "alt": "student playing cricket",
+              "sep": ""
+            },
+            {
+              "kind": "paragraph",
+              "text": "Cricket Nets",
+              "display": "block",
+              "sep": ""
+            }
+          ],
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "Outdoor Volleyball courts",
+          "display": "list-item",
+          "children": [
+            {
+              "kind": "image",
+              "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_180bfa2c976fa17f0bb984c4822746047582f1ced.jpg?width=750&format=jpg&optimize=medium",
+              "alt": "students playing volleyball",
+              "sep": ""
+            },
+            {
+              "kind": "paragraph",
+              "text": "Outdoor Volleyball courts",
+              "display": "block",
+              "sep": ""
+            }
+          ],
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "Art studios",
+          "display": "list-item",
+          "children": [
+            {
+              "kind": "image",
+              "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_18c4caba58dcb9539eaa6efc673f6d5b2cca7142d.jpg?width=750&format=jpg&optimize=medium",
+              "alt": "students in the art studio",
+              "sep": ""
+            },
+            {
+              "kind": "paragraph",
+              "text": "Art studios",
+              "display": "block",
+              "sep": ""
+            }
+          ],
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "Modern Science labs",
+          "display": "list-item",
+          "children": [
+            {
+              "kind": "image",
+              "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_14b4946e5ba6efbe070d5c8dd0e867290782b5d05.jpg?width=750&format=jpg&optimize=medium",
+              "alt": "student in a science lab",
+              "sep": ""
+            },
+            {
+              "kind": "paragraph",
+              "text": "Modern Science labs",
+              "display": "block",
+              "sep": ""
+            }
+          ],
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "Well equipped Design and Technology rooms, including 3D printers",
+          "display": "list-item",
+          "children": [
+            {
+              "kind": "image",
+              "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_134112a9b6bbbd211f969052331c16995fcf3fdf1.jpg?width=750&format=jpg&optimize=medium",
+              "alt": "students and teacher in the Design and Technology rooms",
+              "sep": ""
+            },
+            {
+              "kind": "paragraph",
+              "text": "Well equipped Design and Technology rooms, including 3D printers",
+              "display": "block",
+              "sep": ""
+            }
+          ],
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "Lecture Theatre",
+          "display": "list-item",
+          "children": [
+            {
+              "kind": "image",
+              "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_18b893b13d0bf3a76e2fab13cb90f344f2543034f.jpg?width=750&format=jpg&optimize=medium",
+              "alt": "students in a Lecture Theatre",
+              "sep": ""
+            },
+            {
+              "kind": "paragraph",
+              "text": "Lecture Theatre",
+              "display": "block",
+              "sep": ""
+            }
+          ],
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "Multiple covered outdoor spaces",
+          "display": "list-item",
+          "children": [
+            {
+              "kind": "image",
+              "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_18e57c1701b907e158a62adc0530a4ab229126a84.jpg?width=750&format=jpg&optimize=medium",
+              "alt": "students in outdoor space",
+              "sep": ""
+            },
+            {
+              "kind": "paragraph",
+              "text": "Multiple covered outdoor spaces",
+              "display": "block",
+              "sep": ""
+            }
+          ],
+          "sep": " "
+        }
+      ],
+      "orderedVerified": true
+    },
+    {
+      "slot": "s04",
+      "rootTag": "div",
+      "rootClass": "columns-wrapper",
+      "visibleText": "Hiring our facilities You may apply to use our school’s facilities for appropriate purposes provided your hiring of the facility doesn't interfere with our teaching and learning programs. We assess each application on a case-by-case basis. Find out more at Using school facilities. If you’re interested in hiring our facilities, contact us for details.",
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Hiring our facilities"
+        }
+      ],
+      "paragraphs": [
+        "You may apply to use our school’s facilities for appropriate purposes provided your hiring of the facility doesn't interfere with our teaching and learning programs.",
+        "We assess each application on a case-by-case basis. Find out more at Using school facilities.",
+        "If you’re interested in hiring our facilities, contact us for details."
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "Using school facilities",
+          "href": "https://education.nsw.gov.au/about-us/using-school-facilities",
+          "absHref": "https://education.nsw.gov.au/about-us/using-school-facilities",
+          "classes": ""
+        },
+        {
+          "text": "contact us",
+          "href": "https://fortstreet-h.schools.nsw.gov.au/contact-us.html",
+          "absHref": "https://fortstreet-h.schools.nsw.gov.au/contact-us.html",
+          "classes": ""
+        }
+      ],
+      "images": [
+        {
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_144c4c4c31a5c2a0b3c7883682b17fa173f76d3ad.jpg?width=2000&format=webply&optimize=medium",
+          "alt": "outdoor facilities",
+          "w": 940,
+          "h": 940
+        }
+      ],
+      "formControls": [],
+      "leftovers": [],
+      "ordered": [
+        {
+          "kind": "heading",
+          "text": "Hiring our facilities",
+          "display": "block",
+          "level": "h1",
+          "sep": ""
+        },
+        {
+          "kind": "paragraph",
+          "text": "You may apply to use our school’s facilities for appropriate purposes provided your hiring of the facility doesn't interfere with our teaching and learning programs.",
+          "display": "block",
+          "sep": " "
+        },
+        {
+          "kind": "paragraph",
+          "text": "We assess each application on a case-by-case basis. Find out more at Using school facilities.",
+          "display": "block",
+          "children": [
+            {
+              "kind": "text",
+              "text": "We assess each application on a case-by-case basis. Find out more at",
+              "parentTag": "p",
+              "parentClass": "",
+              "sep": ""
+            },
+            {
+              "kind": "cta",
+              "text": "Using school facilities",
+              "display": "inline",
+              "href": "https://education.nsw.gov.au/about-us/using-school-facilities",
+              "absHref": "https://education.nsw.gov.au/about-us/using-school-facilities",
+              "classes": "",
+              "sep": " "
+            },
+            {
+              "kind": "text",
+              "text": ".",
+              "parentTag": "p",
+              "parentClass": "",
+              "sep": ""
+            }
+          ],
+          "sep": " "
+        },
+        {
+          "kind": "paragraph",
+          "text": "If you’re interested in hiring our facilities, contact us for details.",
+          "display": "block",
+          "children": [
+            {
+              "kind": "text",
+              "text": "If you’re interested in hiring our facilities,",
+              "parentTag": "p",
+              "parentClass": "",
+              "sep": ""
+            },
+            {
+              "kind": "cta",
+              "text": "contact us",
+              "display": "inline",
+              "href": "https://fortstreet-h.schools.nsw.gov.au/contact-us.html",
+              "absHref": "https://fortstreet-h.schools.nsw.gov.au/contact-us.html",
+              "classes": "",
+              "sep": " "
+            },
+            {
+              "kind": "text",
+              "text": "for details.",
+              "parentTag": "p",
+              "parentClass": "",
+              "sep": " "
+            }
+          ],
+          "sep": " "
+        },
+        {
+          "kind": "image",
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_144c4c4c31a5c2a0b3c7883682b17fa173f76d3ad.jpg?width=2000&format=webply&optimize=medium",
+          "alt": "outdoor facilities",
+          "sep": ""
+        }
+      ],
+      "orderedVerified": true
+    },
+    {
+      "slot": "s05",
+      "rootTag": "div",
+      "rootClass": "card-container-wrapper",
+      "visibleText": "Learning Discover what students learn in our classrooms and how we help them progress. east Student opportunities and activities Discover clubs, sports and other activities your child can enjoy at school. east",
+      "headings": [],
+      "paragraphs": [
+        "Discover what students learn in our classrooms and how we help them progress.",
+        "Discover clubs, sports and other activities your child can enjoy at school."
+      ],
+      "listItems": [
+        "Learning Discover what students learn in our classrooms and how we help them progress. east",
+        "Student opportunities and activities Discover clubs, sports and other activities your child can enjoy at school. east"
+      ],
+      "ctas": [
+        {
+          "text": "Learning",
+          "href": "/learning-and-support/learning",
+          "absHref": "https://fortstreet-h.schools.nsw.gov.au/learning-and-support/learning",
+          "classes": ""
+        },
+        {
+          "text": "Student opportunities and activities",
+          "href": "/school-life/student-opportunities-and-activities",
+          "absHref": "https://fortstreet-h.schools.nsw.gov.au/school-life/student-opportunities-and-activities",
+          "classes": ""
+        }
+      ],
+      "images": [],
+      "formControls": [],
+      "leftovers": [],
+      "ordered": [
+        {
+          "kind": "listItem",
+          "text": "Learning Discover what students learn in our classrooms and how we help them progress. east",
+          "display": "list-item",
+          "children": [
+            {
+              "kind": "cta",
+              "text": "Learning",
+              "display": "inline",
+              "href": "/learning-and-support/learning",
+              "absHref": "https://fortstreet-h.schools.nsw.gov.au/learning-and-support/learning",
+              "classes": "",
+              "sep": ""
+            },
+            {
+              "kind": "paragraph",
+              "text": "Discover what students learn in our classrooms and how we help them progress.",
+              "display": "block",
+              "sep": " "
+            },
+            {
+              "kind": "text",
+              "text": "east",
+              "parentTag": "span",
+              "parentClass": "material-icons nsw-material-icons",
+              "sep": " "
+            }
+          ],
+          "sep": ""
+        },
+        {
+          "kind": "listItem",
+          "text": "Student opportunities and activities Discover clubs, sports and other activities your child can enjoy at school. east",
+          "display": "list-item",
+          "children": [
+            {
+              "kind": "cta",
+              "text": "Student opportunities and activities",
+              "display": "inline",
+              "href": "/school-life/student-opportunities-and-activities",
+              "absHref": "https://fortstreet-h.schools.nsw.gov.au/school-life/student-opportunities-and-activities",
+              "classes": "",
+              "sep": ""
+            },
+            {
+              "kind": "paragraph",
+              "text": "Discover clubs, sports and other activities your child can enjoy at school.",
+              "display": "block",
+              "sep": " "
+            },
+            {
+              "kind": "text",
+              "text": "east",
+              "parentTag": "span",
+              "parentClass": "material-icons nsw-material-icons",
+              "sep": " "
+            }
+          ],
+          "sep": " "
+        }
+      ],
+      "orderedVerified": true
+    }
+  ]
+}

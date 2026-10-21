@@ -1,0 +1,55 @@
+{
+  "slug": "school-life-student-opportunities-and-activities-clubs-and-committees",
+  "type": "content",
+  "renderBranch": "A'",
+  "template": "learning-and-support-wellbeing",
+  "modules": [
+    "M5",
+    "M4",
+    "M2"
+  ],
+  "slotsFilled": [
+    "s01",
+    "s02",
+    "s03"
+  ],
+  "canonShas": {
+    "header": "a8ad9e05a2e6",
+    "footer": "11083616d207",
+    "css": "b7e359a8ffed"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Clubs and Committees",
+    "description": "At Fort Street High School, we have multiple clubs and committees for students to get involved in. They help students build new skills, make friends and explore new interests.",
+    "canonical": "https://fortstreet-h.schools.nsw.gov.au/school-life/student-opportunities-and-activities/clubs-and-committees",
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Clubs and Committees",
+    "description": "At Fort Street High School, we have multiple clubs and committees for students to get involved in. They help students build new skills, make friends and explore new interests.",
+    "url": "https://fortstreet-h.schools.nsw.gov.au/school-life/student-opportunities-and-activities/clubs-and-committees"
+  },
+  "migratedAt": "2026-10-21T14:08:04Z",
+  "designMdSha": "c0ae931d3b54",
+  "designJsonSha": "3ff54e7e981f",
+  "sourceCurrentSha": null,
+  "sourceProposedSha": "618507dc88c3",
+  "fidelityTier": "sibling",
+  "archetypeSource": "learning-and-support-wellbeing",
+  "archetypeSha": "5bc769fe32da",
+  "variants": [],
+  "gatesPassed": [],
+  "gateEvidence": {},
+  "contentDeviations": [],
+  "assetsBundled": 4,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "school-life/student-opportunities-and-activities/clubs-and-committees/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "school-life/student-opportunities-and-activities/clubs-and-committees/_meta.json",
+  "driverVersion": "1"
+}

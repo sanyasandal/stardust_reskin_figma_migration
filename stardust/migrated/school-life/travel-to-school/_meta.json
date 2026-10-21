@@ -1,0 +1,68 @@
+{
+  "slug": "school-life-travel-to-school",
+  "type": "content",
+  "renderBranch": "A'",
+  "template": "learning-and-support-wellbeing",
+  "modules": [
+    "M5",
+    "M3",
+    "M4",
+    "M2"
+  ],
+  "slotsFilled": [
+    "s01",
+    "s02",
+    "s03",
+    "s04",
+    "s05",
+    "s06",
+    "s07",
+    "s08",
+    "s09",
+    "s10",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15"
+  ],
+  "canonShas": {
+    "header": "a8ad9e05a2e6",
+    "footer": "11083616d207",
+    "css": "b7e359a8ffed"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Travel to school",
+    "description": "At Fort Street High School, there are a range of safe transport options. Check our location map, driving details and public transport options to help make the journey to school safe and easy. We are located at 620 PARRAMATTA ROAD, NSW 2049 PETERSHAM.",
+    "canonical": "https://fortstreet-h.schools.nsw.gov.au/school-life/travel-to-school",
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Travel to school",
+    "description": "At Fort Street High School, there are a range of safe transport options. Check our location map, driving details and public transport options to help make the journey to school safe and easy. We are located at 620 PARRAMATTA ROAD, NSW 2049 PETERSHAM.",
+    "url": "https://fortstreet-h.schools.nsw.gov.au/school-life/travel-to-school"
+  },
+  "migratedAt": "2026-10-21T14:08:04Z",
+  "designMdSha": "c0ae931d3b54",
+  "designJsonSha": "3ff54e7e981f",
+  "sourceCurrentSha": null,
+  "sourceProposedSha": "7c31d6ca7a8a",
+  "fidelityTier": "sibling",
+  "archetypeSource": "learning-and-support-wellbeing",
+  "archetypeSha": "5bc769fe32da",
+  "variants": [],
+  "gatesPassed": [],
+  "gateEvidence": {},
+  "contentDeviations": [],
+  "assetsBundled": 6,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "school-life/travel-to-school/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "school-life/travel-to-school/_meta.json",
+  "driverVersion": "1"
+}

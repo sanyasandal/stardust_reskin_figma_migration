@@ -1,0 +1,53 @@
+{
+  "slug": "learning-and-support",
+  "type": "section",
+  "renderBranch": "A'",
+  "template": "school-life",
+  "modules": [
+    "M5",
+    "M2"
+  ],
+  "slotsFilled": [
+    "s01",
+    "s02"
+  ],
+  "canonShas": {
+    "header": "a8ad9e05a2e6",
+    "footer": "11083616d207",
+    "css": "b7e359a8ffed"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Learning and support",
+    "description": "Learn more about learning and support at Fort Street High School.",
+    "canonical": "https://fortstreet-h.schools.nsw.gov.au/learning-and-support",
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Learning and support",
+    "description": "Learn more about learning and support at Fort Street High School.",
+    "url": "https://fortstreet-h.schools.nsw.gov.au/learning-and-support"
+  },
+  "migratedAt": "2026-10-21T14:08:04Z",
+  "designMdSha": "c0ae931d3b54",
+  "designJsonSha": "3ff54e7e981f",
+  "sourceCurrentSha": null,
+  "sourceProposedSha": "1112adc15912",
+  "fidelityTier": "sibling",
+  "archetypeSource": "school-life",
+  "archetypeSha": "3135d99e0630",
+  "variants": [],
+  "gatesPassed": [],
+  "gateEvidence": {},
+  "contentDeviations": [],
+  "assetsBundled": 7,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "learning-and-support/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "learning-and-support/_meta.json",
+  "driverVersion": "1"
+}

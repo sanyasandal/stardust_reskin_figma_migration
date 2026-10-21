@@ -1,0 +1,9 @@
+{"ts":"2026-10-21T12:58:19Z","skill":"stardust:reskin","phase":"content-capture","event":"start","detail":"archetypes school-life (section index) + learning-and-support-wellbeing (content)"}
+{"ts":"2026-10-21T13:01:21Z","skill":"stardust:reskin","phase":"content-capture","event":"end","detail":"school-life 2 slots/14 imgs; learning-and-support-wellbeing 7 slots/2 imgs (N3 accordions all-open)","artifact":"stardust/reskin/content-model/learning-and-support-wellbeing/content-model.json"}
+{"ts":"2026-10-21T13:02:30Z","skill":"stardust:reskin","phase":"mapping-brief","event":"start","detail":"school-life + learning-and-support-wellbeing"}
+{"ts":"2026-10-21T13:04:13Z","skill":"stardust:reskin","phase":"mapping-brief","event":"end","artifact":"stardust/reskin/mapping.md"}
+{"ts":"2026-10-21T13:04:13Z","skill":"stardust:reskin","phase":"programmatic-render","event":"start","detail":"school-life + learning-and-support-wellbeing"}
+{"ts":"2026-10-21T13:17:33Z","skill":"stardust:reskin","phase":"mapping-brief","event":"start","detail":"re-log: the 12:55–13:04 content-capture end / mapping-brief start+end / programmatic-render start lines for school-life + learning-and-support-wellbeing were lost to a concurrent rewrite of status.jsonl"}
+{"ts":"2026-10-21T13:17:33Z","skill":"stardust:reskin","phase":"mapping-brief","event":"end","artifact":"stardust/reskin/mapping.md"}
+{"ts":"2026-10-21T13:17:33Z","skill":"stardust:reskin","phase":"programmatic-render","event":"start","detail":"re-log (see above); rendered 13:04 school-life + learning-and-support-wellbeing"}
+{"ts":"2026-10-21T13:17:33Z","skill":"stardust:reskin","phase":"programmatic-render","event":"end","artifact":"stardust/reskin/pages/learning-and-support-wellbeing.html"}

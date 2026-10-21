@@ -1,0 +1,32 @@
+{
+  "variantName": "accordion",
+  "baseBlock": "accordion",
+  "version": "1.0.0",
+  "created": "2026-10-21T14:55:19.228Z",
+  "visualCharacteristics": {
+    "purpose": "faq",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "title-body-expandable"
+  },
+  "usage": {
+    "pagesUsing": [
+      "about-us/enrol",
+      "about-us/policies-and-reports",
+      "about-us/school-history-and-archives/the-fortian-digitised",
+      "learning-and-support/additional-learning-support",
+      "learning-and-support/high-potential-and-gifted-education",
+      "learning-and-support/learning",
+      "learning-and-support/wellbeing",
+      "our-community/pandc",
+      "school-life/newsletters",
+      "school-life/student-opportunities-and-activities",
+      "school-life/student-opportunities-and-activities/duke-of-edinburgh-award",
+      "school-life/student-opportunities-and-activities/student-leadership-opportunities",
+      "school-life/uniform"
+    ],
+    "reuseCount": 13,
+    "lastUsed": "2026-10-21T14:55:19.228Z"
+  }
+}

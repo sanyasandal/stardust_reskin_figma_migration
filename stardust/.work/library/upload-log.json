@@ -1,0 +1,151 @@
+[
+  {
+    "step": "source",
+    "path": "library/blocks/images/placeholder-16x9.png",
+    "status": 200,
+    "body": "{\"source\":{\"editUrl\":\"https://da.live/edit#/sanyasandal/stardust-reskin-figma-migration/library/blocks/images/placeholder-16x9.png\",\"contentUrl\":\"https://content.da.live/sanyasandal/stardust-reskin-figma-migration/library/blocks/images/placeholder-16x9.png\"},\"aem\":{\"previewUrl\":\"https://main--stardust-reskin-figma-migration--sanyasandal.aem.page/library/blocks/images/placeholder-16x9.png\",\"liveUrl"
+  },
+  {
+    "step": "source",
+    "path": "library/blocks/images/placeholder-4x3.png",
+    "status": 200,
+    "body": "{\"source\":{\"editUrl\":\"https://da.live/edit#/sanyasandal/stardust-reskin-figma-migration/library/blocks/images/placeholder-4x3.png\",\"contentUrl\":\"https://content.da.live/sanyasandal/stardust-reskin-figma-migration/library/blocks/images/placeholder-4x3.png\"},\"aem\":{\"previewUrl\":\"https://main--stardust-reskin-figma-migration--sanyasandal.aem.page/library/blocks/images/placeholder-4x3.png\",\"liveUrl\":\""
+  },
+  {
+    "step": "source",
+    "path": "library/blocks/accordion.html",
+    "status": 200,
+    "body": "{\"source\":{\"editUrl\":\"https://da.live/edit#/sanyasandal/stardust-reskin-figma-migration/library/blocks/accordion\",\"contentUrl\":\"https://content.da.live/sanyasandal/stardust-reskin-figma-migration/library/blocks/accordion\"},\"aem\":{\"previewUrl\":\"https://main--stardust-reskin-figma-migration--sanyasandal.aem.page/library/blocks/accordion\",\"liveUrl\":\"https://main--stardust-reskin-figma-migration--sany"
+  },
+  {
+    "step": "source",
+    "path": "library/blocks/cards.html",
+    "status": 200,
+    "body": "{\"source\":{\"editUrl\":\"https://da.live/edit#/sanyasandal/stardust-reskin-figma-migration/library/blocks/cards\",\"contentUrl\":\"https://content.da.live/sanyasandal/stardust-reskin-figma-migration/library/blocks/cards\"},\"aem\":{\"previewUrl\":\"https://main--stardust-reskin-figma-migration--sanyasandal.aem.page/library/blocks/cards\",\"liveUrl\":\"https://main--stardust-reskin-figma-migration--sanyasandal.aem."
+  },
+  {
+    "step": "source",
+    "path": "library/blocks/columns.html",
+    "status": 200,
+    "body": "{\"source\":{\"editUrl\":\"https://da.live/edit#/sanyasandal/stardust-reskin-figma-migration/library/blocks/columns\",\"contentUrl\":\"https://content.da.live/sanyasandal/stardust-reskin-figma-migration/library/blocks/columns\"},\"aem\":{\"previewUrl\":\"https://main--stardust-reskin-figma-migration--sanyasandal.aem.page/library/blocks/columns\",\"liveUrl\":\"https://main--stardust-reskin-figma-migration--sanyasanda"
+  },
+  {
+    "step": "source",
+    "path": "library/blocks/content-container.html",
+    "status": 200,
+    "body": "{\"source\":{\"editUrl\":\"https://da.live/edit#/sanyasandal/stardust-reskin-figma-migration/library/blocks/content-container\",\"contentUrl\":\"https://content.da.live/sanyasandal/stardust-reskin-figma-migration/library/blocks/content-container\"},\"aem\":{\"previewUrl\":\"https://main--stardust-reskin-figma-migration--sanyasandal.aem.page/library/blocks/content-container\",\"liveUrl\":\"https://main--stardust-resk"
+  },
+  {
+    "step": "source",
+    "path": "library/blocks/embed.html",
+    "status": 200,
+    "body": "{\"source\":{\"editUrl\":\"https://da.live/edit#/sanyasandal/stardust-reskin-figma-migration/library/blocks/embed\",\"contentUrl\":\"https://content.da.live/sanyasandal/stardust-reskin-figma-migration/library/blocks/embed\"},\"aem\":{\"previewUrl\":\"https://main--stardust-reskin-figma-migration--sanyasandal.aem.page/library/blocks/embed\",\"liveUrl\":\"https://main--stardust-reskin-figma-migration--sanyasandal.aem."
+  },
+  {
+    "step": "source",
+    "path": "library/blocks/facebook-feed.html",
+    "status": 200,
+    "body": "{\"source\":{\"editUrl\":\"https://da.live/edit#/sanyasandal/stardust-reskin-figma-migration/library/blocks/facebook-feed\",\"contentUrl\":\"https://content.da.live/sanyasandal/stardust-reskin-figma-migration/library/blocks/facebook-feed\"},\"aem\":{\"previewUrl\":\"https://main--stardust-reskin-figma-migration--sanyasandal.aem.page/library/blocks/facebook-feed\",\"liveUrl\":\"https://main--stardust-reskin-figma-mig"
+  },
+  {
+    "step": "source",
+    "path": "library/blocks/fragment.html",
+    "status": 200,
+    "body": "{\"source\":{\"editUrl\":\"https://da.live/edit#/sanyasandal/stardust-reskin-figma-migration/library/blocks/fragment\",\"contentUrl\":\"https://content.da.live/sanyasandal/stardust-reskin-figma-migration/library/blocks/fragment\"},\"aem\":{\"previewUrl\":\"https://main--stardust-reskin-figma-migration--sanyasandal.aem.page/library/blocks/fragment\",\"liveUrl\":\"https://main--stardust-reskin-figma-migration--sanyasa"
+  },
+  {
+    "step": "source",
+    "path": "library/blocks/gallery.html",
+    "status": 200,
+    "body": "{\"source\":{\"editUrl\":\"https://da.live/edit#/sanyasandal/stardust-reskin-figma-migration/library/blocks/gallery\",\"contentUrl\":\"https://content.da.live/sanyasandal/stardust-reskin-figma-migration/library/blocks/gallery\"},\"aem\":{\"previewUrl\":\"https://main--stardust-reskin-figma-migration--sanyasandal.aem.page/library/blocks/gallery\",\"liveUrl\":\"https://main--stardust-reskin-figma-migration--sanyasanda"
+  },
+  {
+    "step": "source",
+    "path": "library/blocks/hero.html",
+    "status": 200,
+    "body": "{\"source\":{\"editUrl\":\"https://da.live/edit#/sanyasandal/stardust-reskin-figma-migration/library/blocks/hero\",\"contentUrl\":\"https://content.da.live/sanyasandal/stardust-reskin-figma-migration/library/blocks/hero\"},\"aem\":{\"previewUrl\":\"https://main--stardust-reskin-figma-migration--sanyasandal.aem.page/library/blocks/hero\",\"liveUrl\":\"https://main--stardust-reskin-figma-migration--sanyasandal.aem.liv"
+  },
+  {
+    "step": "source",
+    "path": "library/blocks/planningreporting.html",
+    "status": 200,
+    "body": "{\"source\":{\"editUrl\":\"https://da.live/edit#/sanyasandal/stardust-reskin-figma-migration/library/blocks/planningreporting\",\"contentUrl\":\"https://content.da.live/sanyasandal/stardust-reskin-figma-migration/library/blocks/planningreporting\"},\"aem\":{\"previewUrl\":\"https://main--stardust-reskin-figma-migration--sanyasandal.aem.page/library/blocks/planningreporting\",\"liveUrl\":\"https://main--stardust-resk"
+  },
+  {
+    "step": "source",
+    "path": "library/blocks/table.html",
+    "status": 200,
+    "body": "{\"source\":{\"editUrl\":\"https://da.live/edit#/sanyasandal/stardust-reskin-figma-migration/library/blocks/table\",\"contentUrl\":\"https://content.da.live/sanyasandal/stardust-reskin-figma-migration/library/blocks/table\"},\"aem\":{\"previewUrl\":\"https://main--stardust-reskin-figma-migration--sanyasandal.aem.page/library/blocks/table\",\"liveUrl\":\"https://main--stardust-reskin-figma-migration--sanyasandal.aem."
+  },
+  {
+    "step": "source",
+    "path": "library/blocks.json",
+    "status": 200,
+    "body": "{\"source\":{\"editUrl\":\"https://da.live/edit#/sanyasandal/stardust-reskin-figma-migration/library/blocks.json\",\"contentUrl\":\"https://content.da.live/sanyasandal/stardust-reskin-figma-migration/library/blocks.json\"},\"aem\":{\"previewUrl\":\"https://main--stardust-reskin-figma-migration--sanyasandal.aem.page/library/blocks.json\",\"liveUrl\":\"https://main--stardust-reskin-figma-migration--sanyasandal.aem.liv"
+  },
+  {
+    "step": "preview",
+    "path": "library/blocks/accordion",
+    "status": 200
+  },
+  {
+    "step": "preview",
+    "path": "library/blocks/cards",
+    "status": 200
+  },
+  {
+    "step": "preview",
+    "path": "library/blocks/columns",
+    "status": 200
+  },
+  {
+    "step": "preview",
+    "path": "library/blocks/content-container",
+    "status": 200
+  },
+  {
+    "step": "preview",
+    "path": "library/blocks/embed",
+    "status": 200
+  },
+  {
+    "step": "preview",
+    "path": "library/blocks/facebook-feed",
+    "status": 200
+  },
+  {
+    "step": "preview",
+    "path": "library/blocks/fragment",
+    "status": 200
+  },
+  {
+    "step": "preview",
+    "path": "library/blocks/gallery",
+    "status": 200
+  },
+  {
+    "step": "preview",
+    "path": "library/blocks/hero",
+    "status": 200
+  },
+  {
+    "step": "preview",
+    "path": "library/blocks/planningreporting",
+    "status": 200
+  },
+  {
+    "step": "preview",
+    "path": "library/blocks/table",
+    "status": 200
+  },
+  {
+    "step": "config",
+    "status": 201,
+    "sheetsBefore": [
+      "library"
+    ],
+    "sheetsAfter": [
+      "library"
+    ]
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "slug": "about-us-enrol",
+  "type": "content",
+  "renderBranch": "A'",
+  "template": "learning-and-support-wellbeing",
+  "modules": [
+    "M1",
+    "M8",
+    "M3",
+    "M5",
+    "M4",
+    "M2"
+  ],
+  "slotsFilled": [
+    "s01",
+    "s02",
+    "s03",
+    "s04",
+    "s05",
+    "s06",
+    "s07",
+    "s08"
+  ],
+  "canonShas": {
+    "header": "a8ad9e05a2e6",
+    "footer": "11083616d207",
+    "css": "b7e359a8ffed"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Enrol",
+    "description": "At Fort Street High School, we welcome enrolments throughout the school year. Enrol today or talk to us to find out how your family can join our school community.",
+    "canonical": "https://fortstreet-h.schools.nsw.gov.au/about-us/enrol",
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Enrol",
+    "description": "At Fort Street High School, we welcome enrolments throughout the school year. Enrol today or talk to us to find out how your family can join our school community.",
+    "url": "https://fortstreet-h.schools.nsw.gov.au/about-us/enrol"
+  },
+  "migratedAt": "2026-10-21T14:08:04Z",
+  "designMdSha": "c0ae931d3b54",
+  "designJsonSha": "3ff54e7e981f",
+  "sourceCurrentSha": null,
+  "sourceProposedSha": "ba364db99992",
+  "fidelityTier": "sibling",
+  "archetypeSource": "learning-and-support-wellbeing",
+  "archetypeSha": "5bc769fe32da",
+  "variants": [],
+  "gatesPassed": [],
+  "gateEvidence": {},
+  "contentDeviations": [],
+  "assetsBundled": 4,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "about-us/enrol/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "about-us/enrol/_meta.json",
+  "driverVersion": "1"
+}

@@ -31,3 +31,8 @@ _palette-pick.html
 # Captured session state. Secrets; never commit.
 _storage-state.json
 *-clearance.json
+
+# Project: full-resolution fidelity captures (~240 MB). The compare composites are tracked.
+reports/screens/original/
+reports/screens/migrated/
+reports/screens/diff/

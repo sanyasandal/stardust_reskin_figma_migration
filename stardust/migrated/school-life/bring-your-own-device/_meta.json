@@ -1,0 +1,59 @@
+{
+  "slug": "school-life-bring-your-own-device",
+  "type": "content",
+  "renderBranch": "A'",
+  "template": "learning-and-support-wellbeing",
+  "modules": [
+    "M1",
+    "M5",
+    "M4",
+    "M2"
+  ],
+  "slotsFilled": [
+    "s01",
+    "s02",
+    "s03",
+    "s04",
+    "s05",
+    "s06"
+  ],
+  "canonShas": {
+    "header": "a8ad9e05a2e6",
+    "footer": "11083616d207",
+    "css": "b7e359a8ffed"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Bring your own device",
+    "description": "Students at Fort Street High School are able to bring their own computing device to school. This allows for richer learning experiences across all subjects. It also enables teaching staff use technology to immerse students in real world examples on a daily basis.",
+    "canonical": "https://fortstreet-h.schools.nsw.gov.au/school-life/bring-your-own-device",
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Bring your own device",
+    "description": "Students at Fort Street High School are able to bring their own computing device to school. This allows for richer learning experiences across all subjects. It also enables teaching staff use technology to immerse students in real world examples on a daily basis.",
+    "url": "https://fortstreet-h.schools.nsw.gov.au/school-life/bring-your-own-device"
+  },
+  "migratedAt": "2026-10-21T14:08:04Z",
+  "designMdSha": "c0ae931d3b54",
+  "designJsonSha": "3ff54e7e981f",
+  "sourceCurrentSha": null,
+  "sourceProposedSha": "03294a7a7c81",
+  "fidelityTier": "sibling",
+  "archetypeSource": "learning-and-support-wellbeing",
+  "archetypeSha": "5bc769fe32da",
+  "variants": [],
+  "gatesPassed": [],
+  "gateEvidence": {},
+  "contentDeviations": [],
+  "assetsBundled": 4,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "school-life/bring-your-own-device/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "school-life/bring-your-own-device/_meta.json",
+  "driverVersion": "1"
+}

@@ -1,0 +1,33 @@
+{
+  "chrome": {
+    "model": "stardust/reskin/content-model/_chrome",
+    "header": [
+      "s01"
+    ],
+    "footer": [
+      "s02"
+    ],
+    "footerTone": "light",
+    "navAlign": "center"
+  },
+  "pages": {
+    "learning-and-support": {
+      "template": "school-life",
+      "slots": {
+        "s01": {
+          "module": "M5",
+          "layout": "stack",
+          "heading": "h2",
+          "width": "wide"
+        },
+        "s02": {
+          "module": "M2",
+          "layout": "cards",
+          "columns": 2,
+          "heading": "h3",
+          "width": "wide"
+        }
+      }
+    }
+  }
+}

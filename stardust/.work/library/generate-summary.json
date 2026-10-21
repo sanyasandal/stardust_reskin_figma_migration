@@ -1,0 +1,71 @@
+{
+  "createdMeta": [],
+  "generated": [
+    {
+      "b": "hero",
+      "name": "Hero",
+      "n": 1,
+      "source": "reference page"
+    },
+    {
+      "b": "cards",
+      "name": "Cards",
+      "n": 7,
+      "source": "reference page"
+    },
+    {
+      "b": "columns",
+      "name": "Columns",
+      "n": 2,
+      "source": "reference page"
+    },
+    {
+      "b": "accordion",
+      "name": "Accordion",
+      "n": 1,
+      "source": "reference page"
+    },
+    {
+      "b": "table",
+      "name": "Table",
+      "n": 3,
+      "source": "reference page"
+    },
+    {
+      "b": "gallery",
+      "name": "Gallery",
+      "n": 1,
+      "source": "reference page"
+    },
+    {
+      "b": "content-container",
+      "name": "Content Container",
+      "n": 1,
+      "source": "reference page"
+    },
+    {
+      "b": "facebook-feed",
+      "name": "Facebook Feed",
+      "n": 1,
+      "source": "reference page"
+    },
+    {
+      "b": "planningreporting",
+      "name": "Planning and Reporting",
+      "n": 1,
+      "source": "reference page"
+    },
+    {
+      "b": "embed",
+      "name": "Embed",
+      "n": 1,
+      "source": "structure+JS"
+    },
+    {
+      "b": "fragment",
+      "name": "Fragment",
+      "n": 1,
+      "source": "structure+JS"
+    }
+  ]
+}

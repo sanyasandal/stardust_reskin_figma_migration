@@ -1,0 +1,25 @@
+{
+  "variantName": "gallery",
+  "baseBlock": "gallery",
+  "version": "1.0.0",
+  "created": "2026-10-21T14:55:19.228Z",
+  "visualCharacteristics": {
+    "purpose": "image-gallery",
+    "imagePattern": "image"
+  },
+  "contentPattern": {
+    "structure": "image repeating"
+  },
+  "usage": {
+    "pagesUsing": [
+      "about-us/facilities-and-resources",
+      "about-us/stories-and-highlights",
+      "learning-and-support/careers",
+      "learning-and-support/high-potential-and-gifted-education",
+      "school-life/student-opportunities-and-activities/duke-of-edinburgh-award",
+      "school-life/uniform"
+    ],
+    "reuseCount": 6,
+    "lastUsed": "2026-10-21T14:55:19.228Z"
+  }
+}

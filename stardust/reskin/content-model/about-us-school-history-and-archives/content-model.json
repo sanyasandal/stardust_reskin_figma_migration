@@ -1,0 +1,708 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:reskin/capture-content.mjs",
+    "capturedAt": "2026-10-21T13:42:37.918Z",
+    "url": "https://fortstreet-h.schools.nsw.gov.au/about-us/school-history-and-archives",
+    "viewport": "1440x900",
+    "scope": "main > div:nth-child(1) > div:nth-child(1)!,main > div:nth-child(1) > div:nth-child(2)!,main > div:nth-child(1) > div:nth-child(3)!,main > div:nth-child(1) > div:nth-child(4)!,main > div:nth-child(1) > div:nth-child(5)!,main > div:nth-child(2) > div:nth-child(1)!,main > div:nth-child(3) > div:nth-child(1)!,main > div:nth-child(4) > div:nth-child(1)!,main > div:nth-child(5) > div:nth-child(1)!",
+    "normalize": {
+      "source": "/Users/ssandal/repos/EDS customer repos/copilot-worktrees/stardust_reskin_figma_migration/ssandal-adobe-redesigned-potato/stardust/reskin/normalize/about-us-school-history-and-archives.mjs",
+      "ledger": [
+        {
+          "id": "N-D1",
+          "what": "remove cookie/consent chrome (OneTrust, Cookiebot, Usercentrics, generic cookie-banner ids/classes, any cookie/consent/gdpr-named element inside a fixed/sticky/high-z overlay)",
+          "why": "overlay chrome injected by a CMP, not page content; re-added at deploy time"
+        },
+        {
+          "id": "N-D2",
+          "what": "de-carousel slick/swiper/splide/glide: remove clone slides, force real slides visible+static, drop dots/arrows",
+          "why": "hidden slides are absent from innerText and clones duplicate it — rotating carousels break byte determinism; the reskin renders all slides statically in DOM order"
+        },
+        {
+          "id": "N2",
+          "what": "remove main .back-to-top (floating back-to-top control)",
+          "why": "UI chrome injected by the source theme, no content bytes; donor kit has its own Back to Top module"
+        },
+        {
+          "id": "N3",
+          "what": "expand every main .nsw-accordion: drop hidden=\"until-found\" from .nsw-accordion__content and set the button aria-expanded=\"true\"",
+          "why": "collapsed panels are authored content absent from innerText (hidden); without expansion the byte reference silently drops every accordion body. Same rule as the default de-carousel (N-D2): interactive disclosure is normalized to all-open, and the reskin renders each item title followed by its panel statically in DOM order"
+        }
+      ]
+    },
+    "nav": {
+      "live": true,
+      "waitUntil": "domcontentloaded",
+      "headed": false
+    }
+  },
+  "metadata": {
+    "title": "School history and archives",
+    "description": "Our Archives and Museum exists to preserve the rich history and colourful stories of our teachers and students, told through their experiences in the classroom and in the schoolyard, at work and play for over 170 years.",
+    "canonical": "https://fortstreet-h.schools.nsw.gov.au/about-us/school-history-and-archives",
+    "ogTags": {
+      "og:title": "School history and archives",
+      "og:description": "Our Archives and Museum exists to preserve the rich history and colourful stories of our teachers and students, told through their experiences in the classroom and in the schoolyard, at work and play for over 170 years.",
+      "og:url": "https://fortstreet-h.schools.nsw.gov.au/about-us/school-history-and-archives",
+      "og:image": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_1e8349e5f4a601e1858f1fb2a12011cb5310ae8cd.jpg?width=1200&format=pjpg&optimize=medium",
+      "og:image:secure_url": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_1e8349e5f4a601e1858f1fb2a12011cb5310ae8cd.jpg?width=1200&format=pjpg&optimize=medium",
+      "og:image:alt": "Model School in the old Military Hospital"
+    },
+    "twitterTags": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "School history and archives",
+      "twitter:description": "Our Archives and Museum exists to preserve the rich history and colourful stories of our teachers and students, told through their experiences in the classroom and in the schoolyard, at work and play for over 170 years.",
+      "twitter:image": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_1e8349e5f4a601e1858f1fb2a12011cb5310ae8cd.jpg?width=1200&format=pjpg&optimize=medium"
+    },
+    "jsonLd": [],
+    "lang": "en",
+    "favicon": null
+  },
+  "scope": [
+    {
+      "sel": "main > div:nth-child(1) > div:nth-child(1)",
+      "whole": true
+    },
+    {
+      "sel": "main > div:nth-child(1) > div:nth-child(2)",
+      "whole": true
+    },
+    {
+      "sel": "main > div:nth-child(1) > div:nth-child(3)",
+      "whole": true
+    },
+    {
+      "sel": "main > div:nth-child(1) > div:nth-child(4)",
+      "whole": true
+    },
+    {
+      "sel": "main > div:nth-child(1) > div:nth-child(5)",
+      "whole": true
+    },
+    {
+      "sel": "main > div:nth-child(2) > div:nth-child(1)",
+      "whole": true
+    },
+    {
+      "sel": "main > div:nth-child(3) > div:nth-child(1)",
+      "whole": true
+    },
+    {
+      "sel": "main > div:nth-child(4) > div:nth-child(1)",
+      "whole": true
+    },
+    {
+      "sel": "main > div:nth-child(5) > div:nth-child(1)",
+      "whole": true
+    }
+  ],
+  "visibleTextNormalized": "School history and archives In 1849 the Government of New South Wales established a Model School in the old Military Hospital, which had been built by Governor Macquarie in 1815. This building stood on Observatory Hill, the highest ground in the city near the site of Fort Phillip and the military barracks. It stands there today, the headquarters of the National Trust. Picture the scene at the new Fort Street school on the morning of the first day of spring on 1 September 1849. Inside the renovated old Military Hospital built in 1815 pleasantly situated on the highest ground at Observatory Hill, the polished floorboards and the desks were untarnished by spilt ink. The chalkboard had not once been dusted of chalk and the open roll of Mr Hugh Farrel’s class on the lectern was unmarked. The school yard had not yet echoed of children at play and the bell had not once been rung. On that same morning, boys and girls sat down at the small wooden desks, opened their copybooks and quietly made public school history. These were the first pupils of Fort Street Model School, one of the first schools in New South Wales to be founded under the provisions of the National Education Board Act 1848. They carried a heavy weight of anticipation on their young shoulders, for they symbolised the future prosperity of the fledgling colony. In this classroom, these students and those who followed them were expected to grow into educated people equipped to fulfil their destiny as the leaders and policy makers, entrepreneurs and industrialists of the future. The school takes its name from a street which was partly incorporated in the playground during the reconstruction of the hospital and which disappeared when the approaches to the Sydney Harbour Bridge were built. The street name is perpetuated in the small street in Petersham, leading to our present school. Fort Street was to be not only an institution where boys and girls of the colony could be taught, but it was also to serve as a model for all other schools. Its scholars were to play a most important role in the growth of the colony and in the federation of the nation. Students and staff were selected to attend the Model School. Their contribution is basic to the fabric of Australian society today. The school became two high schools at the beginning of secondary education in NSW. At this time a headmaster and headmistress were appointed to lead Fort Street Boys and Fort Street Girls High Schools. In 1916, Fort Street Boys’ High was relocated at the present site on Taverners Hill, Petersham; the Girls’ High School remaining on Observatory Hill. In 1975 the two schools were re-united as Fort Street High School on the new Petersham site. Fort Street is proud to continue its co-educational traditions. We value the mix of young men and women learning together. Our young women thrive in this special co-educational, selective setting as leaders in all aspects of school life. The school celebrated its sesquicentenary in 1999. The current school population comes from over 100 suburbs in Sydney. Of the 920 students, over 600 come from language backgrounds other than English. Students speak up to 40 different languages. Fort Street truly reflects multicultural Australia Fort Street remains a selective high school providing a wide choice of subjects for study by talented young men and women. It is a school which has assimilated modern educational methodology whilst preserving the best in a long and honoured tradition. Fort Street Archives and Museum Our Archives and Museum exists to preserve the rich history and colourful stories of our teachers and students, told through their experiences in the classroom and in the schoolyard, at work and play for over 170 years. The Fort Street Archives contain an impressive range of remarkable historical items, artefacts of the school and personal donations given generously by former students, staff and families. The archives include: student work and prizes school publications including The Fortian and Mercurius photographs, slides and negatives audio visual material school uniforms and badges staff and student records honour boards, achievement awards, trophies and memorabilia uniform paraphernalia and textiles including caps, blazers, uniforms maps, drawings and paintings Information and content from our archives collection is used for a wide range of purposes across the school and its community, including educational projects, building programs, development and alumni events, and school publications. Fort Street Cricket Team 1896 For more information Please contact our archivist Mr Iain Wallace (Thursday and Friday only) here (opens in new window) The Fort Street Museum See the notable archival exhibitions celebrating the achievements of Fortians from the past and present. east The Fortian Digitised Discover this resource which has been chronicling the lives and achievements of students and staff since 1899. east",
+  "coverage": {
+    "bodyTextLen": 6051,
+    "scopeTextLen": 4964,
+    "ratio": 0.82,
+    "h1Text": "School history and archives",
+    "h1InScope": true
+  },
+  "sections": [
+    {
+      "slot": "s01",
+      "rootTag": "div",
+      "rootClass": "default-content-wrapper",
+      "visibleText": "School history and archives",
+      "headings": [
+        {
+          "level": "h1",
+          "text": "School history and archives"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [],
+      "formControls": [],
+      "leftovers": [],
+      "ordered": [
+        {
+          "kind": "heading",
+          "text": "School history and archives",
+          "display": "block",
+          "level": "h1",
+          "sep": ""
+        }
+      ],
+      "orderedVerified": true
+    },
+    {
+      "slot": "s02",
+      "rootTag": "div",
+      "rootClass": "columns-wrapper",
+      "visibleText": "In 1849 the Government of New South Wales established a Model School in the old Military Hospital, which had been built by Governor Macquarie in 1815. This building stood on Observatory Hill, the highest ground in the city near the site of Fort Phillip and the military barracks. It stands there today, the headquarters of the National Trust.",
+      "headings": [],
+      "paragraphs": [
+        "In 1849 the Government of New South Wales established a Model School in the old Military Hospital, which had been built by Governor Macquarie in 1815. This building stood on Observatory Hill, the highest ground in the city near the site of Fort Phillip and the military barracks. It stands there today, the headquarters of the National Trust."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_1e8349e5f4a601e1858f1fb2a12011cb5310ae8cd.jpg?width=2000&format=webply&optimize=medium",
+          "alt": "Model School in the old Military Hospital",
+          "w": 432,
+          "h": 276
+        }
+      ],
+      "formControls": [],
+      "leftovers": [],
+      "ordered": [
+        {
+          "kind": "paragraph",
+          "text": "In 1849 the Government of New South Wales established a Model School in the old Military Hospital, which had been built by Governor Macquarie in 1815. This building stood on Observatory Hill, the highest ground in the city near the site of Fort Phillip and the military barracks. It stands there today, the headquarters of the National Trust.",
+          "display": "block",
+          "sep": ""
+        },
+        {
+          "kind": "image",
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_1e8349e5f4a601e1858f1fb2a12011cb5310ae8cd.jpg?width=2000&format=webply&optimize=medium",
+          "alt": "Model School in the old Military Hospital",
+          "sep": ""
+        }
+      ],
+      "orderedVerified": true
+    },
+    {
+      "slot": "s03",
+      "rootTag": "div",
+      "rootClass": "default-content-wrapper",
+      "visibleText": "Picture the scene at the new Fort Street school on the morning of the first day of spring on 1 September 1849. Inside the renovated old Military Hospital built in 1815 pleasantly situated on the highest ground at Observatory Hill, the polished floorboards and the desks were untarnished by spilt ink. The chalkboard had not once been dusted of chalk and the open roll of Mr Hugh Farrel’s class on the lectern was unmarked. The school yard had not yet echoed of children at play and the bell had not once been rung. On that same morning, boys and girls sat down at the small wooden desks, opened their copybooks and quietly made public school history. These were the first pupils of Fort Street Model School, one of the first schools in New South Wales to be founded under the provisions of the National Education Board Act 1848. They carried a heavy weight of anticipation on their young shoulders, for they symbolised the future prosperity of the fledgling colony. In this classroom, these students and those who followed them were expected to grow into educated people equipped to fulfil their destiny as the leaders and policy makers, entrepreneurs and industrialists of the future. The school takes its name from a street which was partly incorporated in the playground during the reconstruction of the hospital and which disappeared when the approaches to the Sydney Harbour Bridge were built. The street name is perpetuated in the small street in Petersham, leading to our present school.",
+      "headings": [],
+      "paragraphs": [
+        "Picture the scene at the new Fort Street school on the morning of the first day of spring on 1 September 1849. Inside the renovated old Military Hospital built in 1815 pleasantly situated on the highest ground at Observatory Hill, the polished floorboards and the desks were untarnished by spilt ink. The chalkboard had not once been dusted of chalk and the open roll of Mr Hugh Farrel’s class on the lectern was unmarked. The school yard had not yet echoed of children at play and the bell had not once been rung. On that same morning, boys and girls sat down at the small wooden desks, opened their copybooks and quietly made public school history.",
+        "These were the first pupils of Fort Street Model School, one of the first schools in New South Wales to be founded under the provisions of the National Education Board Act 1848.",
+        "They carried a heavy weight of anticipation on their young shoulders, for they symbolised the future prosperity of the fledgling colony. In this classroom, these students and those who followed them were expected to grow into educated people equipped to fulfil their destiny as the leaders and policy makers, entrepreneurs and industrialists of the future.",
+        "The school takes its name from a street which was partly incorporated in the playground during the reconstruction of the hospital and which disappeared when the approaches to the Sydney Harbour Bridge were built. The street name is perpetuated in the small street in Petersham, leading to our present school."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": [],
+      "formControls": [],
+      "leftovers": [],
+      "ordered": [
+        {
+          "kind": "paragraph",
+          "text": "Picture the scene at the new Fort Street school on the morning of the first day of spring on 1 September 1849. Inside the renovated old Military Hospital built in 1815 pleasantly situated on the highest ground at Observatory Hill, the polished floorboards and the desks were untarnished by spilt ink. The chalkboard had not once been dusted of chalk and the open roll of Mr Hugh Farrel’s class on the lectern was unmarked. The school yard had not yet echoed of children at play and the bell had not once been rung. On that same morning, boys and girls sat down at the small wooden desks, opened their copybooks and quietly made public school history.",
+          "display": "block",
+          "sep": ""
+        },
+        {
+          "kind": "paragraph",
+          "text": "These were the first pupils of Fort Street Model School, one of the first schools in New South Wales to be founded under the provisions of the National Education Board Act 1848.",
+          "display": "block",
+          "sep": " "
+        },
+        {
+          "kind": "paragraph",
+          "text": "They carried a heavy weight of anticipation on their young shoulders, for they symbolised the future prosperity of the fledgling colony. In this classroom, these students and those who followed them were expected to grow into educated people equipped to fulfil their destiny as the leaders and policy makers, entrepreneurs and industrialists of the future.",
+          "display": "block",
+          "sep": " "
+        },
+        {
+          "kind": "paragraph",
+          "text": "The school takes its name from a street which was partly incorporated in the playground during the reconstruction of the hospital and which disappeared when the approaches to the Sydney Harbour Bridge were built. The street name is perpetuated in the small street in Petersham, leading to our present school.",
+          "display": "block",
+          "sep": " "
+        }
+      ],
+      "orderedVerified": true
+    },
+    {
+      "slot": "s04",
+      "rootTag": "div",
+      "rootClass": "columns-wrapper",
+      "visibleText": "Fort Street was to be not only an institution where boys and girls of the colony could be taught, but it was also to serve as a model for all other schools. Its scholars were to play a most important role in the growth of the colony and in the federation of the nation. Students and staff were selected to attend the Model School. Their contribution is basic to the fabric of Australian society today. The school became two high schools at the beginning of secondary education in NSW. At this time a headmaster and headmistress were appointed to lead Fort Street Boys and Fort Street Girls High Schools. In 1916, Fort Street Boys’ High was relocated at the present site on Taverners Hill, Petersham; the Girls’ High School remaining on Observatory Hill. In 1975 the two schools were re-united as Fort Street High School on the new Petersham site.",
+      "headings": [],
+      "paragraphs": [
+        "Fort Street was to be not only an institution where boys and girls of the colony could be taught, but it was also to serve as a model for all other schools.",
+        "Its scholars were to play a most important role in the growth of the colony and in the federation of the nation. Students and staff were selected to attend the Model School. Their contribution is basic to the fabric of Australian society today.",
+        "The school became two high schools at the beginning of secondary education in NSW. At this time a headmaster and headmistress were appointed to lead Fort Street Boys and Fort Street Girls High Schools.",
+        "In 1916, Fort Street Boys’ High was relocated at the present site on Taverners Hill, Petersham; the Girls’ High School remaining on Observatory Hill. In 1975 the two schools were re-united as Fort Street High School on the new Petersham site."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_10cf1a29281c4d192a29c15cf553a1d4c4b149e46.jpg?width=2000&format=webply&optimize=medium",
+          "alt": "Girls at Fort Street High School",
+          "w": 1409,
+          "h": 1979
+        }
+      ],
+      "formControls": [],
+      "leftovers": [],
+      "ordered": [
+        {
+          "kind": "image",
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_10cf1a29281c4d192a29c15cf553a1d4c4b149e46.jpg?width=2000&format=webply&optimize=medium",
+          "alt": "Girls at Fort Street High School",
+          "sep": ""
+        },
+        {
+          "kind": "paragraph",
+          "text": "Fort Street was to be not only an institution where boys and girls of the colony could be taught, but it was also to serve as a model for all other schools.",
+          "display": "block",
+          "sep": ""
+        },
+        {
+          "kind": "paragraph",
+          "text": "Its scholars were to play a most important role in the growth of the colony and in the federation of the nation. Students and staff were selected to attend the Model School. Their contribution is basic to the fabric of Australian society today.",
+          "display": "block",
+          "sep": " "
+        },
+        {
+          "kind": "paragraph",
+          "text": "The school became two high schools at the beginning of secondary education in NSW. At this time a headmaster and headmistress were appointed to lead Fort Street Boys and Fort Street Girls High Schools.",
+          "display": "block",
+          "sep": " "
+        },
+        {
+          "kind": "paragraph",
+          "text": "In 1916, Fort Street Boys’ High was relocated at the present site on Taverners Hill, Petersham; the Girls’ High School remaining on Observatory Hill. In 1975 the two schools were re-united as Fort Street High School on the new Petersham site.",
+          "display": "block",
+          "sep": " "
+        }
+      ],
+      "orderedVerified": true
+    },
+    {
+      "slot": "s05",
+      "rootTag": "div",
+      "rootClass": "default-content-wrapper",
+      "visibleText": "Fort Street is proud to continue its co-educational traditions. We value the mix of young men and women learning together. Our young women thrive in this special co-educational, selective setting as leaders in all aspects of school life. The school celebrated its sesquicentenary in 1999. The current school population comes from over 100 suburbs in Sydney. Of the 920 students, over 600 come from language backgrounds other than English. Students speak up to 40 different languages. Fort Street truly reflects multicultural Australia Fort Street remains a selective high school providing a wide choice of subjects for study by talented young men and women. It is a school which has assimilated modern educational methodology whilst preserving the best in a long and honoured tradition.",
+      "headings": [],
+      "paragraphs": [
+        "Fort Street is proud to continue its co-educational traditions. We value the mix of young men and women learning together. Our young women thrive in this special co-educational, selective setting as leaders in all aspects of school life.",
+        "The school celebrated its sesquicentenary in 1999. The current school population comes from over 100 suburbs in Sydney. Of the 920 students, over 600 come from language backgrounds other than English. Students speak up to 40 different languages. Fort Street truly reflects multicultural Australia",
+        "Fort Street remains a selective high school providing a wide choice of subjects for study by talented young men and women. It is a school which has assimilated modern educational methodology whilst preserving the best in a long and honoured tradition."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_1bdbf60f3ea09221cd751349c0cdb79b9744d209a.jpg?width=2000&format=webply&optimize=medium",
+          "alt": "",
+          "w": 2000,
+          "h": 672
+        },
+        {
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_10d0e0223ad0365e2305279f6df4bdb044d9f4b1b.jpg?width=2000&format=webply&optimize=medium",
+          "alt": "Fort Street Memorial Hall",
+          "w": 2000,
+          "h": 1335
+        }
+      ],
+      "formControls": [],
+      "leftovers": [],
+      "ordered": [
+        {
+          "kind": "paragraph",
+          "text": "",
+          "display": "block",
+          "children": [
+            {
+              "kind": "image",
+              "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_1bdbf60f3ea09221cd751349c0cdb79b9744d209a.jpg?width=2000&format=webply&optimize=medium",
+              "alt": ""
+            }
+          ],
+          "sep": ""
+        },
+        {
+          "kind": "paragraph",
+          "text": "Fort Street is proud to continue its co-educational traditions. We value the mix of young men and women learning together. Our young women thrive in this special co-educational, selective setting as leaders in all aspects of school life.",
+          "display": "block",
+          "sep": ""
+        },
+        {
+          "kind": "paragraph",
+          "text": "The school celebrated its sesquicentenary in 1999. The current school population comes from over 100 suburbs in Sydney. Of the 920 students, over 600 come from language backgrounds other than English. Students speak up to 40 different languages. Fort Street truly reflects multicultural Australia",
+          "display": "block",
+          "sep": " "
+        },
+        {
+          "kind": "paragraph",
+          "text": "Fort Street remains a selective high school providing a wide choice of subjects for study by talented young men and women. It is a school which has assimilated modern educational methodology whilst preserving the best in a long and honoured tradition.",
+          "display": "block",
+          "sep": " "
+        },
+        {
+          "kind": "paragraph",
+          "text": "",
+          "display": "block",
+          "children": [
+            {
+              "kind": "image",
+              "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_10d0e0223ad0365e2305279f6df4bdb044d9f4b1b.jpg?width=2000&format=webply&optimize=medium",
+              "alt": "Fort Street Memorial Hall"
+            }
+          ],
+          "sep": ""
+        }
+      ],
+      "orderedVerified": true
+    },
+    {
+      "slot": "s06",
+      "rootTag": "div",
+      "rootClass": "default-content-wrapper",
+      "visibleText": "Fort Street Archives and Museum Our Archives and Museum exists to preserve the rich history and colourful stories of our teachers and students, told through their experiences in the classroom and in the schoolyard, at work and play for over 170 years. The Fort Street Archives contain an impressive range of remarkable historical items, artefacts of the school and personal donations given generously by former students, staff and families. The archives include: student work and prizes school publications including The Fortian and Mercurius photographs, slides and negatives audio visual material school uniforms and badges staff and student records honour boards, achievement awards, trophies and memorabilia uniform paraphernalia and textiles including caps, blazers, uniforms maps, drawings and paintings Information and content from our archives collection is used for a wide range of purposes across the school and its community, including educational projects, building programs, development and alumni events, and school publications.",
+      "headings": [
+        {
+          "level": "h2",
+          "text": "Fort Street Archives and Museum"
+        }
+      ],
+      "paragraphs": [
+        "Our Archives and Museum exists to preserve the rich history and colourful stories of our teachers and students, told through their experiences in the classroom and in the schoolyard, at work and play for over 170 years. The Fort Street Archives contain an impressive range of remarkable historical items, artefacts of the school and personal donations given generously by former students, staff and families.",
+        "The archives include:",
+        "Information and content from our archives collection is used for a wide range of purposes across the school and its community, including educational projects, building programs, development and alumni events, and school publications."
+      ],
+      "listItems": [
+        "student work and prizes",
+        "school publications including The Fortian and Mercurius",
+        "photographs, slides and negatives",
+        "audio visual material",
+        "school uniforms and badges",
+        "staff and student records",
+        "honour boards, achievement awards, trophies and memorabilia",
+        "uniform paraphernalia and textiles including caps, blazers, uniforms",
+        "maps, drawings and paintings"
+      ],
+      "ctas": [],
+      "images": [
+        {
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_126cfe52b1ac4166daa1fb79a7250b0f2a47cb22b.jpg?width=2000&format=webply&optimize=medium",
+          "alt": "",
+          "w": 1280,
+          "h": 991
+        }
+      ],
+      "formControls": [],
+      "leftovers": [],
+      "ordered": [
+        {
+          "kind": "heading",
+          "text": "Fort Street Archives and Museum",
+          "display": "block",
+          "level": "h2",
+          "sep": ""
+        },
+        {
+          "kind": "paragraph",
+          "text": "Our Archives and Museum exists to preserve the rich history and colourful stories of our teachers and students, told through their experiences in the classroom and in the schoolyard, at work and play for over 170 years. The Fort Street Archives contain an impressive range of remarkable historical items, artefacts of the school and personal donations given generously by former students, staff and families.",
+          "display": "block",
+          "sep": " "
+        },
+        {
+          "kind": "paragraph",
+          "text": "",
+          "display": "block",
+          "children": [
+            {
+              "kind": "image",
+              "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_126cfe52b1ac4166daa1fb79a7250b0f2a47cb22b.jpg?width=2000&format=webply&optimize=medium",
+              "alt": ""
+            }
+          ],
+          "sep": ""
+        },
+        {
+          "kind": "paragraph",
+          "text": "The archives include:",
+          "display": "block",
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "student work and prizes",
+          "display": "list-item",
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "school publications including The Fortian and Mercurius",
+          "display": "list-item",
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "photographs, slides and negatives",
+          "display": "list-item",
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "audio visual material",
+          "display": "list-item",
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "school uniforms and badges",
+          "display": "list-item",
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "staff and student records",
+          "display": "list-item",
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "honour boards, achievement awards, trophies and memorabilia",
+          "display": "list-item",
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "uniform paraphernalia and textiles including caps, blazers, uniforms",
+          "display": "list-item",
+          "sep": " "
+        },
+        {
+          "kind": "listItem",
+          "text": "maps, drawings and paintings",
+          "display": "list-item",
+          "sep": " "
+        },
+        {
+          "kind": "paragraph",
+          "text": "Information and content from our archives collection is used for a wide range of purposes across the school and its community, including educational projects, building programs, development and alumni events, and school publications.",
+          "display": "block",
+          "sep": " "
+        }
+      ],
+      "orderedVerified": true
+    },
+    {
+      "slot": "s07",
+      "rootTag": "div",
+      "rootClass": "default-content-wrapper",
+      "visibleText": "Fort Street Cricket Team 1896",
+      "headings": [
+        {
+          "level": "h6",
+          "text": "Fort Street Cricket Team 1896"
+        }
+      ],
+      "paragraphs": [],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_1a2a6fb9a8d56b03a22609ab13bff372c67707701.jpg?width=2000&format=webply&optimize=medium",
+          "alt": "",
+          "w": 2000,
+          "h": 1269
+        }
+      ],
+      "formControls": [],
+      "leftovers": [],
+      "ordered": [
+        {
+          "kind": "paragraph",
+          "text": "",
+          "display": "block",
+          "children": [
+            {
+              "kind": "image",
+              "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/media_1a2a6fb9a8d56b03a22609ab13bff372c67707701.jpg?width=2000&format=webply&optimize=medium",
+              "alt": ""
+            }
+          ],
+          "sep": ""
+        },
+        {
+          "kind": "heading",
+          "text": "Fort Street Cricket Team 1896",
+          "display": "block",
+          "level": "h6",
+          "sep": ""
+        }
+      ],
+      "orderedVerified": true
+    },
+    {
+      "slot": "s08",
+      "rootTag": "div",
+      "rootClass": "default-content-wrapper",
+      "visibleText": "For more information Please contact our archivist Mr Iain Wallace (Thursday and Friday only) here (opens in new window)",
+      "headings": [
+        {
+          "level": "h2",
+          "text": "For more information"
+        }
+      ],
+      "paragraphs": [
+        "Please contact our archivist Mr Iain Wallace (Thursday and Friday only) here (opens in new window)"
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "here (opens in new window)",
+          "href": "mailto:iain.wallace@det.nsw.edu.au",
+          "absHref": "mailto:iain.wallace@det.nsw.edu.au",
+          "classes": ""
+        }
+      ],
+      "images": [],
+      "formControls": [],
+      "leftovers": [],
+      "ordered": [
+        {
+          "kind": "heading",
+          "text": "For more information",
+          "display": "block",
+          "level": "h2",
+          "sep": ""
+        },
+        {
+          "kind": "paragraph",
+          "text": "Please contact our archivist Mr Iain Wallace (Thursday and Friday only) here (opens in new window)",
+          "display": "block",
+          "children": [
+            {
+              "kind": "text",
+              "text": "Please contact our archivist Mr Iain Wallace (Thursday and Friday only)",
+              "parentTag": "p",
+              "parentClass": "",
+              "sep": ""
+            },
+            {
+              "kind": "cta",
+              "text": "here (opens in new window)",
+              "display": "inline",
+              "href": "mailto:iain.wallace@det.nsw.edu.au",
+              "absHref": "mailto:iain.wallace@det.nsw.edu.au",
+              "classes": "",
+              "children": [
+                {
+                  "kind": "text",
+                  "text": "here",
+                  "parentTag": "a",
+                  "parentClass": "",
+                  "sep": ""
+                },
+                {
+                  "kind": "text",
+                  "text": "(opens in new window)",
+                  "parentTag": "span",
+                  "parentClass": "sr-only",
+                  "sep": " "
+                }
+              ],
+              "sep": " "
+            }
+          ],
+          "sep": " "
+        }
+      ],
+      "orderedVerified": true
+    },
+    {
+      "slot": "s09",
+      "rootTag": "div",
+      "rootClass": "card-container-wrapper",
+      "visibleText": "The Fort Street Museum See the notable archival exhibitions celebrating the achievements of Fortians from the past and present. east The Fortian Digitised Discover this resource which has been chronicling the lives and achievements of students and staff since 1899. east",
+      "headings": [],
+      "paragraphs": [
+        "See the notable archival exhibitions celebrating the achievements of Fortians from the past and present.",
+        "Discover this resource which has been chronicling the lives and achievements of students and staff since 1899."
+      ],
+      "listItems": [
+        "The Fort Street Museum See the notable archival exhibitions celebrating the achievements of Fortians from the past and present. east",
+        "The Fortian Digitised Discover this resource which has been chronicling the lives and achievements of students and staff since 1899. east"
+      ],
+      "ctas": [
+        {
+          "text": "The Fort Street Museum",
+          "href": "/about-us/school-history-and-archives/the-fort-street-museum",
+          "absHref": "https://fortstreet-h.schools.nsw.gov.au/about-us/school-history-and-archives/the-fort-street-museum",
+          "classes": ""
+        },
+        {
+          "text": "The Fortian Digitised",
+          "href": "/about-us/school-history-and-archives/the-fortian-digitised",
+          "absHref": "https://fortstreet-h.schools.nsw.gov.au/about-us/school-history-and-archives/the-fortian-digitised",
+          "classes": ""
+        }
+      ],
+      "images": [],
+      "formControls": [],
+      "leftovers": [],
+      "ordered": [
+        {
+          "kind": "listItem",
+          "text": "The Fort Street Museum See the notable archival exhibitions celebrating the achievements of Fortians from the past and present. east",
+          "display": "list-item",
+          "children": [
+            {
+              "kind": "cta",
+              "text": "The Fort Street Museum",
+              "display": "inline",
+              "href": "/about-us/school-history-and-archives/the-fort-street-museum",
+              "absHref": "https://fortstreet-h.schools.nsw.gov.au/about-us/school-history-and-archives/the-fort-street-museum",
+              "classes": "",
+              "sep": ""
+            },
+            {
+              "kind": "paragraph",
+              "text": "See the notable archival exhibitions celebrating the achievements of Fortians from the past and present.",
+              "display": "block",
+              "sep": " "
+            },
+            {
+              "kind": "text",
+              "text": "east",
+              "parentTag": "span",
+              "parentClass": "material-icons nsw-material-icons",
+              "sep": " "
+            }
+          ],
+          "sep": ""
+        },
+        {
+          "kind": "listItem",
+          "text": "The Fortian Digitised Discover this resource which has been chronicling the lives and achievements of students and staff since 1899. east",
+          "display": "list-item",
+          "children": [
+            {
+              "kind": "cta",
+              "text": "The Fortian Digitised",
+              "display": "inline",
+              "href": "/about-us/school-history-and-archives/the-fortian-digitised",
+              "absHref": "https://fortstreet-h.schools.nsw.gov.au/about-us/school-history-and-archives/the-fortian-digitised",
+              "classes": "",
+              "sep": ""
+            },
+            {
+              "kind": "paragraph",
+              "text": "Discover this resource which has been chronicling the lives and achievements of students and staff since 1899.",
+              "display": "block",
+              "sep": " "
+            },
+            {
+              "kind": "text",
+              "text": "east",
+              "parentTag": "span",
+              "parentClass": "material-icons nsw-material-icons",
+              "sep": " "
+            }
+          ],
+          "sep": " "
+        }
+      ],
+      "orderedVerified": true
+    }
+  ]
+}

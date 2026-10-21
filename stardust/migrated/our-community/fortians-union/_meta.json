@@ -1,0 +1,57 @@
+{
+  "slug": "our-community-fortians-union",
+  "type": "content",
+  "renderBranch": "A'",
+  "template": "learning-and-support-wellbeing",
+  "modules": [
+    "M1",
+    "M5",
+    "M4",
+    "M2"
+  ],
+  "slotsFilled": [
+    "s01",
+    "s02",
+    "s03",
+    "s04"
+  ],
+  "canonShas": {
+    "header": "a8ad9e05a2e6",
+    "footer": "11083616d207",
+    "css": "b7e359a8ffed"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "The Fortians Union",
+    "description": "The Fortian alumni associations began in 1894 to build a strong community, give back to Fort Street and celebrate our legacy.",
+    "canonical": "https://fortstreet-h.schools.nsw.gov.au/our-community/fortians-union",
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "The Fortians Union",
+    "description": "The Fortian alumni associations began in 1894 to build a strong community, give back to Fort Street and celebrate our legacy.",
+    "url": "https://fortstreet-h.schools.nsw.gov.au/our-community/fortians-union"
+  },
+  "migratedAt": "2026-10-21T14:08:04Z",
+  "designMdSha": "c0ae931d3b54",
+  "designJsonSha": "3ff54e7e981f",
+  "sourceCurrentSha": null,
+  "sourceProposedSha": "739ca0ff6b7e",
+  "fidelityTier": "sibling",
+  "archetypeSource": "learning-and-support-wellbeing",
+  "archetypeSha": "5bc769fe32da",
+  "variants": [],
+  "gatesPassed": [],
+  "gateEvidence": {},
+  "contentDeviations": [],
+  "assetsBundled": 3,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "our-community/fortians-union/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "our-community/fortians-union/_meta.json",
+  "driverVersion": "1"
+}

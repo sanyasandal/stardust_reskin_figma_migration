@@ -1,0 +1,4949 @@
+[
+  {
+    "slug": "home",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/",
+    "pixel": {
+      "a": "stardust/reports/screens/original/home-1440.png",
+      "b": "stardust/reports/screens/migrated/home-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 4944,
+        "mode": "overlap"
+      },
+      "heightDelta": 1007,
+      "differingPixels": 3309581,
+      "pct": 46.49,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/home-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 52.7
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 69.5
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 44.9
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 19.2
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 27.6
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 67.8
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 25.8
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 46.4
+        },
+        {
+          "y0": 4000,
+          "y1": 4500,
+          "pct": 88.9
+        },
+        {
+          "y0": 4500,
+          "y1": 4944,
+          "pct": 18.9
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/home-1440.png",
+      "b": "stardust/reports/screens/migrated/home-1440.png",
+      "scale": 4,
+      "ssimOverlap": 30.52,
+      "ssimHeightNormalized": 29.91,
+      "ssimAboveFold": 21.15,
+      "heights": [
+        5951,
+        4944
+      ]
+    }
+  },
+  {
+    "slug": "school-life",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 2589,
+        "mode": "overlap"
+      },
+      "heightDelta": 1753,
+      "differingPixels": 1319941,
+      "pct": 35.4,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 10.6
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 41.4
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 41
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 36.1
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 45.7
+        },
+        {
+          "y0": 2500,
+          "y1": 2589,
+          "pct": 47.7
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-1440.png",
+      "scale": 4,
+      "ssimOverlap": 40.97,
+      "ssimHeightNormalized": 40.11,
+      "ssimAboveFold": 48.97,
+      "heights": [
+        4342,
+        2589
+      ]
+    }
+  },
+  {
+    "slug": "home",
+    "w": 768,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/",
+    "pixel": {
+      "a": "stardust/reports/screens/original/home-768.png",
+      "b": "stardust/reports/screens/migrated/home-768.png",
+      "compared": {
+        "width": 768,
+        "height": 6645,
+        "mode": "overlap"
+      },
+      "heightDelta": -405,
+      "differingPixels": 2983951,
+      "pct": 58.47,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/home-768.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 45.5
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 67.5
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 55.6
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 31.8
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 63.9
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 67.5
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 51.1
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 50.6
+        },
+        {
+          "y0": 4000,
+          "y1": 4500,
+          "pct": 44.1
+        },
+        {
+          "y0": 4500,
+          "y1": 5000,
+          "pct": 72
+        },
+        {
+          "y0": 5000,
+          "y1": 5500,
+          "pct": 67
+        },
+        {
+          "y0": 5500,
+          "y1": 6000,
+          "pct": 55.9
+        },
+        {
+          "y0": 6000,
+          "y1": 6500,
+          "pct": 77.4
+        },
+        {
+          "y0": 6500,
+          "y1": 6645,
+          "pct": 93.5
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/home-768.png",
+      "b": "stardust/reports/screens/migrated/home-768.png",
+      "scale": 4,
+      "ssimOverlap": 15.81,
+      "ssimHeightNormalized": 16.09,
+      "ssimAboveFold": 19.49,
+      "heights": [
+        6645,
+        7050
+      ]
+    }
+  },
+  {
+    "slug": "home",
+    "w": 390,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/",
+    "pixel": {
+      "a": "stardust/reports/screens/original/home-390.png",
+      "b": "stardust/reports/screens/migrated/home-390.png",
+      "compared": {
+        "width": 390,
+        "height": 8507,
+        "mode": "overlap"
+      },
+      "heightDelta": 202,
+      "differingPixels": 1830558,
+      "pct": 55.18,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/home-390.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 45
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 43.6
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 81.1
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 79.3
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 48.3
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 19.4
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 70.1
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 81.3
+        },
+        {
+          "y0": 4000,
+          "y1": 4500,
+          "pct": 51.7
+        },
+        {
+          "y0": 4500,
+          "y1": 5000,
+          "pct": 28.1
+        },
+        {
+          "y0": 5000,
+          "y1": 5500,
+          "pct": 52.3
+        },
+        {
+          "y0": 5500,
+          "y1": 6000,
+          "pct": 43.2
+        },
+        {
+          "y0": 6000,
+          "y1": 6500,
+          "pct": 48.8
+        },
+        {
+          "y0": 6500,
+          "y1": 7000,
+          "pct": 76.8
+        },
+        {
+          "y0": 7000,
+          "y1": 7500,
+          "pct": 37.8
+        },
+        {
+          "y0": 7500,
+          "y1": 8000,
+          "pct": 43.3
+        },
+        {
+          "y0": 8000,
+          "y1": 8500,
+          "pct": 87.1
+        },
+        {
+          "y0": 8500,
+          "y1": 8507,
+          "pct": 98.9
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/home-390.png",
+      "b": "stardust/reports/screens/migrated/home-390.png",
+      "scale": 4,
+      "ssimOverlap": 10.39,
+      "ssimHeightNormalized": 11.66,
+      "ssimAboveFold": 15.56,
+      "heights": [
+        8709,
+        8507
+      ]
+    }
+  },
+  {
+    "slug": "learning-and-support-wellbeing",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/learning-and-support/wellbeing",
+    "pixel": {
+      "a": "stardust/reports/screens/original/learning-and-support-wellbeing-1440.png",
+      "b": "stardust/reports/screens/migrated/learning-and-support-wellbeing-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 5465,
+        "mode": "overlap"
+      },
+      "heightDelta": -6332,
+      "differingPixels": 1699113,
+      "pct": 21.59,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/learning-and-support-wellbeing-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 9.8
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 45.3
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 4.4
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 5
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 2.6
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 2.8
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 39.5
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 6.3
+        },
+        {
+          "y0": 4000,
+          "y1": 4500,
+          "pct": 16.4
+        },
+        {
+          "y0": 4500,
+          "y1": 5000,
+          "pct": 18
+        },
+        {
+          "y0": 5000,
+          "y1": 5465,
+          "pct": 92.3
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/learning-and-support-wellbeing-1440.png",
+      "b": "stardust/reports/screens/migrated/learning-and-support-wellbeing-1440.png",
+      "scale": 4,
+      "ssimOverlap": 44.07,
+      "ssimHeightNormalized": 36.7,
+      "ssimAboveFold": 43.05,
+      "heights": [
+        5465,
+        11797
+      ]
+    }
+  },
+  {
+    "slug": "school-life",
+    "w": 768,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-768.png",
+      "b": "stardust/reports/screens/migrated/school-life-768.png",
+      "compared": {
+        "width": 768,
+        "height": 2801,
+        "mode": "overlap"
+      },
+      "heightDelta": 1080,
+      "differingPixels": 1280587,
+      "pct": 59.53,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-768.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 24.9
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 71.7
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 68.3
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 49.6
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 73.5
+        },
+        {
+          "y0": 2500,
+          "y1": 2801,
+          "pct": 75.7
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-768.png",
+      "b": "stardust/reports/screens/migrated/school-life-768.png",
+      "scale": 4,
+      "ssimOverlap": 13.29,
+      "ssimHeightNormalized": 13.09,
+      "ssimAboveFold": 23.17,
+      "heights": [
+        3881,
+        2801
+      ]
+    }
+  },
+  {
+    "slug": "school-life",
+    "w": 390,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-390.png",
+      "b": "stardust/reports/screens/migrated/school-life-390.png",
+      "compared": {
+        "width": 390,
+        "height": 4263,
+        "mode": "overlap"
+      },
+      "heightDelta": 2377,
+      "differingPixels": 1090844,
+      "pct": 65.61,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-390.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 19.4
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 84.7
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 77.2
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 62.3
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 79.6
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 55.4
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 62.2
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 80.8
+        },
+        {
+          "y0": 4000,
+          "y1": 4263,
+          "pct": 71.7
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-390.png",
+      "b": "stardust/reports/screens/migrated/school-life-390.png",
+      "scale": 4,
+      "ssimOverlap": 10.41,
+      "ssimHeightNormalized": 9.96,
+      "ssimAboveFold": 17.98,
+      "heights": [
+        6640,
+        4263
+      ]
+    }
+  },
+  {
+    "slug": "about-us",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/about-us",
+    "pixel": {
+      "a": "stardust/reports/screens/original/about-us-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 2014,
+        "mode": "overlap"
+      },
+      "heightDelta": 843,
+      "differingPixels": 1031041,
+      "pct": 35.55,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/about-us-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 16.2
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 45.3
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 44.2
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 36.8
+        },
+        {
+          "y0": 2000,
+          "y1": 2014,
+          "pct": 25.6
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/about-us-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-1440.png",
+      "scale": 4,
+      "ssimOverlap": 41.48,
+      "ssimHeightNormalized": 42.29,
+      "ssimAboveFold": 44.81,
+      "heights": [
+        2857,
+        2014
+      ]
+    }
+  },
+  {
+    "slug": "learning-and-support-wellbeing",
+    "w": 768,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/learning-and-support/wellbeing",
+    "pixel": {
+      "a": "stardust/reports/screens/original/learning-and-support-wellbeing-768.png",
+      "b": "stardust/reports/screens/migrated/learning-and-support-wellbeing-768.png",
+      "compared": {
+        "width": 768,
+        "height": 5321,
+        "mode": "overlap"
+      },
+      "heightDelta": -7902,
+      "differingPixels": 1358884,
+      "pct": 33.25,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/learning-and-support-wellbeing-768.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 25.4
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 84.5
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 15.4
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 7.7
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 4.3
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 5.7
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 67.8
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 8.2
+        },
+        {
+          "y0": 4000,
+          "y1": 4500,
+          "pct": 31.8
+        },
+        {
+          "y0": 4500,
+          "y1": 5000,
+          "pct": 45.3
+        },
+        {
+          "y0": 5000,
+          "y1": 5321,
+          "pct": 89.7
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/learning-and-support-wellbeing-768.png",
+      "b": "stardust/reports/screens/migrated/learning-and-support-wellbeing-768.png",
+      "scale": 4,
+      "ssimOverlap": 23.97,
+      "ssimHeightNormalized": 17.29,
+      "ssimAboveFold": 16.98,
+      "heights": [
+        5321,
+        13223
+      ]
+    }
+  },
+  {
+    "slug": "about-us-enrol",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/about-us/enrol",
+    "pixel": {
+      "a": "stardust/reports/screens/original/about-us-enrol-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-enrol-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 3941,
+        "mode": "overlap"
+      },
+      "heightDelta": -2346,
+      "differingPixels": 2015959,
+      "pct": 35.52,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/about-us-enrol-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 4
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 6.2
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 35.1
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 49.7
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 24.9
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 45.6
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 32.9
+        },
+        {
+          "y0": 3500,
+          "y1": 3941,
+          "pct": 92.6
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/about-us-enrol-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-enrol-1440.png",
+      "scale": 4,
+      "ssimOverlap": 37.24,
+      "ssimHeightNormalized": 39.41,
+      "ssimAboveFold": 47.23,
+      "heights": [
+        3941,
+        6287
+      ]
+    }
+  },
+  {
+    "slug": "learning-and-support-wellbeing",
+    "w": 390,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/learning-and-support/wellbeing",
+    "pixel": {
+      "a": "stardust/reports/screens/original/learning-and-support-wellbeing-390.png",
+      "b": "stardust/reports/screens/migrated/learning-and-support-wellbeing-390.png",
+      "compared": {
+        "width": 390,
+        "height": 5922,
+        "mode": "overlap"
+      },
+      "heightDelta": -12938,
+      "differingPixels": 691494,
+      "pct": 29.94,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/learning-and-support-wellbeing-390.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 13.6
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 43.5
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 30.7
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 10.9
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 9.4
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 9.1
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 32.1
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 10.3
+        },
+        {
+          "y0": 4000,
+          "y1": 4500,
+          "pct": 24.1
+        },
+        {
+          "y0": 4500,
+          "y1": 5000,
+          "pct": 21.7
+        },
+        {
+          "y0": 5000,
+          "y1": 5500,
+          "pct": 75.8
+        },
+        {
+          "y0": 5500,
+          "y1": 5922,
+          "pct": 87.2
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/learning-and-support-wellbeing-390.png",
+      "b": "stardust/reports/screens/migrated/learning-and-support-wellbeing-390.png",
+      "scale": 4,
+      "ssimOverlap": 15.37,
+      "ssimHeightNormalized": 11.42,
+      "ssimAboveFold": 16.52,
+      "heights": [
+        5922,
+        18860
+      ]
+    }
+  },
+  {
+    "slug": "about-us-facilities-and-resources",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/about-us/facilities-and-resources",
+    "pixel": {
+      "a": "stardust/reports/screens/original/about-us-facilities-and-resources-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-facilities-and-resources-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 3019,
+        "mode": "overlap"
+      },
+      "heightDelta": -2013,
+      "differingPixels": 1714651,
+      "pct": 39.44,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/about-us-facilities-and-resources-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 3.4
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 4.6
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 24.3
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 55.2
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 53.1
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 93.9
+        },
+        {
+          "y0": 3000,
+          "y1": 3019,
+          "pct": 93.1
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/about-us-facilities-and-resources-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-facilities-and-resources-1440.png",
+      "scale": 4,
+      "ssimOverlap": 35.69,
+      "ssimHeightNormalized": 34.05,
+      "ssimAboveFold": 52.99,
+      "heights": [
+        3019,
+        5032
+      ]
+    }
+  },
+  {
+    "slug": "about-us-hsc-results",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/about-us/hsc-results",
+    "pixel": {
+      "a": "stardust/reports/screens/original/about-us-hsc-results-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-hsc-results-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 10845,
+        "mode": "overlap"
+      },
+      "heightDelta": -1074,
+      "differingPixels": 5929879,
+      "pct": 37.97,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/about-us-hsc-results-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 17.7
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 43.6
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 5.2
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 3.1
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 2.9
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 2.9
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 2
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 43.1
+        },
+        {
+          "y0": 4000,
+          "y1": 4500,
+          "pct": 50.3
+        },
+        {
+          "y0": 4500,
+          "y1": 5000,
+          "pct": 50
+        },
+        {
+          "y0": 5000,
+          "y1": 5500,
+          "pct": 50.3
+        },
+        {
+          "y0": 5500,
+          "y1": 6000,
+          "pct": 50.6
+        },
+        {
+          "y0": 6000,
+          "y1": 6500,
+          "pct": 50.7
+        },
+        {
+          "y0": 6500,
+          "y1": 7000,
+          "pct": 50.8
+        },
+        {
+          "y0": 7000,
+          "y1": 7500,
+          "pct": 50.1
+        },
+        {
+          "y0": 7500,
+          "y1": 8000,
+          "pct": 50.5
+        },
+        {
+          "y0": 8000,
+          "y1": 8500,
+          "pct": 50.6
+        },
+        {
+          "y0": 8500,
+          "y1": 9000,
+          "pct": 50.3
+        },
+        {
+          "y0": 9000,
+          "y1": 9500,
+          "pct": 50
+        },
+        {
+          "y0": 9500,
+          "y1": 10000,
+          "pct": 51
+        },
+        {
+          "y0": 10000,
+          "y1": 10500,
+          "pct": 33.6
+        },
+        {
+          "y0": 10500,
+          "y1": 10845,
+          "pct": 93.3
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/about-us-hsc-results-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-hsc-results-1440.png",
+      "scale": 4,
+      "ssimOverlap": 38.42,
+      "ssimHeightNormalized": 37.82,
+      "ssimAboveFold": 44.28,
+      "heights": [
+        10845,
+        11919
+      ]
+    }
+  },
+  {
+    "slug": "about-us-our-principal-and-staff",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/about-us/our-principal-and-staff",
+    "pixel": {
+      "a": "stardust/reports/screens/original/about-us-our-principal-and-staff-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-our-principal-and-staff-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 6986,
+        "mode": "overlap"
+      },
+      "heightDelta": -1428,
+      "differingPixels": 3168086,
+      "pct": 31.49,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/about-us-our-principal-and-staff-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 16.6
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 49.1
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 45.4
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 33.5
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 73.4
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 47
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 3.1
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 8.4
+        },
+        {
+          "y0": 4000,
+          "y1": 4500,
+          "pct": 45.3
+        },
+        {
+          "y0": 4500,
+          "y1": 5000,
+          "pct": 9.6
+        },
+        {
+          "y0": 5000,
+          "y1": 5500,
+          "pct": 4.6
+        },
+        {
+          "y0": 5500,
+          "y1": 6000,
+          "pct": 4
+        },
+        {
+          "y0": 6000,
+          "y1": 6500,
+          "pct": 8.2
+        },
+        {
+          "y0": 6500,
+          "y1": 6986,
+          "pct": 94.7
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/about-us-our-principal-and-staff-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-our-principal-and-staff-1440.png",
+      "scale": 4,
+      "ssimOverlap": 40.35,
+      "ssimHeightNormalized": 41.42,
+      "ssimAboveFold": 45.16,
+      "heights": [
+        6986,
+        8414
+      ]
+    }
+  },
+  {
+    "slug": "about-us-policies-and-reports",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/about-us/policies-and-reports",
+    "pixel": {
+      "a": "stardust/reports/screens/original/about-us-policies-and-reports-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-policies-and-reports-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 3647,
+        "mode": "overlap"
+      },
+      "heightDelta": -2067,
+      "differingPixels": 1439269,
+      "pct": 27.41,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/about-us-policies-and-reports-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 18
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 45.9
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 4.6
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 4.5
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 7.9
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 24.7
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 67.1
+        },
+        {
+          "y0": 3500,
+          "y1": 3647,
+          "pct": 92.5
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/about-us-policies-and-reports-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-policies-and-reports-1440.png",
+      "scale": 4,
+      "ssimOverlap": 40.37,
+      "ssimHeightNormalized": 37.98,
+      "ssimAboveFold": 42.44,
+      "heights": [
+        3647,
+        5714
+      ]
+    }
+  },
+  {
+    "slug": "about-us-policies-and-reports-nsw-public-school-information",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/about-us/policies-and-reports/nsw-public-school-information",
+    "pixel": {
+      "a": "stardust/reports/screens/original/about-us-policies-and-reports-nsw-public-school-information-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-policies-and-reports-nsw-public-school-information-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 1876,
+        "mode": "overlap"
+      },
+      "heightDelta": -327,
+      "differingPixels": 1006300,
+      "pct": 37.25,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/about-us-policies-and-reports-nsw-public-school-information-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 11.1
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 29.9
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 27.8
+        },
+        {
+          "y0": 1500,
+          "y1": 1876,
+          "pct": 94.4
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/about-us-policies-and-reports-nsw-public-school-information-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-policies-and-reports-nsw-public-school-information-1440.png",
+      "scale": 4,
+      "ssimOverlap": 40.39,
+      "ssimHeightNormalized": 38.45,
+      "ssimAboveFold": 45.62,
+      "heights": [
+        1876,
+        2203
+      ]
+    }
+  },
+  {
+    "slug": "about-us-school-history-and-archives",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/about-us/school-history-and-archives",
+    "pixel": {
+      "a": "stardust/reports/screens/original/about-us-school-history-and-archives-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-school-history-and-archives-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 5596,
+        "mode": "overlap"
+      },
+      "heightDelta": -1637,
+      "differingPixels": 3764095,
+      "pct": 46.71,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/about-us-school-history-and-archives-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 7.8
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 19
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 26.2
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 44.1
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 39.9
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 44.2
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 73.9
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 37.2
+        },
+        {
+          "y0": 4000,
+          "y1": 4500,
+          "pct": 75
+        },
+        {
+          "y0": 4500,
+          "y1": 5000,
+          "pct": 58.5
+        },
+        {
+          "y0": 5000,
+          "y1": 5500,
+          "pct": 78.7
+        },
+        {
+          "y0": 5500,
+          "y1": 5596,
+          "pct": 95.9
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/about-us-school-history-and-archives-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-school-history-and-archives-1440.png",
+      "scale": 4,
+      "ssimOverlap": 32.91,
+      "ssimHeightNormalized": 32.28,
+      "ssimAboveFold": 49.13,
+      "heights": [
+        5596,
+        7233
+      ]
+    }
+  },
+  {
+    "slug": "about-us-school-history-and-archives-fort-street-archives",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/about-us/school-history-and-archives/fort-street-archives",
+    "pixel": {
+      "a": "stardust/reports/screens/original/about-us-school-history-and-archives-fort-street-archives-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-school-history-and-archives-fort-street-archives-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 5067,
+        "mode": "overlap"
+      },
+      "heightDelta": -191,
+      "differingPixels": 1660447,
+      "pct": 22.76,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/about-us-school-history-and-archives-fort-street-archives-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 14.6
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 41.3
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 12.1
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 18.2
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 8.1
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 7.5
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 9
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 4.5
+        },
+        {
+          "y0": 4000,
+          "y1": 4500,
+          "pct": 18.5
+        },
+        {
+          "y0": 4500,
+          "y1": 5000,
+          "pct": 84
+        },
+        {
+          "y0": 5000,
+          "y1": 5067,
+          "pct": 95.4
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/about-us-school-history-and-archives-fort-street-archives-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-school-history-and-archives-fort-street-archives-1440.png",
+      "scale": 4,
+      "ssimOverlap": 43.47,
+      "ssimHeightNormalized": 42.16,
+      "ssimAboveFold": 44.25,
+      "heights": [
+        5067,
+        5258
+      ]
+    }
+  },
+  {
+    "slug": "about-us-school-history-and-archives-the-fort-street-museum",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/about-us/school-history-and-archives/the-fort-street-museum",
+    "pixel": {
+      "a": "stardust/reports/screens/original/about-us-school-history-and-archives-the-fort-street-museum-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-school-history-and-archives-the-fort-street-museum-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 3448,
+        "mode": "overlap"
+      },
+      "heightDelta": -840,
+      "differingPixels": 2969901,
+      "pct": 59.82,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/about-us-school-history-and-archives-the-fort-street-museum-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 9.8
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 60.2
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 77.9
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 46.9
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 61.4
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 74.9
+        },
+        {
+          "y0": 3000,
+          "y1": 3448,
+          "pct": 90.9
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/about-us-school-history-and-archives-the-fort-street-museum-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-school-history-and-archives-the-fort-street-museum-1440.png",
+      "scale": 4,
+      "ssimOverlap": 31.84,
+      "ssimHeightNormalized": 33.26,
+      "ssimAboveFold": 45.77,
+      "heights": [
+        3448,
+        4288
+      ]
+    }
+  },
+  {
+    "slug": "about-us-school-history-and-archives-the-fortian-digitised",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/about-us/school-history-and-archives/the-fortian-digitised",
+    "pixel": {
+      "a": "stardust/reports/screens/original/about-us-school-history-and-archives-the-fortian-digitised-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-school-history-and-archives-the-fortian-digitised-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 3183,
+        "mode": "overlap"
+      },
+      "heightDelta": -10104,
+      "differingPixels": 1327955,
+      "pct": 28.97,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/about-us-school-history-and-archives-the-fortian-digitised-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 16.4
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 36.4
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 10.9
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 1.3
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 22
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 62
+        },
+        {
+          "y0": 3000,
+          "y1": 3183,
+          "pct": 96.8
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/about-us-school-history-and-archives-the-fortian-digitised-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-school-history-and-archives-the-fortian-digitised-1440.png",
+      "scale": 4,
+      "ssimOverlap": 50.86,
+      "ssimHeightNormalized": 49.37,
+      "ssimAboveFold": 48.68,
+      "heights": [
+        3183,
+        13287
+      ]
+    }
+  },
+  {
+    "slug": "about-us-transition-to-high-school",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/about-us/transition-to-high-school",
+    "pixel": {
+      "a": "stardust/reports/screens/original/about-us-transition-to-high-school-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-transition-to-high-school-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 3979,
+        "mode": "overlap"
+      },
+      "heightDelta": -334,
+      "differingPixels": 1684737,
+      "pct": 29.4,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/about-us-transition-to-high-school-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 18.9
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 44.6
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 4.5
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 5.4
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 4.5
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 40.1
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 25.3
+        },
+        {
+          "y0": 3500,
+          "y1": 3979,
+          "pct": 94.7
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/about-us-transition-to-high-school-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-transition-to-high-school-1440.png",
+      "scale": 4,
+      "ssimOverlap": 42.74,
+      "ssimHeightNormalized": 43.14,
+      "ssimAboveFold": 43.92,
+      "heights": [
+        3979,
+        4313
+      ]
+    }
+  },
+  {
+    "slug": "about-us-stories-and-highlights",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/about-us/stories-and-highlights",
+    "pixel": {
+      "a": "stardust/reports/screens/original/about-us-stories-and-highlights-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-stories-and-highlights-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 3767,
+        "mode": "overlap"
+      },
+      "heightDelta": -5105,
+      "differingPixels": 2080549,
+      "pct": 38.35,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/about-us-stories-and-highlights-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 3.4
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 35.9
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 40
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 33.3
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 31.7
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 44.2
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 50.7
+        },
+        {
+          "y0": 3500,
+          "y1": 3767,
+          "pct": 93.3
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/about-us-stories-and-highlights-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-stories-and-highlights-1440.png",
+      "scale": 4,
+      "ssimOverlap": 33.89,
+      "ssimHeightNormalized": 29.95,
+      "ssimAboveFold": 49.67,
+      "heights": [
+        3767,
+        8872
+      ]
+    }
+  },
+  {
+    "slug": "learning-and-support",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/learning-and-support",
+    "pixel": {
+      "a": "stardust/reports/screens/original/learning-and-support-1440.png",
+      "b": "stardust/reports/screens/migrated/learning-and-support-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 1740,
+        "mode": "overlap"
+      },
+      "heightDelta": 227,
+      "differingPixels": 710313,
+      "pct": 28.35,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/learning-and-support-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 14
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 22.3
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 17.2
+        },
+        {
+          "y0": 1500,
+          "y1": 1740,
+          "pct": 94.1
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/learning-and-support-1440.png",
+      "b": "stardust/reports/screens/migrated/learning-and-support-1440.png",
+      "scale": 4,
+      "ssimOverlap": 49.34,
+      "ssimHeightNormalized": 45.38,
+      "ssimAboveFold": 53.94,
+      "heights": [
+        1967,
+        1740
+      ]
+    }
+  },
+  {
+    "slug": "contact-us",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/contact-us",
+    "pixel": {
+      "a": "stardust/reports/screens/original/contact-us-1440.png",
+      "b": "stardust/reports/screens/migrated/contact-us-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 3329,
+        "mode": "overlap"
+      },
+      "heightDelta": -1107,
+      "differingPixels": 1225754,
+      "pct": 25.57,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/contact-us-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 2.6
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 14.7
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 32.8
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 2.4
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 20.3
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 36
+        },
+        {
+          "y0": 3000,
+          "y1": 3329,
+          "pct": 93.4
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/contact-us-1440.png",
+      "b": "stardust/reports/screens/migrated/contact-us-1440.png",
+      "scale": 4,
+      "ssimOverlap": 51.69,
+      "ssimHeightNormalized": 47.55,
+      "ssimAboveFold": 55.96,
+      "heights": [
+        3329,
+        4436
+      ]
+    }
+  },
+  {
+    "slug": "about-us-why-choose-us",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/about-us/why-choose-us",
+    "pixel": {
+      "a": "stardust/reports/screens/original/about-us-why-choose-us-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-why-choose-us-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 6277,
+        "mode": "overlap"
+      },
+      "heightDelta": 13,
+      "differingPixels": 3798604,
+      "pct": 42.03,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/about-us-why-choose-us-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 18.4
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 40
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 41.3
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 41.6
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 21.2
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 46
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 69.8
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 69.9
+        },
+        {
+          "y0": 4000,
+          "y1": 4500,
+          "pct": 44.5
+        },
+        {
+          "y0": 4500,
+          "y1": 5000,
+          "pct": 16.9
+        },
+        {
+          "y0": 5000,
+          "y1": 5500,
+          "pct": 22.4
+        },
+        {
+          "y0": 5500,
+          "y1": 6000,
+          "pct": 43.9
+        },
+        {
+          "y0": 6000,
+          "y1": 6277,
+          "pct": 93.4
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/about-us-why-choose-us-1440.png",
+      "b": "stardust/reports/screens/migrated/about-us-why-choose-us-1440.png",
+      "scale": 4,
+      "ssimOverlap": 37.36,
+      "ssimHeightNormalized": 37.4,
+      "ssimAboveFold": 46,
+      "heights": [
+        6290,
+        6277
+      ]
+    }
+  },
+  {
+    "slug": "learning-and-support-careers",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/learning-and-support/careers",
+    "pixel": {
+      "a": "stardust/reports/screens/original/learning-and-support-careers-1440.png",
+      "b": "stardust/reports/screens/migrated/learning-and-support-careers-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 4084,
+        "mode": "overlap"
+      },
+      "heightDelta": -593,
+      "differingPixels": 2077270,
+      "pct": 35.32,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/learning-and-support-careers-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 3.2
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 43
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 7.5
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 6.5
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 11
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 67.8
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 52.8
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 80.5
+        },
+        {
+          "y0": 4000,
+          "y1": 4084,
+          "pct": 97.3
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/learning-and-support-careers-1440.png",
+      "b": "stardust/reports/screens/migrated/learning-and-support-careers-1440.png",
+      "scale": 4,
+      "ssimOverlap": 34.47,
+      "ssimHeightNormalized": 34.96,
+      "ssimAboveFold": 47.52,
+      "heights": [
+        4084,
+        4677
+      ]
+    }
+  },
+  {
+    "slug": "learning-and-support-additional-learning-support",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/learning-and-support/additional-learning-support",
+    "pixel": {
+      "a": "stardust/reports/screens/original/learning-and-support-additional-learning-support-1440.png",
+      "b": "stardust/reports/screens/migrated/learning-and-support-additional-learning-support-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 4914,
+        "mode": "overlap"
+      },
+      "heightDelta": -3765,
+      "differingPixels": 2103398,
+      "pct": 29.73,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/learning-and-support-additional-learning-support-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 19.3
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 45.5
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 6.3
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 6.9
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 20.6
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 29.6
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 38.1
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 27.4
+        },
+        {
+          "y0": 4000,
+          "y1": 4500,
+          "pct": 21.9
+        },
+        {
+          "y0": 4500,
+          "y1": 4914,
+          "pct": 92.5
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/learning-and-support-additional-learning-support-1440.png",
+      "b": "stardust/reports/screens/migrated/learning-and-support-additional-learning-support-1440.png",
+      "scale": 4,
+      "ssimOverlap": 35.38,
+      "ssimHeightNormalized": 33.34,
+      "ssimAboveFold": 43.13,
+      "heights": [
+        4914,
+        8679
+      ]
+    }
+  },
+  {
+    "slug": "learning-and-support-high-potential-and-gifted-education",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/learning-and-support/high-potential-and-gifted-education",
+    "pixel": {
+      "a": "stardust/reports/screens/original/learning-and-support-high-potential-and-gifted-education-1440.png",
+      "b": "stardust/reports/screens/migrated/learning-and-support-high-potential-and-gifted-education-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 4365,
+        "mode": "overlap"
+      },
+      "heightDelta": -1157,
+      "differingPixels": 1944790,
+      "pct": 30.94,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/learning-and-support-high-potential-and-gifted-education-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 4.3
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 30.9
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 46
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 6.1
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 6.1
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 16.7
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 37.8
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 52.4
+        },
+        {
+          "y0": 4000,
+          "y1": 4365,
+          "pct": 95.6
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/learning-and-support-high-potential-and-gifted-education-1440.png",
+      "b": "stardust/reports/screens/migrated/learning-and-support-high-potential-and-gifted-education-1440.png",
+      "scale": 4,
+      "ssimOverlap": 38.78,
+      "ssimHeightNormalized": 40.41,
+      "ssimAboveFold": 48.11,
+      "heights": [
+        4365,
+        5522
+      ]
+    }
+  },
+  {
+    "slug": "our-community",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/our-community",
+    "pixel": {
+      "a": "stardust/reports/screens/original/our-community-1440.png",
+      "b": "stardust/reports/screens/migrated/our-community-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 2282,
+        "mode": "overlap"
+      },
+      "heightDelta": 265,
+      "differingPixels": 1073647,
+      "pct": 32.67,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/our-community-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 10.7
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 45.9
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 42.4
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 3.4
+        },
+        {
+          "y0": 2000,
+          "y1": 2282,
+          "pct": 82.8
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/our-community-1440.png",
+      "b": "stardust/reports/screens/migrated/our-community-1440.png",
+      "scale": 4,
+      "ssimOverlap": 45.49,
+      "ssimHeightNormalized": 42.18,
+      "ssimAboveFold": 48.2,
+      "heights": [
+        2547,
+        2282
+      ]
+    }
+  },
+  {
+    "slug": "our-community-alumni",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/our-community/alumni",
+    "pixel": {
+      "a": "stardust/reports/screens/original/our-community-alumni-1440.png",
+      "b": "stardust/reports/screens/migrated/our-community-alumni-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 4077,
+        "mode": "overlap"
+      },
+      "heightDelta": 222,
+      "differingPixels": 1265316,
+      "pct": 21.55,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/our-community-alumni-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 7.1
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 47.5
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 13.4
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 7.2
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 9.1
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 6
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 30
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 41.1
+        },
+        {
+          "y0": 4000,
+          "y1": 4077,
+          "pct": 92.5
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/our-community-alumni-1440.png",
+      "b": "stardust/reports/screens/migrated/our-community-alumni-1440.png",
+      "scale": 4,
+      "ssimOverlap": 38.36,
+      "ssimHeightNormalized": 37.69,
+      "ssimAboveFold": 44.36,
+      "heights": [
+        4299,
+        4077
+      ]
+    }
+  },
+  {
+    "slug": "learning-and-support-learning",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/learning-and-support/learning",
+    "pixel": {
+      "a": "stardust/reports/screens/original/learning-and-support-learning-1440.png",
+      "b": "stardust/reports/screens/migrated/learning-and-support-learning-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 5123,
+        "mode": "overlap"
+      },
+      "heightDelta": -10486,
+      "differingPixels": 1925534,
+      "pct": 26.1,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/learning-and-support-learning-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 17
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 40.7
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 8.7
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 43.8
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 14.8
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 2
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 5.9
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 9.7
+        },
+        {
+          "y0": 4000,
+          "y1": 4500,
+          "pct": 30.4
+        },
+        {
+          "y0": 4500,
+          "y1": 5000,
+          "pct": 71.8
+        },
+        {
+          "y0": 5000,
+          "y1": 5123,
+          "pct": 92.6
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/learning-and-support-learning-1440.png",
+      "b": "stardust/reports/screens/migrated/learning-and-support-learning-1440.png",
+      "scale": 4,
+      "ssimOverlap": 42.17,
+      "ssimHeightNormalized": 32.8,
+      "ssimAboveFold": 48.13,
+      "heights": [
+        5123,
+        15609
+      ]
+    }
+  },
+  {
+    "slug": "our-community-fortians-union",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/our-community/fortians-union",
+    "pixel": {
+      "a": "stardust/reports/screens/original/our-community-fortians-union-1440.png",
+      "b": "stardust/reports/screens/migrated/our-community-fortians-union-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 2300,
+        "mode": "overlap"
+      },
+      "heightDelta": -453,
+      "differingPixels": 897792,
+      "pct": 27.11,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/our-community-fortians-union-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 3
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 3.8
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 20.1
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 41.8
+        },
+        {
+          "y0": 2000,
+          "y1": 2300,
+          "pct": 93.3
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/our-community-fortians-union-1440.png",
+      "b": "stardust/reports/screens/migrated/our-community-fortians-union-1440.png",
+      "scale": 4,
+      "ssimOverlap": 45.63,
+      "ssimHeightNormalized": 45.35,
+      "ssimAboveFold": 55.92,
+      "heights": [
+        2300,
+        2753
+      ]
+    }
+  },
+  {
+    "slug": "our-community-foundation",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/our-community/foundation",
+    "pixel": {
+      "a": "stardust/reports/screens/original/our-community-foundation-1440.png",
+      "b": "stardust/reports/screens/migrated/our-community-foundation-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 5668,
+        "mode": "overlap"
+      },
+      "heightDelta": -474,
+      "differingPixels": 1622416,
+      "pct": 19.88,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/our-community-foundation-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 6.8
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 34.2
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 17.4
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 9.2
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 7.4
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 5.4
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 4.5
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 9
+        },
+        {
+          "y0": 4000,
+          "y1": 4500,
+          "pct": 3.5
+        },
+        {
+          "y0": 4500,
+          "y1": 5000,
+          "pct": 30.3
+        },
+        {
+          "y0": 5000,
+          "y1": 5500,
+          "pct": 65.5
+        },
+        {
+          "y0": 5500,
+          "y1": 5668,
+          "pct": 95.7
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/our-community-foundation-1440.png",
+      "b": "stardust/reports/screens/migrated/our-community-foundation-1440.png",
+      "scale": 4,
+      "ssimOverlap": 42.2,
+      "ssimHeightNormalized": 42.33,
+      "ssimAboveFold": 40.19,
+      "heights": [
+        5668,
+        6142
+      ]
+    }
+  },
+  {
+    "slug": "our-community-foundation-tertiary-bursaries",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/our-community/foundation-tertiary-bursaries",
+    "pixel": {
+      "a": "stardust/reports/screens/original/our-community-foundation-tertiary-bursaries-1440.png",
+      "b": "stardust/reports/screens/migrated/our-community-foundation-tertiary-bursaries-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 2408,
+        "mode": "overlap"
+      },
+      "heightDelta": -363,
+      "differingPixels": 829469,
+      "pct": 23.92,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/our-community-foundation-tertiary-bursaries-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 4.4
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 6.5
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 5
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 22.1
+        },
+        {
+          "y0": 2000,
+          "y1": 2408,
+          "pct": 94.5
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/our-community-foundation-tertiary-bursaries-1440.png",
+      "b": "stardust/reports/screens/migrated/our-community-foundation-tertiary-bursaries-1440.png",
+      "scale": 4,
+      "ssimOverlap": 42.04,
+      "ssimHeightNormalized": 43.41,
+      "ssimAboveFold": 43.75,
+      "heights": [
+        2408,
+        2771
+      ]
+    }
+  },
+  {
+    "slug": "our-community-pandc",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/our-community/pandc",
+    "pixel": {
+      "a": "stardust/reports/screens/original/our-community-pandc-1440.png",
+      "b": "stardust/reports/screens/migrated/our-community-pandc-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 6275,
+        "mode": "overlap"
+      },
+      "heightDelta": -1017,
+      "differingPixels": 1863729,
+      "pct": 20.63,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/our-community-pandc-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 4.2
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 45.7
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 15.3
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 32.4
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 2.9
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 2.7
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 3
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 5.1
+        },
+        {
+          "y0": 4000,
+          "y1": 4500,
+          "pct": 5
+        },
+        {
+          "y0": 4500,
+          "y1": 5000,
+          "pct": 3
+        },
+        {
+          "y0": 5000,
+          "y1": 5500,
+          "pct": 40.5
+        },
+        {
+          "y0": 5500,
+          "y1": 6000,
+          "pct": 47.4
+        },
+        {
+          "y0": 6000,
+          "y1": 6275,
+          "pct": 94.1
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/our-community-pandc-1440.png",
+      "b": "stardust/reports/screens/migrated/our-community-pandc-1440.png",
+      "scale": 4,
+      "ssimOverlap": 45.85,
+      "ssimHeightNormalized": 43.49,
+      "ssimAboveFold": 40.17,
+      "heights": [
+        6275,
+        7292
+      ]
+    }
+  },
+  {
+    "slug": "school-life-bell-times",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life/bell-times",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-bell-times-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-bell-times-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 3839,
+        "mode": "overlap"
+      },
+      "heightDelta": -558,
+      "differingPixels": 1118330,
+      "pct": 20.23,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-bell-times-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 3.2
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 6.1
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 6.9
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 6
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 7.5
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 24.9
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 36.9
+        },
+        {
+          "y0": 3500,
+          "y1": 3839,
+          "pct": 94.2
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-bell-times-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-bell-times-1440.png",
+      "scale": 4,
+      "ssimOverlap": 34.48,
+      "ssimHeightNormalized": 36.46,
+      "ssimAboveFold": 49.1,
+      "heights": [
+        3839,
+        4397
+      ]
+    }
+  },
+  {
+    "slug": "school-life-bring-your-own-device",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life/bring-your-own-device",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-bring-your-own-device-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-bring-your-own-device-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 4189,
+        "mode": "overlap"
+      },
+      "heightDelta": 330,
+      "differingPixels": 1095044,
+      "pct": 18.15,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-bring-your-own-device-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 10
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 48.8
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 15.5
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 4.7
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 4.9
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 7.5
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 12.6
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 13.7
+        },
+        {
+          "y0": 4000,
+          "y1": 4189,
+          "pct": 90.6
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-bring-your-own-device-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-bring-your-own-device-1440.png",
+      "scale": 4,
+      "ssimOverlap": 43.51,
+      "ssimHeightNormalized": 40.89,
+      "ssimAboveFold": 43.24,
+      "heights": [
+        4519,
+        4189
+      ]
+    }
+  },
+  {
+    "slug": "school-life-canteen",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life/canteen",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-canteen-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-canteen-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 4195,
+        "mode": "overlap"
+      },
+      "heightDelta": 165,
+      "differingPixels": 1210666,
+      "pct": 20.04,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-canteen-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 3.4
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 9.3
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 23.6
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 14.6
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 18.9
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 14.1
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 15.4
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 32.7
+        },
+        {
+          "y0": 4000,
+          "y1": 4195,
+          "pct": 92.7
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-canteen-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-canteen-1440.png",
+      "scale": 4,
+      "ssimOverlap": 44.6,
+      "ssimHeightNormalized": 44,
+      "ssimAboveFold": 49.69,
+      "heights": [
+        4360,
+        4195
+      ]
+    }
+  },
+  {
+    "slug": "school-life-forms",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life/forms",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-forms-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-forms-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 1975,
+        "mode": "overlap"
+      },
+      "heightDelta": -408,
+      "differingPixels": 910757,
+      "pct": 32.02,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-forms-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 3
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 11
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 22.5
+        },
+        {
+          "y0": 1500,
+          "y1": 1975,
+          "pct": 94.8
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-forms-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-forms-1440.png",
+      "scale": 4,
+      "ssimOverlap": 38.09,
+      "ssimHeightNormalized": 40.45,
+      "ssimAboveFold": 47.47,
+      "heights": [
+        1975,
+        2383
+      ]
+    }
+  },
+  {
+    "slug": "school-life-events",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life/events",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-events-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-events-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 6411,
+        "mode": "overlap"
+      },
+      "heightDelta": -822,
+      "differingPixels": 2931842,
+      "pct": 31.76,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-events-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 2.9
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 3.9
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 4.7
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 4.8
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 24.5
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 52.9
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 57.8
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 45.7
+        },
+        {
+          "y0": 4000,
+          "y1": 4500,
+          "pct": 27.8
+        },
+        {
+          "y0": 4500,
+          "y1": 5000,
+          "pct": 44.4
+        },
+        {
+          "y0": 5000,
+          "y1": 5500,
+          "pct": 34.2
+        },
+        {
+          "y0": 5500,
+          "y1": 6000,
+          "pct": 25.4
+        },
+        {
+          "y0": 6000,
+          "y1": 6411,
+          "pct": 95.1
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-events-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-events-1440.png",
+      "scale": 4,
+      "ssimOverlap": 41.87,
+      "ssimHeightNormalized": 42.64,
+      "ssimAboveFold": 57.57,
+      "heights": [
+        6411,
+        7233
+      ]
+    }
+  },
+  {
+    "slug": "school-life-house-and-merit-system",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life/house-and-merit-system",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-house-and-merit-system-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-house-and-merit-system-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 5258,
+        "mode": "overlap"
+      },
+      "heightDelta": 345,
+      "differingPixels": 1932634,
+      "pct": 25.53,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-house-and-merit-system-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 3.2
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 15.1
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 15.5
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 17
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 33.3
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 35
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 26.4
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 38.1
+        },
+        {
+          "y0": 4000,
+          "y1": 4500,
+          "pct": 30.2
+        },
+        {
+          "y0": 4500,
+          "y1": 5000,
+          "pct": 22.8
+        },
+        {
+          "y0": 5000,
+          "y1": 5258,
+          "pct": 61.8
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-house-and-merit-system-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-house-and-merit-system-1440.png",
+      "scale": 4,
+      "ssimOverlap": 43.22,
+      "ssimHeightNormalized": 43.12,
+      "ssimAboveFold": 51.65,
+      "heights": [
+        5603,
+        5258
+      ]
+    }
+  },
+  {
+    "slug": "school-life-lockers-and-lost-property",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life/lockers-and-lost-property",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-lockers-and-lost-property-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-lockers-and-lost-property-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 3401,
+        "mode": "overlap"
+      },
+      "heightDelta": -275,
+      "differingPixels": 1385618,
+      "pct": 28.29,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-lockers-and-lost-property-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 18.3
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 44
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 5.1
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 2.7
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 20.6
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 25.5
+        },
+        {
+          "y0": 3000,
+          "y1": 3401,
+          "pct": 94.9
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-lockers-and-lost-property-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-lockers-and-lost-property-1440.png",
+      "scale": 4,
+      "ssimOverlap": 42.68,
+      "ssimHeightNormalized": 42.9,
+      "ssimAboveFold": 46.93,
+      "heights": [
+        3401,
+        3676
+      ]
+    }
+  },
+  {
+    "slug": "school-life-newsletters",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life/newsletters",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-newsletters-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-newsletters-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 3122,
+        "mode": "overlap"
+      },
+      "heightDelta": -1221,
+      "differingPixels": 1132629,
+      "pct": 25.19,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-newsletters-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 3.2
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 6.7
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 8.8
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 36.3
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 5.2
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 73.5
+        },
+        {
+          "y0": 3000,
+          "y1": 3122,
+          "pct": 96.7
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-newsletters-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-newsletters-1440.png",
+      "scale": 4,
+      "ssimOverlap": 46.4,
+      "ssimHeightNormalized": 43.71,
+      "ssimAboveFold": 56.34,
+      "heights": [
+        3122,
+        4343
+      ]
+    }
+  },
+  {
+    "slug": "school-life-parent-portal",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life/parent-portal",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-parent-portal-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-parent-portal-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 3731,
+        "mode": "overlap"
+      },
+      "heightDelta": -344,
+      "differingPixels": 1177892,
+      "pct": 21.92,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-parent-portal-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 2.9
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 6.6
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 15.8
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 11.4
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 6.1
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 23.6
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 54.1
+        },
+        {
+          "y0": 3500,
+          "y1": 3731,
+          "pct": 93.5
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-parent-portal-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-parent-portal-1440.png",
+      "scale": 4,
+      "ssimOverlap": 46.54,
+      "ssimHeightNormalized": 46.22,
+      "ssimAboveFold": 57.59,
+      "heights": [
+        3731,
+        4075
+      ]
+    }
+  },
+  {
+    "slug": "school-life-stationery",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life/stationery",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-stationery-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-stationery-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 2006,
+        "mode": "overlap"
+      },
+      "heightDelta": -366,
+      "differingPixels": 1357681,
+      "pct": 47,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-stationery-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 3.4
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 38
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 51
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 95
+        },
+        {
+          "y0": 2000,
+          "y1": 2006,
+          "pct": 93.7
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-stationery-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-stationery-1440.png",
+      "scale": 4,
+      "ssimOverlap": 37.15,
+      "ssimHeightNormalized": 39.09,
+      "ssimAboveFold": 46.96,
+      "heights": [
+        2006,
+        2372
+      ]
+    }
+  },
+  {
+    "slug": "school-life-student-opportunities-and-activities",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life/student-opportunities-and-activities",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 5270,
+        "mode": "overlap"
+      },
+      "heightDelta": -1285,
+      "differingPixels": 2879344,
+      "pct": 37.94,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-student-opportunities-and-activities-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 10.7
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 48
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 6.7
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 47.3
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 54
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 62.2
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 47.7
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 3.2
+        },
+        {
+          "y0": 4000,
+          "y1": 4500,
+          "pct": 22.7
+        },
+        {
+          "y0": 4500,
+          "y1": 5000,
+          "pct": 47.6
+        },
+        {
+          "y0": 5000,
+          "y1": 5270,
+          "pct": 92.4
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-1440.png",
+      "scale": 4,
+      "ssimOverlap": 40.67,
+      "ssimHeightNormalized": 41.79,
+      "ssimAboveFold": 48.58,
+      "heights": [
+        5270,
+        6555
+      ]
+    }
+  },
+  {
+    "slug": "school-life-student-opportunities-and-activities-academic-competitions",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life/student-opportunities-and-activities/academic-competitions",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-academic-competitions-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-academic-competitions-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 5551,
+        "mode": "overlap"
+      },
+      "heightDelta": -156,
+      "differingPixels": 1459477,
+      "pct": 18.26,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-student-opportunities-and-activities-academic-competitions-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 13.2
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 29.8
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 6.7
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 4.4
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 5.9
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 6
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 4.6
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 7.3
+        },
+        {
+          "y0": 4000,
+          "y1": 4500,
+          "pct": 8.2
+        },
+        {
+          "y0": 4500,
+          "y1": 5000,
+          "pct": 19.9
+        },
+        {
+          "y0": 5000,
+          "y1": 5500,
+          "pct": 87
+        },
+        {
+          "y0": 5500,
+          "y1": 5551,
+          "pct": 95.6
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-academic-competitions-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-academic-competitions-1440.png",
+      "scale": 4,
+      "ssimOverlap": 40.4,
+      "ssimHeightNormalized": 41.12,
+      "ssimAboveFold": 48.46,
+      "heights": [
+        5551,
+        5707
+      ]
+    }
+  },
+  {
+    "slug": "school-life-student-opportunities-and-activities-clubs-and-committees",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life/student-opportunities-and-activities/clubs-and-committees",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-clubs-and-committees-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-clubs-and-committees-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 4022,
+        "mode": "overlap"
+      },
+      "heightDelta": -165,
+      "differingPixels": 1333248,
+      "pct": 23.02,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-student-opportunities-and-activities-clubs-and-committees-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 8.2
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 32.3
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 10.6
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 4.7
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 5.7
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 9.3
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 17.7
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 92.3
+        },
+        {
+          "y0": 4000,
+          "y1": 4022,
+          "pct": 97.8
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-clubs-and-committees-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-clubs-and-committees-1440.png",
+      "scale": 4,
+      "ssimOverlap": 41.44,
+      "ssimHeightNormalized": 39.76,
+      "ssimAboveFold": 51.11,
+      "heights": [
+        4022,
+        4187
+      ]
+    }
+  },
+  {
+    "slug": "school-life-student-opportunities-and-activities-creative-and-performing-arts",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life/student-opportunities-and-activities/creative-and-performing-arts",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-creative-and-performing-arts-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-creative-and-performing-arts-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 3172,
+        "mode": "overlap"
+      },
+      "heightDelta": -247,
+      "differingPixels": 1295681,
+      "pct": 28.37,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-student-opportunities-and-activities-creative-and-performing-arts-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 15.9
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 34
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 5
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 6.1
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 22.1
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 63.8
+        },
+        {
+          "y0": 3000,
+          "y1": 3172,
+          "pct": 96.1
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-creative-and-performing-arts-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-creative-and-performing-arts-1440.png",
+      "scale": 4,
+      "ssimOverlap": 41.99,
+      "ssimHeightNormalized": 39.21,
+      "ssimAboveFold": 45.3,
+      "heights": [
+        3172,
+        3419
+      ]
+    }
+  },
+  {
+    "slug": "school-life-student-opportunities-and-activities-debating-and-public-speaking",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life/student-opportunities-and-activities/debating-and-public-speaking",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-debating-and-public-speaking-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-debating-and-public-speaking-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 2135,
+        "mode": "overlap"
+      },
+      "heightDelta": -314,
+      "differingPixels": 1162827,
+      "pct": 37.82,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-student-opportunities-and-activities-debating-and-public-speaking-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 13.2
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 28.8
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 22.5
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 71
+        },
+        {
+          "y0": 2000,
+          "y1": 2135,
+          "pct": 96.2
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-debating-and-public-speaking-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-debating-and-public-speaking-1440.png",
+      "scale": 4,
+      "ssimOverlap": 38.38,
+      "ssimHeightNormalized": 37.09,
+      "ssimAboveFold": 45.89,
+      "heights": [
+        2135,
+        2449
+      ]
+    }
+  },
+  {
+    "slug": "school-life-student-opportunities-and-activities-duke-of-edinburgh-award",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life/student-opportunities-and-activities/duke-of-edinburgh-award",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-duke-of-edinburgh-award-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-duke-of-edinburgh-award-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 7505,
+        "mode": "overlap"
+      },
+      "heightDelta": -2623,
+      "differingPixels": 3777372,
+      "pct": 34.95,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-student-opportunities-and-activities-duke-of-edinburgh-award-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 4.5
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 33.9
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 30.2
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 51.8
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 36.7
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 6.8
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 6
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 20
+        },
+        {
+          "y0": 4000,
+          "y1": 4500,
+          "pct": 9.4
+        },
+        {
+          "y0": 4500,
+          "y1": 5000,
+          "pct": 35.3
+        },
+        {
+          "y0": 5000,
+          "y1": 5500,
+          "pct": 53.1
+        },
+        {
+          "y0": 5500,
+          "y1": 6000,
+          "pct": 43.5
+        },
+        {
+          "y0": 6000,
+          "y1": 6500,
+          "pct": 28.1
+        },
+        {
+          "y0": 6500,
+          "y1": 7000,
+          "pct": 67.4
+        },
+        {
+          "y0": 7000,
+          "y1": 7500,
+          "pct": 96.9
+        },
+        {
+          "y0": 7500,
+          "y1": 7505,
+          "pct": 99.4
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-duke-of-edinburgh-award-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-duke-of-edinburgh-award-1440.png",
+      "scale": 4,
+      "ssimOverlap": 40.44,
+      "ssimHeightNormalized": 36.93,
+      "ssimAboveFold": 46.29,
+      "heights": [
+        7505,
+        10128
+      ]
+    }
+  },
+  {
+    "slug": "school-life-student-opportunities-and-activities-instrumental-music-program",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life/student-opportunities-and-activities/instrumental-music-program",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-instrumental-music-program-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-instrumental-music-program-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 5947,
+        "mode": "overlap"
+      },
+      "heightDelta": -207,
+      "differingPixels": 2134848,
+      "pct": 24.93,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-student-opportunities-and-activities-instrumental-music-program-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 4.4
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 44.3
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 8.3
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 40.9
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 25.9
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 7.7
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 20.6
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 14.9
+        },
+        {
+          "y0": 4000,
+          "y1": 4500,
+          "pct": 5.7
+        },
+        {
+          "y0": 4500,
+          "y1": 5000,
+          "pct": 18.1
+        },
+        {
+          "y0": 5000,
+          "y1": 5500,
+          "pct": 21.4
+        },
+        {
+          "y0": 5500,
+          "y1": 5947,
+          "pct": 94.6
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-instrumental-music-program-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-instrumental-music-program-1440.png",
+      "scale": 4,
+      "ssimOverlap": 36.95,
+      "ssimHeightNormalized": 38.27,
+      "ssimAboveFold": 40.81,
+      "heights": [
+        5947,
+        6154
+      ]
+    }
+  },
+  {
+    "slug": "school-life-student-opportunities-and-activities-robotics-and-maker-society",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life/student-opportunities-and-activities/robotics-and-maker-society",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-robotics-and-maker-society-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-robotics-and-maker-society-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 2356,
+        "mode": "overlap"
+      },
+      "heightDelta": -285,
+      "differingPixels": 1274707,
+      "pct": 37.57,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-student-opportunities-and-activities-robotics-and-maker-society-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 16
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 39.6
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 23.3
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 30.5
+        },
+        {
+          "y0": 2000,
+          "y1": 2356,
+          "pct": 94.9
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-robotics-and-maker-society-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-robotics-and-maker-society-1440.png",
+      "scale": 4,
+      "ssimOverlap": 39.25,
+      "ssimHeightNormalized": 39.65,
+      "ssimAboveFold": 47.62,
+      "heights": [
+        2356,
+        2641
+      ]
+    }
+  },
+  {
+    "slug": "school-life-student-opportunities-and-activities-sport",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life/student-opportunities-and-activities/sport",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-sport-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-sport-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 3600,
+        "mode": "overlap"
+      },
+      "heightDelta": -442,
+      "differingPixels": 1374998,
+      "pct": 26.52,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-student-opportunities-and-activities-sport-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 13.1
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 43.7
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 6.9
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 4.5
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 4.5
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 21.8
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 77.4
+        },
+        {
+          "y0": 3500,
+          "y1": 3600,
+          "pct": 95.7
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-sport-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-sport-1440.png",
+      "scale": 4,
+      "ssimOverlap": 43.62,
+      "ssimHeightNormalized": 44.6,
+      "ssimAboveFold": 50.29,
+      "heights": [
+        3600,
+        4042
+      ]
+    }
+  },
+  {
+    "slug": "school-life-student-opportunities-and-activities-student-leadership-opportunities",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life/student-opportunities-and-activities/student-leadership-opportunities",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-student-leadership-opportunities-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-student-leadership-opportunities-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 3384,
+        "mode": "overlap"
+      },
+      "heightDelta": -943,
+      "differingPixels": 1445506,
+      "pct": 29.66,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-student-opportunities-and-activities-student-leadership-opportunities-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 10.4
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 45.6
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 12.2
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 29.8
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 4.6
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 27.4
+        },
+        {
+          "y0": 3000,
+          "y1": 3384,
+          "pct": 92.1
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-student-leadership-opportunities-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-student-leadership-opportunities-1440.png",
+      "scale": 4,
+      "ssimOverlap": 36.3,
+      "ssimHeightNormalized": 37.32,
+      "ssimAboveFold": 45.38,
+      "heights": [
+        3384,
+        4327
+      ]
+    }
+  },
+  {
+    "slug": "school-life-travel-to-school",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life/travel-to-school",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-travel-to-school-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-travel-to-school-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 6919,
+        "mode": "overlap"
+      },
+      "heightDelta": -1013,
+      "differingPixels": 1832014,
+      "pct": 18.39,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-travel-to-school-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 3.3
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 9.2
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 6.2
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 3.6
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 9.1
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 12.4
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 10.1
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 9.1
+        },
+        {
+          "y0": 4000,
+          "y1": 4500,
+          "pct": 5.6
+        },
+        {
+          "y0": 4500,
+          "y1": 5000,
+          "pct": 4.8
+        },
+        {
+          "y0": 5000,
+          "y1": 5500,
+          "pct": 30.2
+        },
+        {
+          "y0": 5500,
+          "y1": 6000,
+          "pct": 20.5
+        },
+        {
+          "y0": 6000,
+          "y1": 6500,
+          "pct": 51.6
+        },
+        {
+          "y0": 6500,
+          "y1": 6919,
+          "pct": 94
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-travel-to-school-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-travel-to-school-1440.png",
+      "scale": 4,
+      "ssimOverlap": 41.55,
+      "ssimHeightNormalized": 41.43,
+      "ssimAboveFold": 49.37,
+      "heights": [
+        6919,
+        7932
+      ]
+    }
+  },
+  {
+    "slug": "school-life-uniform",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life/uniform",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-uniform-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-uniform-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 3574,
+        "mode": "overlap"
+      },
+      "heightDelta": -2680,
+      "differingPixels": 1576001,
+      "pct": 30.62,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-uniform-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 12
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 47.7
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 6.8
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 14.2
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 12
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 27.9
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 83.7
+        },
+        {
+          "y0": 3500,
+          "y1": 3574,
+          "pct": 97.9
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-uniform-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-uniform-1440.png",
+      "scale": 4,
+      "ssimOverlap": 40.16,
+      "ssimHeightNormalized": 36.28,
+      "ssimAboveFold": 43.98,
+      "heights": [
+        3574,
+        6254
+      ]
+    }
+  },
+  {
+    "slug": "school-life-uniform-uniform-shop",
+    "w": 1440,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life/uniform/uniform-shop",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-uniform-uniform-shop-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-uniform-uniform-shop-1440.png",
+      "compared": {
+        "width": 1440,
+        "height": 5899,
+        "mode": "overlap"
+      },
+      "heightDelta": -1236,
+      "differingPixels": 1357383,
+      "pct": 15.98,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-uniform-uniform-shop-1440.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 3.3
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 7.5
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 15.9
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 13.3
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 12.9
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 7.6
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 4.9
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 3.2
+        },
+        {
+          "y0": 4000,
+          "y1": 4500,
+          "pct": 3
+        },
+        {
+          "y0": 4500,
+          "y1": 5000,
+          "pct": 18.4
+        },
+        {
+          "y0": 5000,
+          "y1": 5500,
+          "pct": 23
+        },
+        {
+          "y0": 5500,
+          "y1": 5899,
+          "pct": 94.7
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-uniform-uniform-shop-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-uniform-uniform-shop-1440.png",
+      "scale": 4,
+      "ssimOverlap": 40.77,
+      "ssimHeightNormalized": 41.14,
+      "ssimAboveFold": 51.39,
+      "heights": [
+        5899,
+        7135
+      ]
+    }
+  }
+]

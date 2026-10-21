@@ -1,0 +1,36 @@
+{
+  "variantName": "table",
+  "baseBlock": "table",
+  "version": "1.0.0",
+  "created": "2026-10-21T14:55:19.228Z",
+  "visualCharacteristics": {
+    "purpose": "data-table",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "header-row + data-rows"
+  },
+  "variants": [
+    "no-header",
+    "bordered"
+  ],
+  "usage": {
+    "pagesUsing": [
+      "about-us/hsc-results",
+      "about-us/our-principal-and-staff",
+      "learning-and-support/wellbeing",
+      "our-community/foundation",
+      "our-community/pandc",
+      "school-life/events",
+      "school-life/forms",
+      "school-life/lockers-and-lost-property",
+      "school-life/student-opportunities-and-activities",
+      "school-life/student-opportunities-and-activities/duke-of-edinburgh-award",
+      "school-life/student-opportunities-and-activities/sport",
+      "school-life/travel-to-school",
+      "school-life/uniform/uniform-shop"
+    ],
+    "reuseCount": 13,
+    "lastUsed": "2026-10-21T14:55:19.228Z"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "about-us-school-history-and-archives-the-fort-street-museum",
+  "type": "content",
+  "renderBranch": "A'",
+  "template": "learning-and-support-wellbeing",
+  "modules": [
+    "M5",
+    "M4",
+    "M2"
+  ],
+  "slotsFilled": [
+    "s01",
+    "s02",
+    "s03"
+  ],
+  "canonShas": {
+    "header": "a8ad9e05a2e6",
+    "footer": "11083616d207",
+    "css": "b7e359a8ffed"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "The Fort Street Museum",
+    "description": "Our Archives and Museum exists to preserve the rich history and colourful stories of our teachers and students, told through their experiences in the classroom and in the schoolyard, at work and play for over 170 years.",
+    "canonical": "https://fortstreet-h.schools.nsw.gov.au/about-us/school-history-and-archives/the-fort-street-museum",
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "The Fort Street Museum",
+    "description": "Our Archives and Museum exists to preserve the rich history and colourful stories of our teachers and students, told through their experiences in the classroom and in the schoolyard, at work and play for over 170 years.",
+    "url": "https://fortstreet-h.schools.nsw.gov.au/about-us/school-history-and-archives/the-fort-street-museum"
+  },
+  "migratedAt": "2026-10-21T14:08:04Z",
+  "designMdSha": "c0ae931d3b54",
+  "designJsonSha": "3ff54e7e981f",
+  "sourceCurrentSha": null,
+  "sourceProposedSha": "ec95c3095f82",
+  "fidelityTier": "sibling",
+  "archetypeSource": "learning-and-support-wellbeing",
+  "archetypeSha": "5bc769fe32da",
+  "variants": [],
+  "gatesPassed": [],
+  "gateEvidence": {},
+  "contentDeviations": [],
+  "assetsBundled": 5,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "about-us/school-history-and-archives/the-fort-street-museum/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "about-us/school-history-and-archives/the-fort-street-museum/_meta.json",
+  "driverVersion": "1"
+}
