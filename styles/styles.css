@@ -122,8 +122,8 @@
   --font-stack: inter, "inter-fallback", sans-serif;
   --heading-font-stack: lexia, "lexia-fallback", serif;
 
-  /* header reservation = the reskin page's header height per range */
-  --nav-height: 529px;
+  /* header reservation: M9 bar (64px) < 1024px; utility row + bar (114px) >= 1024px */
+  --nav-height: 65px;
 }
 
 @font-face {
@@ -138,24 +138,8 @@
   src: local('Georgia');
 }
 
-@media (width > 400px) {
-  :root { --nav-height: 425px; }
-}
-
-@media (width > 480px) {
-  :root { --nav-height: 325px; }
-}
-
-@media (width > 640px) {
-  :root { --nav-height: 281px; }
-}
-
-@media (width >= 768px) {
-  :root { --nav-height: 237px; }
-}
-
-@media (width >= 900px) {
-  :root { --nav-height: 569px; }
+@media (width >= 1024px) {
+  :root { --nav-height: 114px; }
 }
 
 *,
