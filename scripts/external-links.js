@@ -1,7 +1,9 @@
 // External-link decoration, mirroring the source site's runtime (its `external-link` chunk):
-// a link to another host gets a visually hidden " (opens in new window)" and opens in a new tab.
-// The authored link text is untouched; the suffix is a generated, aria-only span.
+// a link to another host gets a generated " (opens in new window)" hint and opens in a new tab.
+// The authored link text is untouched. The hint is visible, as in the reskin prototypes (the
+// source hides it); a link whose authored text already says so gets none.
 const INTERNAL_HOSTS = ['schools.nsw.gov.au', 'education.nsw.gov.au'];
+const HINT = /\(opens in new window\)/i;
 const SELECTOR = ':is(li, p, h1, h2, h3, h4, h5, h6) a[href]';
 
 function isExternal(a) {
@@ -19,9 +21,9 @@ function isExternal(a) {
 // eslint-disable-next-line import/prefer-default-export
 export function decorateExternalLinks(root) {
   root.querySelectorAll(SELECTOR).forEach((a) => {
-    if (!isExternal(a) || a.closest('.embed') || a.querySelector(':scope > .sr-only')) return;
+    if (!isExternal(a) || a.closest('.embed') || HINT.test(a.textContent)) return;
     const hint = document.createElement('span');
-    hint.className = 'sr-only';
+    hint.className = 'link-hint';
     hint.textContent = ' (opens in new window)';
     a.append(hint);
     a.target = '_blank';

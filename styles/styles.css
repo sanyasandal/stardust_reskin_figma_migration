@@ -253,19 +253,6 @@ main a:any-link {
   text-decoration: underline;
 }
 
-/* generated " (opens in new window)" hint on external links (scripts/external-links.js) */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip-path: inset(50%);
-  white-space: nowrap;
-  border: 0;
-}
-
 /* buttons */
 p.button-wrapper {
   margin: 0;

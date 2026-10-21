@@ -14,9 +14,9 @@ function decorateExternalLinks(root) {
   root.querySelectorAll(':is(li, p, h1, h2, h3, h4, h5, h6) a[href]').forEach((a) => {
     const internal = [window.location.hostname, 'schools.nsw.gov.au', 'education.nsw.gov.au']
       .some((h) => a.hostname === h || a.hostname.endsWith(`.${h}`));
-    if (internal || !/^https?:/.test(a.protocol) || a.querySelector(':scope > .sr-only')) return;
+    if (internal || !/^https?:/.test(a.protocol) || /\(opens in new window\)/i.test(a.textContent)) return;
     const hint = document.createElement('span');
-    hint.className = 'sr-only';
+    hint.className = 'link-hint';
     hint.textContent = ' (opens in new window)';
     a.append(hint);
     a.target = '_blank';
@@ -65,6 +65,11 @@ export default function decorate(block) {
     panel.setAttribute('aria-labelledby', title.id);
     panelCells.forEach((cell) => panel.append(...cell.childNodes));
     markNestedTables(panel);
+    // panel links stay text links (kit Block Element body), not decorateButtons' lone-link buttons
+    panel.querySelectorAll('a.button').forEach((a) => {
+      a.classList.remove('button', 'primary', 'secondary', 'accent');
+      a.closest('.button-wrapper')?.classList.remove('button-wrapper');
+    });
 
     head.append(title, toggle);
     head.addEventListener('click', (e) => {
