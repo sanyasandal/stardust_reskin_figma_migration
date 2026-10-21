@@ -59,4 +59,14 @@ main .section:has(.columns.light) {
   .columns .columns-text h2 {
     font-size: min(var(--type-display-font-size), 11vw);
   }
+
+  /* light bleed band (prototype tone-light bleed): keeps the section padding and pads the panel */
+  main .section:has(.columns.light) {
+    padding-top: var(--layout-section-padding-y);
+    padding-bottom: var(--layout-section-padding-y);
+  }
+
+  .columns.light .columns-panel {
+    padding: 32px 20px;
+  }
 }

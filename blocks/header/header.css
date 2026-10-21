@@ -20,6 +20,11 @@ header .site-header .nav-brand {
   display: contents;
 }
 
+/* the picture is display: contents, so its <source> children would become grid items */
+header .site-header .nav-brand source {
+  display: none;
+}
+
 header .site-header .logo {
   max-width: 100%;
   height: 32px;

@@ -39,3 +39,15 @@ main .section.hero-container {
     justify-self: center;
   }
 }
+
+/* light bleed band (prototype tone-light bleed): keeps the section padding and pads the panel on small screens */
+@media (width <= 640px) {
+  main .section.hero-container {
+    padding-top: var(--layout-section-padding-y);
+    padding-bottom: var(--layout-section-padding-y);
+  }
+
+  .hero .hero-panel {
+    padding: 32px 20px;
+  }
+}
