@@ -245,6 +245,29 @@
     - stardust/reskin/content-model/_chrome/content-model.json
   unsourcedContent: []
 -->
+<style id="carried-chrome">
+  .site-main .crumbs { padding: 16px 0 8px; }
+  .site-main .crumbs .container { max-width: 1168px; padding: 0 16px; }
+  .site-main .breadcrumb ol { display: flex; flex-wrap: wrap; margin: 0; padding: 0; list-style: none; font-size: 14px; line-height: 20px; }
+  .site-main .breadcrumb li { display: flex; align-items: center; margin-top: 8px; }
+  .site-main .breadcrumb li + li::before { content: ''; width: 6px; height: 6px; margin: 0 10px 0 6px; border: solid currentcolor; border-width: 0 1.5px 1.5px 0; transform: rotate(-45deg); }
+  .site-main .breadcrumb a { color: var(--palette-heading-fg); text-decoration: underline; }
+  .site-main .section-nav nav { font-size: 16px; line-height: 24px; }
+  .site-main .section-nav ul { margin: 0; padding: 0; list-style: none; }
+  .site-main .section-nav a { display: block; color: var(--palette-body-fg); text-decoration: none; }
+  .site-main .section-nav li a { padding: 16px; border-bottom: 1px solid rgb(222 227 229); }
+  .site-main .section-nav li li a { padding-left: 32px; }
+  .site-main .section-nav li li li a { padding-left: 48px; }
+  .site-main .section-nav .section-nav-header a { padding: 8px; border-bottom: 2px solid var(--palette-heading-fg); font-weight: 700; }
+  .site-main .section-nav a[aria-current='page'] { background: rgb(242 242 242); font-weight: 600; }
+  .site-main .page-aside { display: none; }
+  @media (width >= 1024px) {
+    .site-main .page-layout { display: grid; grid-template-columns: 400px minmax(0, 800px); max-width: 1200px; margin: 0 auto; }
+    .site-main .page-aside { display: block; padding: 16px 48px 16px 16px; }
+    .site-main .page-main section > .container { max-width: none; padding: 0 16px; }
+  }
+</style>
+<!-- carried (gate a′): breadcrumb, section-nav, dark tones -->
 </head>
 <body>
 <header class="site-header" data-canon="header">
@@ -263,6 +286,7 @@
         <p class="lead">At our school, we recognise and nurture these strengths early. We support advanced learners with great lessons and activities to help them grow and thrive.</p>
       </div></div></div>
     </section>
+<div class="crumbs"><div class="container breadcrumb"><nav aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/learning-and-support">Learning and support</a></li><li aria-current="page">Inspire – High potential and gifted education</li></ol></nav></div></div><div class="page-layout"><aside class="page-aside"><div class="section-nav"><nav aria-label="Section navigation"><div class="section-nav-header"><a href="/learning-and-support">Learning and support</a></div><ul><li><a href="/learning-and-support/additional-learning-support">Additional learning support</a></li><li><a href="/learning-and-support/careers">Careers</a></li><li class="active"><a href="/learning-and-support/high-potential-and-gifted-education" aria-current="page">Inspire – High potential and gifted education</a></li><li><a href="/learning-and-support/learning">Learning</a></li><li><a href="/learning-and-support/wellbeing">Wellbeing</a></li></ul></nav></div></aside><div class="page-main">
   <section class="band layout-split width-wide heading-h3" data-slot="s02" data-module="M3">
       
       <div class="container"><div class="panel"><div class="flow" data-slot-body>
@@ -310,7 +334,7 @@
           <ul class="list"><li><img class="icon" src="../../prototypes/assets/img/fortstreet-h.schools.nsw.gov.au/learning-and-support/media_15ab72c706e9ef96b9b9aa52a354cc1b375da2ecc-2f4d9dd0.jpg" data-source-src="https://fortstreet-h.schools.nsw.gov.au/learning-and-support/media_15ab72c706e9ef96b9b9aa52a354cc1b375da2ecc.jpg?width=750&amp;format=jpg&amp;optimize=medium" alt="">Academic competitions</li><li><img class="icon" src="../../prototypes/assets/img/fortstreet-h.schools.nsw.gov.au/learning-and-support/media_150aebd2d3065de8186f44095c9e955875be521bb-2f4d9dd0.jpg" data-source-src="https://fortstreet-h.schools.nsw.gov.au/learning-and-support/media_150aebd2d3065de8186f44095c9e955875be521bb.jpg?width=750&amp;format=jpg&amp;optimize=medium" alt="">Combined High Schools Competitions</li><li><img class="icon" src="../../prototypes/assets/img/fortstreet-h.schools.nsw.gov.au/learning-and-support/media_1006d3e2acc24d3da5e760c70d1eb0860c22fa39a-2f4d9dd0.jpg" data-source-src="https://fortstreet-h.schools.nsw.gov.au/learning-and-support/media_1006d3e2acc24d3da5e760c70d1eb0860c22fa39a.jpg?width=750&amp;format=jpg&amp;optimize=medium" alt="">Music ensembles</li><li><img class="icon" src="../../prototypes/assets/img/fortstreet-h.schools.nsw.gov.au/learning-and-support/media_1fbf32985d3525c662c3e87d93bac3940d0e3923f-2f4d9dd0.jpg" data-source-src="https://fortstreet-h.schools.nsw.gov.au/learning-and-support/media_1fbf32985d3525c662c3e87d93bac3940d0e3923f.jpg?width=750&amp;format=jpg&amp;optimize=medium" alt="">Duke of Edinburgh Award</li></ul>
       </div></div></div>
     </section>
-  <section class="band layout-stack width-wide tone-light heading-h3 bleed" data-slot="s07" data-module="M4">
+  <section class="band layout-stack width-wide heading-h3 bleed tone-dark" data-slot="s07" data-module="M4">
       
       <div class="container"><div class="panel"><div class="flow" data-slot-body>
           <h2 class="heading">Help for your high potential child</h2>
@@ -323,7 +347,7 @@
       <div class="container"><div class="panel"><div class="flow" data-slot-body>
           <ul class="list"><li><a class="link" href="https://fortstreet-h.schools.nsw.gov.au/school-life/student-opportunities-and-activities">Student opportunities and activities</a> Discover the opportunities our students have at our school. east</li><li><a class="link" href="https://fortstreet-h.schools.nsw.gov.au/learning-and-support/additional-learning-support">Learning</a> Find out about our approach to learning and supporting students to progress east</li></ul>
       </div></div></div>
-    </section>
+    </section></div></div>
 </main>
 <footer class="site-footer tone-light" data-canon="footer">
   <div class="container chrome-footer">
