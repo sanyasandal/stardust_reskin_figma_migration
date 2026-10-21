@@ -247,6 +247,11 @@ Reskin keeps the content byte-faithful to the source and replaces the design wit
     - `npm run lint` passed. Commit `d4e0b8d`, `push.sh`, `sync.sh` → `fortstreet` preview verified.
     - Re-ran `fidelity.mjs` (58 captures; the previous results are kept in `fidelity-pre-header-fix.json`). Regenerated the composites with `.work/reskin/compose.py`. Before/after header shots are in `reports/screens/header/`.
 
+43. **Cards fix** (user report: cards and quick links render as lists).
+    - Diagnosis: the source cards were captured correctly as `listItem`s, but `stream-render.mjs` `findRepeat` needs a repeat of 2+ nodes, so 3 single-node items fell back to `ul.list` (inline icons) and 6 split into false 2-item panels. The EDS block copied that prototype, and the prototype-referenced gates passed it.
+    - Rebuilt `blocks/cards/cards.{js,css}` to Figma M2 Teaser / Card (image, title, text, arrow; 3-up home, 2-up sidebar variants, 1-up ≤ 600px; dark tone kept; new-window hint visually hidden with an icon). Content unchanged.
+    - Verified with Playwright route overlays (`stardust/.work/reskin/cshot.mjs`, `mcheck.mjs`) at 1440/390; composites in `reports/screens/cards/`. Lint passed; deployed with `sync.sh`.
+
 ---
 
 ## Named deviations and helpers (not from the branch)

@@ -71,7 +71,7 @@ A reskin **changes the visual design on purpose**: the original NSW school templ
 |---|---|---|---|
 | **Header** | NSW masthead: crest + school name, horizontal mega-nav, search | Figma M9 header: utility row ("NSW Government") above a bar with crest + school name + motto on the left, 5 serif nav links (magenta underline for the current section) and a search icon on the right. Below 1024px: hamburger + search, nav in a full-width drop-down panel | **Fixed** in `d4e0b8d` (see § 2.1). Before the fix it was an unstyled 3-column chrome with no visible logo, a 529 px blank reservation, the literal `keyboard_arrow_right` ligature and no hamburger. The original's dropdown chevrons and mega-menus are not reproduced (no submenu content is authored) |
 | Hero | Full-bleed photo with an overlay card | Light band split: text on the left (serif maroon H1), image on the right | Intentional (Figma M1 hero) |
-| Cards | Maroon image cards | Icon/bullet lists (`cards-list`). The `dark`/`off-white` variants render as 2-up panels | Intentional mapping to the M2 teaser list. Visually the largest component change |
+| Cards | Maroon image cards | Figma M2 image cards (image, magenta title, text, arrow), 3-up on home, 2-up on sidebar pages; `dark` keeps a maroon panel | Fixed after PR #1 (§ 2.2). The first build rendered them as icon/bullet lists |
 | Colour | Dark maroon feature bands (e.g. school tours) | Light grey `columns light` bands | Intentional (M4 CTA banner tokens) |
 | Typography | Sans-serif throughout | Serif headings (Lexia → Georgia fallback), maroon/magenta; Inter → Arial body | Intentional. The licensed font isn't served, so the fallbacks render (accepted `font` residual) |
 | Layout | Left sidebar nav + breadcrumb on inner pages | Sidebar and breadcrumb dropped; single column | Normalize decision (chrome not in the Figma kit) |
@@ -95,6 +95,33 @@ The first benchmark flagged the header as the largest visual defect. It was rebu
 | 390 | ![header 390](screens/header/header-390.jpg) |
 
 **Effect on the scores.** The header now matches the design, but the metrics move only a little and not all upwards. The mean pixel similarity rose 1.3 points (31 pages up, 21 down). Above-the-fold SSIM fell from 47.2 to 41.5. The old header was mostly a blank 529 px area, and blank white matched the original's white masthead well. Removing it moved every page's content up by about 400 px, and it no longer sits at the original's y-positions. Pixel and SSIM scores are position-sensitive, so they don't reward a correct redesign. Use the composites to judge.
+
+### 2.2 Cards fix (after the first benchmark)
+
+On every page the cards (52 pages, 7 variants) rendered as bulleted lists with 1.6em inline thumbnails instead of image cards.
+
+**Why.** Capture was right: each source card is one `listItem` (image, link, text, arrow). The fault was the skill's renderer. `stream-render.mjs` `findRepeat` only detects repeats of 2 or more nodes, so it couldn't treat each list item as one card:
+- **Home "difference" (3 items):** no repeat was found, so it fell back to `ul.list` with an inline icon.
+- **Quick links (6 items):** a false 2-item repeat produced 3 grey panels of 2-item lists.
+
+The EDS cards block was then built to match that prototype, and named `list` and `quick-links` after it. Neither name is a source or Figma variant. The deployed gates compare EDS to the prototype, so they passed. The eyeball check passed it too.
+
+**Fix.** `blocks/cards/cards.{js,css}` was rebuilt to the Figma M2 Teaser / Card (`canon-source/assets/screenshots/teaser-card.png`):
+- Image on top (16:9 cover), panel body, magenta Lexia title, text, accent arrow.
+- The title link is stretched over the card.
+- The source's "(opens in new window)" stays for screen readers only, with an icon.
+- `list`/`quick-links` are 3-up; the sidebar variants (`dark`, `off-white`, `highlight`, `horizontal`, plain) are 2-up, as in the source. Both are 1-up ≤ 600px.
+- No content change: the authored rows (picture | heading link + text) were already right.
+
+| Section | Original · before · after |
+|---|---|
+| Home "difference" (`list`) | ![](screens/cards/home-difference-1440.jpg) |
+| Home quick links | ![](screens/cards/home-quick-links-1440.jpg) |
+| School life (`dark`) | ![](screens/cards/school-life-dark-1440.jpg) |
+| Uniform (`horizontal`) | ![](screens/cards/uniform-horizontal-1440.jpg) |
+| Quick links at 390 | ![](screens/cards/home-quick-links-390.jpg) |
+
+Block heights at 1440 now track the source: home 577 vs 567 px (was 229), quick links 935 vs 949 (was 409), school life 3796 vs 3345 (was 1118), uniform 202 vs 244 (was 56).
 
 ### Per-page fidelity, 1440px (sorted by pixel similarity)
 
@@ -185,7 +212,7 @@ flowchart LR
 | Block | Pages | Figma module | DA table authors edit | What `decorate()` builds |
 |---|---|---|---|---|
 | **hero** | 44 | M1 hero | 1 column, 2 rows: picture, then h1 + intro/motto + CTA link | `.hero-panel` > `.hero-text` + `picture.hero-media`. Eager, high-priority image; light band on `.hero-container`. 2 columns, 1 at ≤900px |
-| **cards** (`list`, `quick-links`, `dark`, `off-white`, `highlight`, `horizontal`) | 52 | M2 teaser list | Rows of `icon/picture \| title (h3>a or p) + text` | `ul.cards-list > li > span.cards-icon + div.cards-body`. `quick-links` → 3 `.cards-card` columns in `.cards-grid`. `dark`/`off-white` → 2-up `.cards-card` panels |
+| **cards** (`list`, `quick-links`, `dark`, `off-white`, `highlight`, `horizontal`) | 52 | M2 teaser list | Rows of `icon/picture \| title (h3>a or p) + text` | `ul.cards-grid > li.cards-card > div.cards-card-image + div.cards-card-body` (title, text, arrow; stretched title link). `list`/`quick-links` 3-up, the rest 2-up, 1-up ≤ 600px. `dark` maroon panel; sidebar variants white with a hairline; `highlight` adds an accent top rule |
 | **columns** (`light`, `media-first`) | 33 | M3 teaser, M4 CTA banner | 1–5 rows of `text \| picture` (either order); text-only rows span the full width | `.columns-panel` > `.columns-text` + `picture.columns-media`. Button wrappers merge into `div.actions`. `light` puts the band on the section through `:has()` |
 | **accordion** | 13 | M8 accordion | Rows of `title \| panel` (rich panel, nested tables allowed) | `.accordion-item > .accordion-head (.accordion-title + button.accordion-toggle chevron) + .accordion-panel`. Starts open |
 | **table** (`bordered`, `no-header`) | 13 | — (type ramp + palette tokens) | One row per table row, 2–6 columns | `.table-scroll > table > thead/tbody`. The first row is `th` unless `no-header` |
