@@ -1,12 +1,12 @@
 {
   "_provenance": {
     "writtenBy": "stardust:reskin/capture-content.mjs",
-    "capturedAt": "2026-10-21T12:18:40.720Z",
+    "capturedAt": "2026-10-21T17:29:36.913Z",
     "url": "https://fortstreet-h.schools.nsw.gov.au/",
     "viewport": "1440x900",
     "scope": "header!,footer!",
     "normalize": {
-      "source": "/Users/ssandal/repos/EDS customer repos/copilot-worktrees/stardust_reskin_figma_migration/ssandal-adobe-redesigned-potato/stardust/reskin/normalize/home.mjs",
+      "source": "default",
       "ledger": [
         {
           "id": "N-D1",
@@ -17,22 +17,12 @@
           "id": "N-D2",
           "what": "de-carousel slick/swiper/splide/glide: remove clone slides, force real slides visible+static, drop dots/arrows",
           "why": "hidden slides are absent from innerText and clones duplicate it — rotating carousels break byte determinism; the reskin renders all slides statically in DOM order"
-        },
-        {
-          "id": "N1",
-          "what": "remove main .facebook-feed (live Facebook posts rendered client-side as a desktop grid + a duplicate mobile carousel); the section heading \"Stay connected on our socials\" stays in scope",
-          "why": "third-party runtime data, not authored page content: post text and images change between loads, so byte equality cannot hold; carried as a dynamic surface (dynamics disposition: embed/defer) rather than as static content"
-        },
-        {
-          "id": "N2",
-          "what": "remove main .back-to-top (floating back-to-top control)",
-          "why": "UI chrome injected by the source theme, no content bytes; donor kit has its own Back to Top module"
         }
       ]
     },
     "nav": {
       "live": true,
-      "waitUntil": "domcontentloaded",
+      "waitUntil": "load",
       "headed": false
     }
   },
@@ -70,9 +60,9 @@
   ],
   "visibleTextNormalized": "Skip to navigation Skip to content NSW Government Fort Street High School Faber est suae quisque fortunae search Show Search About us keyboard_arrow_right School life keyboard_arrow_right Learning and support keyboard_arrow_right Our community keyboard_arrow_right Contact us Fort Street High School General enquiries fortstreet-h.school@det.nsw.edu.au 8585 1600 620 PARRAMATTA ROAD, NSW 2049 PETERSHAM Follow us We recognise the Ongoing Custodians of the lands and waterways where we work and live. We pay respect to Elders past and present as ongoing teachers of knowledge, songlines and stories. We strive to ensure every Aboriginal and/or Torres Strait Islander learner in NSW achieves their potential through education. Your feedback Policy library Information access",
   "coverage": {
-    "bodyTextLen": 4382,
+    "bodyTextLen": 5186,
     "scopeTextLen": 772,
-    "ratio": 0.176,
+    "ratio": 0.149,
     "h1Text": null,
     "h1InScope": null
   },
@@ -141,6 +131,7 @@
           "classes": ""
         }
       ],
+      "iconLinks": [],
       "images": [
         {
           "currentSrc": "https://assets.schools.nsw.gov.au/content/dam/doe/sws/schools/f/fortstreet-h/logo.png",
@@ -466,6 +457,23 @@
           "href": "https://education.nsw.gov.au/rights-and-accountability/information-access",
           "absHref": "https://education.nsw.gov.au/rights-and-accountability/information-access",
           "classes": ""
+        }
+      ],
+      "iconLinks": [
+        {
+          "label": "Facebook",
+          "href": "https://www.facebook.com/fortstreethighschool",
+          "absHref": "https://www.facebook.com/fortstreethighschool"
+        },
+        {
+          "label": "Instagram",
+          "href": "https://www.instagram.com/fortstreet_hs",
+          "absHref": "https://www.instagram.com/fortstreet_hs"
+        },
+        {
+          "label": "education.nsw.gov.au",
+          "href": "https://www.education.nsw.gov.au",
+          "absHref": "https://www.education.nsw.gov.au/"
         }
       ],
       "images": [

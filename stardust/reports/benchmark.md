@@ -193,6 +193,25 @@ Block heights at 1440 now track the source: home 577 vs 567 px (was 229), quick 
 
 All 58 composites are in [`screens/compare/`](screens/compare/). Each is ORIGINAL | MIGRATED | DIFF, scaled JPEG. The full-resolution captures and diff masks were produced locally under `screens/{original,migrated,diff}/` (about 240 MB). They are not committed.
 
+### 2.3 Footer fix and chrome gate (after the first benchmark)
+
+The footer had dropped the Facebook and Instagram icons and the NSW Department of Education logo link. Those are icon-only links, and capture recorded only text links. The footer was rebuilt to Figma M10 (3 columns, then stacked and centred on mobile), and the DA `/footer` was updated.
+
+| | Source · before · after |
+|---|---|
+| 1440 | ![](screens/footer-source-1440.png) ![](screens/footer-before-1440.png) ![](screens/footer-after-1440.png) |
+| 390 | ![](screens/footer-before-390.png) ![](screens/footer-after-390.png) |
+
+The new skill gate `deployed-gate chrome` (A6) checks the header and footer at 1440 and 360 against the source chrome model:
+
+| Target | Verdict | Key rows |
+|---|---|---|
+| `fortstreet` home (after) | **PASS** 22/22 | footer links 7/7, text 10/10; header/main overlap 0; header 114/81 px |
+| `/about-us`, `/contact-us`, `/learning-and-support` | **PASS** | same |
+| `main` (old chrome) | **FAIL (hard)** | header covers main by 36/204 px; header links 5/6; 4 icon-ligature texts; footer logo 0 |
+
+Evidence: `chrome-gate/after-home.json`, `chrome-gate/before-main.json`.
+
 ## 3. Blocks: how they are formed
 
 Each block follows the same chain: **source DOM → normalize/reskin mapping (Figma module) → DA table (div-grid authors edit) → `decorate()` in `blocks/<b>/<b>.js` → rendered markup styled only with the `:root` Figma tokens in `styles/styles.css`.**

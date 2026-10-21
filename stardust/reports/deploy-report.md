@@ -20,7 +20,7 @@ The page renders decorated:
 | **cards** | M2 Teaser / Card. s02 is `cards (list)` with 3 rows; s06 is `cards (quick-links)` with 6 rows | 2 columns per row: picture \| `h3>a` (linked title) + `p` (text) | Builds `ul.cards-grid` > `li.cards-card` > `div.cards-card-image` + `div.cards-card-body` (title, text, arrow); the title link covers the card. `list`/`quick-links` are 3-up (rebuilt after PR #1: the first build was an inline icon list, see benchmark § 2.2) |
 | **columns** | M3 teaser text+image bands s03, s04, s08. M4 CTA banners s05, s07 use `columns (light)` | 1 row, 2 cells: text cell (h2/h3, p's, CTA link) \| picture cell. If the picture cell comes first, `media-first` is added | Builds `.columns-panel` holding `.columns-text` and `picture.columns-media`. `p.button-wrapper`s are merged into `div.actions`, and a node that only wrapped the picture is dropped. `.light` puts the light background on the section through `:has()` |
 | **header** (restyled) | M9 header 12387:11725 | `/nav` fragment with 3 sections: logo \| `ul` of 5 nav links (About us, School life, Learning and support, Our community, Contact us) \| utility `p`'s (skip links, NSW Government, school name, motto, buttons as strong/em links) | Loads `/nav` and builds `.site-header > .chrome-row > .container` holding `.nav-brand`, `nav#main-nav.nav-sections` and `.nav-actions`. There is no hamburger because the prototype has none |
-| **footer** (restyled) | M10 footer 12406:12683 | `/footer` fragment with 2 sections: logo + 6 `p` (name, enquiries, phone, address, "Follow us", Acknowledgement of Country) \| `ul` of 4 links | Loads `/footer` and builds `.site-footer > .container.chrome-footer` holding `.footer-brand` and `ul.footer-links` (2 CSS columns), on a light tone |
+| **footer** (rebuilt) | M10 footer 12406:12186 / 12188 / 12804 | `/footer` fragment with 4 sections: logo + NSW Department of Education link + name + Acknowledgement \| "General enquiries" + `ul` (email, phone, address) \| `ul` of 3 links \| "Follow us" + `ul` (Facebook, Instagram) | Builds `.footer-brand`, `.footer-col`s and `.footer-social` (inline SVG icons): 3 columns at 1440, the brand full width on tablet, stacked and centred on mobile |
 
 **Default content (David's Model D1):**
 
@@ -55,6 +55,7 @@ No section-metadata styles are used. The light bands come from the block variant
 | Step 10 eyeball | adopted. Desktop 1440 and mobile 390 full-page screenshots read side by side with the prototype |
 | Step 10 CLS probe | 0 at 1440 and 0 at 390, with woff2 + `/nav` + `/footer` delayed 1500 ms |
 | Step 10 header | unresolved: there is no header contract. Logged as a needs-owner residual |
+| chrome (A6, added later with stardust 0.38.0) | **PASS (hard)** 22/22 after the M9 header and M10 footer fixes (`../reports/chrome-gate/after-home.json`); the old chrome on `main` FAILs (`before-main.json`) |
 | content-diff (advisory) | 9/9 headings, 15/15 CTAs. 3 header role swaps: the prototype's `<button>`s are links/text in EDS |
 | ai-readability | not run (not required by the deployed-leg recipe) |
 
@@ -92,6 +93,7 @@ See the git log on `ssandal-adobe-fortstreet-figma-reskin-migration`. The same c
 - `47b6b54` fix(hero,columns): keep picture <source> out of the grid
 - `5939747` fix(header,hero,columns): grid-safe picture sources; light bleed bands on small screens
 - the gates/ledger/report commit, which includes this file
+- `2da52c2` fix(footer): rebuild footer to Figma One-AZ M10
 
 ## 5. Deviations
 

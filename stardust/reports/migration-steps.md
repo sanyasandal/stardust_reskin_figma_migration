@@ -252,6 +252,21 @@ Reskin keeps the content byte-faithful to the source and replaces the design wit
     - Rebuilt `blocks/cards/cards.{js,css}` to Figma M2 Teaser / Card (image, title, text, arrow; 3-up home, 2-up sidebar variants, 1-up ≤ 600px; dark tone kept; new-window hint visually hidden with an icon). Content unchanged.
     - Verified with Playwright route overlays (`stardust/.work/reskin/cshot.mjs`, `mcheck.mjs`) at 1440/390; composites in `reports/screens/cards/`. Lint passed; deployed with `sync.sh`.
 
+44. **Footer fix** (user request "ensure header and footer are migrated properly").
+    - Diagnosis: the preview footer lost the Facebook/Instagram icons and the NSW Department of Education logo link. Those are icon-only links (no text), and `capture-content.mjs` recorded only text CTAs, so the model, the prototype and the EDS footer all dropped them. The chrome model had also been captured at `domcontentloaded`, before the footer rendered.
+    - Read Figma M10 Footer (nodes `12406:12186` desktop, `12406:12188` tablet, `12406:12804` mobile) via the Figma MCP: white, 1px `#ebefee` top border, 40/32/24 padding, 1180 container, 3 × 300 columns, Inter 16/24 `#3c4242`, logo 126×30, social row.
+    - Rebuilt `blocks/footer/footer.{js,css}` (brand, contact, links and social sections; inline SVG social icons; the fragment's "(opens in new window)" hint kept for screen readers). Rewrote `content/footer.html` and PUT it to DA `/footer.html`, then previewed it. Commit `2da52c2`, deployed with `sync.sh`.
+    - Screenshots: `reports/screens/footer-{source,before,after}-*.png`.
+45. **Chrome gate (A6) on the deployed preview.** These are new skill scripts on `figma-reskin-m4-on-m2` (commit `6f5defbf`, stardust 0.38.0).
+    - Re-captured the chrome with `capture-content.mjs --scope "header!,footer!" --wait-until load`. The model now holds `iconLinks` (Facebook, Instagram, education.nsw.gov.au) and is committed to `reskin/content-model/_chrome/`.
+    - `deployed-gate chrome` on `fortstreet` home: **PASS chrome**, 22/22 rows. Footer links 7/7 and text 10/10 at both widths; header 114 px at 1440 and 81 px at 360; header/main overlap 0; the menu toggle opens at 360. It also passes on `/about-us`, `/contact-us` and `/learning-and-support`.
+    - Counterfactual on `main` (the old chrome): **FAIL chrome (hard)**. The header covers main by 36 px at 1440 and 204 px at 360; 5/6 header links (the NSW Government link is hidden); 4 "keyboard_arrow_right" ligature texts; 0 footer logos. Evidence: `reports/chrome-gate/{after-home,before-main}.json`.
+46. **Skill hardening, so this can't recur** (branch `sanyasandal:figma-reskin-m4-on-m2`, `6f5defbf`):
+    - `deployed-gate`: new hard `chrome` step (A6). It can't be waived by the agent; a header/footer residual needs `reskin-ledger residual --by <owner>`, and preflight refuses the eyeball pass while `deployed.chrome` fails. A mapped chrome slot that is empty in the model (captured before render) is exit 2, not a vacuous pass.
+    - `capture-content`: records `iconLinks` (icon-only links).
+    - `stream-render`: list-shaped card sources render as cards, not bullet lists (the step-43 cause).
+    - Tests: the chrome, deployed-gate, ledger, preflight, capture and stream-render suites all pass. `npm run lint:stardust` is clean.
+
 ---
 
 ## Named deviations and helpers (not from the branch)
