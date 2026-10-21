@@ -240,6 +240,13 @@ Reskin keeps the content byte-faithful to the source and replaces the design wit
     - Wrote `benchmark.md`.
 41. **Commit and PR.** Committed the code (`blocks/*/metadata.json`), `content/library/` and the stardust artifacts and reports. Pushed via `stardust/.work/deploy/push.sh` and opened the PR with the preview links. The full-resolution screenshots under `reports/screens/{original,migrated,diff}/` (~240 MB) are git-ignored; the composites are committed.
 
+42. **Header fix** (user request "plss fix that", after PR #1).
+    - Diagnosis: `styles/styles.css` reserved a `--nav-height` of 237–569 px. The `/nav` fragment carries the source's Material-icon ligature text and its utility paragraphs, and the chrome CSS had no menu toggle.
+    - Rebuilt `blocks/header/header.{js,css}` to Figma M9 (`canon-source/assets/screenshots/header.png`). Desktop (≥ 1024px): utility row, then brand | nav | search. Below 1024px: hamburger panel. `--nav-height` is now 65/114 px.
+    - The local `aem up` failed (isomorphic-git index checksum on the worktree). I verified instead by rendering the preview with the working-tree code routed in via Playwright (`stardust/.work/reskin/hshot.mjs`, `LOCAL=1`) at 1440, 1024, 900, 768 and 390, with the menu open and closed.
+    - `npm run lint` passed. Commit `d4e0b8d`, `push.sh`, `sync.sh` → `fortstreet` preview verified.
+    - Re-ran `fidelity.mjs` (58 captures; the previous results are kept in `fidelity-pre-header-fix.json`). Regenerated the composites with `.work/reskin/compose.py`. Before/after header shots are in `reports/screens/header/`.
+
 ---
 
 ## Named deviations and helpers (not from the branch)

@@ -15,9 +15,9 @@
 | Metric | Value | Source / method | Status |
 |---|---|---|---|
 | **Pages migrated** | **52 / 52** on aem.page preview (not published) | `stardust/state.json`, `reskin/ledger.json` (`migratedStatus: gated` ×52) | Recorded |
-| **Visual similarity to the original, 1440px** | **69.8 %** mean pixel similarity (median 70.8 %, range 40.2–84.0 %) | `pixel-compare.mjs` (branch) with threshold 100, overlap region. 100 − mean differing-pixel 30.23 % | Recorded |
-| **Structural similarity (SSIM), 1440px** | **40.7** overlap · 39.8 height-normalized · 47.2 above-the-fold (0–100) | `ssim.mjs` (agent helper) on 4× downscaled greyscale | Recorded |
-| Visual similarity, 768 / 390 (3 archetypes) | 49.6 % / 49.8 % pixel · SSIM 17.7 / 12.1 | same | Recorded |
+| **Visual similarity to the original, 1440px** | **71.1 %** mean pixel similarity (median 72.0 %, range 45.3–86.4 %). Before the header fix: 69.8 % (median 70.8 %, range 40.2–84.0 %) | `pixel-compare.mjs` (branch) with threshold 100, overlap region. Re-measured after the header fix (`d4e0b8d`); the pre-fix run is kept in `fidelity-pre-header-fix.json` | Recorded |
+| **Structural similarity (SSIM), 1440px** | **40.5** overlap · 39.6 height-normalized · 41.5 above-the-fold (0–100). Before the fix: 40.7 · 39.8 · 47.2 | `ssim.mjs` (agent helper) on 4× downscaled greyscale | Recorded |
+| Visual similarity, 768 / 390 (3 archetypes) | 51.4 % / 51.3 % pixel · SSIM 18.7 / 11.3 (before the fix: 49.6 % / 49.8 % · 17.7 / 12.1) | same | Recorded |
 | **Content fidelity** | Text byte-equal to the source on **52/52** pages. Images carried 15/15 on home. 4 pages have accepted image residuals (source `about:error` images ×3, an `<h1>`-wrapped image ×1) | reskin dom-equality + deployed content gates | Recorded |
 | **Design fidelity to Figma** | Migrated-output gates: donor-probe 51/52, dom-equality 48/52, slot-coverage 47/52 → **46/52 pages pass all three**. 46 residuals logged, all `accepted` | `reskin/ledger.json` | Recorded |
 | **Input tokens** | **152,042,147** (cache read 147,945,500 · cache write 4,093,981 · uncached 2,666) | `~/.copilot/session-store.db` → `assistant_usage_events` | Recorded |
@@ -55,6 +55,7 @@
 | 13:34–14:45 | Extra EDS blocks and DA content for 51 pages, deployed to preview |
 | 14:03–14:45 | `migrate render --all`, migrated-output gates, ledger, state → `migrated` |
 | 14:45–15:03 | Fidelity run (58 captures), compare composites, DA block library (excat skill) |
+| after 15:03 | Report, commit, PR #1. Then the **header fix** (user request "plss fix that"): rebuilt `blocks/header` to Figma M9, deployed (`d4e0b8d`) and re-ran the 58-capture fidelity run. Not included in the token/AIU totals above |
 
 ## 2. Fidelity: how to read it
 
@@ -68,7 +69,7 @@ A reskin **changes the visual design on purpose**: the original NSW school templ
 
 | Area | Original | Migrated | Cause |
 |---|---|---|---|
-| **Header** | NSW masthead: crest + school name, horizontal mega-nav, search | Unstyled 3-column chrome: no visible logo; skip links, "NSW Government", motto and search buttons stacked on the right; nav labels include the literal `keyboard_arrow_right` ligature. At 390 there is no hamburger and the nav renders as a list | **Defect.** It was already present at home deploy (`.work/deploy/shots/proto-1440-top.png`) and `header.js` is unchanged since then. **This is the largest single visual-fidelity loss** |
+| **Header** | NSW masthead: crest + school name, horizontal mega-nav, search | Figma M9 header: utility row ("NSW Government") above a bar with crest + school name + motto on the left, 5 serif nav links (magenta underline for the current section) and a search icon on the right. Below 1024px: hamburger + search, nav in a full-width drop-down panel | **Fixed** in `d4e0b8d` (see § 2.1). Before the fix it was an unstyled 3-column chrome with no visible logo, a 529 px blank reservation, the literal `keyboard_arrow_right` ligature and no hamburger. The original's dropdown chevrons and mega-menus are not reproduced (no submenu content is authored) |
 | Hero | Full-bleed photo with an overlay card | Light band split: text on the left (serif maroon H1), image on the right | Intentional (Figma M1 hero) |
 | Cards | Maroon image cards | Icon/bullet lists (`cards-list`). The `dark`/`off-white` variants render as 2-up panels | Intentional mapping to the M2 teaser list. Visually the largest component change |
 | Colour | Dark maroon feature bands (e.g. school tours) | Light grey `columns light` bands | Intentional (M4 CTA banner tokens) |
@@ -76,77 +77,92 @@ A reskin **changes the visual design on purpose**: the original NSW school templ
 | Layout | Left sidebar nav + breadcrumb on inner pages | Sidebar and breadcrumb dropped; single column | Normalize decision (chrome not in the Figma kit) |
 | Accordions | Collapsed | Start open (EW7), which makes wellbeing much taller (5,922 → 18,860 px at 390) | Intentional authoring rule. It also makes the overlap-mode pixel score look better than it is |
 | Tables | Bordered | Borderless and full width (except `table bordered`) | Token-driven restyle |
-| Page height | e.g. home 5,951 px | home 4,944 px | Sum of the above |
+| Page height | e.g. home 5,951 px | home 4,489 px (4,944 px before the header fix) | Sum of the above |
 
 Caveat: pixel compare uses the **overlap** region (the shorter page's height). Pages that grow a lot (accordion-heavy) are compared on their top part only. SSIM height-normalized resizes both captures to the same height and is the fairer whole-page number.
+
+### 2.1 Header fix (after the first benchmark)
+
+The first benchmark flagged the header as the largest visual defect. It was rebuilt to the Figma M9 header (`stardust/canon-source/assets/screenshots/header.png`):
+
+- **`blocks/header/header.js`** classifies the `/nav` fragment defensively. Skip links → focus-only skip links. Plain-text lines → school name + motto. The search link → icon button. The source's "Show" menu link → dropped (a real `button.nav-toggle` replaces it). Everything else → utility links. Nav labels have the source's Material-icon ligature text (`keyboard_arrow_right`) stripped.
+- **`blocks/header/header.css`** ≥ 1024px: utility row + brand | inline nav | search. < 1024px: brand | search + hamburger, with the nav (and utility links) in a full-width panel. `aria-expanded`/`aria-controls`, Escape closes, the current page gets `aria-current`.
+- **`styles/styles.css`**: the `--nav-height` reservation went from 237–569 px (5 breakpoints) to 65 px / 114 px, matching the rendered header, so there is no layout shift.
+
+| Viewport | Before → after |
+|---|---|
+| 1440 | ![header 1440](screens/header/header-1440.jpg) |
+| 390 | ![header 390](screens/header/header-390.jpg) |
+
+**Effect on the scores.** The header now matches the design, but the metrics move only a little and not all upwards. The mean pixel similarity rose 1.3 points (31 pages up, 21 down). Above-the-fold SSIM fell from 47.2 to 41.5. The old header was mostly a blank 529 px area, and blank white matched the original's white masthead well. Removing it moved every page's content up by about 400 px, and it no longer sits at the original's y-positions. Pixel and SSIM scores are position-sensitive, so they don't reward a correct redesign. Use the composites to judge.
 
 ### Per-page fidelity, 1440px (sorted by pixel similarity)
 
 | Page | Pixel similarity | SSIM overlap | SSIM height-norm | SSIM above-fold | Height orig → migrated (px) | Composite |
 |---|---|---|---|---|---|---|
-| `school-life-uniform-uniform-shop` | 84.0% | 40.8 | 41.1 | 51.4 | 5899 → 7135 | [compare](screens/compare/school-life-uniform-uniform-shop-1440.jpg) |
-| `school-life-bring-your-own-device` | 81.8% | 43.5 | 40.9 | 43.2 | 4519 → 4189 | [compare](screens/compare/school-life-bring-your-own-device-1440.jpg) |
-| `school-life-student-opportunities-and-activities-academic-competitions` | 81.7% | 40.4 | 41.1 | 48.5 | 5551 → 5707 | [compare](screens/compare/school-life-student-opportunities-and-activities-academic-competitions-1440.jpg) |
-| `school-life-travel-to-school` | 81.6% | 41.5 | 41.4 | 49.4 | 6919 → 7932 | [compare](screens/compare/school-life-travel-to-school-1440.jpg) |
-| `our-community-foundation` | 80.1% | 42.2 | 42.3 | 40.2 | 5668 → 6142 | [compare](screens/compare/our-community-foundation-1440.jpg) |
-| `school-life-canteen` | 80.0% | 44.6 | 44.0 | 49.7 | 4360 → 4195 | [compare](screens/compare/school-life-canteen-1440.jpg) |
-| `school-life-bell-times` | 79.8% | 34.5 | 36.5 | 49.1 | 3839 → 4397 | [compare](screens/compare/school-life-bell-times-1440.jpg) |
-| `our-community-pandc` | 79.4% | 45.9 | 43.5 | 40.2 | 6275 → 7292 | [compare](screens/compare/our-community-pandc-1440.jpg) |
-| `our-community-alumni` | 78.5% | 38.4 | 37.7 | 44.4 | 4299 → 4077 | [compare](screens/compare/our-community-alumni-1440.jpg) |
-| `learning-and-support-wellbeing` | 78.4% | 44.1 | 36.7 | 43.0 | 5465 → 11797 | [compare](screens/compare/learning-and-support-wellbeing-1440.jpg) |
-| `school-life-parent-portal` | 78.1% | 46.5 | 46.2 | 57.6 | 3731 → 4075 | [compare](screens/compare/school-life-parent-portal-1440.jpg) |
-| `about-us-school-history-and-archives-fort-street-archives` | 77.2% | 43.5 | 42.2 | 44.2 | 5067 → 5258 | [compare](screens/compare/about-us-school-history-and-archives-fort-street-archives-1440.jpg) |
-| `school-life-student-opportunities-and-activities-clubs-and-committees` | 77.0% | 41.4 | 39.8 | 51.1 | 4022 → 4187 | [compare](screens/compare/school-life-student-opportunities-and-activities-clubs-and-committees-1440.jpg) |
-| `our-community-foundation-tertiary-bursaries` | 76.1% | 42.0 | 43.4 | 43.8 | 2408 → 2771 | [compare](screens/compare/our-community-foundation-tertiary-bursaries-1440.jpg) |
-| `school-life-student-opportunities-and-activities-instrumental-music-program` | 75.1% | 37.0 | 38.3 | 40.8 | 5947 → 6154 | [compare](screens/compare/school-life-student-opportunities-and-activities-instrumental-music-program-1440.jpg) |
-| `school-life-newsletters` | 74.8% | 46.4 | 43.7 | 56.3 | 3122 → 4343 | [compare](screens/compare/school-life-newsletters-1440.jpg) |
-| `school-life-house-and-merit-system` | 74.5% | 43.2 | 43.1 | 51.6 | 5603 → 5258 | [compare](screens/compare/school-life-house-and-merit-system-1440.jpg) |
-| `contact-us` | 74.4% | 51.7 | 47.5 | 56.0 | 3329 → 4436 | [compare](screens/compare/contact-us-1440.jpg) |
-| `learning-and-support-learning` | 73.9% | 42.2 | 32.8 | 48.1 | 5123 → 15609 | [compare](screens/compare/learning-and-support-learning-1440.jpg) |
-| `school-life-student-opportunities-and-activities-sport` | 73.5% | 43.6 | 44.6 | 50.3 | 3600 → 4042 | [compare](screens/compare/school-life-student-opportunities-and-activities-sport-1440.jpg) |
-| `our-community-fortians-union` | 72.9% | 45.6 | 45.4 | 55.9 | 2300 → 2753 | [compare](screens/compare/our-community-fortians-union-1440.jpg) |
-| `about-us-policies-and-reports` | 72.6% | 40.4 | 38.0 | 42.4 | 3647 → 5714 | [compare](screens/compare/about-us-policies-and-reports-1440.jpg) |
-| `school-life-lockers-and-lost-property` | 71.7% | 42.7 | 42.9 | 46.9 | 3401 → 3676 | [compare](screens/compare/school-life-lockers-and-lost-property-1440.jpg) |
-| `learning-and-support` | 71.7% | 49.3 | 45.4 | 53.9 | 1967 → 1740 | [compare](screens/compare/learning-and-support-1440.jpg) |
-| `school-life-student-opportunities-and-activities-creative-and-performing-arts` | 71.6% | 42.0 | 39.2 | 45.3 | 3172 → 3419 | [compare](screens/compare/school-life-student-opportunities-and-activities-creative-and-performing-arts-1440.jpg) |
-| `about-us-school-history-and-archives-the-fortian-digitised` | 71.0% | 50.9 | 49.4 | 48.7 | 3183 → 13287 | [compare](screens/compare/about-us-school-history-and-archives-the-fortian-digitised-1440.jpg) |
-| `about-us-transition-to-high-school` | 70.6% | 42.7 | 43.1 | 43.9 | 3979 → 4313 | [compare](screens/compare/about-us-transition-to-high-school-1440.jpg) |
-| `school-life-student-opportunities-and-activities-student-leadership-opportunities` | 70.3% | 36.3 | 37.3 | 45.4 | 3384 → 4327 | [compare](screens/compare/school-life-student-opportunities-and-activities-student-leadership-opportunities-1440.jpg) |
-| `learning-and-support-additional-learning-support` | 70.3% | 35.4 | 33.3 | 43.1 | 4914 → 8679 | [compare](screens/compare/learning-and-support-additional-learning-support-1440.jpg) |
-| `school-life-uniform` | 69.4% | 40.2 | 36.3 | 44.0 | 3574 → 6254 | [compare](screens/compare/school-life-uniform-1440.jpg) |
-| `learning-and-support-high-potential-and-gifted-education` | 69.1% | 38.8 | 40.4 | 48.1 | 4365 → 5522 | [compare](screens/compare/learning-and-support-high-potential-and-gifted-education-1440.jpg) |
-| `about-us-our-principal-and-staff` | 68.5% | 40.4 | 41.4 | 45.2 | 6986 → 8414 | [compare](screens/compare/about-us-our-principal-and-staff-1440.jpg) |
-| `school-life-events` | 68.2% | 41.9 | 42.6 | 57.6 | 6411 → 7233 | [compare](screens/compare/school-life-events-1440.jpg) |
-| `school-life-forms` | 68.0% | 38.1 | 40.5 | 47.5 | 1975 → 2383 | [compare](screens/compare/school-life-forms-1440.jpg) |
-| `our-community` | 67.3% | 45.5 | 42.2 | 48.2 | 2547 → 2282 | [compare](screens/compare/our-community-1440.jpg) |
-| `school-life-student-opportunities-and-activities-duke-of-edinburgh-award` | 65.0% | 40.4 | 36.9 | 46.3 | 7505 → 10128 | [compare](screens/compare/school-life-student-opportunities-and-activities-duke-of-edinburgh-award-1440.jpg) |
-| `learning-and-support-careers` | 64.7% | 34.5 | 35.0 | 47.5 | 4084 → 4677 | [compare](screens/compare/learning-and-support-careers-1440.jpg) |
-| `school-life` | 64.6% | 41.0 | 40.1 | 49.0 | 4342 → 2589 | [compare](screens/compare/school-life-1440.jpg) |
-| `about-us-enrol` | 64.5% | 37.2 | 39.4 | 47.2 | 3941 → 6287 | [compare](screens/compare/about-us-enrol-1440.jpg) |
-| `about-us` | 64.5% | 41.5 | 42.3 | 44.8 | 2857 → 2014 | [compare](screens/compare/about-us-1440.jpg) |
-| `about-us-policies-and-reports-nsw-public-school-information` | 62.8% | 40.4 | 38.5 | 45.6 | 1876 → 2203 | [compare](screens/compare/about-us-policies-and-reports-nsw-public-school-information-1440.jpg) |
-| `school-life-student-opportunities-and-activities-robotics-and-maker-society` | 62.4% | 39.2 | 39.6 | 47.6 | 2356 → 2641 | [compare](screens/compare/school-life-student-opportunities-and-activities-robotics-and-maker-society-1440.jpg) |
-| `school-life-student-opportunities-and-activities-debating-and-public-speaking` | 62.2% | 38.4 | 37.1 | 45.9 | 2135 → 2449 | [compare](screens/compare/school-life-student-opportunities-and-activities-debating-and-public-speaking-1440.jpg) |
-| `school-life-student-opportunities-and-activities` | 62.1% | 40.7 | 41.8 | 48.6 | 5270 → 6555 | [compare](screens/compare/school-life-student-opportunities-and-activities-1440.jpg) |
-| `about-us-hsc-results` | 62.0% | 38.4 | 37.8 | 44.3 | 10845 → 11919 | [compare](screens/compare/about-us-hsc-results-1440.jpg) |
-| `about-us-stories-and-highlights` | 61.6% | 33.9 | 29.9 | 49.7 | 3767 → 8872 | [compare](screens/compare/about-us-stories-and-highlights-1440.jpg) |
-| `about-us-facilities-and-resources` | 60.6% | 35.7 | 34.0 | 53.0 | 3019 → 5032 | [compare](screens/compare/about-us-facilities-and-resources-1440.jpg) |
-| `about-us-why-choose-us` | 58.0% | 37.4 | 37.4 | 46.0 | 6290 → 6277 | [compare](screens/compare/about-us-why-choose-us-1440.jpg) |
-| `home` | 53.5% | 30.5 | 29.9 | 21.1 | 5951 → 4944 | [compare](screens/compare/home-1440.jpg) |
-| `about-us-school-history-and-archives` | 53.3% | 32.9 | 32.3 | 49.1 | 5596 → 7233 | [compare](screens/compare/about-us-school-history-and-archives-1440.jpg) |
-| `school-life-stationery` | 53.0% | 37.1 | 39.1 | 47.0 | 2006 → 2372 | [compare](screens/compare/school-life-stationery-1440.jpg) |
-| `about-us-school-history-and-archives-the-fort-street-museum` | 40.2% | 31.8 | 33.3 | 45.8 | 3448 → 4288 | [compare](screens/compare/about-us-school-history-and-archives-the-fort-street-museum-1440.jpg) |
+| `school-life-student-opportunities-and-activities-academic-competitions` | 86.4% | 42.48 | 41.21 | 42.05 | 5551 → 5252 | [compare](screens/compare/school-life-student-opportunities-and-activities-academic-competitions-1440.jpg) |
+| `school-life-canteen` | 86.1% | 45.73 | 45.53 | 43.25 | 4360 → 3740 | [compare](screens/compare/school-life-canteen-1440.jpg) |
+| `school-life-uniform-uniform-shop` | 84.2% | 40.2 | 40.32 | 48.21 | 5899 → 6680 | [compare](screens/compare/school-life-uniform-uniform-shop-1440.jpg) |
+| `learning-and-support` | 82.7% | 49.17 | 43.81 | 52.57 | 1967 → 1285 | [compare](screens/compare/learning-and-support-1440.jpg) |
+| `school-life-student-opportunities-and-activities-clubs-and-committees` | 82.7% | 44.57 | 39.28 | 43.76 | 4022 → 3732 | [compare](screens/compare/school-life-student-opportunities-and-activities-clubs-and-committees-1440.jpg) |
+| `school-life-travel-to-school` | 82.0% | 41.56 | 41.59 | 49.6 | 6919 → 7477 | [compare](screens/compare/school-life-travel-to-school-1440.jpg) |
+| `our-community-alumni` | 81.7% | 36.04 | 36.5 | 38.34 | 4299 → 3622 | [compare](screens/compare/our-community-alumni-1440.jpg) |
+| `about-us-school-history-and-archives-fort-street-archives` | 81.5% | 45.42 | 42.98 | 39.57 | 5067 → 4803 | [compare](screens/compare/about-us-school-history-and-archives-fort-street-archives-1440.jpg) |
+| `school-life-bring-your-own-device` | 81.4% | 38.02 | 40.2 | 35.61 | 4519 → 3734 | [compare](screens/compare/school-life-bring-your-own-device-1440.jpg) |
+| `school-life-parent-portal` | 81.4% | 48.56 | 49.03 | 58.32 | 3731 → 3620 | [compare](screens/compare/school-life-parent-portal-1440.jpg) |
+| `our-community-foundation` | 80.0% | 42.03 | 43.25 | 35.69 | 5668 → 5687 | [compare](screens/compare/our-community-foundation-1440.jpg) |
+| `school-life-bell-times` | 79.8% | 36.66 | 36.54 | 44.41 | 3839 → 3942 | [compare](screens/compare/school-life-bell-times-1440.jpg) |
+| `our-community-foundation-tertiary-bursaries` | 78.9% | 43.2 | 43.89 | 42.73 | 2408 → 2316 | [compare](screens/compare/our-community-foundation-tertiary-bursaries-1440.jpg) |
+| `our-community-pandc` | 77.2% | 44.66 | 43.93 | 28.3 | 6275 → 6837 | [compare](screens/compare/our-community-pandc-1440.jpg) |
+| `school-life-student-opportunities-and-activities-creative-and-performing-arts` | 76.7% | 42.07 | 41.3 | 39.27 | 3172 → 2964 | [compare](screens/compare/school-life-student-opportunities-and-activities-creative-and-performing-arts-1440.jpg) |
+| `learning-and-support-wellbeing` | 76.5% | 42.86 | 34.84 | 34.32 | 5465 → 11342 | [compare](screens/compare/learning-and-support-wellbeing-1440.jpg) |
+| `contact-us` | 75.7% | 50.1 | 49.38 | 55.11 | 3329 → 3981 | [compare](screens/compare/contact-us-1440.jpg) |
+| `school-life-house-and-merit-system` | 75.6% | 42.75 | 42.43 | 48.88 | 5603 → 4803 | [compare](screens/compare/school-life-house-and-merit-system-1440.jpg) |
+| `school-life-lockers-and-lost-property` | 75.0% | 43.54 | 43.58 | 40.51 | 3401 → 3221 | [compare](screens/compare/school-life-lockers-and-lost-property-1440.jpg) |
+| `school-life-newsletters` | 74.6% | 45.51 | 45.43 | 55.6 | 3122 → 3888 | [compare](screens/compare/school-life-newsletters-1440.jpg) |
+| `school-life-student-opportunities-and-activities-instrumental-music-program` | 74.4% | 36.51 | 36.85 | 30.78 | 5947 → 5699 | [compare](screens/compare/school-life-student-opportunities-and-activities-instrumental-music-program-1440.jpg) |
+| `school-life-student-opportunities-and-activities-sport` | 74.1% | 43.53 | 44.02 | 44.78 | 3600 → 3587 | [compare](screens/compare/school-life-student-opportunities-and-activities-sport-1440.jpg) |
+| `about-us-transition-to-high-school` | 74.0% | 42.35 | 43.62 | 38.93 | 3979 → 3858 | [compare](screens/compare/about-us-transition-to-high-school-1440.jpg) |
+| `learning-and-support-learning` | 73.0% | 39.85 | 31.29 | 37.85 | 5123 → 15154 | [compare](screens/compare/learning-and-support-learning-1440.jpg) |
+| `our-community-fortians-union` | 72.6% | 45.01 | 45.88 | 52.07 | 2300 → 2298 | [compare](screens/compare/our-community-fortians-union-1440.jpg) |
+| `our-community` | 72.0% | 45 | 41.97 | 41.92 | 2547 → 1827 | [compare](screens/compare/our-community-1440.jpg) |
+| `about-us-our-principal-and-staff` | 72.0% | 42.46 | 41.59 | 38.83 | 6986 → 7959 | [compare](screens/compare/about-us-our-principal-and-staff-1440.jpg) |
+| `about-us-policies-and-reports` | 71.9% | 39.54 | 34.7 | 35.59 | 3647 → 5259 | [compare](screens/compare/about-us-policies-and-reports-1440.jpg) |
+| `about-us-school-history-and-archives-the-fortian-digitised` | 71.3% | 51.03 | 48.94 | 42.85 | 3183 → 12832 | [compare](screens/compare/about-us-school-history-and-archives-the-fortian-digitised-1440.jpg) |
+| `learning-and-support-additional-learning-support` | 71.2% | 37.69 | 33.03 | 38.27 | 4914 → 8224 | [compare](screens/compare/learning-and-support-additional-learning-support-1440.jpg) |
+| `school-life-student-opportunities-and-activities-student-leadership-opportunities` | 69.7% | 36.74 | 36.89 | 38.01 | 3384 → 3872 | [compare](screens/compare/school-life-student-opportunities-and-activities-student-leadership-opportunities-1440.jpg) |
+| `school-life-forms` | 69.4% | 38.32 | 38.47 | 43.72 | 1975 → 1928 | [compare](screens/compare/school-life-forms-1440.jpg) |
+| `learning-and-support-high-potential-and-gifted-education` | 68.3% | 38.42 | 39.29 | 42.92 | 4365 → 5067 | [compare](screens/compare/learning-and-support-high-potential-and-gifted-education-1440.jpg) |
+| `school-life-events` | 68.0% | 42.35 | 42.91 | 56.5 | 6411 → 6778 | [compare](screens/compare/school-life-events-1440.jpg) |
+| `school-life-student-opportunities-and-activities-robotics-and-maker-society` | 67.6% | 41.68 | 38.34 | 40.18 | 2356 → 2186 | [compare](screens/compare/school-life-student-opportunities-and-activities-robotics-and-maker-society-1440.jpg) |
+| `school-life` | 67.5% | 40.3 | 40.78 | 45.42 | 4342 → 2134 | [compare](screens/compare/school-life-1440.jpg) |
+| `school-life-uniform` | 67.1% | 39.28 | 34.82 | 35.83 | 3574 → 5799 | [compare](screens/compare/school-life-uniform-1440.jpg) |
+| `about-us-policies-and-reports-nsw-public-school-information` | 66.6% | 39.49 | 40.28 | 37.88 | 1876 → 1748 | [compare](screens/compare/about-us-policies-and-reports-nsw-public-school-information-1440.jpg) |
+| `about-us-enrol` | 66.5% | 34.94 | 37.32 | 38.61 | 3941 → 5832 | [compare](screens/compare/about-us-enrol-1440.jpg) |
+| `school-life-student-opportunities-and-activities-debating-and-public-speaking` | 66.2% | 37.58 | 36.7 | 36.79 | 2135 → 1994 | [compare](screens/compare/school-life-student-opportunities-and-activities-debating-and-public-speaking-1440.jpg) |
+| `about-us` | 64.5% | 38.48 | 41.9 | 42.04 | 2857 → 1559 | [compare](screens/compare/about-us-1440.jpg) |
+| `about-us-why-choose-us` | 63.2% | 40.32 | 37.53 | 40.9 | 6290 → 5822 | [compare](screens/compare/about-us-why-choose-us-1440.jpg) |
+| `school-life-student-opportunities-and-activities` | 62.0% | 39.72 | 39.1 | 40.88 | 5270 → 6100 | [compare](screens/compare/school-life-student-opportunities-and-activities-1440.jpg) |
+| `about-us-hsc-results` | 61.8% | 37.87 | 37.17 | 36.48 | 10845 → 11464 | [compare](screens/compare/about-us-hsc-results-1440.jpg) |
+| `school-life-student-opportunities-and-activities-duke-of-edinburgh-award` | 61.4% | 40.35 | 38.91 | 37.59 | 7505 → 9673 | [compare](screens/compare/school-life-student-opportunities-and-activities-duke-of-edinburgh-award-1440.jpg) |
+| `learning-and-support-careers` | 59.8% | 33.95 | 33.83 | 40.2 | 4084 → 4222 | [compare](screens/compare/learning-and-support-careers-1440.jpg) |
+| `about-us-stories-and-highlights` | 59.6% | 31.74 | 29.76 | 41.9 | 3767 → 8417 | [compare](screens/compare/about-us-stories-and-highlights-1440.jpg) |
+| `school-life-stationery` | 58.3% | 40.72 | 39.42 | 40.06 | 2006 → 1917 | [compare](screens/compare/school-life-stationery-1440.jpg) |
+| `about-us-facilities-and-resources` | 56.5% | 32.79 | 31.35 | 46.81 | 3019 → 4577 | [compare](screens/compare/about-us-facilities-and-resources-1440.jpg) |
+| `about-us-school-history-and-archives-the-fort-street-museum` | 51.6% | 32.87 | 33.35 | 33.87 | 3448 → 3833 | [compare](screens/compare/about-us-school-history-and-archives-the-fort-street-museum-1440.jpg) |
+| `about-us-school-history-and-archives` | 48.1% | 30.41 | 32.98 | 42.42 | 5596 → 6778 | [compare](screens/compare/about-us-school-history-and-archives-1440.jpg) |
+| `home` | 45.3% | 27.94 | 31.25 | 19.1 | 5951 → 4489 | [compare](screens/compare/home-1440.jpg) |
 
 ### Archetypes at 768 and 390
 
 | Page | Width | Pixel similarity | SSIM overlap | Height orig → migrated (px) | Composite |
 |---|---|---|---|---|---|
-| `home` | 768 | 41.5% | 15.8 | 6645 → 7050 | [compare](screens/compare/home-768.jpg) |
-| `home` | 390 | 44.8% | 10.4 | 8709 → 8507 | [compare](screens/compare/home-390.jpg) |
-| `school-life` | 768 | 40.5% | 13.3 | 3881 → 2801 | [compare](screens/compare/school-life-768.jpg) |
-| `school-life` | 390 | 34.4% | 10.4 | 6640 → 4263 | [compare](screens/compare/school-life-390.jpg) |
-| `learning-and-support-wellbeing` | 768 | 66.8% | 24.0 | 5321 → 13223 | [compare](screens/compare/learning-and-support-wellbeing-768.jpg) |
-| `learning-and-support-wellbeing` | 390 | 70.1% | 15.4 | 5922 → 18860 | [compare](screens/compare/learning-and-support-wellbeing-390.jpg) |
+| `home` | 768 | 41.0% | 15.77 | 6645 → 6834 | [compare](screens/compare/home-768.jpg) |
+| `home` | 390 | 45.3% | 10.11 | 8709 → 8043 | [compare](screens/compare/home-390.jpg) |
+| `school-life` | 768 | 42.5% | 14.6 | 3881 → 2585 | [compare](screens/compare/school-life-768.jpg) |
+| `school-life` | 390 | 36.5% | 11.56 | 6640 → 3799 | [compare](screens/compare/school-life-390.jpg) |
+| `learning-and-support-wellbeing` | 768 | 70.6% | 25.66 | 5321 → 13007 | [compare](screens/compare/learning-and-support-wellbeing-768.jpg) |
+| `learning-and-support-wellbeing` | 390 | 72.1% | 12.15 | 5922 → 18396 | [compare](screens/compare/learning-and-support-wellbeing-390.jpg) |
 
 All 58 composites are in [`screens/compare/`](screens/compare/). Each is ORIGINAL | MIGRATED | DIFF, scaled JPEG. The full-resolution captures and diff masks were produced locally under `screens/{original,migrated,diff}/` (about 240 MB). They are not committed.
 
@@ -178,7 +194,7 @@ flowchart LR
 | **facebook-feed** | 3 | — (light band + link tokens) | 1 cell: link to the Facebook page | `.facebook-feed-panel` + action link. No third-party script |
 | **planningreporting** | 1 | — (list + link tokens) | Key/value config rows: `reporttype`, `schoolcode` | Fetches the NSW school plan/report API → `ul.planningreporting-list > li > a`; on failure, links to the department page |
 | **embed** | 0 authored (auto-blocked) | — | Plain link; `scripts.js` auto-blocks known hosts (Brightcove, Google Maps) | `.embed-frame` (16:9 placeholder + load button) + `.embed-source`. The iframe is created on click only |
-| **header** | all (`/nav` fragment) | M9 header | 3 sections: logo \| `ul` of 5 nav links \| utility paragraphs | `.site-header > .chrome-row > .container` with `.nav-brand`, `nav#main-nav`, `.nav-actions`. No hamburger (the prototype has none) → **see the header defect above** |
+| **header** | all (`/nav` fragment) | M9 header | 3 sections: logo \| `ul` of 5 nav links \| utility paragraphs | `.site-header` > skip links + `.nav-utility` + `.nav-bar > .nav-container` with `a.nav-brand` (logo, name, motto), `nav#main-nav > ul`, `.nav-actions` (search link + `button.nav-toggle`). Ligature text is stripped; the menu panel is under 1024px → **§ 2.1** |
 | **footer** | all (`/footer` fragment) | M10 footer | 2 sections: logo + 6 info paragraphs \| `ul` of 4 links | `.site-footer > .container.chrome-footer` with `.footer-brand` + `ul.footer-links` |
 
 Default content (headings above blocks, lone h2 sections) and `metadata` stay outside blocks. No section-metadata styles are used. Full per-block details: [`deploy-report.md`](deploy-report.md) (home blocks) and [`deploy-siblings-report.md`](deploy-siblings-report.md) (the 7 extra blocks).
