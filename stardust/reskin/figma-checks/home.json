@@ -20,25 +20,29 @@
           "id": "g1",
           "selector": ".panel",
           "measure": "width",
-          "node": "12950:24817"
+          "node": "12950:24817",
+          "previewSelector": ".hero-panel"
         },
         {
           "id": "g2",
           "selector": ".split-img",
           "measure": "width",
-          "node": "12950:24804"
+          "node": "12950:24804",
+          "previewSelector": ".hero-media img"
         }
       ],
       "type": [
         {
           "id": "t1",
           "selector": ".heading",
-          "node": "12950:24787"
+          "node": "12950:24787",
+          "previewSelector": ".hero-text h1"
         },
         {
           "id": "t2",
           "selector": "p.lead",
-          "node": "12950:24788"
+          "node": "12950:24788",
+          "previewSelector": ".hero-text > p"
         }
       ]
     },
@@ -59,30 +63,35 @@
           "id": "g1",
           "selector": ".panel",
           "measure": "width",
-          "node": "12431:14271"
+          "node": "12431:14271",
+          "previewSelector": ".columns-panel"
         },
         {
           "id": "g2",
           "selector": ".split-img",
           "measure": "width",
-          "node": "12431:14261"
+          "node": "12431:14261",
+          "previewSelector": ".columns-media img"
         }
       ],
       "type": [
         {
           "id": "t1",
           "selector": ".heading",
-          "node": "I12534:1358;12529:1209"
+          "node": "I12534:1358;12529:1209",
+          "previewSelector": ".columns-text h2"
         },
         {
           "id": "t2",
           "selector": "p.lead",
-          "node": "12431:14265"
+          "node": "12431:14265",
+          "previewSelector": ".columns-text > p"
         },
         {
           "id": "t3",
           "selector": ".btn",
-          "node": "I12431:14266;12077:109144"
+          "node": "I12431:14266;12077:109144",
+          "previewSelector": ".columns-text a.button"
         }
       ]
     },
@@ -104,25 +113,29 @@
           "id": "g1",
           "selector": ".panel",
           "measure": "width",
-          "node": "12431:14270"
+          "node": "12431:14270",
+          "previewSelector": ".columns-panel"
         },
         {
           "id": "g2",
           "selector": ".split-img",
           "measure": "width",
-          "node": "12431:14241"
+          "node": "12431:14241",
+          "previewSelector": ".columns-media img"
         }
       ],
       "type": [
         {
           "id": "t1",
           "selector": ".heading",
-          "node": "I12534:1355;12529:1209"
+          "node": "I12534:1355;12529:1209",
+          "previewSelector": ".columns-text h2"
         },
         {
           "id": "t2",
           "selector": "p.lead",
-          "node": "12431:14243"
+          "node": "12431:14243",
+          "previewSelector": ".columns-text > p"
         }
       ]
     },
@@ -177,12 +190,14 @@
         {
           "id": "t1",
           "selector": "h2.heading",
-          "node": "I13370:1456;12529:1209"
+          "node": "I13370:1456;12529:1209",
+          "previewSelector": ".columns-text h2"
         },
         {
           "id": "t2",
           "selector": "p.lead",
-          "node": "I13370:1865;12534:1254"
+          "node": "I13370:1865;12534:1254",
+          "previewSelector": ".columns-text > p"
         }
       ]
     },
@@ -236,17 +251,20 @@
         {
           "id": "t1",
           "selector": "h2.heading",
-          "node": "I13370:1456;12529:1209"
+          "node": "I13370:1456;12529:1209",
+          "previewSelector": ".columns-text h2"
         },
         {
           "id": "t2",
           "selector": "p.lead",
-          "node": "I13370:1865;12534:1254"
+          "node": "I13370:1865;12534:1254",
+          "previewSelector": ".columns-text > p"
         },
         {
           "id": "t3",
           "selector": ".btn",
-          "node": "I13370:1892;13028:1785;12077:109144"
+          "node": "I13370:1892;13028:1785;12077:109144",
+          "previewSelector": ".columns-text a.button"
         }
       ]
     },
@@ -268,25 +286,29 @@
           "id": "g1",
           "selector": ".panel",
           "measure": "width",
-          "node": "12431:14270"
+          "node": "12431:14270",
+          "previewSelector": ".columns-panel"
         },
         {
           "id": "g2",
           "selector": ".split-img",
           "measure": "width",
-          "node": "12431:14241"
+          "node": "12431:14241",
+          "previewSelector": ".columns-media img"
         }
       ],
       "type": [
         {
           "id": "t1",
           "selector": ".heading",
-          "node": "I12534:1355;12529:1209"
+          "node": "I12534:1355;12529:1209",
+          "previewSelector": ".columns-text h2"
         },
         {
           "id": "t2",
           "selector": "p.lead",
-          "node": "12431:14243"
+          "node": "12431:14243",
+          "previewSelector": ".columns-text > p"
         }
       ]
     },
@@ -308,14 +330,16 @@
           "id": "g1",
           "selector": ".panel",
           "measure": "width",
-          "node": "12534:1405"
+          "node": "12534:1405",
+          "previewSelector": ".default-content-wrapper"
         }
       ],
       "type": [
         {
           "id": "t1",
           "selector": "h2.heading",
-          "node": "I12534:1395;12529:1207"
+          "node": "I12534:1395;12529:1207",
+          "previewSelector": ".default-content-wrapper > h2"
         }
       ]
     }

@@ -29,6 +29,45 @@
           "verdict": "accepted",
           "note": "Lexia (licensed AZ font) and Inter not served by the page; Georgia/Arial fallbacks render. Advisory on every section.",
           "at": "2026-10-21T12:29:47Z"
+        },
+        {
+          "gate": "deployed.parity",
+          "class": "deployed.parity",
+          "cause": "content-delta",
+          "verdict": "accepted",
+          "note": "pixel @360 13.35% (bar 10%); @1440 8.35% PASS, heights +101/+88px (2.1%/1.0%), header/footer crops <=1.02%, cap-probe 0/10. Cause: the deployed page carries the s05 image the prototype's stream-render dropped (+172px at 360) and the prototype keeps the source runtime's ' east' ligature text in s02/s06 list items (-28/-56px), so every later section is offset. Both are content deltas, not design faults. Reference: deployed-gate serves the reskin page from its own dir, so ../../prototypes/assets images 404'd (first run FAIL 4/9); re-run with --reskin stardust/.work/reskin/parity-ref/home.html (byte-identical but asset paths rewritten to a sibling assets/ copy).",
+          "at": "2026-10-21T13:25:51Z"
+        },
+        {
+          "gate": "deployed.figma.geometry",
+          "class": "deployed.figma.geometry",
+          "cause": "renderer",
+          "verdict": "accepted",
+          "note": "s03 g2 split image 520 vs 574 — same as the prototype-stage figma-geometry residual: 3 long paragraphs widen the text column of the auto split grid; the columns block reproduces the prototype grid.",
+          "at": "2026-10-21T13:25:51Z"
+        },
+        {
+          "gate": "deployed.figma.ramp",
+          "class": "deployed.figma.ramp",
+          "cause": "donor-conflict",
+          "verdict": "accepted",
+          "note": "s05/s07 t2 body 18/28 vs M4 CTA Banner 16/24 (4 fails) — same as prototype-stage figma-ramp residual: one type.body role at 18/28 (majority of modules).",
+          "at": "2026-10-21T13:25:51Z"
+        },
+        {
+          "gate": "deployed.content",
+          "class": "deployed.content",
+          "cause": "declared-deltas",
+          "verdict": "accepted",
+          "note": "PASS with reskin/deltas/home.json (blocking false). images count+alt+width: DA media URLs (media_<hash>) replace the source host+path, so only count/alt/width are comparable. metadata.ignore canonical/og:url/og:image/og:image:secure_url/twitter:image: preview origin and DA media hashes differ from the source by construction; jsonLd count-only (default). text t1 ' east' (source runtime Material Symbols ligature, not in .plain.html). One gate run of 3 saw the live source capture truncated at 1846 chars (source lazy sections not loaded at domcontentloaded; networkidle diagnostic PASS 3564/3564) — source-side flake, final all run PASS.",
+          "at": "2026-10-21T13:25:52Z"
+        },
+        {
+          "gate": "step10.header",
+          "cause": "no-contract",
+          "verdict": "needs-owner",
+          "note": "No stardust/chrome/header-contract.json. Header renders as the prototype (logo, 5 nav links, Contact us, utility row) at all widths, links work, no hamburger (prototype has none). search/Show/Search are <button> in the prototype and <a>/text in EDS (chrome-parity role swaps); search toggle and menu behaviour are not implemented; 'keyboard_arrow_right' is authored text (icon font not loaded). Owner must decide header behaviour.",
+          "at": "2026-10-21T13:25:52Z"
         }
       ],
       "eyeball": {
@@ -67,12 +106,43 @@
           "coverage": "text styles 15/40 · widths 1180,1440,2817 · waived 24",
           "literals": 0,
           "invocation": "figma-gate.mjs all --page home --url stardust/reskin/pages/home.html --dir stardust"
+        },
+        "deployed": {
+          "regime": "preview",
+          "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/",
+          "content": "PASS",
+          "tokens": "PASS",
+          "parity": "FAIL 1/9",
+          "sanity": {
+            "verdict": "PASS",
+            "hard": true
+          },
+          "inherited": "PASS",
+          "figma": {
+            "regime": "preview",
+            "figmaVersion": "2408265627482005963",
+            "join": "PASS",
+            "geometry": "FAIL 1/13",
+            "ramp": "FAIL 4/125",
+            "pixel": "s01 n/a: frame content differs, s02 n/a: frame content differs, s03 n/a: frame content differs, s04 n/a: frame content differs, s05 n/a: frame content differs, s06 n/a: frame content differs, s07 n/a: frame content differs, s08 n/a: frame content differs, s09 n/a: frame content differs",
+            "register": "mandated 0 · waived 24 · unmandated 5 · out-of-kit 0 · conflict 14 · pre-existing 0",
+            "coverage": "text styles 15/40 · widths 1180,1440,2817 · waived 24",
+            "literals": 0,
+            "invocation": "figma-gate.mjs all --page home --url https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/ --target preview --reskin stardust/.work/reskin/parity-ref/home.html --dir stardust"
+          },
+          "invocation": "deployed-gate.mjs all --page home --reskin stardust/.work/reskin/parity-ref/home.html"
+        },
+        "step10": {
+          "eyeball": "adopted: desktop 1440 + mobile 390 full-page screenshots of the preview read side by side with the reskin prototype — same section order, bands, plum Lexia-fallback headings, magenta CTAs, light bands s01/s05/s07; chrome raw as the prototype (logo 0-width at >=900 in both)",
+          "cls": "0 @1440, 0 @390 (woff2 + /nav + /footer delayed 1500ms; stardust/.work/reskin/qa/cls.mjs)",
+          "header": "unresolved: no header contract (stardust/chrome/header-contract.json absent); links render and navigate, no menu/search toggle — residual step10.header needs-owner",
+          "at": "2026-10-21T13:30:00Z"
         }
       },
       "status": "failing",
       "prototypeSha": "ef93143c765d",
       "prototypePath": "stardust/reskin/pages/home.html",
-      "recordedAt": "2026-10-21T12:30:10Z"
+      "recordedAt": "2026-10-21T13:25:18Z"
     }
   },
   "handoff": {}
