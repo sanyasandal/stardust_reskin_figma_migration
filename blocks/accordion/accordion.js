@@ -5,7 +5,9 @@
  * (any rich content, including a nested table whose first row is the source's block-name row).
  * Decode: .accordion-item > .accordion-head (div.accordion-title holding the moved title +
  * a chevron-only button.accordion-toggle) + .accordion-panel (the moved panel content).
- * Items start open (EW7: no authored text hidden at rest); the whole head row toggles.
+ * Items start closed, as on the source and the kit's default variant (the extract's N3 all-open
+ * normalisation is capture-only). Panels use hidden="until-found", so find-in-page and #fragment
+ * links still reveal them; the whole head row toggles.
  */
 
 // Same rule as scripts/external-links.js (inlined: the block round-trip harness cannot resolve
@@ -54,7 +56,7 @@ export default function decorate(block) {
     const toggle = document.createElement('button');
     toggle.type = 'button';
     toggle.className = 'accordion-toggle';
-    toggle.setAttribute('aria-expanded', 'true');
+    toggle.setAttribute('aria-expanded', 'false');
     toggle.setAttribute('aria-controls', `${id}-panel`);
     toggle.setAttribute('aria-labelledby', title.id);
 
@@ -63,6 +65,7 @@ export default function decorate(block) {
     panel.id = `${id}-panel`;
     panel.setAttribute('role', 'region');
     panel.setAttribute('aria-labelledby', title.id);
+    panel.setAttribute('hidden', 'until-found');
     panelCells.forEach((cell) => panel.append(...cell.childNodes));
     markNestedTables(panel);
     // panel links stay text links (kit Block Element body), not decorateButtons' lone-link buttons
@@ -71,17 +74,29 @@ export default function decorate(block) {
       a.closest('.button-wrapper')?.classList.remove('button-wrapper');
     });
 
+    item.classList.add('is-closed');
+    const setOpen = (open) => {
+      toggle.setAttribute('aria-expanded', String(open));
+      item.classList.toggle('is-closed', !open);
+      if (open) panel.removeAttribute('hidden');
+      else panel.setAttribute('hidden', 'until-found');
+    };
     head.append(title, toggle);
     head.addEventListener('click', (e) => {
       if (e.target.closest('a')) return;
-      const open = toggle.getAttribute('aria-expanded') !== 'true';
-      toggle.setAttribute('aria-expanded', String(open));
-      item.classList.toggle('is-closed', !open);
+      setOpen(toggle.getAttribute('aria-expanded') !== 'true');
     });
+    panel.addEventListener('beforematch', () => setOpen(true));
 
     item.append(head, panel);
     return item;
   });
   block.replaceChildren(...items);
   decorateExternalLinks(block);
+
+  // a #fragment pointing inside a closed panel opens it (browsers without until-found support)
+  const { hash } = window.location;
+  const target = hash.length > 1 && block.querySelector(`[id="${CSS.escape(decodeURIComponent(hash.slice(1)))}"]`);
+  const host = target && target.closest('.accordion-item');
+  if (host && host.classList.contains('is-closed')) host.querySelector('.accordion-head').click();
 }

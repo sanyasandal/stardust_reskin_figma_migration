@@ -75,7 +75,7 @@ A reskin **changes the visual design on purpose**: the original NSW school templ
 | Colour | Dark maroon feature bands (e.g. school tours) | Light grey `columns light` bands | Intentional (M4 CTA banner tokens) |
 | Typography | Sans-serif throughout | Serif headings (Lexia → Georgia fallback), maroon/magenta; Inter → Arial body | Intentional. The licensed font isn't served, so the fallbacks render (accepted `font` residual) |
 | Layout | Left sidebar nav + breadcrumb on inner pages | Sidebar and breadcrumb dropped; single column | Normalize decision (chrome not in the Figma kit) |
-| Accordions | Collapsed | Start open (EW7), which makes wellbeing much taller (5,922 → 18,860 px at 390) | Intentional authoring rule. It also makes the overlap-mode pixel score look better than it is |
+| Accordions | Collapsed | **Fixed (step 48):** they now start collapsed, as on the source and the Figma M8 default. They had started open because the extract's capture-only N3 "all-open" normalisation leaked into the block's rest state (wellbeing's first accordion was 3,327 px tall; now 163 px, source 128) | The look stays M8 (plum Lexia title, rule, chevron) rather than the source's grey bars |
 | Tables | Bordered | Borderless and full width (except `table bordered`) | Token-driven restyle |
 | Page height | e.g. home 5,951 px | home 4,489 px (4,944 px before the header fix) | Sum of the above |
 

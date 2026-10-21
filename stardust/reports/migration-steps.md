@@ -274,6 +274,12 @@ Reskin keeps the content byte-faithful to the source and replaces the design wit
     - Captured block screenshots (`screens/blocks/`) and authored-vs-decorated block markup (`block-example.json`).
     - Generated the self-contained `stardust/reports/benchmark-report.html` (`.work/reskin/build-html-report.py`).
 
+48. **Accordion rest state fixed** (user: "you did not got the accordian right ..why ?").
+    - **Why it was wrong:** the extract normalisation rule N3 expands every source accordion so that the content-fidelity byte reference includes the hidden panel text. That is a capture-only rule, but the deploy carried it into the delivered block ("items start open") and cited EW7 as the reason. EW7 actually permits content hidden at rest. Both the source and the Figma M8 kit show collapsed rows by default.
+    - **Fix:** `blocks/accordion/accordion.js` starts every item closed (`aria-expanded="false"`, panel `hidden="until-found"`). Clicking the row or pressing Enter/Space on the chevron toggles it. `beforematch` opens a panel for find-in-page and text-fragment links, and a `#id` inside a panel opens its item. `accordion.css` zeroes the hidden panel's padding.
+    - **Verified on the preview** with the local block code injected (`.work/reskin/acc-test.mjs`): wellbeing's first accordion is 163 px at rest (was 3,327 px; source 128 px), the toggles work, and a `#:~:text=` link opens the matching panel.
+    - The visual style stays Figma M8 (Lexia plum title, 1px rule, chevron), not the source's grey NSW bars. That is the reskin.
+
 ---
 
 ## Named deviations and helpers (not from the branch)

@@ -23,7 +23,7 @@ The preview is at `https://fortstreet--stardust-reskin-figma-migration--sanyasan
 
 | Block | Source shape | DA table shape | What decorate() builds | Donor module / tokens |
 |---|---|---|---|---|
-| accordion | `accordions`: n rows of `title \| panel`. The panel can be rich, including a nested `<table>` | `accordion`: one row per item, `title \| panel` | `.accordion-item > .accordion-head` (`.accordion-title` + chevron `button.accordion-toggle`) + `.accordion-panel`. Starts open (EW7). Panel links stay plain links | M8: Lexia plum title, chevron, 1px rule, Block Element panel |
+| accordion | `accordions`: n rows of `title \| panel`. The panel can be rich, including a nested `<table>` | `accordion`: one row per item, `title \| panel` | `.accordion-item > .accordion-head` (`.accordion-title` + chevron `button.accordion-toggle`) + `.accordion-panel`. Starts collapsed (`hidden="until-found"`; was open until step 48). Panel links stay plain links | M8: Lexia plum title, chevron, 1px rule, Block Element panel |
 | table | `table` / `no-header` / `bordered`, 2–6 columns | `table (no-header\|bordered)`: one row per table row | `.table-scroll > table > thead/tbody > tr > th/td`. The first row is the header unless the block is `no-header` | No module. Uses the type ramp, `--palette-*` rules and spacing tokens |
 | embed | `embed`: 1 cell holding a single link (Brightcove, Google Maps) | Plain link paragraph. scripts.js auto-blocks a link to a known embed host | `.embed-frame` (16:9 placeholder + load button) + `.embed-source` (link fallback). The iframe is created only on click | No module. Light band and button tokens |
 | gallery | `gallery`: 4–21 rows of `picture \| caption` | `gallery`: `picture \| caption` | `ul.gallery-grid > li.gallery-item > .gallery-media + .gallery-caption` | No module. M2 card spacing and radius tokens |
@@ -170,7 +170,7 @@ Evidence:
    - The list itself is not authorable content.
 3. **embed:** authored as a plain link, which scripts.js auto-blocks, and loaded on click to protect privacy. Nothing third-party loads at page view.
 4. **accordion:**
-   - Items start open (EW7: no authored text is hidden at rest).
+   - Items start collapsed with `hidden="until-found"`, so find-in-page and text-fragment links still open them. (They started open until step 48: N3 is a capture-only rule, and EW7 allows collapsed panels.)
    - Uses the literal M8 sizes.
    - Strips the h/p wrapper from the title cell.
    - Hides the name row of nested source tables.

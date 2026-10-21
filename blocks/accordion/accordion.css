@@ -71,7 +71,12 @@
   padding: 0 0 24px;
 }
 
-.accordion .is-closed .accordion-panel {
+.accordion .accordion-panel[hidden] {
+  padding: 0;
+}
+
+/* until-found keeps closed panels searchable where supported; plain [hidden] elsewhere */
+.accordion .accordion-panel[hidden]:not([hidden="until-found"]) {
   display: none;
 }
 
