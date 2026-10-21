@@ -13,6 +13,11 @@ main .section.hero-container {
   display: contents;
 }
 
+/* the picture is display: contents, so its <source> children would become grid items */
+.hero .hero-media source {
+  display: none;
+}
+
 .hero .hero-media img {
   justify-self: end;
   max-width: 100%;

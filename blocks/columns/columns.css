@@ -22,6 +22,11 @@ main .section:has(.columns.light) {
   display: contents;
 }
 
+/* the picture is display: contents, so its <source> children would become grid items */
+.columns .columns-media source {
+  display: none;
+}
+
 .columns .columns-media img {
   justify-self: end;
   max-width: 100%;
