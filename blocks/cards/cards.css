@@ -37,6 +37,10 @@
   margin: 16px 0;
 }
 
+.cards:is(.dark, .off-white) .cards-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .cards .cards-card {
   padding: 40px;
   background: var(--palette-light-band-bg);
@@ -47,7 +51,8 @@
 }
 
 @media (width <= 900px) {
-  .cards .cards-grid {
+  .cards .cards-grid,
+  .cards:is(.dark, .off-white) .cards-grid {
     grid-template-columns: minmax(0, 1fr);
   }
 }

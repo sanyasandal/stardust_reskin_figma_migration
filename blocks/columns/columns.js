@@ -5,10 +5,12 @@
  * Authoring: one row, two cells — a text cell (heading, paragraphs, link/button) and an image cell.
  * Cell order is the layout: image cell first = media-first.
  * Decode: .columns-panel (2-column split) > .columns-text (+ .actions for buttons) + picture.
+ * Source pages also author several rows (one panel per row, e.g. house-and-merit) and
+ * text-only rows (a single cell, or no picture): those panels take the full width.
  */
-export default function decorate(block) {
-  const cells = [...block.querySelectorAll(':scope > div > div')];
-  const picture = block.querySelector('picture');
+function buildPanel(row) {
+  const cells = [...row.querySelectorAll(':scope > div')];
+  const picture = row.querySelector('picture');
   const mediaCell = picture ? cells.find((cell) => cell.contains(picture)) : null;
   const textCells = cells.filter((cell) => cell !== mediaCell || cell.textContent.trim());
 
@@ -38,11 +40,23 @@ export default function decorate(block) {
     buttons.slice(1).forEach((p) => p.remove());
   }
 
-  panel.append(text);
+  if (text.childNodes.length) panel.append(text);
+  let mediaFirst = false;
   if (picture) {
     picture.classList.add('columns-media');
-    if (cells.indexOf(mediaCell) === 0) block.classList.add('media-first');
+    mediaFirst = cells.indexOf(mediaCell) === 0 || !text.childNodes.length;
     panel.append(picture);
   }
-  block.replaceChildren(panel);
+  return { panel, mediaFirst };
+}
+
+export default function decorate(block) {
+  const rows = [...block.children].filter((row) => row.textContent.trim() || row.querySelector('picture'));
+  const panels = rows.map(buildPanel);
+  if (panels.length === 1) {
+    if (panels[0].mediaFirst) block.classList.add('media-first');
+  } else {
+    panels.forEach(({ panel, mediaFirst }) => panel.classList.toggle('media-first', mediaFirst));
+  }
+  block.replaceChildren(...panels.map(({ panel }) => panel));
 }

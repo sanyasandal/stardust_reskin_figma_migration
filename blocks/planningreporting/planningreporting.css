@@ -1,0 +1,19 @@
+.planningreporting {
+  margin: 0 0 24px;
+}
+
+.planningreporting .planningreporting-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--palette-light-band-bg);
+}
+
+.planningreporting .planningreporting-list li {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--palette-light-band-bg);
+}
+
+.planningreporting .planningreporting-list a:any-link {
+  font-weight: var(--buttons-primary-font-weight);
+}

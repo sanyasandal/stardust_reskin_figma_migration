@@ -35,7 +35,17 @@ main .section:has(.columns.light) {
   height: auto;
 }
 
-.columns.media-first .columns-media img {
+.columns .columns-panel + .columns-panel {
+  margin-top: var(--layout-section-padding-y);
+}
+
+.columns .columns-panel:not(:has(.columns-media)),
+.columns .columns-panel:not(:has(.columns-text)) {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.columns.media-first .columns-media img,
+.columns .columns-panel.media-first .columns-media img {
   order: -1;
   justify-self: start;
 }
@@ -50,7 +60,8 @@ main .section:has(.columns.light) {
   }
 
   .columns .columns-media img,
-  .columns.media-first .columns-media img {
+  .columns.media-first .columns-media img,
+  .columns .columns-panel.media-first .columns-media img {
     justify-self: center;
   }
 }

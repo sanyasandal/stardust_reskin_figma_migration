@@ -9,6 +9,10 @@ main .section.hero-container {
   align-items: center;
 }
 
+.hero .hero-panel:not(:has(.hero-media)) {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .hero .hero-media {
   display: contents;
 }

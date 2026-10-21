@@ -5,7 +5,10 @@
  * (repeat unit: LI = 1 image + 1 cta + 1 text run).
  * Authoring: one row per item — cell 1 = icon image, cell 2 = linked title (h3 > a) + text.
  * Decode: ul.cards-list > li > span.cards-icon + div.cards-body (inline run, as in the kit list);
- * the quick-links variant splits the items into three .cards-card panels.
+ * the quick-links variant splits the items into three .cards-card panels; the source
+ * card-container `dark` / `off-white` variants (section index teasers, reskin school-life s02)
+ * group the items two per .cards-card panel in a 2-up grid. `horizontal`, `highlight` and
+ * unvariant'd cards keep the list.
  */
 function buildItem(row) {
   const li = document.createElement('li');
@@ -43,11 +46,11 @@ export default function decorate(block) {
     .filter((row) => row.textContent.trim() || row.querySelector('img'))
     .map(buildItem);
 
-  if (block.classList.contains('quick-links')) {
+  const paired = block.classList.contains('dark') || block.classList.contains('off-white');
+  if (block.classList.contains('quick-links') || paired) {
     const grid = document.createElement('div');
     grid.className = 'cards-grid';
-    const columns = 3;
-    const size = Math.ceil(items.length / columns) || 1;
+    const size = paired ? 2 : Math.ceil(items.length / 3) || 1;
     for (let i = 0; i < items.length; i += size) {
       const card = document.createElement('div');
       card.className = 'cards-card';

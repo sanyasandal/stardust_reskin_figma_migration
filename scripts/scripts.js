@@ -11,6 +11,7 @@ import {
   loadCSS,
   buildBlock,
 } from './aem.js';
+import { decorateExternalLinks } from './external-links.js';
 
 if (window.trustedTypes && window.trustedTypes.createPolicy) {
   const innerTT = window.trustedTypes.createPolicy('tt-inner', {
@@ -73,6 +74,24 @@ function buildWidgetAutoBlocks(main) {
   });
 }
 
+const EMBED_HOSTS = /^https:\/\/(bcove\.video\/|players\.brightcove\.net\/|www\.google\.com\/maps\/embed)/;
+
+/**
+ * Turns a default-content paragraph holding only an embed link (Brightcove, Google Maps)
+ * into an embed block; the authored paragraph moves into the block.
+ * @param {Element} main The container element
+ */
+function buildEmbedAutoBlocks(main) {
+  main.querySelectorAll(':scope > div > p > a[href]').forEach((link) => {
+    if (!EMBED_HOSTS.test(link.href)) return;
+    const p = link.parentElement;
+    if (p.children.length !== 1 || p.textContent.trim() !== link.textContent.trim()) return;
+    const block = buildBlock('embed', '');
+    p.replaceWith(block);
+    block.querySelector(':scope > div > div').append(p);
+  });
+}
+
 /**
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
@@ -97,6 +116,7 @@ function buildAutoBlocks(main) {
       });
     }
     buildWidgetAutoBlocks(main);
+    buildEmbedAutoBlocks(main);
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Auto Blocking failed', error);
@@ -153,6 +173,7 @@ export function decorateMain(main) {
   decorateSections(main);
   decorateBlocks(main);
   decorateButtons(main);
+  decorateExternalLinks(main);
 }
 
 /**

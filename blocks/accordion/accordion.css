@@ -1,0 +1,116 @@
+/* M8 accordion: title row (Lexia, plum) + chevron, 1px rule, panel below.
+   The M8 title literal sizes (36/40, 20px row gap, 24px chevron gap) are the kit's own values; no donor role carries them. */
+.accordion {
+  margin: 0 0 24px;
+  border-top: 1px solid var(--palette-light-band-bg);
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid var(--palette-light-band-bg);
+}
+
+.accordion .accordion-head {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.accordion .accordion-title {
+  flex: 1;
+  min-width: 0;
+  font-family: var(--heading-font-stack);
+  font-size: 36px;
+  font-weight: var(--type-h2-font-weight);
+  line-height: 40px;
+  color: var(--palette-heading-fg);
+}
+
+.accordion .accordion-title :is(p, h2, h3, h4, h5, h6) {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+.accordion .accordion-toggle {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radii-button);
+  background: none;
+  color: var(--palette-accent);
+  cursor: pointer;
+}
+
+.accordion .accordion-toggle::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid currentcolor;
+  border-bottom: 2px solid currentcolor;
+  transform: translateY(-3px) rotate(45deg);
+  transition: transform 0.2s;
+}
+
+.accordion .accordion-toggle[aria-expanded="true"]::before {
+  transform: translateY(3px) rotate(-135deg);
+}
+
+.accordion .accordion-toggle:focus-visible {
+  outline: 2px solid var(--palette-accent);
+  outline-offset: 2px;
+}
+
+.accordion .accordion-panel {
+  padding: 0 0 24px;
+}
+
+.accordion .is-closed .accordion-panel {
+  display: none;
+}
+
+.accordion .accordion-panel p.button-wrapper {
+  margin: 0 0 16px;
+}
+
+.accordion .accordion-panel picture img {
+  display: block;
+  max-height: 520px;
+}
+
+/* nested source tables (a block-name row first, then data rows) */
+.accordion .accordion-table {
+  width: 100%;
+  margin: 0 0 24px;
+  border-collapse: collapse;
+}
+
+.accordion .accordion-table td,
+.accordion .accordion-table th {
+  padding: 16px;
+  border-bottom: 1px solid var(--palette-light-band-bg);
+  text-align: left;
+  vertical-align: top;
+}
+
+.accordion .accordion-table-name {
+  display: none;
+}
+
+@media (width <= 640px) {
+  .accordion .accordion-title {
+    font-size: var(--type-h3-font-size);
+    line-height: var(--type-h3-line-height);
+  }
+
+  .accordion .accordion-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
