@@ -8,12 +8,12 @@
       "b": "stardust/reports/screens/migrated/home-1440.png",
       "compared": {
         "width": 1440,
-        "height": 4489,
+        "height": 5227,
         "mode": "overlap"
       },
-      "heightDelta": 1462,
-      "differingPixels": 3534856,
-      "pct": 54.68,
+      "heightDelta": 724,
+      "differingPixels": 3884812,
+      "pct": 51.61,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/home-1440.png",
@@ -31,42 +31,52 @@
         {
           "y0": 500,
           "y1": 1000,
-          "pct": 61.3
+          "pct": 63.7
         },
         {
           "y0": 1000,
           "y1": 1500,
-          "pct": 57.9
+          "pct": 52.5
         },
         {
           "y0": 1500,
           "y1": 2000,
-          "pct": 42.5
+          "pct": 24.9
         },
         {
           "y0": 2000,
           "y1": 2500,
-          "pct": 37
+          "pct": 32.7
         },
         {
           "y0": 2500,
           "y1": 3000,
-          "pct": 69.9
+          "pct": 78.4
         },
         {
           "y0": 3000,
           "y1": 3500,
-          "pct": 37
+          "pct": 44.7
         },
         {
           "y0": 3500,
           "y1": 4000,
-          "pct": 37.5
+          "pct": 43.2
         },
         {
           "y0": 4000,
-          "y1": 4489,
-          "pct": 87.7
+          "y1": 4500,
+          "pct": 89.2
+        },
+        {
+          "y0": 4500,
+          "y1": 5000,
+          "pct": 26.2
+        },
+        {
+          "y0": 5000,
+          "y1": 5227,
+          "pct": 48.3
         }
       ]
     },
@@ -74,12 +84,12 @@
       "a": "stardust/reports/screens/original/home-1440.png",
       "b": "stardust/reports/screens/migrated/home-1440.png",
       "scale": 4,
-      "ssimOverlap": 27.94,
-      "ssimHeightNormalized": 31.25,
-      "ssimAboveFold": 19.1,
+      "ssimOverlap": 28.22,
+      "ssimHeightNormalized": 27.98,
+      "ssimAboveFold": 21.08,
       "heights": [
         5951,
-        4489
+        5227
       ]
     }
   },
@@ -95,9 +105,9 @@
         "height": 6645,
         "mode": "overlap"
       },
-      "heightDelta": -189,
-      "differingPixels": 3011930,
-      "pct": 59.02,
+      "heightDelta": -1664,
+      "differingPixels": 2955787,
+      "pct": 57.92,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/home-768.png",
@@ -120,62 +130,62 @@
         {
           "y0": 1000,
           "y1": 1500,
-          "pct": 54.3
+          "pct": 64.1
         },
         {
           "y0": 1500,
           "y1": 2000,
-          "pct": 38.8
+          "pct": 44.3
         },
         {
           "y0": 2000,
           "y1": 2500,
-          "pct": 59.1
+          "pct": 29
         },
         {
           "y0": 2500,
           "y1": 3000,
-          "pct": 68.3
+          "pct": 57.9
         },
         {
           "y0": 3000,
           "y1": 3500,
-          "pct": 58.6
+          "pct": 67.9
         },
         {
           "y0": 3500,
           "y1": 4000,
-          "pct": 34.6
+          "pct": 49.9
         },
         {
           "y0": 4000,
           "y1": 4500,
-          "pct": 43.7
+          "pct": 61.4
         },
         {
           "y0": 4500,
           "y1": 5000,
-          "pct": 79.4
+          "pct": 76.4
         },
         {
           "y0": 5000,
           "y1": 5500,
-          "pct": 79.4
+          "pct": 45.9
         },
         {
           "y0": 5500,
           "y1": 6000,
-          "pct": 34.8
+          "pct": 38.7
         },
         {
           "y0": 6000,
           "y1": 6500,
-          "pct": 74.5
+          "pct": 74
         },
         {
           "y0": 6500,
           "y1": 6645,
-          "pct": 87.8
+          "pct": 92.3
         }
       ]
     },
@@ -183,12 +193,12 @@
       "a": "stardust/reports/screens/original/home-768.png",
       "b": "stardust/reports/screens/migrated/home-768.png",
       "scale": 4,
-      "ssimOverlap": 15.77,
-      "ssimHeightNormalized": 15.99,
+      "ssimOverlap": 15.07,
+      "ssimHeightNormalized": 16.07,
       "ssimAboveFold": 10.23,
       "heights": [
         6645,
-        6834
+        8309
       ]
     }
   },
@@ -201,12 +211,12 @@
       "b": "stardust/reports/screens/migrated/home-390.png",
       "compared": {
         "width": 390,
-        "height": 8043,
+        "height": 8709,
         "mode": "overlap"
       },
-      "heightDelta": 666,
-      "differingPixels": 1715153,
-      "pct": 54.68,
+      "heightDelta": -1777,
+      "differingPixels": 1949834,
+      "pct": 57.41,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/home-390.png",
@@ -229,77 +239,82 @@
         {
           "y0": 1000,
           "y1": 1500,
-          "pct": 75.3
+          "pct": 72.8
         },
         {
           "y0": 1500,
           "y1": 2000,
-          "pct": 79.3
+          "pct": 81.6
         },
         {
           "y0": 2000,
           "y1": 2500,
-          "pct": 47.3
+          "pct": 66
         },
         {
           "y0": 2500,
           "y1": 3000,
-          "pct": 64.7
+          "pct": 13.8
         },
         {
           "y0": 3000,
           "y1": 3500,
-          "pct": 37.6
+          "pct": 35.8
         },
         {
           "y0": 3500,
           "y1": 4000,
-          "pct": 84.6
+          "pct": 85.6
         },
         {
           "y0": 4000,
           "y1": 4500,
-          "pct": 38.6
+          "pct": 46.3
         },
         {
           "y0": 4500,
           "y1": 5000,
-          "pct": 28.7
+          "pct": 42.8
         },
         {
           "y0": 5000,
           "y1": 5500,
-          "pct": 52
+          "pct": 51.8
         },
         {
           "y0": 5500,
           "y1": 6000,
-          "pct": 42.2
+          "pct": 46.6
         },
         {
           "y0": 6000,
           "y1": 6500,
-          "pct": 66.8
+          "pct": 50.1
         },
         {
           "y0": 6500,
           "y1": 7000,
-          "pct": 73.4
+          "pct": 74.7
         },
         {
           "y0": 7000,
           "y1": 7500,
-          "pct": 29.5
+          "pct": 54.6
         },
         {
           "y0": 7500,
           "y1": 8000,
-          "pct": 46.2
+          "pct": 48
         },
         {
           "y0": 8000,
-          "y1": 8043,
-          "pct": 95.8
+          "y1": 8500,
+          "pct": 88.4
+        },
+        {
+          "y0": 8500,
+          "y1": 8709,
+          "pct": 85.9
         }
       ]
     },
@@ -307,12 +322,12 @@
       "a": "stardust/reports/screens/original/home-390.png",
       "b": "stardust/reports/screens/migrated/home-390.png",
       "scale": 4,
-      "ssimOverlap": 10.11,
-      "ssimHeightNormalized": 10.68,
+      "ssimOverlap": 10.49,
+      "ssimHeightNormalized": 9.25,
       "ssimAboveFold": 16.13,
       "heights": [
         8709,
-        8043
+        10486
       ]
     }
   },
@@ -325,148 +340,15 @@
       "b": "stardust/reports/screens/migrated/school-life-1440.png",
       "compared": {
         "width": 1440,
-        "height": 2134,
+        "height": 4342,
         "mode": "overlap"
       },
-      "heightDelta": 2208,
-      "differingPixels": 998955,
-      "pct": 32.51,
+      "heightDelta": -337,
+      "differingPixels": 4047722,
+      "pct": 64.74,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/school-life-1440.png",
-      "masks": [],
-      "maskedRows": 0,
-      "textPct": null,
-      "textBoxes": null,
-      "textPixels": null,
-      "bands": [
-        {
-          "y0": 0,
-          "y1": 500,
-          "pct": 11.3
-        },
-        {
-          "y0": 500,
-          "y1": 1000,
-          "pct": 41.4
-        },
-        {
-          "y0": 1000,
-          "y1": 1500,
-          "pct": 41.7
-        },
-        {
-          "y0": 1500,
-          "y1": 2000,
-          "pct": 31.1
-        },
-        {
-          "y0": 2000,
-          "y1": 2134,
-          "pct": 49.5
-        }
-      ]
-    },
-    "ssim": {
-      "a": "stardust/reports/screens/original/school-life-1440.png",
-      "b": "stardust/reports/screens/migrated/school-life-1440.png",
-      "scale": 4,
-      "ssimOverlap": 40.3,
-      "ssimHeightNormalized": 40.78,
-      "ssimAboveFold": 45.42,
-      "heights": [
-        4342,
-        2134
-      ]
-    }
-  },
-  {
-    "slug": "school-life",
-    "w": 768,
-    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life",
-    "pixel": {
-      "a": "stardust/reports/screens/original/school-life-768.png",
-      "b": "stardust/reports/screens/migrated/school-life-768.png",
-      "compared": {
-        "width": 768,
-        "height": 2585,
-        "mode": "overlap"
-      },
-      "heightDelta": 1296,
-      "differingPixels": 1141970,
-      "pct": 57.52,
-      "threshold": 100,
-      "pass": true,
-      "diff": "stardust/reports/screens/diff/school-life-768.png",
-      "masks": [],
-      "maskedRows": 0,
-      "textPct": null,
-      "textBoxes": null,
-      "textPixels": null,
-      "bands": [
-        {
-          "y0": 0,
-          "y1": 500,
-          "pct": 22.8
-        },
-        {
-          "y0": 500,
-          "y1": 1000,
-          "pct": 71.4
-        },
-        {
-          "y0": 1000,
-          "y1": 1500,
-          "pct": 69.7
-        },
-        {
-          "y0": 1500,
-          "y1": 2000,
-          "pct": 49.7
-        },
-        {
-          "y0": 2000,
-          "y1": 2500,
-          "pct": 72.7
-        },
-        {
-          "y0": 2500,
-          "y1": 2585,
-          "pct": 65.3
-        }
-      ]
-    },
-    "ssim": {
-      "a": "stardust/reports/screens/original/school-life-768.png",
-      "b": "stardust/reports/screens/migrated/school-life-768.png",
-      "scale": 4,
-      "ssimOverlap": 14.6,
-      "ssimHeightNormalized": 15.64,
-      "ssimAboveFold": 27.7,
-      "heights": [
-        3881,
-        2585
-      ]
-    }
-  },
-  {
-    "slug": "school-life",
-    "w": 390,
-    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life",
-    "pixel": {
-      "a": "stardust/reports/screens/original/school-life-390.png",
-      "b": "stardust/reports/screens/migrated/school-life-390.png",
-      "compared": {
-        "width": 390,
-        "height": 3799,
-        "mode": "overlap"
-      },
-      "heightDelta": 2841,
-      "differingPixels": 940477,
-      "pct": 63.48,
-      "threshold": 100,
-      "pass": true,
-      "diff": "stardust/reports/screens/diff/school-life-390.png",
       "masks": [],
       "maskedRows": 0,
       "textPct": null,
@@ -481,37 +363,230 @@
         {
           "y0": 500,
           "y1": 1000,
-          "pct": 84.1
+          "pct": 65.5
         },
         {
           "y0": 1000,
           "y1": 1500,
-          "pct": 76.2
+          "pct": 66.3
         },
         {
           "y0": 1500,
           "y1": 2000,
-          "pct": 61.2
+          "pct": 58.3
         },
         {
           "y0": 2000,
           "y1": 2500,
-          "pct": 79.2
+          "pct": 67.1
         },
         {
           "y0": 2500,
           "y1": 3000,
-          "pct": 56.5
+          "pct": 74.7
         },
         {
           "y0": 3000,
           "y1": 3500,
-          "pct": 59
+          "pct": 67.4
         },
         {
           "y0": 3500,
-          "y1": 3799,
-          "pct": 79.2
+          "y1": 4000,
+          "pct": 79.9
+        },
+        {
+          "y0": 4000,
+          "y1": 4342,
+          "pct": 94.1
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-1440.png",
+      "b": "stardust/reports/screens/migrated/school-life-1440.png",
+      "scale": 4,
+      "ssimOverlap": 29.59,
+      "ssimHeightNormalized": 29.6,
+      "ssimAboveFold": 41.18,
+      "heights": [
+        4342,
+        4679
+      ]
+    }
+  },
+  {
+    "slug": "school-life",
+    "w": 768,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-768.png",
+      "b": "stardust/reports/screens/migrated/school-life-768.png",
+      "compared": {
+        "width": 768,
+        "height": 3881,
+        "mode": "overlap"
+      },
+      "heightDelta": -227,
+      "differingPixels": 2054294,
+      "pct": 68.92,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-768.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 27.5
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 65.3
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 55.4
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 65.2
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 81.4
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 83.2
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 88.2
+        },
+        {
+          "y0": 3500,
+          "y1": 3881,
+          "pct": 90.4
+        }
+      ]
+    },
+    "ssim": {
+      "a": "stardust/reports/screens/original/school-life-768.png",
+      "b": "stardust/reports/screens/migrated/school-life-768.png",
+      "scale": 4,
+      "ssimOverlap": 22.39,
+      "ssimHeightNormalized": 20.47,
+      "ssimAboveFold": 37.92,
+      "heights": [
+        3881,
+        4108
+      ]
+    }
+  },
+  {
+    "slug": "school-life",
+    "w": 390,
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/school-life",
+    "pixel": {
+      "a": "stardust/reports/screens/original/school-life-390.png",
+      "b": "stardust/reports/screens/migrated/school-life-390.png",
+      "compared": {
+        "width": 390,
+        "height": 6640,
+        "mode": "overlap"
+      },
+      "heightDelta": -641,
+      "differingPixels": 1987490,
+      "pct": 76.75,
+      "threshold": 100,
+      "pass": true,
+      "diff": "stardust/reports/screens/diff/school-life-390.png",
+      "masks": [],
+      "maskedRows": 0,
+      "textPct": null,
+      "textBoxes": null,
+      "textPixels": null,
+      "bands": [
+        {
+          "y0": 0,
+          "y1": 500,
+          "pct": 32.3
+        },
+        {
+          "y0": 500,
+          "y1": 1000,
+          "pct": 77.7
+        },
+        {
+          "y0": 1000,
+          "y1": 1500,
+          "pct": 72.7
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 70.5
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 77
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 68.7
+        },
+        {
+          "y0": 3000,
+          "y1": 3500,
+          "pct": 78
+        },
+        {
+          "y0": 3500,
+          "y1": 4000,
+          "pct": 83.9
+        },
+        {
+          "y0": 4000,
+          "y1": 4500,
+          "pct": 83.9
+        },
+        {
+          "y0": 4500,
+          "y1": 5000,
+          "pct": 82
+        },
+        {
+          "y0": 5000,
+          "y1": 5500,
+          "pct": 85.4
+        },
+        {
+          "y0": 5500,
+          "y1": 6000,
+          "pct": 88
+        },
+        {
+          "y0": 6000,
+          "y1": 6500,
+          "pct": 92.8
+        },
+        {
+          "y0": 6500,
+          "y1": 6640,
+          "pct": 94
         }
       ]
     },
@@ -519,12 +594,12 @@
       "a": "stardust/reports/screens/original/school-life-390.png",
       "b": "stardust/reports/screens/migrated/school-life-390.png",
       "scale": 4,
-      "ssimOverlap": 11.56,
-      "ssimHeightNormalized": 10.18,
-      "ssimAboveFold": 19.16,
+      "ssimOverlap": 14.68,
+      "ssimHeightNormalized": 16.73,
+      "ssimAboveFold": 20.59,
       "heights": [
         6640,
-        3799
+        7281
       ]
     }
   },
@@ -540,7 +615,7 @@
         "height": 5465,
         "mode": "overlap"
       },
-      "heightDelta": -5877,
+      "heightDelta": -5886,
       "differingPixels": 1846461,
       "pct": 23.46,
       "threshold": 100,
@@ -614,11 +689,11 @@
       "b": "stardust/reports/screens/migrated/learning-and-support-wellbeing-1440.png",
       "scale": 4,
       "ssimOverlap": 42.86,
-      "ssimHeightNormalized": 34.84,
+      "ssimHeightNormalized": 34.91,
       "ssimAboveFold": 34.32,
       "heights": [
         5465,
-        11342
+        11351
       ]
     }
   },
@@ -634,7 +709,7 @@
         "height": 5321,
         "mode": "overlap"
       },
-      "heightDelta": -7686,
+      "heightDelta": -7727,
       "differingPixels": 1200179,
       "pct": 29.37,
       "threshold": 100,
@@ -708,11 +783,11 @@
       "b": "stardust/reports/screens/migrated/learning-and-support-wellbeing-768.png",
       "scale": 4,
       "ssimOverlap": 25.66,
-      "ssimHeightNormalized": 16.72,
+      "ssimHeightNormalized": 15.78,
       "ssimAboveFold": 19.53,
       "heights": [
         5321,
-        13007
+        13048
       ]
     }
   },
@@ -728,7 +803,7 @@
         "height": 5922,
         "mode": "overlap"
       },
-      "heightDelta": -12474,
+      "heightDelta": -12641,
       "differingPixels": 644239,
       "pct": 27.89,
       "threshold": 100,
@@ -807,11 +882,11 @@
       "b": "stardust/reports/screens/migrated/learning-and-support-wellbeing-390.png",
       "scale": 4,
       "ssimOverlap": 12.15,
-      "ssimHeightNormalized": 9.33,
+      "ssimHeightNormalized": 9.71,
       "ssimAboveFold": 16.67,
       "heights": [
         5922,
-        18396
+        18563
       ]
     }
   },
@@ -824,12 +899,12 @@
       "b": "stardust/reports/screens/migrated/about-us-1440.png",
       "compared": {
         "width": 1440,
-        "height": 1559,
+        "height": 2857,
         "mode": "overlap"
       },
-      "heightDelta": 1298,
-      "differingPixels": 796219,
-      "pct": 35.47,
+      "heightDelta": -213,
+      "differingPixels": 2697419,
+      "pct": 65.57,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/about-us-1440.png",
@@ -842,22 +917,32 @@
         {
           "y0": 0,
           "y1": 500,
-          "pct": 16.5
+          "pct": 24.3
         },
         {
           "y0": 500,
           "y1": 1000,
-          "pct": 44.2
+          "pct": 71
         },
         {
           "y0": 1000,
           "y1": 1500,
-          "pct": 44
+          "pct": 74.4
         },
         {
           "y0": 1500,
-          "y1": 1559,
-          "pct": 49.9
+          "y1": 2000,
+          "pct": 75.7
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 61.9
+        },
+        {
+          "y0": 2500,
+          "y1": 2857,
+          "pct": 94.2
         }
       ]
     },
@@ -865,12 +950,12 @@
       "a": "stardust/reports/screens/original/about-us-1440.png",
       "b": "stardust/reports/screens/migrated/about-us-1440.png",
       "scale": 4,
-      "ssimOverlap": 38.48,
-      "ssimHeightNormalized": 41.9,
-      "ssimAboveFold": 42.04,
+      "ssimOverlap": 32.2,
+      "ssimHeightNormalized": 33.15,
+      "ssimAboveFold": 41.08,
       "heights": [
         2857,
-        1559
+        3070
       ]
     }
   },
@@ -886,7 +971,7 @@
         "height": 3941,
         "mode": "overlap"
       },
-      "heightDelta": -1891,
+      "heightDelta": -1900,
       "differingPixels": 1903827,
       "pct": 33.55,
       "threshold": 100,
@@ -945,11 +1030,11 @@
       "b": "stardust/reports/screens/migrated/about-us-enrol-1440.png",
       "scale": 4,
       "ssimOverlap": 34.94,
-      "ssimHeightNormalized": 37.32,
+      "ssimHeightNormalized": 37.83,
       "ssimAboveFold": 38.61,
       "heights": [
         3941,
-        5832
+        5841
       ]
     }
   },
@@ -965,7 +1050,7 @@
         "height": 3019,
         "mode": "overlap"
       },
-      "heightDelta": -1558,
+      "heightDelta": -1567,
       "differingPixels": 1891647,
       "pct": 43.51,
       "threshold": 100,
@@ -1019,11 +1104,11 @@
       "b": "stardust/reports/screens/migrated/about-us-facilities-and-resources-1440.png",
       "scale": 4,
       "ssimOverlap": 32.79,
-      "ssimHeightNormalized": 31.35,
+      "ssimHeightNormalized": 31.19,
       "ssimAboveFold": 46.81,
       "heights": [
         3019,
-        4577
+        4586
       ]
     }
   },
@@ -1039,9 +1124,9 @@
         "height": 10845,
         "mode": "overlap"
       },
-      "heightDelta": -619,
-      "differingPixels": 5968458,
-      "pct": 38.22,
+      "heightDelta": -628,
+      "differingPixels": 5967136,
+      "pct": 38.21,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/about-us-hsc-results-1440.png",
@@ -1159,7 +1244,7 @@
         {
           "y0": 10500,
           "y1": 10845,
-          "pct": 93.6
+          "pct": 93.4
         }
       ]
     },
@@ -1167,12 +1252,12 @@
       "a": "stardust/reports/screens/original/about-us-hsc-results-1440.png",
       "b": "stardust/reports/screens/migrated/about-us-hsc-results-1440.png",
       "scale": 4,
-      "ssimOverlap": 37.87,
-      "ssimHeightNormalized": 37.17,
+      "ssimOverlap": 37.89,
+      "ssimHeightNormalized": 37.63,
       "ssimAboveFold": 36.48,
       "heights": [
         10845,
-        11464
+        11473
       ]
     }
   },
@@ -1188,9 +1273,9 @@
         "height": 6986,
         "mode": "overlap"
       },
-      "heightDelta": -973,
-      "differingPixels": 2821341,
-      "pct": 28.05,
+      "heightDelta": -1164,
+      "differingPixels": 3233065,
+      "pct": 32.14,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/about-us-our-principal-and-staff-1440.png",
@@ -1248,27 +1333,27 @@
         {
           "y0": 4500,
           "y1": 5000,
-          "pct": 10.6
+          "pct": 33.9
         },
         {
           "y0": 5000,
           "y1": 5500,
-          "pct": 4.2
+          "pct": 38.1
         },
         {
           "y0": 5500,
           "y1": 6000,
-          "pct": 4.2
+          "pct": 3.1
         },
         {
           "y0": 6000,
           "y1": 6500,
-          "pct": 7.3
+          "pct": 8.1
         },
         {
           "y0": 6500,
           "y1": 6986,
-          "pct": 94.7
+          "pct": 94.8
         }
       ]
     },
@@ -1276,12 +1361,12 @@
       "a": "stardust/reports/screens/original/about-us-our-principal-and-staff-1440.png",
       "b": "stardust/reports/screens/migrated/about-us-our-principal-and-staff-1440.png",
       "scale": 4,
-      "ssimOverlap": 42.46,
-      "ssimHeightNormalized": 41.59,
+      "ssimOverlap": 40.34,
+      "ssimHeightNormalized": 40.93,
       "ssimAboveFold": 38.83,
       "heights": [
         6986,
-        7959
+        8150
       ]
     }
   },
@@ -1297,7 +1382,7 @@
         "height": 3647,
         "mode": "overlap"
       },
-      "heightDelta": -1612,
+      "heightDelta": -1621,
       "differingPixels": 1475175,
       "pct": 28.09,
       "threshold": 100,
@@ -1356,11 +1441,11 @@
       "b": "stardust/reports/screens/migrated/about-us-policies-and-reports-1440.png",
       "scale": 4,
       "ssimOverlap": 39.54,
-      "ssimHeightNormalized": 34.7,
+      "ssimHeightNormalized": 34.63,
       "ssimAboveFold": 35.59,
       "heights": [
         3647,
-        5259
+        5268
       ]
     }
   },
@@ -1373,12 +1458,12 @@
       "b": "stardust/reports/screens/migrated/about-us-policies-and-reports-nsw-public-school-information-1440.png",
       "compared": {
         "width": 1440,
-        "height": 1748,
+        "height": 1757,
         "mode": "overlap"
       },
-      "heightDelta": 128,
-      "differingPixels": 840711,
-      "pct": 33.4,
+      "heightDelta": 119,
+      "differingPixels": 847999,
+      "pct": 33.52,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/about-us-policies-and-reports-nsw-public-school-information-1440.png",
@@ -1401,12 +1486,12 @@
         {
           "y0": 1000,
           "y1": 1500,
-          "pct": 27.8
+          "pct": 26.9
         },
         {
           "y0": 1500,
-          "y1": 1748,
-          "pct": 93.6
+          "y1": 1757,
+          "pct": 94.1
         }
       ]
     },
@@ -1414,12 +1499,12 @@
       "a": "stardust/reports/screens/original/about-us-policies-and-reports-nsw-public-school-information-1440.png",
       "b": "stardust/reports/screens/migrated/about-us-policies-and-reports-nsw-public-school-information-1440.png",
       "scale": 4,
-      "ssimOverlap": 39.49,
-      "ssimHeightNormalized": 40.28,
+      "ssimOverlap": 39.9,
+      "ssimHeightNormalized": 40.41,
       "ssimAboveFold": 37.88,
       "heights": [
         1876,
-        1748
+        1757
       ]
     }
   },
@@ -1435,7 +1520,7 @@
         "height": 5596,
         "mode": "overlap"
       },
-      "heightDelta": -1182,
+      "heightDelta": -1191,
       "differingPixels": 4178742,
       "pct": 51.86,
       "threshold": 100,
@@ -1514,11 +1599,11 @@
       "b": "stardust/reports/screens/migrated/about-us-school-history-and-archives-1440.png",
       "scale": 4,
       "ssimOverlap": 30.41,
-      "ssimHeightNormalized": 32.98,
+      "ssimHeightNormalized": 32.7,
       "ssimAboveFold": 42.42,
       "heights": [
         5596,
-        6778
+        6787
       ]
     }
   },
@@ -1531,12 +1616,12 @@
       "b": "stardust/reports/screens/migrated/about-us-school-history-and-archives-fort-street-archives-1440.png",
       "compared": {
         "width": 1440,
-        "height": 4803,
+        "height": 4812,
         "mode": "overlap"
       },
-      "heightDelta": 264,
-      "differingPixels": 1279345,
-      "pct": 18.5,
+      "heightDelta": 255,
+      "differingPixels": 1297048,
+      "pct": 18.72,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/about-us-school-history-and-archives-fort-street-archives-1440.png",
@@ -1589,12 +1674,12 @@
         {
           "y0": 4000,
           "y1": 4500,
-          "pct": 16
+          "pct": 16.1
         },
         {
           "y0": 4500,
-          "y1": 4803,
-          "pct": 77.4
+          "y1": 4812,
+          "pct": 78.9
         }
       ]
     },
@@ -1602,12 +1687,12 @@
       "a": "stardust/reports/screens/original/about-us-school-history-and-archives-fort-street-archives-1440.png",
       "b": "stardust/reports/screens/migrated/about-us-school-history-and-archives-fort-street-archives-1440.png",
       "scale": 4,
-      "ssimOverlap": 45.42,
-      "ssimHeightNormalized": 42.98,
+      "ssimOverlap": 45.01,
+      "ssimHeightNormalized": 42.79,
       "ssimAboveFold": 39.57,
       "heights": [
         5067,
-        4803
+        4812
       ]
     }
   },
@@ -1623,9 +1708,9 @@
         "height": 3448,
         "mode": "overlap"
       },
-      "heightDelta": -385,
-      "differingPixels": 2403784,
-      "pct": 48.41,
+      "heightDelta": -394,
+      "differingPixels": 2405593,
+      "pct": 48.45,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/about-us-school-history-and-archives-the-fort-street-museum-1440.png",
@@ -1668,7 +1753,7 @@
         {
           "y0": 3000,
           "y1": 3448,
-          "pct": 94.5
+          "pct": 94.8
         }
       ]
     },
@@ -1676,12 +1761,12 @@
       "a": "stardust/reports/screens/original/about-us-school-history-and-archives-the-fort-street-museum-1440.png",
       "b": "stardust/reports/screens/migrated/about-us-school-history-and-archives-the-fort-street-museum-1440.png",
       "scale": 4,
-      "ssimOverlap": 32.87,
-      "ssimHeightNormalized": 33.35,
+      "ssimOverlap": 32.95,
+      "ssimHeightNormalized": 32.86,
       "ssimAboveFold": 33.87,
       "heights": [
         3448,
-        3833
+        3842
       ]
     }
   },
@@ -1697,7 +1782,7 @@
         "height": 3767,
         "mode": "overlap"
       },
-      "heightDelta": -4650,
+      "heightDelta": -4659,
       "differingPixels": 2191642,
       "pct": 40.4,
       "threshold": 100,
@@ -1756,11 +1841,11 @@
       "b": "stardust/reports/screens/migrated/about-us-stories-and-highlights-1440.png",
       "scale": 4,
       "ssimOverlap": 31.74,
-      "ssimHeightNormalized": 29.76,
+      "ssimHeightNormalized": 29.83,
       "ssimAboveFold": 41.9,
       "heights": [
         3767,
-        8417
+        8426
       ]
     }
   },
@@ -1776,7 +1861,7 @@
         "height": 3183,
         "mode": "overlap"
       },
-      "heightDelta": -9649,
+      "heightDelta": -9658,
       "differingPixels": 1314445,
       "pct": 28.68,
       "threshold": 100,
@@ -1834,7 +1919,7 @@
       "ssimAboveFold": 42.85,
       "heights": [
         3183,
-        12832
+        12841
       ]
     }
   },
@@ -1847,12 +1932,12 @@
       "b": "stardust/reports/screens/migrated/about-us-transition-to-high-school-1440.png",
       "compared": {
         "width": 1440,
-        "height": 3858,
+        "height": 3839,
         "mode": "overlap"
       },
-      "heightDelta": 121,
-      "differingPixels": 1445030,
-      "pct": 26.01,
+      "heightDelta": 140,
+      "differingPixels": 1413907,
+      "pct": 25.58,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/about-us-transition-to-high-school-1440.png",
@@ -1895,12 +1980,12 @@
         {
           "y0": 3000,
           "y1": 3500,
-          "pct": 7.9
+          "pct": 7.7
         },
         {
           "y0": 3500,
-          "y1": 3858,
-          "pct": 94.8
+          "y1": 3839,
+          "pct": 94
         }
       ]
     },
@@ -1908,33 +1993,33 @@
       "a": "stardust/reports/screens/original/about-us-transition-to-high-school-1440.png",
       "b": "stardust/reports/screens/migrated/about-us-transition-to-high-school-1440.png",
       "scale": 4,
-      "ssimOverlap": 42.35,
-      "ssimHeightNormalized": 43.62,
+      "ssimOverlap": 42.69,
+      "ssimHeightNormalized": 44.66,
       "ssimAboveFold": 38.93,
       "heights": [
         3979,
-        3858
+        3839
       ]
     }
   },
   {
-    "slug": "learning-and-support",
+    "slug": "contact-us",
     "w": 1440,
-    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/learning-and-support",
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/contact-us",
     "pixel": {
-      "a": "stardust/reports/screens/original/learning-and-support-1440.png",
-      "b": "stardust/reports/screens/migrated/learning-and-support-1440.png",
+      "a": "stardust/reports/screens/original/contact-us-1440.png",
+      "b": "stardust/reports/screens/migrated/contact-us-1440.png",
       "compared": {
         "width": 1440,
-        "height": 1285,
+        "height": 3329,
         "mode": "overlap"
       },
-      "heightDelta": 682,
-      "differingPixels": 319428,
-      "pct": 17.26,
+      "heightDelta": -661,
+      "differingPixels": 1167735,
+      "pct": 24.36,
       "threshold": 100,
       "pass": true,
-      "diff": "stardust/reports/screens/diff/learning-and-support-1440.png",
+      "diff": "stardust/reports/screens/diff/contact-us-1440.png",
       "masks": [],
       "maskedRows": 0,
       "textPct": null,
@@ -1944,30 +2029,50 @@
         {
           "y0": 0,
           "y1": 500,
-          "pct": 14.8
+          "pct": 3.1
         },
         {
           "y0": 500,
           "y1": 1000,
-          "pct": 20.4
+          "pct": 26.7
         },
         {
           "y0": 1000,
-          "y1": 1285,
-          "pct": 16.2
+          "y1": 1500,
+          "pct": 11
+        },
+        {
+          "y0": 1500,
+          "y1": 2000,
+          "pct": 2.1
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 21.8
+        },
+        {
+          "y0": 2500,
+          "y1": 3000,
+          "pct": 36
+        },
+        {
+          "y0": 3000,
+          "y1": 3329,
+          "pct": 93.6
         }
       ]
     },
     "ssim": {
-      "a": "stardust/reports/screens/original/learning-and-support-1440.png",
-      "b": "stardust/reports/screens/migrated/learning-and-support-1440.png",
+      "a": "stardust/reports/screens/original/contact-us-1440.png",
+      "b": "stardust/reports/screens/migrated/contact-us-1440.png",
       "scale": 4,
-      "ssimOverlap": 49.17,
-      "ssimHeightNormalized": 43.81,
-      "ssimAboveFold": 52.57,
+      "ssimOverlap": 50.08,
+      "ssimHeightNormalized": 49.74,
+      "ssimAboveFold": 55.11,
       "heights": [
-        1967,
-        1285
+        3329,
+        3990
       ]
     }
   },
@@ -1980,12 +2085,12 @@
       "b": "stardust/reports/screens/migrated/about-us-why-choose-us-1440.png",
       "compared": {
         "width": 1440,
-        "height": 5822,
+        "height": 6290,
         "mode": "overlap"
       },
-      "heightDelta": 468,
-      "differingPixels": 3084178,
-      "pct": 36.79,
+      "heightDelta": -338,
+      "differingPixels": 4493090,
+      "pct": 49.61,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/about-us-why-choose-us-1440.png",
@@ -2038,22 +2143,27 @@
         {
           "y0": 4000,
           "y1": 4500,
-          "pct": 45.4
+          "pct": 70.1
         },
         {
           "y0": 4500,
           "y1": 5000,
-          "pct": 15.6
+          "pct": 69.8
         },
         {
           "y0": 5000,
           "y1": 5500,
-          "pct": 21.8
+          "pct": 50.8
         },
         {
           "y0": 5500,
-          "y1": 5822,
-          "pct": 15.1
+          "y1": 6000,
+          "pct": 42.9
+        },
+        {
+          "y0": 6000,
+          "y1": 6290,
+          "pct": 94.4
         }
       ]
     },
@@ -2061,33 +2171,33 @@
       "a": "stardust/reports/screens/original/about-us-why-choose-us-1440.png",
       "b": "stardust/reports/screens/migrated/about-us-why-choose-us-1440.png",
       "scale": 4,
-      "ssimOverlap": 40.32,
-      "ssimHeightNormalized": 37.53,
+      "ssimOverlap": 35.04,
+      "ssimHeightNormalized": 36.78,
       "ssimAboveFold": 40.9,
       "heights": [
         6290,
-        5822
+        6628
       ]
     }
   },
   {
-    "slug": "contact-us",
+    "slug": "learning-and-support",
     "w": 1440,
-    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/contact-us",
+    "url": "https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/learning-and-support",
     "pixel": {
-      "a": "stardust/reports/screens/original/contact-us-1440.png",
-      "b": "stardust/reports/screens/migrated/contact-us-1440.png",
+      "a": "stardust/reports/screens/original/learning-and-support-1440.png",
+      "b": "stardust/reports/screens/migrated/learning-and-support-1440.png",
       "compared": {
         "width": 1440,
-        "height": 3329,
+        "height": 1967,
         "mode": "overlap"
       },
-      "heightDelta": -652,
-      "differingPixels": 1167383,
-      "pct": 24.35,
+      "heightDelta": -23,
+      "differingPixels": 1397297,
+      "pct": 49.33,
       "threshold": 100,
       "pass": true,
-      "diff": "stardust/reports/screens/diff/contact-us-1440.png",
+      "diff": "stardust/reports/screens/diff/learning-and-support-1440.png",
       "masks": [],
       "maskedRows": 0,
       "textPct": null,
@@ -2097,50 +2207,35 @@
         {
           "y0": 0,
           "y1": 500,
-          "pct": 3.1
+          "pct": 24.8
         },
         {
           "y0": 500,
           "y1": 1000,
-          "pct": 26.7
+          "pct": 39.5
         },
         {
           "y0": 1000,
           "y1": 1500,
-          "pct": 11
+          "pct": 41.7
         },
         {
           "y0": 1500,
-          "y1": 2000,
-          "pct": 2.1
-        },
-        {
-          "y0": 2000,
-          "y1": 2500,
-          "pct": 21.8
-        },
-        {
-          "y0": 2500,
-          "y1": 3000,
-          "pct": 36
-        },
-        {
-          "y0": 3000,
-          "y1": 3329,
-          "pct": 93.6
+          "y1": 1967,
+          "pct": 94.2
         }
       ]
     },
     "ssim": {
-      "a": "stardust/reports/screens/original/contact-us-1440.png",
-      "b": "stardust/reports/screens/migrated/contact-us-1440.png",
+      "a": "stardust/reports/screens/original/learning-and-support-1440.png",
+      "b": "stardust/reports/screens/migrated/learning-and-support-1440.png",
       "scale": 4,
-      "ssimOverlap": 50.1,
-      "ssimHeightNormalized": 49.38,
-      "ssimAboveFold": 55.11,
+      "ssimOverlap": 35.1,
+      "ssimHeightNormalized": 34.71,
+      "ssimAboveFold": 45.75,
       "heights": [
-        3329,
-        3981
+        1967,
+        1990
       ]
     }
   },
@@ -2156,9 +2251,9 @@
         "height": 4084,
         "mode": "overlap"
       },
-      "heightDelta": -138,
-      "differingPixels": 2367093,
-      "pct": 40.25,
+      "heightDelta": -147,
+      "differingPixels": 2365540,
+      "pct": 40.22,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/learning-and-support-careers-1440.png",
@@ -2201,17 +2296,17 @@
         {
           "y0": 3000,
           "y1": 3500,
-          "pct": 24.3
+          "pct": 24.1
         },
         {
           "y0": 3500,
           "y1": 4000,
-          "pct": 81.1
+          "pct": 80.9
         },
         {
           "y0": 4000,
           "y1": 4084,
-          "pct": 94.5
+          "pct": 95.4
         }
       ]
     },
@@ -2219,12 +2314,12 @@
       "a": "stardust/reports/screens/original/learning-and-support-careers-1440.png",
       "b": "stardust/reports/screens/migrated/learning-and-support-careers-1440.png",
       "scale": 4,
-      "ssimOverlap": 33.95,
-      "ssimHeightNormalized": 33.83,
+      "ssimOverlap": 34.33,
+      "ssimHeightNormalized": 33.7,
       "ssimAboveFold": 40.2,
       "heights": [
         4084,
-        4222
+        4231
       ]
     }
   },
@@ -2240,9 +2335,9 @@
         "height": 4365,
         "mode": "overlap"
       },
-      "heightDelta": -702,
-      "differingPixels": 1994821,
-      "pct": 31.74,
+      "heightDelta": -714,
+      "differingPixels": 1997755,
+      "pct": 31.78,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/learning-and-support-high-potential-and-gifted-education-1440.png",
@@ -2295,7 +2390,7 @@
         {
           "y0": 4000,
           "y1": 4365,
-          "pct": 94.7
+          "pct": 95.2
         }
       ]
     },
@@ -2303,12 +2398,12 @@
       "a": "stardust/reports/screens/original/learning-and-support-high-potential-and-gifted-education-1440.png",
       "b": "stardust/reports/screens/migrated/learning-and-support-high-potential-and-gifted-education-1440.png",
       "scale": 4,
-      "ssimOverlap": 38.42,
-      "ssimHeightNormalized": 39.29,
+      "ssimOverlap": 38.38,
+      "ssimHeightNormalized": 37.78,
       "ssimAboveFold": 42.92,
       "heights": [
         4365,
-        5067
+        5079
       ]
     }
   },
@@ -2324,7 +2419,7 @@
         "height": 4914,
         "mode": "overlap"
       },
-      "heightDelta": -3310,
+      "heightDelta": -3319,
       "differingPixels": 2036834,
       "pct": 28.78,
       "threshold": 100,
@@ -2393,11 +2488,11 @@
       "b": "stardust/reports/screens/migrated/learning-and-support-additional-learning-support-1440.png",
       "scale": 4,
       "ssimOverlap": 37.69,
-      "ssimHeightNormalized": 33.03,
+      "ssimHeightNormalized": 33.44,
       "ssimAboveFold": 38.27,
       "heights": [
         4914,
-        8224
+        8233
       ]
     }
   },
@@ -2410,12 +2505,12 @@
       "b": "stardust/reports/screens/migrated/our-community-1440.png",
       "compared": {
         "width": 1440,
-        "height": 1827,
+        "height": 2547,
         "mode": "overlap"
       },
-      "heightDelta": 720,
-      "differingPixels": 737634,
-      "pct": 28.04,
+      "heightDelta": -114,
+      "differingPixels": 1953618,
+      "pct": 53.27,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/our-community-1440.png",
@@ -2428,22 +2523,32 @@
         {
           "y0": 0,
           "y1": 500,
-          "pct": 11.6
+          "pct": 19.4
         },
         {
           "y0": 500,
           "y1": 1000,
-          "pct": 45.7
+          "pct": 71.9
         },
         {
           "y0": 1000,
           "y1": 1500,
-          "pct": 42
+          "pct": 73
         },
         {
           "y0": 1500,
-          "y1": 1827,
-          "pct": 4.7
+          "y1": 2000,
+          "pct": 10.4
+        },
+        {
+          "y0": 2000,
+          "y1": 2500,
+          "pct": 87.5
+        },
+        {
+          "y0": 2500,
+          "y1": 2547,
+          "pct": 98.2
         }
       ]
     },
@@ -2451,12 +2556,12 @@
       "a": "stardust/reports/screens/original/our-community-1440.png",
       "b": "stardust/reports/screens/migrated/our-community-1440.png",
       "scale": 4,
-      "ssimOverlap": 45,
-      "ssimHeightNormalized": 41.97,
-      "ssimAboveFold": 41.92,
+      "ssimOverlap": 34.3,
+      "ssimHeightNormalized": 34.73,
+      "ssimAboveFold": 37.55,
       "heights": [
         2547,
-        1827
+        2661
       ]
     }
   },
@@ -2469,12 +2574,12 @@
       "b": "stardust/reports/screens/migrated/our-community-alumni-1440.png",
       "compared": {
         "width": 1440,
-        "height": 3622,
+        "height": 3631,
         "mode": "overlap"
       },
-      "heightDelta": 677,
-      "differingPixels": 956429,
-      "pct": 18.34,
+      "heightDelta": 668,
+      "differingPixels": 950925,
+      "pct": 18.19,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/our-community-alumni-1440.png",
@@ -2517,12 +2622,12 @@
         {
           "y0": 3000,
           "y1": 3500,
-          "pct": 29.7
+          "pct": 29.1
         },
         {
           "y0": 3500,
-          "y1": 3622,
-          "pct": 2.8
+          "y1": 3631,
+          "pct": 2
         }
       ]
     },
@@ -2530,12 +2635,12 @@
       "a": "stardust/reports/screens/original/our-community-alumni-1440.png",
       "b": "stardust/reports/screens/migrated/our-community-alumni-1440.png",
       "scale": 4,
-      "ssimOverlap": 36.04,
-      "ssimHeightNormalized": 36.5,
+      "ssimOverlap": 36.73,
+      "ssimHeightNormalized": 35.87,
       "ssimAboveFold": 38.34,
       "heights": [
         4299,
-        3622
+        3631
       ]
     }
   },
@@ -2551,9 +2656,9 @@
         "height": 5123,
         "mode": "overlap"
       },
-      "heightDelta": -10031,
-      "differingPixels": 1990332,
-      "pct": 26.98,
+      "heightDelta": -10222,
+      "differingPixels": 2263674,
+      "pct": 30.69,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/learning-and-support-learning-1440.png",
@@ -2576,47 +2681,47 @@
         {
           "y0": 1000,
           "y1": 1500,
-          "pct": 6.6
+          "pct": 31.3
         },
         {
           "y0": 1500,
           "y1": 2000,
-          "pct": 44.6
+          "pct": 59.3
         },
         {
           "y0": 2000,
           "y1": 2500,
-          "pct": 13.8
+          "pct": 13.7
         },
         {
           "y0": 2500,
           "y1": 3000,
-          "pct": 4.3
+          "pct": 3.4
         },
         {
           "y0": 3000,
           "y1": 3500,
-          "pct": 4.1
+          "pct": 4.6
         },
         {
           "y0": 3500,
           "y1": 4000,
-          "pct": 8.7
+          "pct": 9.1
         },
         {
           "y0": 4000,
           "y1": 4500,
-          "pct": 29.9
+          "pct": 30.9
         },
         {
           "y0": 4500,
           "y1": 5000,
-          "pct": 74.1
+          "pct": 71.6
         },
         {
           "y0": 5000,
           "y1": 5123,
-          "pct": 95.7
+          "pct": 95.8
         }
       ]
     },
@@ -2624,12 +2729,12 @@
       "a": "stardust/reports/screens/original/learning-and-support-learning-1440.png",
       "b": "stardust/reports/screens/migrated/learning-and-support-learning-1440.png",
       "scale": 4,
-      "ssimOverlap": 39.85,
-      "ssimHeightNormalized": 31.29,
+      "ssimOverlap": 39.8,
+      "ssimHeightNormalized": 31.69,
       "ssimAboveFold": 37.85,
       "heights": [
         5123,
-        15154
+        15345
       ]
     }
   },
@@ -2642,12 +2747,12 @@
       "b": "stardust/reports/screens/migrated/our-community-fortians-union-1440.png",
       "compared": {
         "width": 1440,
-        "height": 2298,
+        "height": 2300,
         "mode": "overlap"
       },
-      "heightDelta": 2,
-      "differingPixels": 906900,
-      "pct": 27.41,
+      "heightDelta": -7,
+      "differingPixels": 906174,
+      "pct": 27.36,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/our-community-fortians-union-1440.png",
@@ -2675,12 +2780,12 @@
         {
           "y0": 1500,
           "y1": 2000,
-          "pct": 42
+          "pct": 41.1
         },
         {
           "y0": 2000,
-          "y1": 2298,
-          "pct": 93.2
+          "y1": 2300,
+          "pct": 93.9
         }
       ]
     },
@@ -2688,12 +2793,12 @@
       "a": "stardust/reports/screens/original/our-community-fortians-union-1440.png",
       "b": "stardust/reports/screens/migrated/our-community-fortians-union-1440.png",
       "scale": 4,
-      "ssimOverlap": 45.01,
-      "ssimHeightNormalized": 45.88,
+      "ssimOverlap": 45.04,
+      "ssimHeightNormalized": 45.05,
       "ssimAboveFold": 52.07,
       "heights": [
         2300,
-        2298
+        2307
       ]
     }
   },
@@ -2709,9 +2814,9 @@
         "height": 5668,
         "mode": "overlap"
       },
-      "heightDelta": -19,
-      "differingPixels": 1632111,
-      "pct": 20,
+      "heightDelta": -28,
+      "differingPixels": 1630745,
+      "pct": 19.98,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/our-community-foundation-1440.png",
@@ -2769,17 +2874,17 @@
         {
           "y0": 4500,
           "y1": 5000,
-          "pct": 30.8
+          "pct": 30.4
         },
         {
           "y0": 5000,
           "y1": 5500,
-          "pct": 64.7
+          "pct": 64.6
         },
         {
           "y0": 5500,
           "y1": 5668,
-          "pct": 95.1
+          "pct": 96.1
         }
       ]
     },
@@ -2787,12 +2892,12 @@
       "a": "stardust/reports/screens/original/our-community-foundation-1440.png",
       "b": "stardust/reports/screens/migrated/our-community-foundation-1440.png",
       "scale": 4,
-      "ssimOverlap": 42.03,
-      "ssimHeightNormalized": 43.25,
+      "ssimOverlap": 42.34,
+      "ssimHeightNormalized": 42.88,
       "ssimAboveFold": 35.69,
       "heights": [
         5668,
-        5687
+        5696
       ]
     }
   },
@@ -2805,12 +2910,12 @@
       "b": "stardust/reports/screens/migrated/our-community-foundation-tertiary-bursaries-1440.png",
       "compared": {
         "width": 1440,
-        "height": 2316,
+        "height": 2325,
         "mode": "overlap"
       },
-      "heightDelta": 92,
-      "differingPixels": 703035,
-      "pct": 21.08,
+      "heightDelta": 83,
+      "differingPixels": 709835,
+      "pct": 21.2,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/our-community-foundation-tertiary-bursaries-1440.png",
@@ -2838,12 +2943,12 @@
         {
           "y0": 1500,
           "y1": 2000,
-          "pct": 21.2
+          "pct": 20.4
         },
         {
           "y0": 2000,
-          "y1": 2316,
-          "pct": 94
+          "y1": 2325,
+          "pct": 94.1
         }
       ]
     },
@@ -2851,12 +2956,12 @@
       "a": "stardust/reports/screens/original/our-community-foundation-tertiary-bursaries-1440.png",
       "b": "stardust/reports/screens/migrated/our-community-foundation-tertiary-bursaries-1440.png",
       "scale": 4,
-      "ssimOverlap": 43.2,
-      "ssimHeightNormalized": 43.89,
+      "ssimOverlap": 44.01,
+      "ssimHeightNormalized": 43.66,
       "ssimAboveFold": 42.73,
       "heights": [
         2408,
-        2316
+        2325
       ]
     }
   },
@@ -2872,9 +2977,9 @@
         "height": 6275,
         "mode": "overlap"
       },
-      "heightDelta": -562,
-      "differingPixels": 2063695,
-      "pct": 22.84,
+      "heightDelta": -571,
+      "differingPixels": 2064729,
+      "pct": 22.85,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/our-community-pandc-1440.png",
@@ -2947,7 +3052,7 @@
         {
           "y0": 6000,
           "y1": 6275,
-          "pct": 93.9
+          "pct": 94.2
         }
       ]
     },
@@ -2955,12 +3060,12 @@
       "a": "stardust/reports/screens/original/our-community-pandc-1440.png",
       "b": "stardust/reports/screens/migrated/our-community-pandc-1440.png",
       "scale": 4,
-      "ssimOverlap": 44.66,
-      "ssimHeightNormalized": 43.93,
+      "ssimOverlap": 44.69,
+      "ssimHeightNormalized": 43.6,
       "ssimAboveFold": 28.3,
       "heights": [
         6275,
-        6837
+        6846
       ]
     }
   },
@@ -2976,9 +3081,9 @@
         "height": 3839,
         "mode": "overlap"
       },
-      "heightDelta": -103,
-      "differingPixels": 1114228,
-      "pct": 20.16,
+      "heightDelta": -112,
+      "differingPixels": 1118490,
+      "pct": 20.23,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/school-life-bell-times-1440.png",
@@ -3021,12 +3126,12 @@
         {
           "y0": 3000,
           "y1": 3500,
-          "pct": 34.7
+          "pct": 35.2
         },
         {
           "y0": 3500,
           "y1": 3839,
-          "pct": 93.7
+          "pct": 93.8
         }
       ]
     },
@@ -3034,12 +3139,12 @@
       "a": "stardust/reports/screens/original/school-life-bell-times-1440.png",
       "b": "stardust/reports/screens/migrated/school-life-bell-times-1440.png",
       "scale": 4,
-      "ssimOverlap": 36.66,
-      "ssimHeightNormalized": 36.54,
+      "ssimOverlap": 36.76,
+      "ssimHeightNormalized": 38.23,
       "ssimAboveFold": 44.41,
       "heights": [
         3839,
-        3942
+        3951
       ]
     }
   },
@@ -3052,12 +3157,12 @@
       "b": "stardust/reports/screens/migrated/school-life-bring-your-own-device-1440.png",
       "compared": {
         "width": 1440,
-        "height": 3734,
+        "height": 3743,
         "mode": "overlap"
       },
-      "heightDelta": 785,
-      "differingPixels": 997861,
-      "pct": 18.56,
+      "heightDelta": 776,
+      "differingPixels": 996014,
+      "pct": 18.48,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/school-life-bring-your-own-device-1440.png",
@@ -3100,12 +3205,12 @@
         {
           "y0": 3000,
           "y1": 3500,
-          "pct": 12.3
+          "pct": 12.2
         },
         {
           "y0": 3500,
-          "y1": 3734,
-          "pct": 28
+          "y1": 3743,
+          "pct": 26.4
         }
       ]
     },
@@ -3113,12 +3218,12 @@
       "a": "stardust/reports/screens/original/school-life-bring-your-own-device-1440.png",
       "b": "stardust/reports/screens/migrated/school-life-bring-your-own-device-1440.png",
       "scale": 4,
-      "ssimOverlap": 38.02,
-      "ssimHeightNormalized": 40.2,
+      "ssimOverlap": 38.62,
+      "ssimHeightNormalized": 39.58,
       "ssimAboveFold": 35.61,
       "heights": [
         4519,
-        3734
+        3743
       ]
     }
   },
@@ -3131,12 +3236,12 @@
       "b": "stardust/reports/screens/migrated/school-life-canteen-1440.png",
       "compared": {
         "width": 1440,
-        "height": 3740,
+        "height": 3749,
         "mode": "overlap"
       },
-      "heightDelta": 620,
-      "differingPixels": 746641,
-      "pct": 13.86,
+      "heightDelta": 611,
+      "differingPixels": 743015,
+      "pct": 13.76,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/school-life-canteen-1440.png",
@@ -3179,12 +3284,12 @@
         {
           "y0": 3000,
           "y1": 3500,
-          "pct": 14.7
+          "pct": 14.5
         },
         {
           "y0": 3500,
-          "y1": 3740,
-          "pct": 9.1
+          "y1": 3749,
+          "pct": 8.3
         }
       ]
     },
@@ -3192,12 +3297,12 @@
       "a": "stardust/reports/screens/original/school-life-canteen-1440.png",
       "b": "stardust/reports/screens/migrated/school-life-canteen-1440.png",
       "scale": 4,
-      "ssimOverlap": 45.73,
-      "ssimHeightNormalized": 45.53,
+      "ssimOverlap": 46.47,
+      "ssimHeightNormalized": 45.16,
       "ssimAboveFold": 43.25,
       "heights": [
         4360,
-        3740
+        3749
       ]
     }
   },
@@ -3210,12 +3315,12 @@
       "b": "stardust/reports/screens/migrated/school-life-forms-1440.png",
       "compared": {
         "width": 1440,
-        "height": 1928,
+        "height": 1937,
         "mode": "overlap"
       },
-      "heightDelta": 47,
-      "differingPixels": 850420,
-      "pct": 30.63,
+      "heightDelta": 38,
+      "differingPixels": 859754,
+      "pct": 30.82,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/school-life-forms-1440.png",
@@ -3238,12 +3343,12 @@
         {
           "y0": 1000,
           "y1": 1500,
-          "pct": 22.5
+          "pct": 22.2
         },
         {
           "y0": 1500,
-          "y1": 1928,
-          "pct": 94
+          "y1": 1937,
+          "pct": 93.9
         }
       ]
     },
@@ -3251,12 +3356,12 @@
       "a": "stardust/reports/screens/original/school-life-forms-1440.png",
       "b": "stardust/reports/screens/migrated/school-life-forms-1440.png",
       "scale": 4,
-      "ssimOverlap": 38.32,
-      "ssimHeightNormalized": 38.47,
+      "ssimOverlap": 39.14,
+      "ssimHeightNormalized": 39,
       "ssimAboveFold": 43.72,
       "heights": [
         1975,
-        1928
+        1937
       ]
     }
   },
@@ -3272,9 +3377,9 @@
         "height": 6411,
         "mode": "overlap"
       },
-      "heightDelta": -367,
-      "differingPixels": 2949155,
-      "pct": 31.95,
+      "heightDelta": -376,
+      "differingPixels": 2950966,
+      "pct": 31.97,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/school-life-events-1440.png",
@@ -3347,7 +3452,7 @@
         {
           "y0": 6000,
           "y1": 6411,
-          "pct": 94.3
+          "pct": 94.6
         }
       ]
     },
@@ -3355,12 +3460,12 @@
       "a": "stardust/reports/screens/original/school-life-events-1440.png",
       "b": "stardust/reports/screens/migrated/school-life-events-1440.png",
       "scale": 4,
-      "ssimOverlap": 42.35,
-      "ssimHeightNormalized": 42.91,
+      "ssimOverlap": 42.32,
+      "ssimHeightNormalized": 42.99,
       "ssimAboveFold": 56.5,
       "heights": [
         6411,
-        6778
+        6787
       ]
     }
   },
@@ -3373,12 +3478,12 @@
       "b": "stardust/reports/screens/migrated/school-life-house-and-merit-system-1440.png",
       "compared": {
         "width": 1440,
-        "height": 4803,
+        "height": 4812,
         "mode": "overlap"
       },
-      "heightDelta": 800,
-      "differingPixels": 1689633,
-      "pct": 24.43,
+      "heightDelta": 791,
+      "differingPixels": 1690824,
+      "pct": 24.4,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/school-life-house-and-merit-system-1440.png",
@@ -3431,12 +3536,12 @@
         {
           "y0": 4000,
           "y1": 4500,
-          "pct": 21.4
+          "pct": 21.8
         },
         {
           "y0": 4500,
-          "y1": 4803,
-          "pct": 37.6
+          "y1": 4812,
+          "pct": 36.2
         }
       ]
     },
@@ -3444,12 +3549,12 @@
       "a": "stardust/reports/screens/original/school-life-house-and-merit-system-1440.png",
       "b": "stardust/reports/screens/migrated/school-life-house-and-merit-system-1440.png",
       "scale": 4,
-      "ssimOverlap": 42.75,
-      "ssimHeightNormalized": 42.43,
+      "ssimOverlap": 43.16,
+      "ssimHeightNormalized": 42.45,
       "ssimAboveFold": 48.88,
       "heights": [
         5603,
-        4803
+        4812
       ]
     }
   },
@@ -3462,12 +3567,12 @@
       "b": "stardust/reports/screens/migrated/school-life-lockers-and-lost-property-1440.png",
       "compared": {
         "width": 1440,
-        "height": 3221,
+        "height": 3202,
         "mode": "overlap"
       },
-      "heightDelta": 180,
-      "differingPixels": 1158649,
-      "pct": 24.98,
+      "heightDelta": 199,
+      "differingPixels": 1134136,
+      "pct": 24.6,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/school-life-lockers-and-lost-property-1440.png",
@@ -3500,17 +3605,17 @@
         {
           "y0": 2000,
           "y1": 2500,
-          "pct": 21.1
+          "pct": 21
         },
         {
           "y0": 2500,
           "y1": 3000,
-          "pct": 25.1
+          "pct": 25.2
         },
         {
           "y0": 3000,
-          "y1": 3221,
-          "pct": 93
+          "y1": 3202,
+          "pct": 93.6
         }
       ]
     },
@@ -3518,12 +3623,12 @@
       "a": "stardust/reports/screens/original/school-life-lockers-and-lost-property-1440.png",
       "b": "stardust/reports/screens/migrated/school-life-lockers-and-lost-property-1440.png",
       "scale": 4,
-      "ssimOverlap": 43.54,
-      "ssimHeightNormalized": 43.58,
+      "ssimOverlap": 43.52,
+      "ssimHeightNormalized": 43.66,
       "ssimAboveFold": 40.51,
       "heights": [
         3401,
-        3221
+        3202
       ]
     }
   },
@@ -3539,7 +3644,7 @@
         "height": 3122,
         "mode": "overlap"
       },
-      "heightDelta": -766,
+      "heightDelta": -775,
       "differingPixels": 1142759,
       "pct": 25.42,
       "threshold": 100,
@@ -3593,11 +3698,11 @@
       "b": "stardust/reports/screens/migrated/school-life-newsletters-1440.png",
       "scale": 4,
       "ssimOverlap": 45.51,
-      "ssimHeightNormalized": 45.43,
+      "ssimHeightNormalized": 45.2,
       "ssimAboveFold": 55.6,
       "heights": [
         3122,
-        3888
+        3897
       ]
     }
   },
@@ -3610,12 +3715,12 @@
       "b": "stardust/reports/screens/migrated/school-life-parent-portal-1440.png",
       "compared": {
         "width": 1440,
-        "height": 3620,
+        "height": 3629,
         "mode": "overlap"
       },
-      "heightDelta": 111,
-      "differingPixels": 969386,
-      "pct": 18.6,
+      "heightDelta": 102,
+      "differingPixels": 981368,
+      "pct": 18.78,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/school-life-parent-portal-1440.png",
@@ -3658,12 +3763,12 @@
         {
           "y0": 3000,
           "y1": 3500,
-          "pct": 53.5
+          "pct": 53.2
         },
         {
           "y0": 3500,
-          "y1": 3620,
-          "pct": 92.2
+          "y1": 3629,
+          "pct": 93.4
         }
       ]
     },
@@ -3671,12 +3776,12 @@
       "a": "stardust/reports/screens/original/school-life-parent-portal-1440.png",
       "b": "stardust/reports/screens/migrated/school-life-parent-portal-1440.png",
       "scale": 4,
-      "ssimOverlap": 48.56,
-      "ssimHeightNormalized": 49.03,
+      "ssimOverlap": 48.7,
+      "ssimHeightNormalized": 48.8,
       "ssimAboveFold": 58.32,
       "heights": [
         3731,
-        3620
+        3629
       ]
     }
   },
@@ -3689,12 +3794,12 @@
       "b": "stardust/reports/screens/migrated/school-life-stationery-1440.png",
       "compared": {
         "width": 1440,
-        "height": 1917,
+        "height": 1926,
         "mode": "overlap"
       },
-      "heightDelta": 89,
-      "differingPixels": 1151546,
-      "pct": 41.72,
+      "heightDelta": 80,
+      "differingPixels": 1158825,
+      "pct": 41.78,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/school-life-stationery-1440.png",
@@ -3717,12 +3822,12 @@
         {
           "y0": 1000,
           "y1": 1500,
-          "pct": 11.8
+          "pct": 11.4
         },
         {
           "y0": 1500,
-          "y1": 1917,
-          "pct": 94.5
+          "y1": 1926,
+          "pct": 94.2
         }
       ]
     },
@@ -3730,12 +3835,12 @@
       "a": "stardust/reports/screens/original/school-life-stationery-1440.png",
       "b": "stardust/reports/screens/migrated/school-life-stationery-1440.png",
       "scale": 4,
-      "ssimOverlap": 40.72,
-      "ssimHeightNormalized": 39.42,
+      "ssimOverlap": 41.24,
+      "ssimHeightNormalized": 38.93,
       "ssimAboveFold": 40.06,
       "heights": [
         2006,
-        1917
+        1926
       ]
     }
   },
@@ -3751,7 +3856,7 @@
         "height": 5270,
         "mode": "overlap"
       },
-      "heightDelta": -830,
+      "heightDelta": -839,
       "differingPixels": 2882687,
       "pct": 37.99,
       "threshold": 100,
@@ -3825,11 +3930,11 @@
       "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-1440.png",
       "scale": 4,
       "ssimOverlap": 39.72,
-      "ssimHeightNormalized": 39.1,
+      "ssimHeightNormalized": 39.55,
       "ssimAboveFold": 40.88,
       "heights": [
         5270,
-        6100
+        6109
       ]
     }
   },
@@ -3842,12 +3947,12 @@
       "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-academic-competitions-1440.png",
       "compared": {
         "width": 1440,
-        "height": 5252,
+        "height": 5249,
         "mode": "overlap"
       },
-      "heightDelta": 299,
-      "differingPixels": 1028449,
-      "pct": 13.6,
+      "heightDelta": 302,
+      "differingPixels": 1025040,
+      "pct": 13.56,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/school-life-student-opportunities-and-activities-academic-competitions-1440.png",
@@ -3900,17 +4005,17 @@
         {
           "y0": 4000,
           "y1": 4500,
-          "pct": 5.8
+          "pct": 5.5
         },
         {
           "y0": 4500,
           "y1": 5000,
-          "pct": 19.5
+          "pct": 19.8
         },
         {
           "y0": 5000,
-          "y1": 5252,
-          "pct": 80.5
+          "y1": 5249,
+          "pct": 80.6
         }
       ]
     },
@@ -3918,12 +4023,12 @@
       "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-academic-competitions-1440.png",
       "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-academic-competitions-1440.png",
       "scale": 4,
-      "ssimOverlap": 42.48,
-      "ssimHeightNormalized": 41.21,
+      "ssimOverlap": 42.37,
+      "ssimHeightNormalized": 41.46,
       "ssimAboveFold": 42.05,
       "heights": [
         5551,
-        5252
+        5249
       ]
     }
   },
@@ -3936,12 +4041,12 @@
       "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-clubs-and-committees-1440.png",
       "compared": {
         "width": 1440,
-        "height": 3732,
+        "height": 3729,
         "mode": "overlap"
       },
-      "heightDelta": 290,
-      "differingPixels": 931902,
-      "pct": 17.34,
+      "heightDelta": 293,
+      "differingPixels": 929231,
+      "pct": 17.3,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/school-life-student-opportunities-and-activities-clubs-and-committees-1440.png",
@@ -3979,17 +4084,17 @@
         {
           "y0": 2500,
           "y1": 3000,
-          "pct": 9.7
+          "pct": 8.9
         },
         {
           "y0": 3000,
           "y1": 3500,
-          "pct": 16.7
+          "pct": 17.2
         },
         {
           "y0": 3500,
-          "y1": 3732,
-          "pct": 90.6
+          "y1": 3729,
+          "pct": 91.5
         }
       ]
     },
@@ -3997,12 +4102,12 @@
       "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-clubs-and-committees-1440.png",
       "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-clubs-and-committees-1440.png",
       "scale": 4,
-      "ssimOverlap": 44.57,
-      "ssimHeightNormalized": 39.28,
+      "ssimOverlap": 44.45,
+      "ssimHeightNormalized": 40.02,
       "ssimAboveFold": 43.76,
       "heights": [
         4022,
-        3732
+        3729
       ]
     }
   },
@@ -4015,12 +4120,12 @@
       "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-creative-and-performing-arts-1440.png",
       "compared": {
         "width": 1440,
-        "height": 2964,
+        "height": 2961,
         "mode": "overlap"
       },
-      "heightDelta": 208,
-      "differingPixels": 996295,
-      "pct": 23.34,
+      "heightDelta": 211,
+      "differingPixels": 990602,
+      "pct": 23.23,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/school-life-student-opportunities-and-activities-creative-and-performing-arts-1440.png",
@@ -4053,12 +4158,12 @@
         {
           "y0": 2000,
           "y1": 2500,
-          "pct": 23.2
+          "pct": 22.4
         },
         {
           "y0": 2500,
-          "y1": 2964,
-          "pct": 61.9
+          "y1": 2961,
+          "pct": 62.3
         }
       ]
     },
@@ -4066,12 +4171,12 @@
       "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-creative-and-performing-arts-1440.png",
       "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-creative-and-performing-arts-1440.png",
       "scale": 4,
-      "ssimOverlap": 42.07,
-      "ssimHeightNormalized": 41.3,
+      "ssimOverlap": 42.08,
+      "ssimHeightNormalized": 40.57,
       "ssimAboveFold": 39.27,
       "heights": [
         3172,
-        2964
+        2961
       ]
     }
   },
@@ -4084,12 +4189,12 @@
       "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-debating-and-public-speaking-1440.png",
       "compared": {
         "width": 1440,
-        "height": 1994,
+        "height": 1991,
         "mode": "overlap"
       },
-      "heightDelta": 141,
-      "differingPixels": 969690,
-      "pct": 33.77,
+      "heightDelta": 144,
+      "differingPixels": 968887,
+      "pct": 33.79,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/school-life-student-opportunities-and-activities-debating-and-public-speaking-1440.png",
@@ -4112,12 +4217,12 @@
         {
           "y0": 1000,
           "y1": 1500,
-          "pct": 23.6
+          "pct": 23.7
         },
         {
           "y0": 1500,
-          "y1": 1994,
-          "pct": 70.2
+          "y1": 1991,
+          "pct": 70.4
         }
       ]
     },
@@ -4125,12 +4230,12 @@
       "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-debating-and-public-speaking-1440.png",
       "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-debating-and-public-speaking-1440.png",
       "scale": 4,
-      "ssimOverlap": 37.58,
-      "ssimHeightNormalized": 36.7,
+      "ssimOverlap": 37.03,
+      "ssimHeightNormalized": 37.53,
       "ssimAboveFold": 36.79,
       "heights": [
         2135,
-        1994
+        1991
       ]
     }
   },
@@ -4146,7 +4251,7 @@
         "height": 7505,
         "mode": "overlap"
       },
-      "heightDelta": -2168,
+      "heightDelta": -2165,
       "differingPixels": 4176769,
       "pct": 38.65,
       "threshold": 100,
@@ -4245,11 +4350,11 @@
       "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-duke-of-edinburgh-award-1440.png",
       "scale": 4,
       "ssimOverlap": 40.35,
-      "ssimHeightNormalized": 38.91,
+      "ssimHeightNormalized": 39.09,
       "ssimAboveFold": 37.59,
       "heights": [
         7505,
-        9673
+        9670
       ]
     }
   },
@@ -4262,11 +4367,11 @@
       "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-instrumental-music-program-1440.png",
       "compared": {
         "width": 1440,
-        "height": 5699,
+        "height": 5696,
         "mode": "overlap"
       },
-      "heightDelta": 248,
-      "differingPixels": 2103275,
+      "heightDelta": 251,
+      "differingPixels": 2102166,
       "pct": 25.63,
       "threshold": 100,
       "pass": true,
@@ -4325,17 +4430,17 @@
         {
           "y0": 4500,
           "y1": 5000,
-          "pct": 16.5
+          "pct": 16.1
         },
         {
           "y0": 5000,
           "y1": 5500,
-          "pct": 20.4
+          "pct": 20.7
         },
         {
           "y0": 5500,
-          "y1": 5699,
-          "pct": 95.3
+          "y1": 5696,
+          "pct": 96.5
         }
       ]
     },
@@ -4343,12 +4448,12 @@
       "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-instrumental-music-program-1440.png",
       "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-instrumental-music-program-1440.png",
       "scale": 4,
-      "ssimOverlap": 36.51,
-      "ssimHeightNormalized": 36.85,
+      "ssimOverlap": 36.24,
+      "ssimHeightNormalized": 36.7,
       "ssimAboveFold": 30.78,
       "heights": [
         5947,
-        5699
+        5696
       ]
     }
   },
@@ -4361,12 +4466,12 @@
       "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-robotics-and-maker-society-1440.png",
       "compared": {
         "width": 1440,
-        "height": 2186,
+        "height": 2183,
         "mode": "overlap"
       },
-      "heightDelta": 170,
-      "differingPixels": 1021201,
-      "pct": 32.44,
+      "heightDelta": 173,
+      "differingPixels": 1018161,
+      "pct": 32.39,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/school-life-student-opportunities-and-activities-robotics-and-maker-society-1440.png",
@@ -4389,17 +4494,17 @@
         {
           "y0": 1000,
           "y1": 1500,
-          "pct": 24
+          "pct": 23.6
         },
         {
           "y0": 1500,
           "y1": 2000,
-          "pct": 30.6
+          "pct": 30.7
         },
         {
           "y0": 2000,
-          "y1": 2186,
-          "pct": 92.9
+          "y1": 2183,
+          "pct": 93.9
         }
       ]
     },
@@ -4407,12 +4512,12 @@
       "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-robotics-and-maker-society-1440.png",
       "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-robotics-and-maker-society-1440.png",
       "scale": 4,
-      "ssimOverlap": 41.68,
-      "ssimHeightNormalized": 38.34,
+      "ssimOverlap": 41.34,
+      "ssimHeightNormalized": 39.5,
       "ssimAboveFold": 40.18,
       "heights": [
         2356,
-        2186
+        2183
       ]
     }
   },
@@ -4425,12 +4530,12 @@
       "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-sport-1440.png",
       "compared": {
         "width": 1440,
-        "height": 3587,
+        "height": 3584,
         "mode": "overlap"
       },
-      "heightDelta": 13,
-      "differingPixels": 1338331,
-      "pct": 25.91,
+      "heightDelta": 16,
+      "differingPixels": 1330310,
+      "pct": 25.78,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/school-life-student-opportunities-and-activities-sport-1440.png",
@@ -4473,12 +4578,12 @@
         {
           "y0": 3000,
           "y1": 3500,
-          "pct": 77.8
+          "pct": 77.2
         },
         {
           "y0": 3500,
-          "y1": 3587,
-          "pct": 95.6
+          "y1": 3584,
+          "pct": 96.3
         }
       ]
     },
@@ -4486,12 +4591,12 @@
       "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-sport-1440.png",
       "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-sport-1440.png",
       "scale": 4,
-      "ssimOverlap": 43.53,
-      "ssimHeightNormalized": 44.02,
+      "ssimOverlap": 43.88,
+      "ssimHeightNormalized": 44.38,
       "ssimAboveFold": 44.78,
       "heights": [
         3600,
-        3587
+        3584
       ]
     }
   },
@@ -4507,9 +4612,9 @@
         "height": 3384,
         "mode": "overlap"
       },
-      "heightDelta": -488,
-      "differingPixels": 1475405,
-      "pct": 30.28,
+      "heightDelta": -485,
+      "differingPixels": 1479577,
+      "pct": 30.36,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/school-life-student-opportunities-and-activities-student-leadership-opportunities-1440.png",
@@ -4552,7 +4657,7 @@
         {
           "y0": 3000,
           "y1": 3384,
-          "pct": 94.1
+          "pct": 94.9
         }
       ]
     },
@@ -4560,12 +4665,12 @@
       "a": "stardust/reports/screens/original/school-life-student-opportunities-and-activities-student-leadership-opportunities-1440.png",
       "b": "stardust/reports/screens/migrated/school-life-student-opportunities-and-activities-student-leadership-opportunities-1440.png",
       "scale": 4,
-      "ssimOverlap": 36.74,
-      "ssimHeightNormalized": 36.89,
+      "ssimOverlap": 36.99,
+      "ssimHeightNormalized": 36.78,
       "ssimAboveFold": 38.01,
       "heights": [
         3384,
-        3872
+        3869
       ]
     }
   },
@@ -4581,9 +4686,9 @@
         "height": 6919,
         "mode": "overlap"
       },
-      "heightDelta": -558,
-      "differingPixels": 1795391,
-      "pct": 18.02,
+      "heightDelta": -567,
+      "differingPixels": 1796329,
+      "pct": 18.03,
       "threshold": 100,
       "pass": true,
       "diff": "stardust/reports/screens/diff/school-life-travel-to-school-1440.png",
@@ -4661,7 +4766,7 @@
         {
           "y0": 6500,
           "y1": 6919,
-          "pct": 93.8
+          "pct": 93.9
         }
       ]
     },
@@ -4670,11 +4775,11 @@
       "b": "stardust/reports/screens/migrated/school-life-travel-to-school-1440.png",
       "scale": 4,
       "ssimOverlap": 41.56,
-      "ssimHeightNormalized": 41.59,
+      "ssimHeightNormalized": 41.65,
       "ssimAboveFold": 49.6,
       "heights": [
         6919,
-        7477
+        7486
       ]
     }
   },
@@ -4690,7 +4795,7 @@
         "height": 3574,
         "mode": "overlap"
       },
-      "heightDelta": -2225,
+      "heightDelta": -2234,
       "differingPixels": 1693284,
       "pct": 32.9,
       "threshold": 100,
@@ -4749,11 +4854,11 @@
       "b": "stardust/reports/screens/migrated/school-life-uniform-1440.png",
       "scale": 4,
       "ssimOverlap": 39.28,
-      "ssimHeightNormalized": 34.82,
+      "ssimHeightNormalized": 34.5,
       "ssimAboveFold": 35.83,
       "heights": [
         3574,
-        5799
+        5808
       ]
     }
   },
@@ -4769,7 +4874,7 @@
         "height": 5899,
         "mode": "overlap"
       },
-      "heightDelta": -781,
+      "heightDelta": -790,
       "differingPixels": 1339580,
       "pct": 15.77,
       "threshold": 100,
@@ -4848,11 +4953,11 @@
       "b": "stardust/reports/screens/migrated/school-life-uniform-uniform-shop-1440.png",
       "scale": 4,
       "ssimOverlap": 40.2,
-      "ssimHeightNormalized": 40.32,
+      "ssimHeightNormalized": 39.87,
       "ssimAboveFold": 48.21,
       "heights": [
         5899,
-        6680
+        6689
       ]
     }
   }

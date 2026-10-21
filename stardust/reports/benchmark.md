@@ -8,16 +8,16 @@
 | EDS preview (generated page URLs) | https://fortstreet--stardust-reskin-figma-migration--sanyasandal.aem.page/ (all 52 paths are listed in the per-page table) |
 | DA content | https://da.live/#/sanyasandal/stardust-reskin-figma-migration |
 | Model | `claude-opus-5.5` for every call, including sub-agents |
-| Measured at | 2026-10-21 15:03Z. The report-writing and commit tail after that time is not included |
+| Measured at | Tokens, cost and time: 2026-10-21 15:03Z (migration only). Fidelity: final run, 18:0xZ. Whole-session totals, including the fixes and reports, are in [`benchmark-report.html`](benchmark-report.html) |
 
 ## 1. Results
 
 | Metric | Value | Source / method | Status |
 |---|---|---|---|
 | **Pages migrated** | **52 / 52** on aem.page preview (not published) | `stardust/state.json`, `reskin/ledger.json` (`migratedStatus: gated` ×52) | Recorded |
-| **Visual similarity to the original, 1440px** | **71.1 %** mean pixel similarity (median 72.0 %, range 45.3–86.4 %). Before the header fix: 69.8 % (median 70.8 %, range 40.2–84.0 %) | `pixel-compare.mjs` (branch) with threshold 100, overlap region. Re-measured after the header fix (`d4e0b8d`); the pre-fix run is kept in `fidelity-pre-header-fix.json` | Recorded |
-| **Structural similarity (SSIM), 1440px** | **40.5** overlap · 39.6 height-normalized · 41.5 above-the-fold (0–100). Before the fix: 40.7 · 39.8 · 47.2 | `ssim.mjs` (agent helper) on 4× downscaled greyscale | Recorded |
-| Visual similarity, 768 / 390 (3 archetypes) | 51.4 % / 51.3 % pixel · SSIM 18.7 / 11.3 (before the fix: 49.6 % / 49.8 % · 17.7 / 12.1) | same | Recorded |
+| **Visual similarity to the original, 1440px** | **68.4 %** mean pixel similarity (median 70.4 %, range 34.4–86.4 %), final run after the header, cards and footer fixes. Run 2 (after the header fix): 71.1 %. Run 1 (first migration): 69.8 %. The run-3 drop comes from 5 card-landing pages, where the fixed dark M2 cards no longer line up with the original's white sidebar (explained in `benchmark-report.html` § 1.2) | `pixel-compare.mjs` (branch) with threshold 100, overlap region. Earlier runs: `fidelity-pre-cards-footer-fix.json`, `fidelity-pre-header-fix.json` | Recorded |
+| **Structural similarity (SSIM), 1440px** | **39.6** overlap · 38.8 height-normalized · 41.2 above-the-fold (0–100). Run 2: 40.5 · 39.6 · 41.5. Run 1: 40.7 · 39.8 · 47.2 | `ssim.mjs` (agent helper) on 4× downscaled greyscale | Recorded |
+| Visual similarity, 768 / 390 (3 archetypes) | 47.9 % / 46.0 % pixel · SSIM 21.0 / 12.4 overlap (run 2: 51.4 % / 51.3 % · 18.7 / 11.3) | same | Recorded |
 | **Content fidelity** | Text byte-equal to the source on **52/52** pages. Images carried 15/15 on home. 4 pages have accepted image residuals (source `about:error` images ×3, an `<h1>`-wrapped image ×1) | reskin dom-equality + deployed content gates | Recorded |
 | **Design fidelity to Figma** | Migrated-output gates: donor-probe 51/52, dom-equality 48/52, slot-coverage 47/52 → **46/52 pages pass all three**. 46 residuals logged, all `accepted` | `reskin/ledger.json` | Recorded |
 | **Input tokens** | **152,042,147** (cache read 147,945,500 · cache write 4,093,981 · uncached 2,666) | `~/.copilot/session-store.db` → `assistant_usage_events` | Recorded |
@@ -206,7 +206,7 @@ The new skill gate `deployed-gate chrome` (A6) checks the header and footer at 1
 
 | Target | Verdict | Key rows |
 |---|---|---|
-| `fortstreet` home (after) | **PASS** 22/22 | footer links 7/7, text 10/10; header/main overlap 0; header 114/81 px |
+| `fortstreet` home (after) | **PASS** 21/21 | footer links 7/7, text 10/10; header/main overlap 0; header 114/81 px |
 | `/about-us`, `/contact-us`, `/learning-and-support` | **PASS** | same |
 | `main` (old chrome) | **FAIL (hard)** | header covers main by 36/204 px; header links 5/6; 4 icon-ligature texts; footer logo 0 |
 

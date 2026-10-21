@@ -259,13 +259,20 @@ Reskin keeps the content byte-faithful to the source and replaces the design wit
     - Screenshots: `reports/screens/footer-{source,before,after}-*.png`.
 45. **Chrome gate (A6) on the deployed preview.** These are new skill scripts on `figma-reskin-m4-on-m2` (commit `6f5defbf`, stardust 0.38.0).
     - Re-captured the chrome with `capture-content.mjs --scope "header!,footer!" --wait-until load`. The model now holds `iconLinks` (Facebook, Instagram, education.nsw.gov.au) and is committed to `reskin/content-model/_chrome/`.
-    - `deployed-gate chrome` on `fortstreet` home: **PASS chrome**, 22/22 rows. Footer links 7/7 and text 10/10 at both widths; header 114 px at 1440 and 81 px at 360; header/main overlap 0; the menu toggle opens at 360. It also passes on `/about-us`, `/contact-us` and `/learning-and-support`.
+    - `deployed-gate chrome` on `fortstreet` home: **PASS chrome**, 21/21 rows. Footer links 7/7 and text 10/10 at both widths; header 114 px at 1440 and 81 px at 360; header/main overlap 0; the menu toggle opens at 360. It also passes on `/about-us`, `/contact-us` and `/learning-and-support`.
     - Counterfactual on `main` (the old chrome): **FAIL chrome (hard)**. The header covers main by 36 px at 1440 and 204 px at 360; 5/6 header links (the NSW Government link is hidden); 4 "keyboard_arrow_right" ligature texts; 0 footer logos. Evidence: `reports/chrome-gate/{after-home,before-main}.json`.
 46. **Skill hardening, so this can't recur** (branch `sanyasandal:figma-reskin-m4-on-m2`, `6f5defbf`):
     - `deployed-gate`: new hard `chrome` step (A6). It can't be waived by the agent; a header/footer residual needs `reskin-ledger residual --by <owner>`, and preflight refuses the eyeball pass while `deployed.chrome` fails. A mapped chrome slot that is empty in the model (captured before render) is exit 2, not a vacuous pass.
     - `capture-content`: records `iconLinks` (icon-only links).
     - `stream-render`: list-shaped card sources render as cards, not bullet lists (the step-43 cause).
     - Tests: the chrome, deployed-gate, ledger, preflight, capture and stream-render suites all pass. `npm run lint:stardust` is clean.
+
+47. **HTML benchmark report** (user request "generate an html report of the parameters i asked for", styled after the supplied `benchmark-report.html`).
+    - Re-measured fidelity on the `fortstreet` preview (all 52 pages at 1440, plus 3 archetypes at 768 and 390) with the branch `stitch-shot.mjs --settle` + `pixel-compare.mjs` and `ssim.mjs`. Final mean at 1440: 68.4 % pixel, SSIM 38.8 height-normalised. The run-2 results are kept in `fidelity-pre-cards-footer-fix.json`.
+    - Re-ran the branch `donor-probe.mjs` on the preview home: 50/50 Figma token assertions pass (`tokens/home-tokens-probe.*`).
+    - Snapshotted whole-session usage from `~/.copilot/session-store.db` (`usage.json`) and tool failures and retries from `events.jsonl` (`retries.json`), and refreshed `prompts.md`.
+    - Captured block screenshots (`screens/blocks/`) and authored-vs-decorated block markup (`block-example.json`).
+    - Generated the self-contained `stardust/reports/benchmark-report.html` (`.work/reskin/build-html-report.py`).
 
 ---
 

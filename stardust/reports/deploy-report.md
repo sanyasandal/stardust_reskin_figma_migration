@@ -55,7 +55,7 @@ No section-metadata styles are used. The light bands come from the block variant
 | Step 10 eyeball | adopted. Desktop 1440 and mobile 390 full-page screenshots read side by side with the prototype |
 | Step 10 CLS probe | 0 at 1440 and 0 at 390, with woff2 + `/nav` + `/footer` delayed 1500 ms |
 | Step 10 header | unresolved: there is no header contract. Logged as a needs-owner residual |
-| chrome (A6, added later with stardust 0.38.0) | **PASS (hard)** 22/22 after the M9 header and M10 footer fixes (`../reports/chrome-gate/after-home.json`); the old chrome on `main` FAILs (`before-main.json`) |
+| chrome (A6, added later with stardust 0.38.0) | **PASS (hard)** 21/21 after the M9 header and M10 footer fixes (`../reports/chrome-gate/after-home.json`); the old chrome on `main` FAILs (`before-main.json`) |
 | content-diff (advisory) | 9/9 headings, 15/15 CTAs. 3 header role swaps: the prototype's `<button>`s are links/text in EDS |
 | ai-readability | not run (not required by the deployed-leg recipe) |
 
