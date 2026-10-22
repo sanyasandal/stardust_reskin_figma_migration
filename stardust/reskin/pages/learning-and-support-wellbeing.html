@@ -119,6 +119,9 @@
   }
   :where(.site-header, .site-main, .site-footer), :where(.site-header, .site-main, .site-footer) *, :where(.site-header, .site-main, .site-footer) *::before, :where(.site-header, .site-main, .site-footer) *::after { box-sizing: border-box; }
   body:has(> .site-header, > .site-main, > .site-footer) { margin: 0; background: var(--palette-page-bg); color: var(--palette-body-fg); font-family: var(--type-family); font-size: var(--type-body-font-size); line-height: var(--type-body-line-height); }
+  .site-main .embed-placeholder { position: relative; height: 440px; margin-top: 48px; background: var(--palette-light-band-bg); }
+  .site-main .embed-placeholder::after { content: ""; position: absolute; left: 50%; top: 50%; width: 36px; height: 36px; margin: -18px 0 0 -18px; border-radius: 50%; background: var(--palette-accent); }
+  @media (max-width: 640px) { .site-main .embed-placeholder { height: 280px; margin-top: 32px; } }
   .site-main .clamp { display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; }
   .container { box-sizing: content-box; max-width: var(--layout-container-max-width); margin: 0 auto; padding: 0 24px; }
   :where(.site-header, .site-main, .site-footer) a { color: inherit; }
@@ -176,6 +179,55 @@
   :is(.site-main, .site-header) .btn-secondary { background: var(--buttons-secondary-background); color: var(--buttons-secondary-color); border: var(--buttons-secondary-border); }
   .site-main .width-narrow .btn { width: 100%; }
 
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+  .glyph { display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; font-size: 0; vertical-align: middle; }
+  .glyph::before { content: ""; width: 7px; height: 7px; border: solid currentcolor; border-width: 0 2px 2px 0; }
+  .glyph-right::before { transform: rotate(-45deg); } .glyph-left::before { transform: rotate(135deg); }
+  .glyph-down::before { transform: translateY(-2px) rotate(45deg); } .glyph-up::before { transform: translateY(2px) rotate(-135deg); }
+  .glyph-search::before { width: 9px; height: 9px; border: 2px solid currentcolor; border-radius: 50%; }
+  .glyph-close::before { content: "×"; width: auto; height: auto; border: 0; font-size: 20px; line-height: 1; }
+  .glyph-menu::before { width: 16px; height: 2px; border: 0; background: currentcolor; box-shadow: 0 -5px 0 currentcolor, 0 5px 0 currentcolor; }
+  .site-header .icon-btn { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; padding: 0; border: 0; background: none; color: inherit; cursor: pointer; }
+  .site-header .icon-btn .glyph { width: 20px; height: 20px; }
+  .site-header .brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
+  .site-header .brand .logo { height: 56px; width: auto; }
+  .site-header .brand-text { display: flex; flex-direction: column; white-space: nowrap; }
+  .site-header .nav-actions { flex-wrap: nowrap; }
+  .site-header .icon-btn .glyph-search::before { width: 13px; height: 13px; }
+  .site-header .brand-text .nav-text:first-child { font-family: var(--type-display-font-family); color: var(--palette-heading-fg); font-size: 1.25em; line-height: 1.2; }
+  .site-header .brand-text .nav-text + .nav-text { font-size: 0.875em; font-style: italic; line-height: 1.3; }
+  .site-header nav .glyph { display: none; }
+  .site-header .utility-bar { border-bottom: 1px solid var(--palette-light-band-bg); font-size: 12px; line-height: 1; }
+  .site-header .utility-bar .container { display: flex; justify-content: flex-end; gap: 16px; padding-top: 10px; padding-bottom: 10px; }
+  .site-header .utility-bar a { text-decoration: underline; }
+  @media (min-width: 901px) {
+    .site-header .chrome-row .container { min-height: 80px; }
+    .site-header nav { gap: 24px; font-family: inherit; font-size: inherit; }
+  }
+  .site-header .nav-toggle { display: none; }
+  .site-header .glyph-search::before { box-shadow: none; }
+  .site-header .glyph-search { position: relative; }
+  .site-header .glyph-search::after { content: ""; position: absolute; width: 2px; height: 6px; background: currentcolor; transform: translate(7px, 7px) rotate(-45deg); }
+  @media (max-width: 900px) {
+    .site-header nav, .site-header .utility-bar { display: none; }
+    .site-header .nav-toggle { display: inline-flex; }
+    .site-header .chrome-row .container { flex-wrap: nowrap; min-height: 64px; }
+    .site-header .brand .logo { height: 40px; }
+    .site-header .brand-text { font-size: 14px; }
+  }
+  .site-main .disclosure { border-bottom: 1px solid var(--palette-light-band-bg); }
+  .site-main .disclosure:first-of-type, .site-main :not(.disclosure) + .disclosure { border-top: 1px solid var(--palette-light-band-bg); }
+  .site-main .disclosure-toggle { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 0; border: 0; background: none; color: var(--palette-heading-fg); font-family: var(--type-display-font-family); font-size: var(--type-h3-font-size); line-height: var(--type-h3-line-height); font-weight: var(--type-h3-font-weight); text-align: left; cursor: pointer; }
+  .site-main .disclosure-toggle .glyph { color: var(--palette-accent); width: 24px; height: 24px; }
+  .site-main .disclosure-toggle[aria-expanded="true"] .glyph::before { transform: translateY(2px) rotate(-135deg); }
+  .site-main .disclosure-panel { padding: 0 0 24px; }
+  .site-main .table-wrap { overflow-x: auto; margin: 0 0 24px; }
+  .site-main .table { width: 100%; border-collapse: collapse; }
+  .site-main .table :is(th, td) { padding: 16px; border-bottom: 1px solid var(--palette-light-band-bg); text-align: left; vertical-align: top; }
+  .site-main .table th { background: var(--palette-light-band-bg); color: var(--palette-heading-fg); }
+  .site-main .table :is(th, td) p { margin: 0; }
+  .site-main .media-wide img { width: 100%; max-height: none; }
+  .site-main .inline-media { display: block; width: 100%; height: auto; margin: 0 0 16px; }
   .site-main .list { padding-left: 1.2em; }
   .site-main .media img { max-height: 360px; width: auto; }
   .site-main .icon { display: inline-block; height: 1.6em; width: auto; vertical-align: middle; margin-right: 0.5em; }
@@ -192,7 +244,20 @@
   .site-main .align-center.width-narrow .panel { margin-inline: auto; }
   .site-main .cards { display: grid; grid-template-columns: repeat(var(--cards-columns, 3), minmax(0, 1fr)); gap: var(--layout-column-gap); margin: 16px 0; }
   .site-main .card { background: var(--palette-light-band-bg); border-radius: 0; box-shadow: none; padding: 40px; }
+  .site-main .card > p.aux:first-child:has(> .link:only-child) .link { font-family: var(--type-heading-family); font-size: var(--type-h4-font-size); line-height: 1.25; color: var(--palette-accent); text-decoration: none; }
+  .site-main .card > .glyph:last-child { display: flex; width: 28px; height: 28px; margin-top: 12px; color: var(--palette-accent); position: relative; }
+  .site-main .card > .glyph-right:last-child::before { position: absolute; right: 6px; width: 9px; height: 9px; transform: rotate(-45deg); }
+  .site-main .card > .glyph-right:last-child::after { content: ""; position: absolute; left: 4px; right: 5px; top: 13px; height: 2px; background: currentcolor; }
   .site-main .card > :last-child { margin-bottom: 0; }
+  .site-main .card:has(> .media:first-child) { padding: 0 0 32px; overflow: hidden; }
+  .site-main .card:has(> .media:first-child) > :not(.media:first-child) { margin-inline: 24px; }
+  .site-main .card > .media:first-child { margin: 0 0 24px; }
+  .site-main .card > .media:first-child img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; max-height: none; }
+  .site-main :is(.cards-dark, .cards-accent, .cards-light) .card { border-color: transparent; }
+  .site-main .cards-dark .card { background: var(--palette-dark-band-bg); color: var(--palette-dark-band-fg); }
+  .site-main .cards-accent .card { background: var(--palette-accent); color: var(--palette-dark-band-fg); }
+  .site-main .cards-light .card { background: var(--palette-light-band-bg); }
+  .site-main :is(.cards-dark, .cards-accent) .card :is(h1, h2, h3, h4, .heading, .link) { color: inherit; }
   .site-main .tone-dark .panel, .site-main .tone-light .panel, .site-main .tone-accent .panel { border-radius: 0; padding: 50px 60px; }
   .site-main .bleed.tone-dark, .site-main .bleed.tone-light, .site-main .bleed.tone-accent { padding-top: var(--layout-section-padding-y); padding-bottom: var(--layout-section-padding-y); }
   .site-main .bleed.tone-dark { background: var(--palette-dark-band-bg); color: var(--palette-dark-band-fg); }
@@ -201,7 +266,7 @@
   .site-main .bleed .panel { background: none !important; border-radius: 0; padding: 0; }
   .site-main .tone-dark .panel { background: var(--palette-dark-band-bg); color: var(--palette-dark-band-fg); }
   .site-main .tone-dark :is(h1, h2, h3, h4) { color: inherit; }
-  .site-main .tone-dark .card { background: transparent; box-shadow: none; }
+  .site-main .tone-dark .card { background: transparent; box-shadow: none; border-color: transparent; }
   .site-main .tone-light .panel { background: var(--palette-light-band-bg); }
   .site-main .tone-light .card { background: var(--palette-page-bg); }
   .site-main .tone-accent .panel { background: var(--palette-accent); }
@@ -214,13 +279,33 @@
   .site-footer.tone-dark { background: var(--palette-dark-band-bg); color: var(--palette-dark-band-fg); border-radius: 0 0 0 0; }
   .site-footer.tone-light { background: var(--palette-light-band-bg); }
   .site-footer.tone-accent { background: var(--palette-accent); }
+  .site-footer .footer-zoned { display: block; font-size: 0.889em; }
+  .site-footer .footer-main { display: flex; gap: 40px; }
+  .site-footer .footer-main > * { flex: 1 1 0; min-width: 0; }
+  .site-footer .footer-zoned a { color: inherit; }
+  .site-footer .footer-zoned ul { columns: 1; }
+  .site-footer .footer-zoned p { margin: 0 0 16px; }
+  .site-footer .footer-brand > p { max-width: 300px; }
+  .site-footer .footer-brand .logo { display: block; height: 40px; width: auto; margin-bottom: 24px; }
+  .site-footer .footer-name { font-family: var(--type-heading-family); color: var(--palette-heading-fg); font-size: 1.25em; }
+  .site-footer .footer-col-title { font-weight: 700; }
+  .site-footer .footer-social { margin-top: 40px; display: flex; align-items: center; gap: 16px; font-size: 0.875em; }
+  .site-footer .footer-social p { margin: 0; }
+  .site-footer .footer-social ul { display: flex; gap: 16px; }
+  .site-footer .footer-social li { margin: 0; }
   @media (max-width: 900px) {
     .site-main .layout-grid-2 .flow { grid-template-columns: 1fr; }
     .site-main .layout-split .panel { grid-template-columns: minmax(0, 1fr); }
     .site-main .layout-split .panel > * { min-width: 0; }
-    .site-main .split-img { justify-self: center; }
+    .site-main .split-img { justify-self: stretch; width: 100%; }
     .site-main .cards { grid-template-columns: minmax(0, 1fr); }
     .site-footer .chrome-footer { grid-template-columns: 1fr; }
+    .site-footer .footer-main { flex-direction: column; gap: 24px; }
+    .site-footer .footer-zoned { text-align: center; line-height: 1.4; }
+    .site-footer .footer-brand > p { max-width: none; }
+    .site-footer .footer-brand .logo { margin: 0 auto 24px; }
+    .site-footer .footer-social { justify-content: center; margin-top: 24px; white-space: nowrap; }
+    .site-footer .footer-zoned li { margin-bottom: 12px; }
   }
   @media (max-width: 640px) {
     .site-main section { padding-top: 24px; padding-bottom: 24px; }
@@ -228,13 +313,14 @@
     .site-main .inset > .container { padding: 0 20px; }
     .site-main .tone-dark .panel, .site-main .tone-light .panel, .site-main .tone-accent .panel { padding: 32px 20px; }
     .site-footer ul { columns: 1; }
+    .site-main .table :is(th, td) { padding: 8px; }
     .site-main :is(.heading, .heading-display .heading) { font-size: min(var(--type-display-font-size), 11vw); }
     .site-main .heading { overflow-wrap: break-word; }
   }
 </style>
 <!-- stardust:prototype
   writtenBy:        stardust:reskin/stream-render
-  writtenAt:        2026-10-21T13:04:23.875Z
+  writtenAt:        2026-10-22T08:52:54.285Z
   page:             learning-and-support-wellbeing
   pageUrl:          https://fortstreet-h.schools.nsw.gov.au/learning-and-support/wellbeing
   template:         learning-and-support-wellbeing
@@ -271,22 +357,22 @@
 </head>
 <body>
 <header class="site-header" data-canon="header">
-  <div class="chrome-row nav-align-center"><div class="container">
-      <img class="logo" src="../../prototypes/assets/img/assets.schools.nsw.gov.au/content/dam/doe/sws/schools/f/fortstreet-h/logo.png" data-source-src="https://assets.schools.nsw.gov.au/content/dam/doe/sws/schools/f/fortstreet-h/logo.png" alt="school logo">
-      <nav><a href="https://fortstreet-h.schools.nsw.gov.au/about-us">About us keyboard_arrow_right</a><a href="https://fortstreet-h.schools.nsw.gov.au/school-life">School life keyboard_arrow_right</a><a href="https://fortstreet-h.schools.nsw.gov.au/learning-and-support">Learning and support keyboard_arrow_right</a><a href="https://fortstreet-h.schools.nsw.gov.au/our-community">Our community keyboard_arrow_right</a><a href="https://fortstreet-h.schools.nsw.gov.au/contact-us">Contact us</a></nav>
-      <div class="nav-actions"><a href="https://fortstreet-h.schools.nsw.gov.au/#main-nav">Skip to navigation</a><a href="https://fortstreet-h.schools.nsw.gov.au/#main">Skip to content</a><a href="https://fortstreet-h.schools.nsw.gov.au/">NSW Government</a><span class="nav-text">Fort Street High School</span><span class="nav-text">Faber est suae quisque fortunae</span><button class="btn btn-secondary" type="button">search</button><button class="btn" type="button">Show</button><button class="btn" type="button">Search</button></div>
+  <div class="utility-bar"><div class="container"><a href="https://fortstreet-h.schools.nsw.gov.au/">NSW Government</a></div></div><div class="chrome-row nav-align-end"><div class="container">
+      <div class="brand"><img class="logo" src="../../prototypes/assets/img/assets.schools.nsw.gov.au/content/dam/doe/sws/schools/f/fortstreet-h/logo.png" data-source-src="https://assets.schools.nsw.gov.au/content/dam/doe/sws/schools/f/fortstreet-h/logo.png" alt="school logo"><div class="brand-text"><span class="nav-text">Fort Street High School</span><span class="nav-text">Faber est suae quisque fortunae</span></div></div>
+      <nav><a href="https://fortstreet-h.schools.nsw.gov.au/about-us">About us <span class="glyph glyph-right" aria-hidden="true">keyboard_arrow_right</span></a><a href="https://fortstreet-h.schools.nsw.gov.au/school-life">School life <span class="glyph glyph-right" aria-hidden="true">keyboard_arrow_right</span></a><a href="https://fortstreet-h.schools.nsw.gov.au/learning-and-support">Learning and support <span class="glyph glyph-right" aria-hidden="true">keyboard_arrow_right</span></a><a href="https://fortstreet-h.schools.nsw.gov.au/our-community">Our community <span class="glyph glyph-right" aria-hidden="true">keyboard_arrow_right</span></a><a href="https://fortstreet-h.schools.nsw.gov.au/contact-us">Contact us</a></nav>
+      <div class="nav-actions"><a class="sr-only" href="https://fortstreet-h.schools.nsw.gov.au/#main-nav">Skip to navigation</a><a class="sr-only" href="https://fortstreet-h.schools.nsw.gov.au/#main">Skip to content</a><button class="icon-btn" type="button"><span class="glyph glyph-search" aria-hidden="true">search</span></button><button class="sr-only" type="button"><span class="sr-only">Show</span></button><button class="sr-only" type="button"><span class="sr-only">Search</span></button><button class="icon-btn nav-toggle" type="button" aria-label="Menu"><span class="glyph glyph-menu" aria-hidden="true"></span></button></div>
     </div></div>
 </header>
-<main class="site-main" data-template="learning-and-support-wellbeing">
+<main class="site-main" data-template="learning-and-support-wellbeing"><div class="crumbs"><div class="container breadcrumb"><nav aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/learning-and-support">Learning and support</a></li><li aria-current="page">Wellbeing</li></ol></nav></div></div>
   <section class="band layout-split width-wide tone-light heading-display bleed" data-slot="s01" data-module="M1">
       
       <div class="container"><div class="panel"><div class="flow" data-slot-body>
           <h1 class="heading">Wellbeing</h1>
         <p class="lead">Wellbeing at Fort Street is for all students. A focus on wellbeing goes beyond the welfare needs of a few individual students and aims for all students to be healthy, happy, successful and productive individuals who are active and positive contributors to the school and society in which they live.</p>
-        <p class="lead"><img class="icon" src="../../prototypes/assets/img/fortstreet-h.schools.nsw.gov.au/learning-and-support/media_134e079c16c877e3a8bdedf4cc98c2abe99cada5e-3d5a5588.jpg" data-source-src="https://fortstreet-h.schools.nsw.gov.au/learning-and-support/media_134e079c16c877e3a8bdedf4cc98c2abe99cada5e.jpg?width=2000&amp;format=webply&amp;optimize=medium" alt=""></p>
+        <figure class="media media-wide"><img src="../../prototypes/assets/img/fortstreet-h.schools.nsw.gov.au/learning-and-support/media_134e079c16c877e3a8bdedf4cc98c2abe99cada5e-3d5a5588.jpg" data-source-src="https://fortstreet-h.schools.nsw.gov.au/learning-and-support/media_134e079c16c877e3a8bdedf4cc98c2abe99cada5e.jpg?width=2000&amp;format=webply&amp;optimize=medium" alt=""></figure>
       </div></div></div>
     </section>
-<div class="crumbs"><div class="container breadcrumb"><nav aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/learning-and-support">Learning and support</a></li><li aria-current="page">Wellbeing</li></ol></nav></div></div><div class="page-layout"><aside class="page-aside"><div class="section-nav"><nav aria-label="Section navigation"><div class="section-nav-header"><a href="/learning-and-support">Learning and support</a></div><ul><li><a href="/learning-and-support/additional-learning-support">Additional learning support</a></li><li><a href="/learning-and-support/careers">Careers</a></li><li><a href="/learning-and-support/high-potential-and-gifted-education">Inspire – High potential and gifted education</a></li><li><a href="/learning-and-support/learning">Learning</a></li><li class="active"><a href="/learning-and-support/wellbeing" aria-current="page">Wellbeing</a></li></ul></nav></div></aside><div class="page-main">
+<div class="page-layout"><aside class="page-aside"><div class="section-nav"><nav aria-label="Section navigation"><div class="section-nav-header"><a href="/learning-and-support">Learning and support</a></div><ul><li><a href="/learning-and-support/additional-learning-support">Additional learning support</a></li><li><a href="/learning-and-support/careers">Careers</a></li><li><a href="/learning-and-support/high-potential-and-gifted-education">Inspire – High potential and gifted education</a></li><li><a href="/learning-and-support/learning">Learning</a></li><li class="active"><a href="/learning-and-support/wellbeing" aria-current="page">Wellbeing</a></li></ul></nav></div></aside><div class="page-main">
   <section class="band layout-stack width-wide heading-h2" data-slot="s02" data-module="M5">
       
       <div class="container"><div class="panel"><div class="flow" data-slot-body>
@@ -303,16 +389,7 @@
   <section class="band layout-stack width-wide" data-slot="s03">
       
       <div class="container"><div class="panel"><div class="flow" data-slot-body>
-          <p class="lead">Head Teacher - Wellbeing</p>
-        <p class="lead">Ms Jenny Xu</p>
-        <p class="lead">SPE - Senior Psychologist Education Department</p>
-        <p class="lead">Ms Jean Kidd</p>
-        <p class="lead">School Counsellors</p>
-        <p class="lead">Ms Miori Shino and Ms Meg Huckstepp-Lowe</p>
-        <p class="lead">Student Support Officers (SSO)</p>
-        <p class="lead">Ms Sintra Zorlu</p>
-        <p class="lead">Learning Support</p>
-        <p class="lead">Ms Jill Ryan and Ms Alissa Tan</p>
+          <div class="table-wrap"><table class="table"><tbody><tr><td><p class="lead">Head Teacher - Wellbeing</p></td><td><p class="lead">Ms Jenny Xu</p></td></tr><tr><td><p class="lead">SPE - Senior Psychologist Education Department</p></td><td><p class="lead">Ms Jean Kidd</p></td></tr><tr><td><p class="lead">School Counsellors</p></td><td><p class="lead">Ms Miori Shino and Ms Meg Huckstepp-Lowe</p></td></tr><tr><td><p class="lead">Student Support Officers (SSO)</p></td><td><p class="lead">Ms Sintra Zorlu</p></td></tr><tr><td><p class="lead">Learning Support</p></td><td><p class="lead">Ms Jill Ryan and Ms Alissa Tan</p></td></tr></tbody></table></div>
       </div></div></div>
     </section>
   <section class="band layout-stack width-wide heading-h2" data-slot="s04" data-module="M5">
@@ -324,78 +401,54 @@
   <section class="band layout-stack width-wide" data-slot="s05">
       
       <div class="container"><div class="panel"><div class="flow" data-slot-body>
-          <p class="lead">Year Group</p>
-        <p class="lead">Adviser</p>
-        <p class="lead">Assistant Adviser</p>
-        <p class="lead">Year 7</p>
-        <p class="lead">Ms Amelia Drinkwater</p>
-        <p class="lead">Mr Andrew Tennent</p>
-        <p class="lead">Year 8</p>
-        <p class="lead">Mr Ben Clarke</p>
-        <p class="lead">Ms Fiona Richards</p>
-        <p class="lead">Year 9</p>
-        <p class="lead">Ms Maddy Cove</p>
-        <p class="lead">Mr Bradley Sarif</p>
-        <p class="lead">Year 10</p>
-        <p class="lead">Mr Arkady De Jong</p>
-        <p class="lead">Mr Hugh O'Neill</p>
-        <p class="lead">Year 11</p>
-        <p class="lead">Mr David Latimer</p>
-        <p class="lead">Ms Hyun Cho</p>
-        <p class="lead">Year 12</p>
-        <p class="lead">Mr Derek Patulny</p>
-        <p class="lead">Ms Helen Thompson</p>
+          <div class="table-wrap"><table class="table"><tbody><tr><td><p class="lead">Year Group</p></td><td><p class="lead">Adviser</p></td><td><p class="lead">Assistant Adviser</p></td></tr><tr><td><p class="lead">Year 7</p></td><td><p class="lead">Ms Amelia Drinkwater</p></td><td><p class="lead">Mr Andrew Tennent</p></td></tr><tr><td><p class="lead">Year 8</p></td><td><p class="lead">Mr Ben Clarke</p></td><td><p class="lead">Ms Fiona Richards</p></td></tr><tr><td><p class="lead">Year 9</p></td><td><p class="lead">Ms Maddy Cove</p></td><td><p class="lead">Mr Bradley Sarif</p></td></tr><tr><td><p class="lead">Year 10</p></td><td><p class="lead">Mr Arkady De Jong</p></td><td><p class="lead">Mr Hugh O'Neill</p></td></tr><tr><td><p class="lead">Year 11</p></td><td><p class="lead">Mr David Latimer</p></td><td><p class="lead">Ms Hyun Cho</p></td></tr><tr><td><p class="lead">Year 12</p></td><td><p class="lead">Mr Derek Patulny</p></td><td><p class="lead">Ms Helen Thompson</p></td></tr></tbody></table></div>
       </div></div></div>
     </section>
   <section class="band layout-stack width-wide" data-slot="s06" data-module="M8">
       
       <div class="container"><div class="panel"><div class="flow" data-slot-body>
-          <div class="actions"><button class="btn" type="submit">Student Support Officers</button></div>
-        <div class="actions"><button class="btn btn-secondary" type="submit">keyboard_arrow_down</button></div>
-        <p class="lead">Student support officers (SSOs) work in schools to enhance the wellbeing and learning outcomes of students. They come from a diversity of backgrounds. An SSO may have a diploma or higher qualification in social work, youth work or other related discipline such as community service. They all have experience working with young people to improve their wellbeing and mental health. SSOs work closely with the school counselling service and the school’s wellbeing team.</p>
+          <div class="disclosure"><button class="disclosure-toggle" type="button" aria-expanded="false" aria-controls="disclosure-1">Student Support Officers <span class="glyph glyph-down" aria-hidden="true">keyboard_arrow_down</span></button><div class="disclosure-panel" id="disclosure-1" hidden="until-found"><p class="lead">Student support officers (SSOs) work in schools to enhance the wellbeing and learning outcomes of students. They come from a diversity of backgrounds. An SSO may have a diploma or higher qualification in social work, youth work or other related discipline such as community service. They all have experience working with young people to improve their wellbeing and mental health. SSOs work closely with the school counselling service and the school’s wellbeing team.</p>
         <h2 class="heading">Student Support Officers</h2>
         <p class="lead">SSOs support the implementation of the school’s whole-of-school approach to wellbeing, helping students develop social and emotional skills through targeted strengths-based programs and strategies that build resilience, coping skills and positive relationships working with students one-on-one or in small groups.</p>
         <p class="lead">They also have a pivotal role in working collaboratively with external and other government agencies in their support of students and their families. Students might be referred to the SSO for support in areas such as bullying, developing self-esteem, resilience, conflict resolution or to be connected to local external support and youth services.</p>
         <p class="lead">At Fort Street we currently one SSO onsite:</p>
         <p class="lead">Ms Sintra Zorlu</p>
         <p class="lead">Students who wish to see the SSO can self refer to their office Monday to Friday at recess and lunch. You find can the SSO office between W18 &amp; W19 in the Wilkins building.</p>
-        <p class="aux">Students can make an appointment with the SSO <a class="link" href="https://aus01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsites.google.com%2Feducation.nsw.gov.au%2Ffshs-student-support-portal%2Fmake-an-appointment-with-the-sso&amp;data=05%7C02%7CKirrily.Druery%40det.nsw.edu.au%7C5b85f4e3327646059bdd08de73482ef6%7C05a0e69a418a47c19c259387261bf991%7C0%7C0%7C639074951024044467%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=n2ZrVSDGB68AkY217kIawTsLCZajAyDD0PdV2MdOMFA%3D&amp;reserved=0">here (opens in new window)</a></p>
-        <p class="aux">Students can also visit the <a class="link" href="https://sites.google.com/education.nsw.gov.au/fshs-student-support-portal/home">FSHS Student Support Portal (opens in new window)</a> for resources as well as the additional resources listed below.</p>
+        <p class="aux">Students can make an appointment with the SSO <a class="link" href="https://aus01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsites.google.com%2Feducation.nsw.gov.au%2Ffshs-student-support-portal%2Fmake-an-appointment-with-the-sso&amp;data=05%7C02%7CKirrily.Druery%40det.nsw.edu.au%7C5b85f4e3327646059bdd08de73482ef6%7C05a0e69a418a47c19c259387261bf991%7C0%7C0%7C639074951024044467%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=n2ZrVSDGB68AkY217kIawTsLCZajAyDD0PdV2MdOMFA%3D&amp;reserved=0">here <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux">Students can also visit the <a class="link" href="https://sites.google.com/education.nsw.gov.au/fshs-student-support-portal/home">FSHS Student Support Portal <span class="sr-only">(opens in new window)</span></a> for resources as well as the additional resources listed below.</p>
         <h3 class="heading">Online Resources for students</h3>
-        <p class="aux"><a class="link" href="https://headspace.org.au/online-and-phone-support/join-the-community/chats-by-professionals/">eHeadspace (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://kidshelpline.com.au/">Kids Helpline (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://au.reachout.com/">Reach Out (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://qlife.org.au/">QLife (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://www.minus18.org.au/events">Minus18 (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://butterfly.org.au/get-support/helpline/">The Butterfly Foundation (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://www.twenty10.org.au/">Twenty10 (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://www.beyondblue.org.au/who-does-it-affect/young-people">Beyond Blue (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://www.transhub.org.au/">TransHub (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://www.smilingmind.com.au/smiling-mind-app">Smiling Mind (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://www.health.nsw.gov.au/mentalhealth/Pages/mental-health-line.aspx">Mental Health Line (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://www.lifeline.org.au/">Lifeline (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://www.qendo.org.au/learn">Qendo Endometriosis Support (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://www.biteback.org.au/">BiteBack (opens in new window)</a></p>
+        <p class="aux"><a class="link" href="https://headspace.org.au/online-and-phone-support/join-the-community/chats-by-professionals/">eHeadspace <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://kidshelpline.com.au/">Kids Helpline <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://au.reachout.com/">Reach Out <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://qlife.org.au/">QLife <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://www.minus18.org.au/events">Minus18 <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://butterfly.org.au/get-support/helpline/">The Butterfly Foundation <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://www.twenty10.org.au/">Twenty10 <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://www.beyondblue.org.au/who-does-it-affect/young-people">Beyond Blue <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://www.transhub.org.au/">TransHub <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://www.smilingmind.com.au/smiling-mind-app">Smiling Mind <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://www.health.nsw.gov.au/mentalhealth/Pages/mental-health-line.aspx">Mental Health Line <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://www.lifeline.org.au/">Lifeline <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://www.qendo.org.au/learn">Qendo Endometriosis Support <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://www.biteback.org.au/">BiteBack <span class="sr-only">(opens in new window)</span></a></p>
         <h3 class="heading">Online Resources for Parents and Carers</h3>
-        <p class="aux"><a class="link" href="https://www.esafety.gov.au/parents">eSafety (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://raisingchildren.net.au/teens">Raising Children Network (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://www.parentline.org.au/#:~:text=Call%201300%201300%2052,18%20who%20live%20in%20NSW.">Parent Line (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://www.commonsensemedia.org/">Common Sense Media (opens in new window)</a></p>
+        <p class="aux"><a class="link" href="https://www.esafety.gov.au/parents">eSafety <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://raisingchildren.net.au/teens">Raising Children Network <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://www.parentline.org.au/#:~:text=Call%201300%201300%2052,18%20who%20live%20in%20NSW.">Parent Line <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://www.commonsensemedia.org/">Common Sense Media <span class="sr-only">(opens in new window)</span></a></p>
         <p class="aux"><a class="link" href="https://education.nsw.gov.au/public-schools/going-to-a-public-school/translated-documents/telephone-interpreter-service">Telephone Interpreter Service</a></p>
-        <p class="aux"><a class="link" href="https://www.tisnational.gov.au/">Translating and Interpreter Service (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://www.adhdsupportaustralia.com.au/">ADHD Support Australia (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://headstart.org.au/central-and-eastern-sydney/">Headstart (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://forums.parents.au.reachout.com/">ReachOut Parents Forum (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://embracementalhealth.org.au/">The Embrace Project (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://transcend.org.au/">Transcend Australia (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://www.batyr.com.au/resource-hub/parents-carers/">Batyr Parent resource library (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://reframingautism.org.au/resources/">Reframing Autism (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://www.pgdc.org.au/nsw">Parents of Gender Diverse Children (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://www.blackdoginstitute.org.au/resources-support/coronavirus-resources-for-anxiety-stress/schools-young-people/">Black Dog Institute (opens in new window)</a></p>
-        <p class="aux"><a class="link" href="https://emergingminds.com.au/families/">Emerging Minds (opens in new window)</a></p>
-        <div class="actions"><button class="btn btn-secondary" type="submit">Counselling Service</button></div>
-        <div class="actions"><button class="btn btn-secondary" type="submit">keyboard_arrow_down</button></div>
-        <p class="lead">The school counselling service includes school counsellors and school psychologists. Our school counselling staff are highly skilled and play a crucial role, in supporting children and young people to thrive and succeed at school, making a real difference in the lives of children and young people.</p>
+        <p class="aux"><a class="link" href="https://www.tisnational.gov.au/">Translating and Interpreter Service <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://www.adhdsupportaustralia.com.au/">ADHD Support Australia <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://headstart.org.au/central-and-eastern-sydney/">Headstart <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://forums.parents.au.reachout.com/">ReachOut Parents Forum <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://embracementalhealth.org.au/">The Embrace Project <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://transcend.org.au/">Transcend Australia <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://www.batyr.com.au/resource-hub/parents-carers/">Batyr Parent resource library <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://reframingautism.org.au/resources/">Reframing Autism <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://www.pgdc.org.au/nsw">Parents of Gender Diverse Children <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://www.blackdoginstitute.org.au/resources-support/coronavirus-resources-for-anxiety-stress/schools-young-people/">Black Dog Institute <span class="sr-only">(opens in new window)</span></a></p>
+        <p class="aux"><a class="link" href="https://emergingminds.com.au/families/">Emerging Minds <span class="sr-only">(opens in new window)</span></a></p></div></div>
+        <div class="disclosure"><button class="disclosure-toggle" type="button" aria-expanded="false" aria-controls="disclosure-2">Counselling Service <span class="glyph glyph-down" aria-hidden="true">keyboard_arrow_down</span></button><div class="disclosure-panel" id="disclosure-2" hidden="until-found"><p class="lead">The school counselling service includes school counsellors and school psychologists. Our school counselling staff are highly skilled and play a crucial role, in supporting children and young people to thrive and succeed at school, making a real difference in the lives of children and young people.</p>
         <h2 class="heading">About the school counselling service</h2>
         <p class="lead">School counselling staff support students by providing a psychological counselling, assessment and intervention service.</p>
         <p class="lead">The school counselling service works directly with students to help them with issues related to learning, peer and family relationships, and managing emotions such as depression, anxiety, worry or isolation.</p>
@@ -409,7 +462,7 @@
         <h3 class="heading">Useful links</h3>
         <p class="lead">Information for parents can be found on the Department of Education website at the links below:</p>
         <p class="aux"><a class="link" href="https://education.nsw.gov.au/student-wellbeing/counselling-and-psychology-services/students">Support for Students at home</a></p>
-        <p class="aux"><a class="link" href="https://education.nsw.gov.au/schooling/parents-and-carers">Support for Parents and carers at home</a></p>
+        <p class="aux"><a class="link" href="https://education.nsw.gov.au/schooling/parents-and-carers">Support for Parents and carers at home</a></p></div></div>
       </div></div></div>
     </section>
   <section class="band layout-stack width-wide heading-h2" data-slot="s07" data-module="M5">
@@ -420,20 +473,16 @@
         <p class="lead">The Wellbeing Framework sets out 5 focus points that each year group follows and develops as they progress through high school. These include:</p>
         <ul class="list"><li>Respecting Self</li><li>Respecting Others</li><li>Social Justice Campaigns</li><li>Study Skills</li><li>Year Specific Skills and Challenges (eg Transitioning to High School, Developing Leadership, Post-School Opportunities)</li></ul>
         <p class="lead">The table below sets out how the House system, Exit Profile and Wellbeing programs are aligned.</p>
-        <p class="lead"><img class="icon" src="../../prototypes/assets/img/fortstreet-h.schools.nsw.gov.au/learning-and-support/media_1b4b2e8b69ac3735e6406430dd0551b9a8134d730-3d5a5588.png" data-source-src="https://fortstreet-h.schools.nsw.gov.au/learning-and-support/media_1b4b2e8b69ac3735e6406430dd0551b9a8134d730.png?width=2000&amp;format=webply&amp;optimize=medium" alt=""></p>
+        <figure class="media media-wide"><img src="../../prototypes/assets/img/fortstreet-h.schools.nsw.gov.au/learning-and-support/media_1b4b2e8b69ac3735e6406430dd0551b9a8134d730-3d5a5588.png" data-source-src="https://fortstreet-h.schools.nsw.gov.au/learning-and-support/media_1b4b2e8b69ac3735e6406430dd0551b9a8134d730.png?width=2000&amp;format=webply&amp;optimize=medium" alt=""></figure>
       </div></div></div>
     </section>
   <section class="band layout-stack width-wide" data-slot="s08" data-module="M8">
       
       <div class="container"><div class="panel"><div class="flow" data-slot-body>
-          <div class="actions"><button class="btn" type="submit">Aboriginal student support</button></div>
-        <div class="actions"><button class="btn btn-secondary" type="submit">keyboard_arrow_down</button></div>
-        <p class="lead">We are committed to closing the achievement gap for Aboriginal and Torres Strait Islander students. We know that we need to learn about, nurture and value the cultural identity of our Aboriginal students to help them be successful learners.</p>
+          <div class="disclosure"><button class="disclosure-toggle" type="button" aria-expanded="false" aria-controls="disclosure-3">Aboriginal student support <span class="glyph glyph-down" aria-hidden="true">keyboard_arrow_down</span></button><div class="disclosure-panel" id="disclosure-3" hidden="until-found"><p class="lead">We are committed to closing the achievement gap for Aboriginal and Torres Strait Islander students. We know that we need to learn about, nurture and value the cultural identity of our Aboriginal students to help them be successful learners.</p>
         <p class="lead">We welcome Aboriginal and Torres Strait Islander family members, parents and carers, as well as community members to our school so that we can get to know each other, learn about the local Aboriginal community and develop shared goals and plans for Aboriginal students.</p>
-        <p class="aux">The <a class="link" href="https://education.nsw.gov.au/policy-library/policies/aboriginal-education-and-training-policy">Aboriginal Education Policy</a> confirms the NSW Department of Education’s commitment to improvement in educational outcomes and wellbeing for Aboriginal and Torres Strait Islander students.</p>
-        <div class="actions"><button class="btn btn-secondary" type="submit">Multicultural education</button></div>
-        <div class="actions"><button class="btn btn-secondary" type="submit">keyboard_arrow_down</button></div>
-        <p class="lead">Our school welcomes students, families and community members from all cultural backgrounds. We appreciate difference and diversity and aim to provide a culturally inclusive and responsive environment that benefits all students.</p>
+        <p class="aux">The <a class="link" href="https://education.nsw.gov.au/policy-library/policies/aboriginal-education-and-training-policy">Aboriginal Education Policy</a> confirms the NSW Department of Education’s commitment to improvement in educational outcomes and wellbeing for Aboriginal and Torres Strait Islander students.</p></div></div>
+        <div class="disclosure"><button class="disclosure-toggle" type="button" aria-expanded="false" aria-controls="disclosure-4">Multicultural education <span class="glyph glyph-down" aria-hidden="true">keyboard_arrow_down</span></button><div class="disclosure-panel" id="disclosure-4" hidden="until-found"><p class="lead">Our school welcomes students, families and community members from all cultural backgrounds. We appreciate difference and diversity and aim to provide a culturally inclusive and responsive environment that benefits all students.</p>
         <p class="lead">Our teaching and learning programs develop intercultural understanding, promote positive relationships and enable all students to participate as active Australian and global citizens. Our school fosters student wellbeing and community harmony by implementing anti-racism and anti-discrimination strategies that encourage engagement by parents and carers from all backgrounds.</p>
         <p class="aux">The <a class="link" href="https://education.nsw.gov.au/policy-library/policies/multicultural-education-policy?refid=285776">Multicultural Education Policy</a> outlines the NSW Department of Education’s commitment to providing opportunities that enable all students to achieve equitable education and social outcomes and participate successfully in our culturally diverse society.</p>
         <p class="aux">The <a class="link" href="https://education.nsw.gov.au/policy-library/policies/pd-2005-0235">Anti-Racism Policy</a> confirms the department’s commitment to rejecting all forms of racial discrimination in NSW public schools and eliminating expressions of racism in its learning and working environments.</p>
@@ -445,20 +494,16 @@
         <h3 class="heading">Supporting refugee students</h3>
         <p class="lead">Schools offer safety, support and security to help refugee students adjust to life in Australia and participate successfully in education. Targeted support strategies are provided to assist refugee students in NSW public schools.</p>
         <p class="aux">For more information refer to: <a class="link" href="https://education.nsw.gov.au/teaching-and-learning/curriculum/multicultural-education/refugee-students-in-schools">Supporting refugee students</a>.</p>
-        <p class="aux">Find out more about <a class="link" href="https://fortstreet-h.schools.nsw.gov.au/learning-and-support/additional-learning-support">Learning Support</a>.</p>
-        <div class="actions"><button class="btn btn-secondary" type="submit">Anti-bullying</button></div>
-        <div class="actions"><button class="btn btn-secondary" type="submit">keyboard_arrow_down</button></div>
-        <p class="lead">Bullying of any kind is not acceptable in NSW schools.</p>
-        <p class="aux">The <a class="link" href="https://antibullying.nsw.gov.au/">NSW anti-bullying (opens in new window)</a> website brings together information and resources for teachers, students, parents and carers. It helps to identify, prevent and respond effectively to student bullying, including online bullying. It provides information about online safety and what you can do if your child has been bullied, witnessed bullying or been involved in bullying.</p>
+        <p class="aux">Find out more about <a class="link" href="https://fortstreet-h.schools.nsw.gov.au/learning-and-support/additional-learning-support">Learning Support</a>.</p></div></div>
+        <div class="disclosure"><button class="disclosure-toggle" type="button" aria-expanded="false" aria-controls="disclosure-5">Anti-bullying <span class="glyph glyph-down" aria-hidden="true">keyboard_arrow_down</span></button><div class="disclosure-panel" id="disclosure-5" hidden="until-found"><p class="lead">Bullying of any kind is not acceptable in NSW schools.</p>
+        <p class="aux">The <a class="link" href="https://antibullying.nsw.gov.au/">NSW anti-bullying <span class="sr-only">(opens in new window)</span></a> website brings together information and resources for teachers, students, parents and carers. It helps to identify, prevent and respond effectively to student bullying, including online bullying. It provides information about online safety and what you can do if your child has been bullied, witnessed bullying or been involved in bullying.</p>
         <p class="aux">For more information on anti-bullying strategies for NSW public schools refer to the department’s <a class="link" href="https://education.nsw.gov.au/policy-library/policies/bullying-of-students-prevention-and-response-policy">Bullying of Students – Prevention and Response Policy</a>.</p>
         <p class="lead">For information on racial bullying and anti-racism education for NSW public schools refer to:</p>
-        <ul class="list"><li><a class="link" href="https://education.nsw.gov.au/policy-library/policies/anti-racism-policy?refid=285776">Anti-Racism Policy</a></li><li><a class="link" href="https://education.nsw.gov.au/teaching-and-learning/curriculum/multicultural-education/anti-racism-education">Anti-racism education</a></li><li><a class="link" href="http://www.racismnoway.com.au/">Racism. No way (opens in new window)</a> .</li></ul>
-        <div class="actions"><button class="btn btn-secondary" type="submit">Student leadership</button></div>
-        <div class="actions"><button class="btn btn-secondary" type="submit">keyboard_arrow_down</button></div>
-        <p class="lead">Student leadership helps young people find their voices, participate in decision-making, and understand their rights and responsibilities as active citizens. It helps students have a real impact on their learning and school environment and prepares them to participate meaningfully in their community.</p>
+        <ul class="list"><li><a class="link" href="https://education.nsw.gov.au/policy-library/policies/anti-racism-policy?refid=285776">Anti-Racism Policy</a></li><li><a class="link" href="https://education.nsw.gov.au/teaching-and-learning/curriculum/multicultural-education/anti-racism-education">Anti-racism education</a></li><li><a class="link" href="http://www.racismnoway.com.au/">Racism. No way <span class="sr-only">(opens in new window)</span></a> .</li></ul></div></div>
+        <div class="disclosure"><button class="disclosure-toggle" type="button" aria-expanded="false" aria-controls="disclosure-6">Student leadership <span class="glyph glyph-down" aria-hidden="true">keyboard_arrow_down</span></button><div class="disclosure-panel" id="disclosure-6" hidden="until-found"><p class="lead">Student leadership helps young people find their voices, participate in decision-making, and understand their rights and responsibilities as active citizens. It helps students have a real impact on their learning and school environment and prepares them to participate meaningfully in their community.</p>
         <p class="lead">Students can be leaders in the classroom, through their actions in the playground, through their support for others, or their involvement in academic, sporting, cultural or local community events or projects.</p>
         <p class="aux">For more information about opportunities in NSW public schools visit <a class="link" href="https://education.nsw.gov.au/schooling/students/student-voices/student-voice-and-leadership/why-student-voice-matters">Student voice and leadership</a>.</p>
-        <p class="aux">Visit <a class="link" href="https://fortstreet-h.schools.nsw.gov.au/about-us/our-principal-and-staff">Our principal and staff</a> to learn about our wellbeing and specialist support staff.</p>
+        <p class="aux">Visit <a class="link" href="https://fortstreet-h.schools.nsw.gov.au/about-us/our-principal-and-staff">Our principal and staff</a> to learn about our wellbeing and specialist support staff.</p></div></div>
       </div></div></div>
     </section>
   <section class="band layout-stack width-wide heading-h2" data-slot="s09" data-module="M5">
@@ -473,16 +518,12 @@
   <section class="band layout-stack width-wide" data-slot="s10" data-module="M8">
       
       <div class="container"><div class="panel"><div class="flow" data-slot-body>
-          <div class="actions"><button class="btn" type="submit">First Aid and Sick Bay</button></div>
-        <div class="actions"><button class="btn btn-secondary" type="submit">keyboard_arrow_down</button></div>
-        <p class="lead">Students who are injured or become ill during the school day should inform their teacher who will send a note with the student to Reception. First Aid office staff will monitor students in Sick Bay and a decision will be made to contact parents/carers if a student needs to be collected from school.</p>
-        <p class="lead">Students are not to call their parents or leave school without attending Sick Bay.</p>
-        <div class="actions"><button class="btn btn-secondary" type="submit">Medication</button></div>
-        <div class="actions"><button class="btn btn-secondary" type="submit">keyboard_arrow_down</button></div>
-        <p class="lead">Department of Education Policy prohibits the issue of medications such as Panadol and Aspirin etc by school staff. Students who are asthmatic, anaphylactic or diabetic should carry the required medications with them at all times. Students who have been issued with an Epinephrine Autoinjector (Epipen) must keep one in their bag and also provide a spare EpiPen to the school office to be kept in the medical area. A school EpiPen and Ventolin inhaler are included in all First Aid kits taken on excursions.</p>
+          <div class="disclosure"><button class="disclosure-toggle" type="button" aria-expanded="false" aria-controls="disclosure-7">First Aid and Sick Bay <span class="glyph glyph-down" aria-hidden="true">keyboard_arrow_down</span></button><div class="disclosure-panel" id="disclosure-7" hidden="until-found"><p class="lead">Students who are injured or become ill during the school day should inform their teacher who will send a note with the student to Reception. First Aid office staff will monitor students in Sick Bay and a decision will be made to contact parents/carers if a student needs to be collected from school.</p>
+        <p class="lead">Students are not to call their parents or leave school without attending Sick Bay.</p></div></div>
+        <div class="disclosure"><button class="disclosure-toggle" type="button" aria-expanded="false" aria-controls="disclosure-8">Medication <span class="glyph glyph-down" aria-hidden="true">keyboard_arrow_down</span></button><div class="disclosure-panel" id="disclosure-8" hidden="until-found"><p class="lead">Department of Education Policy prohibits the issue of medications such as Panadol and Aspirin etc by school staff. Students who are asthmatic, anaphylactic or diabetic should carry the required medications with them at all times. Students who have been issued with an Epinephrine Autoinjector (Epipen) must keep one in their bag and also provide a spare EpiPen to the school office to be kept in the medical area. A school EpiPen and Ventolin inhaler are included in all First Aid kits taken on excursions.</p>
         <p class="lead">Parents and Carers must ensure all Student Health plans are current and up to date and all provided inhalers or Epipens are within their expiry date.</p>
         <p class="lead">Students who require prescription medication at school should submit the medication along with a signed letter from the parent advising dosage to Office Staff at Reception. No other medications should be brought into the school.</p>
-        <p class="lead">For any questions relating to health conditions please contact the Front Office staff on 8585 1600.</p>
+        <p class="lead">For any questions relating to health conditions please contact the Front Office staff on 8585 1600.</p></div></div>
       </div></div></div>
     </section>
   <section class="band layout-stack width-wide heading-h3 bleed tone-dark" data-slot="s11" data-module="M4">
@@ -496,15 +537,22 @@
   <section class="band layout-cards width-wide heading-h3" data-slot="s12" data-module="M2">
       
       <div class="container"><div class="panel"><div class="flow" data-slot-body>
-          <ul class="list"><li><a class="link" href="https://fortstreet-h.schools.nsw.gov.au/learning-and-support/additional-learning-support">Additional learning support</a> Find out how we support students with disability or additional learning needs. east</li><li><a class="link" href="https://fortstreet-h.schools.nsw.gov.au/about-us/our-principal-and-staff">Our principal and staff</a> Get to know our principal and staff, who work together to create a positive school culture. east</li></ul>
+          <div class="cards" style="--cards-columns: 2"><div class="card"><p class="aux"><a class="link" href="https://fortstreet-h.schools.nsw.gov.au/learning-and-support/additional-learning-support">Additional learning support</a></p>
+        <p class="lead">Find out how we support students with disability or additional learning needs.</p>
+        <span class="glyph glyph-right" aria-hidden="true">east</span></div><div class="card"><p class="aux"><a class="link" href="https://fortstreet-h.schools.nsw.gov.au/about-us/our-principal-and-staff">Our principal and staff</a></p>
+        <p class="lead">Get to know our principal and staff, who work together to create a positive school culture.</p>
+        <span class="glyph glyph-right" aria-hidden="true">east</span></div></div>
       </div></div></div>
     </section></div></div>
 </main>
-<footer class="site-footer tone-light" data-canon="footer">
-  <div class="container chrome-footer">
-      <div><img class="logo" src="../../prototypes/assets/img/assets.schools.nsw.gov.au/content/dam/doe/sws/master/photos-master/nsw-logo.svg" data-source-src="https://assets.schools.nsw.gov.au/content/dam/doe/sws/master/photos-master/nsw-logo.svg" alt=""><p>Fort Street High School</p><p>General enquiries</p><p>8585 1600</p><p>620 PARRAMATTA ROAD, NSW 2049 PETERSHAM</p><p>Follow us</p><p>We recognise the Ongoing Custodians of the lands and waterways where we work and live. We pay respect to Elders past and present as ongoing teachers of knowledge, songlines and stories. We strive to ensure every Aboriginal and/or Torres Strait Islander learner in NSW achieves their potential through education.</p></div>
-      <ul><li><a href="mailto:fortstreet-h.school@det.nsw.edu.au">fortstreet-h.school@det.nsw.edu.au</a></li><li><a href="https://education.nsw.gov.au/your-feedback">Your feedback</a></li><li><a href="https://education.nsw.gov.au/policy-library">Policy library</a></li><li><a href="https://education.nsw.gov.au/rights-and-accountability/information-access">Information access</a></li></ul>
+<footer class="site-footer" data-canon="footer">
+  <div class="container chrome-footer footer-zoned">
+      <div class="footer-main"><div class="footer-brand"><img class="logo" src="../../prototypes/assets/img/assets.schools.nsw.gov.au/content/dam/doe/sws/master/photos-master/nsw-logo.svg" data-source-src="https://assets.schools.nsw.gov.au/content/dam/doe/sws/master/photos-master/nsw-logo.svg" alt=""><p class="footer-name">Fort Street High School</p><p class="footer-prose">We recognise the Ongoing Custodians of the lands and waterways where we work and live. We pay respect to Elders past and present as ongoing teachers of knowledge, songlines and stories. We strive to ensure every Aboriginal and/or Torres Strait Islander learner in NSW achieves their potential through education.</p></div>
+      <div class="footer-col"><p class="footer-col-title">General enquiries</p><ul><li><a class="link" href="mailto:fortstreet-h.school@det.nsw.edu.au">fortstreet-h.school@det.nsw.edu.au</a></li><li>8585 1600</li><li>620 PARRAMATTA ROAD, NSW 2049 PETERSHAM</li></ul></div>
+      <div class="footer-col"><ul><li><a class="link" href="https://education.nsw.gov.au/your-feedback">Your feedback</a></li><li><a class="link" href="https://education.nsw.gov.au/policy-library">Policy library</a></li><li><a class="link" href="https://education.nsw.gov.au/rights-and-accountability/information-access">Information access</a></li></ul></div></div>
+      <div class="footer-social"><p class="footer-social-label">Follow us</p><ul class="icon-links"><li><a href="https://www.facebook.com/fortstreethighschool" aria-label="Facebook">Facebook</a></li><li><a href="https://www.instagram.com/fortstreet_hs" aria-label="Instagram">Instagram</a></li><li><a href="https://www.education.nsw.gov.au/" aria-label="education.nsw.gov.au">education.nsw.gov.au</a></li></ul></div>
     </div>
 </footer>
+<script>document.addEventListener('click', (e) => { const b = e.target.closest('.disclosure-toggle'); if (!b) return; const p = document.getElementById(b.getAttribute('aria-controls')); const open = b.getAttribute('aria-expanded') !== 'true'; b.setAttribute('aria-expanded', String(open)); if (open) p.removeAttribute('hidden'); else p.setAttribute('hidden', 'until-found'); });</script>
 </body>
 </html>

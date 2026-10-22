@@ -119,6 +119,9 @@
   }
   :where(.site-header, .site-main, .site-footer), :where(.site-header, .site-main, .site-footer) *, :where(.site-header, .site-main, .site-footer) *::before, :where(.site-header, .site-main, .site-footer) *::after { box-sizing: border-box; }
   body:has(> .site-header, > .site-main, > .site-footer) { margin: 0; background: var(--palette-page-bg); color: var(--palette-body-fg); font-family: var(--type-family); font-size: var(--type-body-font-size); line-height: var(--type-body-line-height); }
+  .site-main .embed-placeholder { position: relative; height: 440px; margin-top: 48px; background: var(--palette-light-band-bg); }
+  .site-main .embed-placeholder::after { content: ""; position: absolute; left: 50%; top: 50%; width: 36px; height: 36px; margin: -18px 0 0 -18px; border-radius: 50%; background: var(--palette-accent); }
+  @media (max-width: 640px) { .site-main .embed-placeholder { height: 280px; margin-top: 32px; } }
   .site-main .clamp { display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; }
   .container { box-sizing: content-box; max-width: var(--layout-container-max-width); margin: 0 auto; padding: 0 24px; }
   :where(.site-header, .site-main, .site-footer) a { color: inherit; }
@@ -176,6 +179,55 @@
   :is(.site-main, .site-header) .btn-secondary { background: var(--buttons-secondary-background); color: var(--buttons-secondary-color); border: var(--buttons-secondary-border); }
   .site-main .width-narrow .btn { width: 100%; }
 
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+  .glyph { display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; font-size: 0; vertical-align: middle; }
+  .glyph::before { content: ""; width: 7px; height: 7px; border: solid currentcolor; border-width: 0 2px 2px 0; }
+  .glyph-right::before { transform: rotate(-45deg); } .glyph-left::before { transform: rotate(135deg); }
+  .glyph-down::before { transform: translateY(-2px) rotate(45deg); } .glyph-up::before { transform: translateY(2px) rotate(-135deg); }
+  .glyph-search::before { width: 9px; height: 9px; border: 2px solid currentcolor; border-radius: 50%; }
+  .glyph-close::before { content: "×"; width: auto; height: auto; border: 0; font-size: 20px; line-height: 1; }
+  .glyph-menu::before { width: 16px; height: 2px; border: 0; background: currentcolor; box-shadow: 0 -5px 0 currentcolor, 0 5px 0 currentcolor; }
+  .site-header .icon-btn { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; padding: 0; border: 0; background: none; color: inherit; cursor: pointer; }
+  .site-header .icon-btn .glyph { width: 20px; height: 20px; }
+  .site-header .brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
+  .site-header .brand .logo { height: 56px; width: auto; }
+  .site-header .brand-text { display: flex; flex-direction: column; white-space: nowrap; }
+  .site-header .nav-actions { flex-wrap: nowrap; }
+  .site-header .icon-btn .glyph-search::before { width: 13px; height: 13px; }
+  .site-header .brand-text .nav-text:first-child { font-family: var(--type-display-font-family); color: var(--palette-heading-fg); font-size: 1.25em; line-height: 1.2; }
+  .site-header .brand-text .nav-text + .nav-text { font-size: 0.875em; font-style: italic; line-height: 1.3; }
+  .site-header nav .glyph { display: none; }
+  .site-header .utility-bar { border-bottom: 1px solid var(--palette-light-band-bg); font-size: 12px; line-height: 1; }
+  .site-header .utility-bar .container { display: flex; justify-content: flex-end; gap: 16px; padding-top: 10px; padding-bottom: 10px; }
+  .site-header .utility-bar a { text-decoration: underline; }
+  @media (min-width: 901px) {
+    .site-header .chrome-row .container { min-height: 80px; }
+    .site-header nav { gap: 24px; font-family: inherit; font-size: inherit; }
+  }
+  .site-header .nav-toggle { display: none; }
+  .site-header .glyph-search::before { box-shadow: none; }
+  .site-header .glyph-search { position: relative; }
+  .site-header .glyph-search::after { content: ""; position: absolute; width: 2px; height: 6px; background: currentcolor; transform: translate(7px, 7px) rotate(-45deg); }
+  @media (max-width: 900px) {
+    .site-header nav, .site-header .utility-bar { display: none; }
+    .site-header .nav-toggle { display: inline-flex; }
+    .site-header .chrome-row .container { flex-wrap: nowrap; min-height: 64px; }
+    .site-header .brand .logo { height: 40px; }
+    .site-header .brand-text { font-size: 14px; }
+  }
+  .site-main .disclosure { border-bottom: 1px solid var(--palette-light-band-bg); }
+  .site-main .disclosure:first-of-type, .site-main :not(.disclosure) + .disclosure { border-top: 1px solid var(--palette-light-band-bg); }
+  .site-main .disclosure-toggle { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 0; border: 0; background: none; color: var(--palette-heading-fg); font-family: var(--type-display-font-family); font-size: var(--type-h3-font-size); line-height: var(--type-h3-line-height); font-weight: var(--type-h3-font-weight); text-align: left; cursor: pointer; }
+  .site-main .disclosure-toggle .glyph { color: var(--palette-accent); width: 24px; height: 24px; }
+  .site-main .disclosure-toggle[aria-expanded="true"] .glyph::before { transform: translateY(2px) rotate(-135deg); }
+  .site-main .disclosure-panel { padding: 0 0 24px; }
+  .site-main .table-wrap { overflow-x: auto; margin: 0 0 24px; }
+  .site-main .table { width: 100%; border-collapse: collapse; }
+  .site-main .table :is(th, td) { padding: 16px; border-bottom: 1px solid var(--palette-light-band-bg); text-align: left; vertical-align: top; }
+  .site-main .table th { background: var(--palette-light-band-bg); color: var(--palette-heading-fg); }
+  .site-main .table :is(th, td) p { margin: 0; }
+  .site-main .media-wide img { width: 100%; max-height: none; }
+  .site-main .inline-media { display: block; width: 100%; height: auto; margin: 0 0 16px; }
   .site-main .list { padding-left: 1.2em; }
   .site-main .media img { max-height: 360px; width: auto; }
   .site-main .icon { display: inline-block; height: 1.6em; width: auto; vertical-align: middle; margin-right: 0.5em; }
@@ -192,7 +244,20 @@
   .site-main .align-center.width-narrow .panel { margin-inline: auto; }
   .site-main .cards { display: grid; grid-template-columns: repeat(var(--cards-columns, 3), minmax(0, 1fr)); gap: var(--layout-column-gap); margin: 16px 0; }
   .site-main .card { background: var(--palette-light-band-bg); border-radius: 0; box-shadow: none; padding: 40px; }
+  .site-main .card > p.aux:first-child:has(> .link:only-child) .link { font-family: var(--type-heading-family); font-size: var(--type-h4-font-size); line-height: 1.25; color: var(--palette-accent); text-decoration: none; }
+  .site-main .card > .glyph:last-child { display: flex; width: 28px; height: 28px; margin-top: 12px; color: var(--palette-accent); position: relative; }
+  .site-main .card > .glyph-right:last-child::before { position: absolute; right: 6px; width: 9px; height: 9px; transform: rotate(-45deg); }
+  .site-main .card > .glyph-right:last-child::after { content: ""; position: absolute; left: 4px; right: 5px; top: 13px; height: 2px; background: currentcolor; }
   .site-main .card > :last-child { margin-bottom: 0; }
+  .site-main .card:has(> .media:first-child) { padding: 0 0 32px; overflow: hidden; }
+  .site-main .card:has(> .media:first-child) > :not(.media:first-child) { margin-inline: 24px; }
+  .site-main .card > .media:first-child { margin: 0 0 24px; }
+  .site-main .card > .media:first-child img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; max-height: none; }
+  .site-main :is(.cards-dark, .cards-accent, .cards-light) .card { border-color: transparent; }
+  .site-main .cards-dark .card { background: var(--palette-dark-band-bg); color: var(--palette-dark-band-fg); }
+  .site-main .cards-accent .card { background: var(--palette-accent); color: var(--palette-dark-band-fg); }
+  .site-main .cards-light .card { background: var(--palette-light-band-bg); }
+  .site-main :is(.cards-dark, .cards-accent) .card :is(h1, h2, h3, h4, .heading, .link) { color: inherit; }
   .site-main .tone-dark .panel, .site-main .tone-light .panel, .site-main .tone-accent .panel { border-radius: 0; padding: 50px 60px; }
   .site-main .bleed.tone-dark, .site-main .bleed.tone-light, .site-main .bleed.tone-accent { padding-top: var(--layout-section-padding-y); padding-bottom: var(--layout-section-padding-y); }
   .site-main .bleed.tone-dark { background: var(--palette-dark-band-bg); color: var(--palette-dark-band-fg); }
@@ -201,7 +266,7 @@
   .site-main .bleed .panel { background: none !important; border-radius: 0; padding: 0; }
   .site-main .tone-dark .panel { background: var(--palette-dark-band-bg); color: var(--palette-dark-band-fg); }
   .site-main .tone-dark :is(h1, h2, h3, h4) { color: inherit; }
-  .site-main .tone-dark .card { background: transparent; box-shadow: none; }
+  .site-main .tone-dark .card { background: transparent; box-shadow: none; border-color: transparent; }
   .site-main .tone-light .panel { background: var(--palette-light-band-bg); }
   .site-main .tone-light .card { background: var(--palette-page-bg); }
   .site-main .tone-accent .panel { background: var(--palette-accent); }
@@ -214,13 +279,33 @@
   .site-footer.tone-dark { background: var(--palette-dark-band-bg); color: var(--palette-dark-band-fg); border-radius: 0 0 0 0; }
   .site-footer.tone-light { background: var(--palette-light-band-bg); }
   .site-footer.tone-accent { background: var(--palette-accent); }
+  .site-footer .footer-zoned { display: block; font-size: 0.889em; }
+  .site-footer .footer-main { display: flex; gap: 40px; }
+  .site-footer .footer-main > * { flex: 1 1 0; min-width: 0; }
+  .site-footer .footer-zoned a { color: inherit; }
+  .site-footer .footer-zoned ul { columns: 1; }
+  .site-footer .footer-zoned p { margin: 0 0 16px; }
+  .site-footer .footer-brand > p { max-width: 300px; }
+  .site-footer .footer-brand .logo { display: block; height: 40px; width: auto; margin-bottom: 24px; }
+  .site-footer .footer-name { font-family: var(--type-heading-family); color: var(--palette-heading-fg); font-size: 1.25em; }
+  .site-footer .footer-col-title { font-weight: 700; }
+  .site-footer .footer-social { margin-top: 40px; display: flex; align-items: center; gap: 16px; font-size: 0.875em; }
+  .site-footer .footer-social p { margin: 0; }
+  .site-footer .footer-social ul { display: flex; gap: 16px; }
+  .site-footer .footer-social li { margin: 0; }
   @media (max-width: 900px) {
     .site-main .layout-grid-2 .flow { grid-template-columns: 1fr; }
     .site-main .layout-split .panel { grid-template-columns: minmax(0, 1fr); }
     .site-main .layout-split .panel > * { min-width: 0; }
-    .site-main .split-img { justify-self: center; }
+    .site-main .split-img { justify-self: stretch; width: 100%; }
     .site-main .cards { grid-template-columns: minmax(0, 1fr); }
     .site-footer .chrome-footer { grid-template-columns: 1fr; }
+    .site-footer .footer-main { flex-direction: column; gap: 24px; }
+    .site-footer .footer-zoned { text-align: center; line-height: 1.4; }
+    .site-footer .footer-brand > p { max-width: none; }
+    .site-footer .footer-brand .logo { margin: 0 auto 24px; }
+    .site-footer .footer-social { justify-content: center; margin-top: 24px; white-space: nowrap; }
+    .site-footer .footer-zoned li { margin-bottom: 12px; }
   }
   @media (max-width: 640px) {
     .site-main section { padding-top: 24px; padding-bottom: 24px; }
@@ -228,13 +313,14 @@
     .site-main .inset > .container { padding: 0 20px; }
     .site-main .tone-dark .panel, .site-main .tone-light .panel, .site-main .tone-accent .panel { padding: 32px 20px; }
     .site-footer ul { columns: 1; }
+    .site-main .table :is(th, td) { padding: 8px; }
     .site-main :is(.heading, .heading-display .heading) { font-size: min(var(--type-display-font-size), 11vw); }
     .site-main .heading { overflow-wrap: break-word; }
   }
 </style>
 <!-- stardust:prototype
   writtenBy:        stardust:reskin/stream-render
-  writtenAt:        2026-10-21T13:50:55.972Z
+  writtenAt:        2026-10-22T08:52:41.871Z
   page:             about-us-hsc-results
   pageUrl:          https://fortstreet-h.schools.nsw.gov.au/about-us/hsc-results
   template:         learning-and-support-wellbeing
@@ -271,18 +357,18 @@
 </head>
 <body>
 <header class="site-header" data-canon="header">
-  <div class="chrome-row nav-align-center"><div class="container">
-      <img class="logo" src="../../prototypes/assets/img/assets.schools.nsw.gov.au/content/dam/doe/sws/schools/f/fortstreet-h/logo.png" data-source-src="https://assets.schools.nsw.gov.au/content/dam/doe/sws/schools/f/fortstreet-h/logo.png" alt="school logo">
-      <nav><a href="https://fortstreet-h.schools.nsw.gov.au/about-us">About us keyboard_arrow_right</a><a href="https://fortstreet-h.schools.nsw.gov.au/school-life">School life keyboard_arrow_right</a><a href="https://fortstreet-h.schools.nsw.gov.au/learning-and-support">Learning and support keyboard_arrow_right</a><a href="https://fortstreet-h.schools.nsw.gov.au/our-community">Our community keyboard_arrow_right</a><a href="https://fortstreet-h.schools.nsw.gov.au/contact-us">Contact us</a></nav>
-      <div class="nav-actions"><a href="https://fortstreet-h.schools.nsw.gov.au/#main-nav">Skip to navigation</a><a href="https://fortstreet-h.schools.nsw.gov.au/#main">Skip to content</a><a href="https://fortstreet-h.schools.nsw.gov.au/">NSW Government</a><span class="nav-text">Fort Street High School</span><span class="nav-text">Faber est suae quisque fortunae</span><button class="btn btn-secondary" type="button">search</button><button class="btn" type="button">Show</button><button class="btn" type="button">Search</button></div>
+  <div class="utility-bar"><div class="container"><a href="https://fortstreet-h.schools.nsw.gov.au/">NSW Government</a></div></div><div class="chrome-row nav-align-end"><div class="container">
+      <div class="brand"><img class="logo" src="../../prototypes/assets/img/assets.schools.nsw.gov.au/content/dam/doe/sws/schools/f/fortstreet-h/logo.png" data-source-src="https://assets.schools.nsw.gov.au/content/dam/doe/sws/schools/f/fortstreet-h/logo.png" alt="school logo"><div class="brand-text"><span class="nav-text">Fort Street High School</span><span class="nav-text">Faber est suae quisque fortunae</span></div></div>
+      <nav><a href="https://fortstreet-h.schools.nsw.gov.au/about-us">About us <span class="glyph glyph-right" aria-hidden="true">keyboard_arrow_right</span></a><a href="https://fortstreet-h.schools.nsw.gov.au/school-life">School life <span class="glyph glyph-right" aria-hidden="true">keyboard_arrow_right</span></a><a href="https://fortstreet-h.schools.nsw.gov.au/learning-and-support">Learning and support <span class="glyph glyph-right" aria-hidden="true">keyboard_arrow_right</span></a><a href="https://fortstreet-h.schools.nsw.gov.au/our-community">Our community <span class="glyph glyph-right" aria-hidden="true">keyboard_arrow_right</span></a><a href="https://fortstreet-h.schools.nsw.gov.au/contact-us">Contact us</a></nav>
+      <div class="nav-actions"><a class="sr-only" href="https://fortstreet-h.schools.nsw.gov.au/#main-nav">Skip to navigation</a><a class="sr-only" href="https://fortstreet-h.schools.nsw.gov.au/#main">Skip to content</a><button class="icon-btn" type="button"><span class="glyph glyph-search" aria-hidden="true">search</span></button><button class="sr-only" type="button"><span class="sr-only">Show</span></button><button class="sr-only" type="button"><span class="sr-only">Search</span></button><button class="icon-btn nav-toggle" type="button" aria-label="Menu"><span class="glyph glyph-menu" aria-hidden="true"></span></button></div>
     </div></div>
 </header>
-<main class="site-main" data-template="learning-and-support-wellbeing">
+<main class="site-main" data-template="learning-and-support-wellbeing"><div class="crumbs"><div class="container breadcrumb"><nav aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/about-us">About us</a></li><li aria-current="page">HSC Results</li></ol></nav></div></div>
   <section class="band layout-split width-wide tone-light heading-display bleed" data-slot="s01" data-module="M1">
       
       <div class="container"><div class="panel"><div class="flow" data-slot-body>
           <h1 class="heading">HSC results</h1>
-        <p class="lead"><img class="icon" src="../../prototypes/assets/img/fortstreet-h.schools.nsw.gov.au/about-us/media_13940deb16fad3299fe00e8d534c6cffefa7ef259-3d5a5588.jpg" data-source-src="https://fortstreet-h.schools.nsw.gov.au/about-us/media_13940deb16fad3299fe00e8d534c6cffefa7ef259.jpg?width=2000&amp;format=webply&amp;optimize=medium" alt=""></p>
+        <figure class="media media-wide"><img src="../../prototypes/assets/img/fortstreet-h.schools.nsw.gov.au/about-us/media_13940deb16fad3299fe00e8d534c6cffefa7ef259-3d5a5588.jpg" data-source-src="https://fortstreet-h.schools.nsw.gov.au/about-us/media_13940deb16fad3299fe00e8d534c6cffefa7ef259.jpg?width=2000&amp;format=webply&amp;optimize=medium" alt=""></figure>
         <p class="lead">Fort Street’s outstanding reputation for academic excellence is reflected in the consistently high results that students achieve in the Higher School Certificate. Ninety-five percent of students proceed from school immediately to university studies with 65% of the year 12 cohort achieving an ATAR in the 90's. Our highest achievers are recognised and celebrated at Speech Day each year.</p>
         <p class="lead">Our students continue as individuals and in groups to be outstanding academic achievers. In 2025 eighteen Fortians featured on the HSC Top All-rounders List.</p>
         <p class="lead">In 2025 Fort Street High School was ranked 20th in the state overall. 156 students sat HSC exams, 30 students (19%) achieved an ATAR of above 98. 37% of the Year 12 student cohort achieved an ATAR over 95.</p>
@@ -292,28 +378,11 @@
         <p class="lead">This list acknowledges students who achieved in the highest performance band in 10 or more units in the HSC.</p>
       </div></div></div>
     </section>
-<div class="crumbs"><div class="container breadcrumb"><nav aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/about-us">About us</a></li><li aria-current="page">HSC Results</li></ol></nav></div></div><div class="page-layout"><aside class="page-aside"><div class="section-nav"><nav aria-label="Section navigation"><div class="section-nav-header"><a href="/about-us">About us</a></div><ul><li><a href="/about-us/enrol">Enrol</a></li><li><a href="/about-us/facilities-and-resources">Facilities and resources</a></li><li class="active"><a href="/about-us/hsc-results" aria-current="page">HSC Results</a></li><li><a href="/about-us/our-principal-and-staff">Our principal and staff</a></li><li><a href="/about-us/policies-and-reports">Policies and reports</a></li><li><a href="/about-us/school-history-and-archives">School history and archives</a></li><li><a href="/about-us/stories-and-highlights">Stories and highlights</a></li><li><a href="/about-us/transition-to-high-school">Transition to high school</a></li><li><a href="/about-us/why-choose-us">Why choose us?</a></li></ul></nav></div></aside><div class="page-main">
+<div class="page-layout"><aside class="page-aside"><div class="section-nav"><nav aria-label="Section navigation"><div class="section-nav-header"><a href="/about-us">About us</a></div><ul><li><a href="/about-us/enrol">Enrol</a></li><li><a href="/about-us/facilities-and-resources">Facilities and resources</a></li><li class="active"><a href="/about-us/hsc-results" aria-current="page">HSC Results</a></li><li><a href="/about-us/our-principal-and-staff">Our principal and staff</a></li><li><a href="/about-us/policies-and-reports">Policies and reports</a></li><li><a href="/about-us/school-history-and-archives">School history and archives</a></li><li><a href="/about-us/stories-and-highlights">Stories and highlights</a></li><li><a href="/about-us/transition-to-high-school">Transition to high school</a></li><li><a href="/about-us/why-choose-us">Why choose us?</a></li></ul></nav></div></aside><div class="page-main">
   <section class="band layout-stack width-wide" data-slot="s02">
       
       <div class="container"><div class="panel"><div class="flow" data-slot-body>
-          <p class="lead">Cai, Kevin</p>
-        <p class="lead">Nguyen, Jayden</p>
-        <p class="lead">Sabir, Jai</p>
-        <p class="lead">Deodhar, Aditya</p>
-        <p class="lead">Nguyen, Lan</p>
-        <p class="lead">Salmon, Alexa</p>
-        <p class="lead">Hong, Gina</p>
-        <p class="lead">Park, Min</p>
-        <p class="lead">Sima, Jessica</p>
-        <p class="lead">Jin, Emily</p>
-        <p class="lead">Peiris, Arun</p>
-        <p class="lead">Webster, Julia</p>
-        <p class="lead">McGee, Joseph</p>
-        <p class="lead">Penney, Luka</p>
-        <p class="lead">Zeng, Yihang Raymond</p>
-        <p class="lead">McIntyre, Lachlan</p>
-        <p class="lead">Rameshbabu, Akshaya</p>
-        <p class="lead">Zhou, Yujing</p>
+          <div class="table-wrap"><table class="table"><tbody><tr><td><p class="lead">Cai, Kevin</p></td><td><p class="lead">Nguyen, Jayden</p></td><td><p class="lead">Sabir, Jai</p></td></tr><tr><td><p class="lead">Deodhar, Aditya</p></td><td><p class="lead">Nguyen, Lan</p></td><td><p class="lead">Salmon, Alexa</p></td></tr><tr><td><p class="lead">Hong, Gina</p></td><td><p class="lead">Park, Min</p></td><td><p class="lead">Sima, Jessica</p></td></tr><tr><td><p class="lead">Jin, Emily</p></td><td><p class="lead">Peiris, Arun</p></td><td><p class="lead">Webster, Julia</p></td></tr><tr><td><p class="lead">McGee, Joseph</p></td><td><p class="lead">Penney, Luka</p></td><td><p class="lead">Zeng, Yihang Raymond</p></td></tr><tr><td><p class="lead">McIntyre, Lachlan</p></td><td><p class="lead">Rameshbabu, Akshaya</p></td><td><p class="lead">Zhou, Yujing</p></td></tr></tbody></table></div>
       </div></div></div>
     </section>
   <section class="band layout-stack width-wide heading-h2" data-slot="s03" data-module="M5">
@@ -325,16 +394,7 @@
   <section class="band layout-stack width-wide" data-slot="s04">
       
       <div class="container"><div class="panel"><div class="flow" data-slot-body>
-          <p class="lead">Hurley-Stone, Emil</p>
-        <p class="lead">2nd in German Extension</p>
-        <p class="lead">McGee, Joseph</p>
-        <p class="lead">15th in Modern History</p>
-        <p class="lead">Penney, Luka</p>
-        <p class="lead">6th in Earth and Environment Science</p>
-        <p class="lead">Vujovic, Lily</p>
-        <p class="lead">19th in Modern History</p>
-        <p class="lead">Zhou, Yujing</p>
-        <p class="lead">3rd in Chinese Continuers</p>
+          <div class="table-wrap"><table class="table"><tbody><tr><td><p class="lead">Hurley-Stone, Emil</p></td><td><p class="lead">2nd in German Extension</p></td></tr><tr><td><p class="lead">McGee, Joseph</p></td><td><p class="lead">15th in Modern History</p></td></tr><tr><td><p class="lead">Penney, Luka</p></td><td><p class="lead">6th in Earth and Environment Science</p></td></tr><tr><td><p class="lead">Vujovic, Lily</p></td><td><p class="lead">19th in Modern History</p></td></tr><tr><td><p class="lead">Zhou, Yujing</p></td><td><p class="lead">3rd in Chinese Continuers</p></td></tr></tbody></table></div>
       </div></div></div>
     </section>
   <section class="band layout-stack width-wide heading-h2" data-slot="s05" data-module="M5">
@@ -348,18 +408,7 @@
   <section class="band layout-stack width-wide" data-slot="s06">
       
       <div class="container"><div class="panel"><div class="flow" data-slot-body>
-          <p class="lead">Edmund Huang</p>
-        <p class="lead">Music Performance</p>
-        <p class="lead">Nominated</p>
-        <p class="lead">Edmund Huang</p>
-        <p class="lead">Music Composition</p>
-        <p class="lead">Nominated</p>
-        <p class="lead">Alexander Patterson</p>
-        <p class="lead">Music Performance</p>
-        <p class="lead">Nominated</p>
-        <p class="lead">Kit (Callum) White</p>
-        <p class="lead">Music Performance</p>
-        <p class="lead">Nominated</p>
+          <div class="table-wrap"><table class="table"><tbody><tr><td><p class="lead">Edmund Huang</p></td><td><p class="lead">Music Performance</p></td><td><p class="lead">Nominated</p></td></tr><tr><td><p class="lead">Edmund Huang</p></td><td><p class="lead">Music Composition</p></td><td><p class="lead">Nominated</p></td></tr><tr><td><p class="lead">Alexander Patterson</p></td><td><p class="lead">Music Performance</p></td><td><p class="lead">Nominated</p></td></tr><tr><td><p class="lead">Kit (Callum) White</p></td><td><p class="lead">Music Performance</p></td><td><p class="lead">Nominated</p></td></tr></tbody></table></div>
       </div></div></div>
     </section>
   <section class="band layout-stack width-wide heading-h3" data-slot="s07" data-module="M5">
@@ -371,8 +420,7 @@
   <section class="band layout-stack width-wide" data-slot="s08">
       
       <div class="container"><div class="panel"><div class="flow" data-slot-body>
-          <p class="lead">Anna Moran</p>
-        <p class="lead">Selected – will be showcased at the Art Gallery of NSW 4 Feb to 26 April and at the Hawkesbury Regional Gallery 28 August to 18 October</p>
+          <div class="table-wrap"><table class="table"><tbody><tr><td><p class="lead">Anna Moran</p></td><td><p class="lead">Selected – will be showcased at the Art Gallery of NSW 4 Feb to 26 April and at the Hawkesbury Regional Gallery 28 August to 18 October</p></td></tr></tbody></table></div>
       </div></div></div>
     </section>
   <section class="band layout-stack width-wide heading-h3" data-slot="s09" data-module="M5">
@@ -384,26 +432,12 @@
   <section class="band layout-stack width-wide" data-slot="s10">
       
       <div class="container"><div class="panel"><div class="flow" data-slot-body>
-          <p class="lead">Owen Druery</p>
-        <p class="lead">Individual Project</p>
-        <p class="lead">Nominated</p>
-        <p class="lead">Charlie McQueen</p>
-        <p class="lead">Individual Project</p>
-        <p class="lead">Nominated</p>
-        <p class="lead">Kit (Callum) White</p>
-        <p class="lead">Individual Project</p>
-        <p class="lead">Nominated</p>
-        <p class="lead">Edain Davied Barnes</p>
-        <p class="lead">Individual Project</p>
-        <p class="lead">Nominated</p>
-        <p class="lead">Edain Davies Barnier,</p>
+          <div class="table-wrap"><table class="table"><tbody><tr><td><p class="lead">Owen Druery</p></td><td><p class="lead">Individual Project</p></td><td><p class="lead">Nominated</p></td></tr><tr><td><p class="lead">Charlie McQueen</p></td><td><p class="lead">Individual Project</p></td><td><p class="lead">Nominated</p></td></tr><tr><td><p class="lead">Kit (Callum) White</p></td><td><p class="lead">Individual Project</p></td><td><p class="lead">Nominated</p></td></tr><tr><td><p class="lead">Edain Davied Barnes</p></td><td><p class="lead">Individual Project</p></td><td><p class="lead">Nominated</p></td></tr><tr><td><p class="lead">Edain Davies Barnier,</p>
         <p class="lead">Owen Druery,</p>
         <p class="lead">Emma Howes,</p>
         <p class="lead">Arden Teresa Lay,</p>
         <p class="lead">Charlie McQueen,</p>
-        <p class="lead">Kit (Callum) White</p>
-        <p class="lead">Group Performance</p>
-        <p class="lead">Nominated</p>
+        <p class="lead">Kit (Callum) White</p></td><td><p class="lead">Group Performance</p></td><td><p class="lead">Nominated</p></td></tr></tbody></table></div>
       </div></div></div>
     </section>
   <section class="band layout-stack width-wide heading-h3" data-slot="s11" data-module="M5">
@@ -415,9 +449,7 @@
   <section class="band layout-stack width-wide" data-slot="s12">
       
       <div class="container"><div class="panel"><div class="flow" data-slot-body>
-          <p class="lead">Hugh Phan</p>
-        <p class="lead">Major Design Project</p>
-        <p class="lead">Selected</p>
+          <div class="table-wrap"><table class="table"><tbody><tr><td><p class="lead">Hugh Phan</p></td><td><p class="lead">Major Design Project</p></td><td><p class="lead">Selected</p></td></tr></tbody></table></div>
       </div></div></div>
     </section>
   <section class="band layout-stack width-wide heading-h3" data-slot="s13" data-module="M5">
@@ -429,9 +461,7 @@
   <section class="band layout-stack width-wide" data-slot="s14">
       
       <div class="container"><div class="panel"><div class="flow" data-slot-body>
-          <p class="lead">Melody Rivard-Hyde</p>
-        <p class="lead">Major Design Project</p>
-        <p class="lead">Selected</p>
+          <div class="table-wrap"><table class="table"><tbody><tr><td><p class="lead">Melody Rivard-Hyde</p></td><td><p class="lead">Major Design Project</p></td><td><p class="lead">Selected</p></td></tr></tbody></table></div>
       </div></div></div>
     </section>
   <section class="band layout-stack width-wide heading-h2 tone-dark bleed" data-slot="s15" data-module="M5">
@@ -581,14 +611,20 @@
   <section class="band layout-cards width-wide heading-h3" data-slot="s16" data-module="M2">
       
       <div class="container"><div class="panel"><div class="flow" data-slot-body>
-          <ul class="list"><li><a class="link" href="https://fortstreet-h.schools.nsw.gov.au/learning-and-support/learning">Learning</a> Discover what students learn in our classrooms and how we help them progress. east</li><li><a class="link" href="https://fortstreet-h.schools.nsw.gov.au/school-life/student-opportunities-and-activities">Student opportunities and activities</a> Discover clubs, sports and other activities your child can enjoy at school. east</li></ul>
+          <div class="cards" style="--cards-columns: 2"><div class="card"><p class="aux"><a class="link" href="https://fortstreet-h.schools.nsw.gov.au/learning-and-support/learning">Learning</a></p>
+        <p class="lead">Discover what students learn in our classrooms and how we help them progress.</p>
+        <span class="glyph glyph-right" aria-hidden="true">east</span></div><div class="card"><p class="aux"><a class="link" href="https://fortstreet-h.schools.nsw.gov.au/school-life/student-opportunities-and-activities">Student opportunities and activities</a></p>
+        <p class="lead">Discover clubs, sports and other activities your child can enjoy at school.</p>
+        <span class="glyph glyph-right" aria-hidden="true">east</span></div></div>
       </div></div></div>
     </section></div></div>
 </main>
-<footer class="site-footer tone-light" data-canon="footer">
-  <div class="container chrome-footer">
-      <div><img class="logo" src="../../prototypes/assets/img/assets.schools.nsw.gov.au/content/dam/doe/sws/master/photos-master/nsw-logo.svg" data-source-src="https://assets.schools.nsw.gov.au/content/dam/doe/sws/master/photos-master/nsw-logo.svg" alt=""><p>Fort Street High School</p><p>General enquiries</p><p>8585 1600</p><p>620 PARRAMATTA ROAD, NSW 2049 PETERSHAM</p><p>Follow us</p><p>We recognise the Ongoing Custodians of the lands and waterways where we work and live. We pay respect to Elders past and present as ongoing teachers of knowledge, songlines and stories. We strive to ensure every Aboriginal and/or Torres Strait Islander learner in NSW achieves their potential through education.</p></div>
-      <ul><li><a href="mailto:fortstreet-h.school@det.nsw.edu.au">fortstreet-h.school@det.nsw.edu.au</a></li><li><a href="https://education.nsw.gov.au/your-feedback">Your feedback</a></li><li><a href="https://education.nsw.gov.au/policy-library">Policy library</a></li><li><a href="https://education.nsw.gov.au/rights-and-accountability/information-access">Information access</a></li></ul>
+<footer class="site-footer" data-canon="footer">
+  <div class="container chrome-footer footer-zoned">
+      <div class="footer-main"><div class="footer-brand"><img class="logo" src="../../prototypes/assets/img/assets.schools.nsw.gov.au/content/dam/doe/sws/master/photos-master/nsw-logo.svg" data-source-src="https://assets.schools.nsw.gov.au/content/dam/doe/sws/master/photos-master/nsw-logo.svg" alt=""><p class="footer-name">Fort Street High School</p><p class="footer-prose">We recognise the Ongoing Custodians of the lands and waterways where we work and live. We pay respect to Elders past and present as ongoing teachers of knowledge, songlines and stories. We strive to ensure every Aboriginal and/or Torres Strait Islander learner in NSW achieves their potential through education.</p></div>
+      <div class="footer-col"><p class="footer-col-title">General enquiries</p><ul><li><a class="link" href="mailto:fortstreet-h.school@det.nsw.edu.au">fortstreet-h.school@det.nsw.edu.au</a></li><li>8585 1600</li><li>620 PARRAMATTA ROAD, NSW 2049 PETERSHAM</li></ul></div>
+      <div class="footer-col"><ul><li><a class="link" href="https://education.nsw.gov.au/your-feedback">Your feedback</a></li><li><a class="link" href="https://education.nsw.gov.au/policy-library">Policy library</a></li><li><a class="link" href="https://education.nsw.gov.au/rights-and-accountability/information-access">Information access</a></li></ul></div></div>
+      <div class="footer-social"><p class="footer-social-label">Follow us</p><ul class="icon-links"><li><a href="https://www.facebook.com/fortstreethighschool" aria-label="Facebook">Facebook</a></li><li><a href="https://www.instagram.com/fortstreet_hs" aria-label="Instagram">Instagram</a></li><li><a href="https://www.education.nsw.gov.au/" aria-label="education.nsw.gov.au">education.nsw.gov.au</a></li></ul></div>
     </div>
 </footer>
 </body>

@@ -100,7 +100,7 @@ for (const j of jobs) {
       const rest = main.slice(restStart, last.index + last[0].length);
       const tail = main.slice(last.index + last[0].length);
       const crumbs = eds.crumbs ? `<div class="crumbs"><div class="container breadcrumb">${eds.crumbs}</div></div>` : '';
-      main = `${head}\n${crumbs}<div class="page-layout"><aside class="page-aside"><div class="section-nav">${eds.nav}</div></aside><div class="page-main">${rest}</div></div>${tail}`;
+      main = `${crumbs}${head}\n<div class="page-layout"><aside class="page-aside"><div class="section-nav">${eds.nav}</div></aside><div class="page-main">${rest}</div></div>${tail}`;
       chrome = true;
     }
   }

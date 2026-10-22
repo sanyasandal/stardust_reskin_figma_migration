@@ -7,8 +7,7 @@
     "footer": [
       "s02"
     ],
-    "footerTone": "light",
-    "navAlign": "center"
+    "navAlign": "end"
   },
   "pages": {
     "home": {
@@ -44,7 +43,7 @@
         "s05": {
           "module": "M4",
           "layout": "stack",
-          "tone": "light",
+          "tone": "dark",
           "heading": "h3",
           "bleed": true,
           "width": "wide"
@@ -59,7 +58,7 @@
         "s07": {
           "module": "M4",
           "layout": "split",
-          "tone": "light",
+          "tone": "dark",
           "heading": "h3",
           "bleed": true,
           "width": "wide"
@@ -185,7 +184,8 @@
           "layout": "cards",
           "columns": 2,
           "heading": "h3",
-          "width": "wide"
+          "width": "wide",
+          "cardTone": "dark"
         }
       }
     },
