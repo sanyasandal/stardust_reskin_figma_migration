@@ -30,7 +30,7 @@ FR = 'stardust/reports/fidelity-ref'
 RUNS = [('Baseline (first measured)', J(f'{FR}/fidelity-baseline.json')),
         ('After breadcrumb, sidebar, Facebook feed and dark bands on EDS', J(f'{FR}/fidelity-after-chrome.json')),
         ('After the same chrome is carried into the stardust targets ', J(f'{FR}/fidelity-after-carry.json')),
-        ('After stardust skill 0.41.0 re-renders the stardust targets', J(f'{FR}/fidelity-skill-0.41.json'))]
+        ('After stardust skill 0.42.0 re-renders the stardust targets', J(f'{FR}/fidelity-skill-0.42.json'))]
 REF = RUNS[-1][1]
 def ragg(F, k='design', sub='fidelity', w=None):
     return st.mean(r[k][sub] for r in F if w is None or r['w'] == w)
