@@ -1,0 +1,601 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:reskin/figma-donor.mjs",
+    "writtenAt": "2026-10-21T12:15:01Z",
+    "readArtifacts": [
+      "stardust/reskin/curation-rules.json",
+      "stardust/reskin/donor-tokens.json",
+      "stardust/canon-source/foundation/"
+    ],
+    "synthesizedInputs": [],
+    "note": "DESCRIPTIVE capture of a Figma design system (REST), not browser-rendered"
+  },
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-21T12:15:01Z",
+  "title": "Design System: oneAZ Design System v3.2",
+  "extensions": {
+    "colorMeta": {
+      "rgb-255-255-255": {
+        "role": "pageBg, darkBandFg",
+        "displayName": "White",
+        "canonical": "#ffffff",
+        "tonalRamp": []
+      },
+      "rgb-235-239-238": {
+        "role": "lightBandBg",
+        "displayName": "Mist grey",
+        "canonical": "#ebefee",
+        "tonalRamp": []
+      },
+      "rgb-178-180-180": {
+        "role": "unassigned",
+        "displayName": "rgb-178-180-180",
+        "canonical": "#b2b4b4",
+        "tonalRamp": []
+      },
+      "rgb-60-66-66": {
+        "role": "bodyFg",
+        "displayName": "Graphite",
+        "canonical": "#3c4242",
+        "tonalRamp": []
+      },
+      "rgb-196-207-205": {
+        "role": "unassigned",
+        "displayName": "rgb-196-207-205",
+        "canonical": "#c4cfcd",
+        "tonalRamp": []
+      },
+      "rgb-141-143-143": {
+        "role": "mutedFg",
+        "displayName": "Muted grey",
+        "canonical": "#8d8f8f",
+        "tonalRamp": []
+      },
+      "rgb-216-223-222": {
+        "role": "unassigned",
+        "displayName": "rgb-216-223-222",
+        "canonical": "#d8dfde",
+        "tonalRamp": []
+      },
+      "rgb-101-105-105": {
+        "role": "unassigned",
+        "displayName": "rgb-101-105-105",
+        "canonical": "#656969",
+        "tonalRamp": []
+      },
+      "rgb-208-0-111": {
+        "role": "accent",
+        "displayName": "Magenta",
+        "canonical": "#d0006f",
+        "tonalRamp": []
+      },
+      "rgb-246-206-231": {
+        "role": "unassigned",
+        "displayName": "rgb-246-206-231",
+        "canonical": "#f6cee7",
+        "tonalRamp": []
+      },
+      "rgb-216-218-218": {
+        "role": "unassigned",
+        "displayName": "rgb-216-218-218",
+        "canonical": "#d8dada",
+        "tonalRamp": []
+      },
+      "rgb-227-102-169": {
+        "role": "unassigned",
+        "displayName": "rgb-227-102-169",
+        "canonical": "#e366a9",
+        "tonalRamp": []
+      },
+      "rgb-131-0-81": {
+        "role": "headingFg, darkBandBg",
+        "displayName": "Plum",
+        "canonical": "#830051",
+        "tonalRamp": []
+      },
+      "rgb-79-0-49": {
+        "role": "unassigned",
+        "displayName": "rgb-79-0-49",
+        "canonical": "#4f0031",
+        "tonalRamp": []
+      },
+      "rgb-240-171-0": {
+        "role": "unassigned",
+        "displayName": "Gold",
+        "canonical": "#f0ab00",
+        "tonalRamp": []
+      },
+      "rgb-157-176-172": {
+        "role": "unassigned",
+        "displayName": "rgb-157-176-172",
+        "canonical": "#9db0ac",
+        "tonalRamp": []
+      },
+      "rgb-211-211-222": {
+        "role": "unassigned",
+        "displayName": "rgb-211-211-222",
+        "canonical": "#d3d3de",
+        "tonalRamp": []
+      },
+      "rgb-37-35-89": {
+        "role": "unassigned",
+        "displayName": "rgb-37-35-89",
+        "canonical": "#252359",
+        "tonalRamp": []
+      },
+      "rgb-196-0-122": {
+        "role": "unassigned",
+        "displayName": "rgb-196-0-122",
+        "canonical": "#c4007a",
+        "tonalRamp": []
+      },
+      "rgb-240-179-35": {
+        "role": "unassigned",
+        "displayName": "rgb-240-179-35",
+        "canonical": "#f0b323",
+        "tonalRamp": []
+      },
+      "rgb-0-114-96": {
+        "role": "unassigned",
+        "displayName": "rgb-0-114-96",
+        "canonical": "#007260",
+        "tonalRamp": []
+      },
+      "rgb-174-37-115": {
+        "role": "unassigned",
+        "displayName": "rgb-174-37-115",
+        "canonical": "#ae2573",
+        "tonalRamp": []
+      },
+      "rgb-0-179-152": {
+        "role": "unassigned",
+        "displayName": "rgb-0-179-152",
+        "canonical": "#00b398",
+        "tonalRamp": []
+      },
+      "rgb-229-247-245": {
+        "role": "unassigned",
+        "displayName": "rgb-229-247-245",
+        "canonical": "#e5f7f5",
+        "tonalRamp": []
+      },
+      "rgb-198-237-249": {
+        "role": "unassigned",
+        "displayName": "rgb-198-237-249",
+        "canonical": "#c6edf9",
+        "tonalRamp": []
+      },
+      "rgb-0-22-99": {
+        "role": "unassigned",
+        "displayName": "rgb-0-22-99",
+        "canonical": "#001663",
+        "tonalRamp": []
+      },
+      "rgb-0-116-224": {
+        "role": "unassigned",
+        "displayName": "rgb-0-116-224",
+        "canonical": "#0074e0",
+        "tonalRamp": []
+      },
+      "rgb-161-230-2": {
+        "role": "unassigned",
+        "displayName": "rgb-161-230-2",
+        "canonical": "#a1e602",
+        "tonalRamp": []
+      },
+      "rgb-252-217-214": {
+        "role": "unassigned",
+        "displayName": "rgb-252-217-214",
+        "canonical": "#fcd9d6",
+        "tonalRamp": []
+      },
+      "rgb-239-65-48": {
+        "role": "unassigned",
+        "displayName": "rgb-239-65-48",
+        "canonical": "#ef4130",
+        "tonalRamp": []
+      },
+      "rgb-0-85-137": {
+        "role": "unassigned",
+        "displayName": "rgb-0-85-137",
+        "canonical": "#005589",
+        "tonalRamp": []
+      },
+      "rgb-203-219-42": {
+        "role": "unassigned",
+        "displayName": "rgb-203-219-42",
+        "canonical": "#cbdb2a",
+        "tonalRamp": []
+      },
+      "rgb-0-165-226": {
+        "role": "unassigned",
+        "displayName": "rgb-0-165-226",
+        "canonical": "#00a5e2",
+        "tonalRamp": []
+      },
+      "rgb-253-236-234": {
+        "role": "unassigned",
+        "displayName": "rgb-253-236-234",
+        "canonical": "#fdecea",
+        "tonalRamp": []
+      },
+      "rgb-245-232-234": {
+        "role": "unassigned",
+        "displayName": "rgb-245-232-234",
+        "canonical": "#f5e8ea",
+        "tonalRamp": []
+      },
+      "rgb-0-50-98": {
+        "role": "unassigned",
+        "displayName": "rgb-0-50-98",
+        "canonical": "#003262",
+        "tonalRamp": []
+      },
+      "rgb-172-24-46": {
+        "role": "unassigned",
+        "displayName": "rgb-172-24-46",
+        "canonical": "#ac182e",
+        "tonalRamp": []
+      },
+      "rgb-0-174-155": {
+        "role": "unassigned",
+        "displayName": "rgb-0-174-155",
+        "canonical": "#00ae9b",
+        "tonalRamp": []
+      },
+      "rgb-112-153-211": {
+        "role": "unassigned",
+        "displayName": "rgb-112-153-211",
+        "canonical": "#7099d3",
+        "tonalRamp": []
+      },
+      "rgb-229-244-242": {
+        "role": "unassigned",
+        "displayName": "rgb-229-244-242",
+        "canonical": "#e5f4f2",
+        "tonalRamp": []
+      },
+      "rgb-0-59-69": {
+        "role": "unassigned",
+        "displayName": "rgb-0-59-69",
+        "canonical": "#003b45",
+        "tonalRamp": []
+      },
+      "rgb-0-146-124": {
+        "role": "unassigned",
+        "displayName": "rgb-0-146-124",
+        "canonical": "#00927c",
+        "tonalRamp": []
+      },
+      "rgb-199-34-99": {
+        "role": "unassigned",
+        "displayName": "rgb-199-34-99",
+        "canonical": "#c72263",
+        "tonalRamp": []
+      },
+      "rgb-104-16-212": {
+        "role": "unassigned",
+        "displayName": "rgb-104-16-212",
+        "canonical": "#6810d4",
+        "tonalRamp": []
+      },
+      "rgb-55-58-54": {
+        "role": "unassigned",
+        "displayName": "rgb-55-58-54",
+        "canonical": "#373a36",
+        "tonalRamp": []
+      },
+      "rgb-0-77-116": {
+        "role": "unassigned",
+        "displayName": "rgb-0-77-116",
+        "canonical": "#004d74",
+        "tonalRamp": []
+      },
+      "rgb-178-210-52": {
+        "role": "unassigned",
+        "displayName": "rgb-178-210-52",
+        "canonical": "#b2d234",
+        "tonalRamp": []
+      },
+      "rgb-232-219-249": {
+        "role": "unassigned",
+        "displayName": "rgb-232-219-249",
+        "canonical": "#e8dbf9",
+        "tonalRamp": []
+      },
+      "rgb-47-84-117": {
+        "role": "unassigned",
+        "displayName": "rgb-47-84-117",
+        "canonical": "#2f5475",
+        "tonalRamp": []
+      },
+      "rgb-255-0-0": {
+        "role": "unassigned",
+        "displayName": "rgb-255-0-0",
+        "canonical": "#ff0000",
+        "tonalRamp": []
+      },
+      "rgb-151-152-155": {
+        "role": "unassigned",
+        "displayName": "rgb-151-152-155",
+        "canonical": "#97989b",
+        "tonalRamp": []
+      },
+      "rgb-254-229-228": {
+        "role": "unassigned",
+        "displayName": "rgb-254-229-228",
+        "canonical": "#fee5e4",
+        "tonalRamp": []
+      },
+      "rgb-229-243-244": {
+        "role": "unassigned",
+        "displayName": "rgb-229-243-244",
+        "canonical": "#e5f3f4",
+        "tonalRamp": []
+      },
+      "rgb-86-51-92": {
+        "role": "unassigned",
+        "displayName": "rgb-86-51-92",
+        "canonical": "#56335c",
+        "tonalRamp": []
+      },
+      "rgb-0-131-138": {
+        "role": "unassigned",
+        "displayName": "rgb-0-131-138",
+        "canonical": "#00838a",
+        "tonalRamp": []
+      },
+      "rgb-239-234-239": {
+        "role": "unassigned",
+        "displayName": "rgb-239-234-239",
+        "canonical": "#efeaef",
+        "tonalRamp": []
+      },
+      "rgb-0-56-101": {
+        "role": "unassigned",
+        "displayName": "rgb-0-56-101",
+        "canonical": "#003865",
+        "tonalRamp": []
+      },
+      "rgb-239-111-34": {
+        "role": "unassigned",
+        "displayName": "rgb-239-111-34",
+        "canonical": "#ef6f22",
+        "tonalRamp": []
+      },
+      "rgb-221-48-93": {
+        "role": "unassigned",
+        "displayName": "rgb-221-48-93",
+        "canonical": "#dd305d",
+        "tonalRamp": []
+      },
+      "rgb-230-236-240": {
+        "role": "unassigned",
+        "displayName": "rgb-230-236-240",
+        "canonical": "#e6ecf0",
+        "tonalRamp": []
+      },
+      "rgb-213-247-243": {
+        "role": "unassigned",
+        "displayName": "rgb-213-247-243",
+        "canonical": "#d5f7f3",
+        "tonalRamp": []
+      },
+      "rgb-44-213-196": {
+        "role": "unassigned",
+        "displayName": "rgb-44-213-196",
+        "canonical": "#2cd5c4",
+        "tonalRamp": []
+      },
+      "rgb-32-162-149": {
+        "role": "unassigned",
+        "displayName": "rgb-32-162-149",
+        "canonical": "#20a295",
+        "tonalRamp": []
+      },
+      "rgb-128-131-199": {
+        "role": "unassigned",
+        "displayName": "rgb-128-131-199",
+        "canonical": "#8083c7",
+        "tonalRamp": []
+      },
+      "rgb-37-14-98": {
+        "role": "unassigned",
+        "displayName": "rgb-37-14-98",
+        "canonical": "#250e62",
+        "tonalRamp": []
+      },
+      "rgb-29-164-176": {
+        "role": "unassigned",
+        "displayName": "rgb-29-164-176",
+        "canonical": "#1da4b0",
+        "tonalRamp": []
+      },
+      "rgb-248-72-94": {
+        "role": "unassigned",
+        "displayName": "rgb-248-72-94",
+        "canonical": "#f8485e",
+        "tonalRamp": []
+      },
+      "rgb-239-252-255": {
+        "role": "unassigned",
+        "displayName": "rgb-239-252-255",
+        "canonical": "#effcff",
+        "tonalRamp": []
+      },
+      "rgb-229-240-235": {
+        "role": "unassigned",
+        "displayName": "rgb-229-240-235",
+        "canonical": "#e5f0eb",
+        "tonalRamp": []
+      },
+      "rgb-0-65-34": {
+        "role": "unassigned",
+        "displayName": "rgb-0-65-34",
+        "canonical": "#004122",
+        "tonalRamp": []
+      },
+      "rgb-255-243-59": {
+        "role": "unassigned",
+        "displayName": "rgb-255-243-59",
+        "canonical": "#fff33b",
+        "tonalRamp": []
+      },
+      "rgb-0-104-56": {
+        "role": "unassigned",
+        "displayName": "rgb-0-104-56",
+        "canonical": "#006838",
+        "tonalRamp": []
+      },
+      "rgb-242-101-34": {
+        "role": "unassigned",
+        "displayName": "rgb-242-101-34",
+        "canonical": "#f26522",
+        "tonalRamp": []
+      },
+      "rgb-220-68-5": {
+        "role": "unassigned",
+        "displayName": "rgb-220-68-5",
+        "canonical": "#dc4405",
+        "tonalRamp": []
+      },
+      "rgb-51-112-121": {
+        "role": "unassigned",
+        "displayName": "rgb-51-112-121",
+        "canonical": "#337079",
+        "tonalRamp": []
+      },
+      "rgb-255-199-44": {
+        "role": "unassigned",
+        "displayName": "rgb-255-199-44",
+        "canonical": "#ffc72c",
+        "tonalRamp": []
+      },
+      "rgb-23-60-84": {
+        "role": "unassigned",
+        "displayName": "rgb-23-60-84",
+        "canonical": "#173c54",
+        "tonalRamp": []
+      },
+      "rgb-255-249-234": {
+        "role": "unassigned",
+        "displayName": "rgb-255-249-234",
+        "canonical": "#fff9ea",
+        "tonalRamp": []
+      },
+      "rgba-0-0-0-0-5": {
+        "role": "unassigned",
+        "displayName": "rgba-0-0-0-0-5",
+        "canonical": "#00000080",
+        "tonalRamp": []
+      },
+      "rgb-239-239-239": {
+        "role": "unassigned",
+        "displayName": "rgb-239-239-239",
+        "canonical": "#efefef",
+        "tonalRamp": []
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Lexia, Georgia, serif",
+        "purpose": "page and hero headlines (Lexia)"
+      },
+      "body": {
+        "displayName": "Inter, Arial, sans-serif",
+        "purpose": "running copy and leads (Inter)"
+      }
+    },
+    "shadows": [],
+    "motion": [],
+    "breakpoints": null,
+    "componentStyle": {
+      "buttons": {
+        "primary": {
+          "background": "rgb(208, 0, 111)",
+          "color": "rgb(255, 255, 255)",
+          "fontFamily": "Inter, Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "700",
+          "lineHeight": "24px",
+          "letterSpacing": "normal",
+          "borderRadius": "4px",
+          "padding": "0px 16px",
+          "border": "1px solid rgb(208, 0, 111)"
+        },
+        "secondary": {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(208, 0, 111)",
+          "fontFamily": "Inter, Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "700",
+          "lineHeight": "24px",
+          "letterSpacing": "normal",
+          "borderRadius": "4px",
+          "padding": "0px 16px",
+          "border": "1px solid rgb(208, 0, 111)"
+        },
+        "ghost": null
+      }
+    },
+    "motifs": {
+      "borderRadius": {
+        "primary": "2px",
+        "secondary": "4px",
+        "pill": "9999px"
+      },
+      "shadows": [],
+      "gradients": [],
+      "patterns": []
+    },
+    "voice": null
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Button (Size=Medium, Type=Primary, Property=With text): foundation components/button-medium-primary-with-text, node 12084:109270",
+      "html": null,
+      "css": "background: rgb(208, 0, 111); color: rgb(255, 255, 255); font-family: Inter, Arial, sans-serif; font-size: 16px; font-weight: 700; line-height: 24px; letter-spacing: normal; border-radius: 4px; padding: 0px 16px; border: 1px solid rgb(208, 0, 111);"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Button (Size=Medium, Type=Secondary, Property=With text): foundation components/button-medium-secondary-with-text, node 12084:109276",
+      "html": null,
+      "css": "background: rgb(255, 255, 255); color: rgb(208, 0, 111); font-family: Inter, Arial, sans-serif; font-size: 16px; font-weight: 700; line-height: 24px; letter-spacing: normal; border-radius: 4px; padding: 0px 16px; border: 1px solid rgb(208, 0, 111);"
+    }
+  ],
+  "narrative": {
+    "northStar": "Clinical clarity with a warm brand accent.",
+    "overview": "White pages with mist-grey hero bands, serif plum headings, and a single magenta action per block.",
+    "keyCharacteristics": [
+      "Lexia + Inter pairing",
+      "plum headings, magenta actions",
+      "1180px column",
+      "square media, 4px buttons"
+    ],
+    "rules": [
+      {
+        "name": "Rule 1",
+        "body": "one primary button per block",
+        "section": "Overview"
+      },
+      {
+        "name": "Rule 2",
+        "body": "headings in sentence case",
+        "section": "Overview"
+      }
+    ],
+    "dos": [
+      "keep the gradient imagery soft",
+      "use mist grey for emphasis bands"
+    ],
+    "donts": [
+      "add rounded cards",
+      "introduce a third accent colour"
+    ]
+  }
+}

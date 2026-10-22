@@ -1,0 +1,347 @@
+{
+  "version": 1,
+  "page": "home",
+  "sections": {
+    "s01": {
+      "node": "12950:24813",
+      "width": 1440,
+      "waive": [
+        {
+          "width": "mobile",
+          "why": "renderer collapses at 900/640px, not the kit's 375 frame; mobile fidelity is measured in the benchmark at 390px"
+        },
+        {
+          "node": "I12950:24789;12077:109144",
+          "why": "the source hero carries a text link (Why Choose Us?), not a button; byte fidelity keeps it a link"
+        }
+      ],
+      "geometry": [
+        {
+          "id": "g1",
+          "selector": ".panel",
+          "measure": "width",
+          "node": "12950:24817",
+          "previewSelector": ".hero-panel"
+        },
+        {
+          "id": "g2",
+          "selector": ".split-img",
+          "measure": "width",
+          "node": "12950:24804",
+          "previewSelector": ".hero-media img"
+        }
+      ],
+      "type": [
+        {
+          "id": "t1",
+          "selector": ".heading",
+          "node": "12950:24787",
+          "previewSelector": ".hero-text h1"
+        },
+        {
+          "id": "t2",
+          "selector": "p.lead",
+          "node": "12950:24788",
+          "previewSelector": ".hero-text > p"
+        }
+      ]
+    },
+    "s02": {
+      "skip": "renderer residual R1: findRepeat needs a period >= 2, so 3 single listItem cards render as a stacked list, not M2 cards; no card box exists to measure"
+    },
+    "s03": {
+      "node": "12431:14271",
+      "width": 1440,
+      "waive": [
+        {
+          "width": "mobile",
+          "why": "renderer collapses at 900/640px, not the kit's 375 frame; mobile fidelity is measured in the benchmark at 390px"
+        }
+      ],
+      "geometry": [
+        {
+          "id": "g1",
+          "selector": ".panel",
+          "measure": "width",
+          "node": "12431:14271",
+          "previewSelector": ".columns-panel"
+        },
+        {
+          "id": "g2",
+          "selector": ".split-img",
+          "measure": "width",
+          "node": "12431:14261",
+          "previewSelector": ".columns-media img"
+        }
+      ],
+      "type": [
+        {
+          "id": "t1",
+          "selector": ".heading",
+          "node": "I12534:1358;12529:1209",
+          "previewSelector": ".columns-text h2"
+        },
+        {
+          "id": "t2",
+          "selector": "p.lead",
+          "node": "12431:14265",
+          "previewSelector": ".columns-text > p"
+        },
+        {
+          "id": "t3",
+          "selector": ".btn",
+          "node": "I12431:14266;12077:109144",
+          "previewSelector": ".columns-text a.button"
+        }
+      ]
+    },
+    "s04": {
+      "node": "12431:14270",
+      "width": 1440,
+      "waive": [
+        {
+          "width": "mobile",
+          "why": "renderer collapses at 900/640px, not the kit's 375 frame; mobile fidelity is measured in the benchmark at 390px"
+        },
+        {
+          "node": "I12431:14252;12077:109144",
+          "why": "the source slot carries a text link (Find out more), not a button"
+        }
+      ],
+      "geometry": [
+        {
+          "id": "g1",
+          "selector": ".panel",
+          "measure": "width",
+          "node": "12431:14270",
+          "previewSelector": ".columns-panel"
+        },
+        {
+          "id": "g2",
+          "selector": ".split-img",
+          "measure": "width",
+          "node": "12431:14241",
+          "previewSelector": ".columns-media img"
+        }
+      ],
+      "type": [
+        {
+          "id": "t1",
+          "selector": ".heading",
+          "node": "I12534:1355;12529:1209",
+          "previewSelector": ".columns-text h2"
+        },
+        {
+          "id": "t2",
+          "selector": "p.lead",
+          "node": "12431:14243",
+          "previewSelector": ".columns-text > p"
+        }
+      ]
+    },
+    "s05": {
+      "node": "13370:1909",
+      "width": 1440,
+      "waive": [
+        {
+          "width": "mobile",
+          "why": "renderer collapses at 900/640px, not the kit's 375 frame"
+        },
+        {
+          "node": "I13370:1868;12128:3258",
+          "why": "source has no supportive caption"
+        },
+        {
+          "node": "I13370:1892;13028:1785;12077:109144",
+          "why": "source carries a text link (Dates and booking information), not buttons"
+        },
+        {
+          "node": "I13370:1892;13028:1786;12084:109167",
+          "why": "source has no secondary action"
+        },
+        {
+          "node": "I13370:1892;13028:1787;12084:109180",
+          "why": "source has no tertiary action"
+        },
+        {
+          "node": "I13370:1868;12128:3183",
+          "why": "source has no supportive caption (required-asterisk style)"
+        },
+        {
+          "node": "I13370:1868;12128:3187",
+          "why": "source has no supportive caption (placeholder style)"
+        }
+      ],
+      "geometry": [
+        {
+          "id": "g1",
+          "selector": ":scope",
+          "measure": "width",
+          "node": "13370:1909"
+        },
+        {
+          "id": "g2",
+          "selector": ":scope",
+          "measure": "paddingTop",
+          "node": "13370:1909"
+        }
+      ],
+      "type": [
+        {
+          "id": "t1",
+          "selector": "h2.heading",
+          "node": "I13370:1456;12529:1209",
+          "previewSelector": ".columns-text h2"
+        },
+        {
+          "id": "t2",
+          "selector": "p.lead",
+          "node": "I13370:1865;12534:1254",
+          "previewSelector": ".columns-text > p"
+        }
+      ]
+    },
+    "s06": {
+      "skip": "the kit holds only a single 527px Teaser/Card component, no page-width card grid frame to root at 1440; card type is covered by donor-probe (b) and the benchmark pixel compare"
+    },
+    "s07": {
+      "node": "13370:1909",
+      "width": 1440,
+      "waive": [
+        {
+          "width": "mobile",
+          "why": "renderer collapses at 900/640px, not the kit's 375 frame"
+        },
+        {
+          "node": "I13370:1868;12128:3258",
+          "why": "source has no supportive caption"
+        },
+        {
+          "node": "I13370:1892;13028:1786;12084:109167",
+          "why": "source has one action only"
+        },
+        {
+          "node": "I13370:1892;13028:1787;12084:109180",
+          "why": "source has one action only"
+        },
+        {
+          "node": "I13370:1868;12128:3183",
+          "why": "source has no supportive caption (required-asterisk style)"
+        },
+        {
+          "node": "I13370:1868;12128:3187",
+          "why": "source has no supportive caption (placeholder style)"
+        }
+      ],
+      "geometry": [
+        {
+          "id": "g1",
+          "selector": ":scope",
+          "measure": "width",
+          "node": "13370:1909"
+        },
+        {
+          "id": "g2",
+          "selector": ":scope",
+          "measure": "paddingTop",
+          "node": "13370:1909"
+        }
+      ],
+      "type": [
+        {
+          "id": "t1",
+          "selector": "h2.heading",
+          "node": "I13370:1456;12529:1209",
+          "previewSelector": ".columns-text h2"
+        },
+        {
+          "id": "t2",
+          "selector": "p.lead",
+          "node": "I13370:1865;12534:1254",
+          "previewSelector": ".columns-text > p"
+        },
+        {
+          "id": "t3",
+          "selector": ".btn",
+          "node": "I13370:1892;13028:1785;12077:109144",
+          "previewSelector": ".columns-text a.button"
+        }
+      ]
+    },
+    "s08": {
+      "node": "12431:14270",
+      "width": 1440,
+      "waive": [
+        {
+          "width": "mobile",
+          "why": "renderer collapses at 900/640px, not the kit's 375 frame"
+        },
+        {
+          "node": "I12431:14252;12077:109144",
+          "why": "source slot carries a text link, not a button"
+        }
+      ],
+      "geometry": [
+        {
+          "id": "g1",
+          "selector": ".panel",
+          "measure": "width",
+          "node": "12431:14270",
+          "previewSelector": ".columns-panel"
+        },
+        {
+          "id": "g2",
+          "selector": ".split-img",
+          "measure": "width",
+          "node": "12431:14241",
+          "previewSelector": ".columns-media img"
+        }
+      ],
+      "type": [
+        {
+          "id": "t1",
+          "selector": ".heading",
+          "node": "I12534:1355;12529:1209",
+          "previewSelector": ".columns-text h2"
+        },
+        {
+          "id": "t2",
+          "selector": "p.lead",
+          "node": "12431:14243",
+          "previewSelector": ".columns-text > p"
+        }
+      ]
+    },
+    "s09": {
+      "node": "12534:1405",
+      "width": 1180,
+      "waive": [
+        {
+          "width": "mobile",
+          "why": "renderer collapses at 900/640px, not the kit's 375 frame"
+        },
+        {
+          "node": "I12534:1397;12534:1254",
+          "why": "the slot's body is the Facebook feed removed by N1; only the heading remains"
+        }
+      ],
+      "geometry": [
+        {
+          "id": "g1",
+          "selector": ".panel",
+          "measure": "width",
+          "node": "12534:1405",
+          "previewSelector": ".default-content-wrapper"
+        }
+      ],
+      "type": [
+        {
+          "id": "t1",
+          "selector": "h2.heading",
+          "node": "I12534:1395;12529:1207",
+          "previewSelector": ".default-content-wrapper > h2"
+        }
+      ]
+    }
+  }
+}

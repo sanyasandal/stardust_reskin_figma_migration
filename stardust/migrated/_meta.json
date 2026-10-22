@@ -1,0 +1,83 @@
+{
+  "slug": "home",
+  "type": "landing",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5"
+  ],
+  "slotsFilled": [
+    "s01",
+    "s02",
+    "s03",
+    "s04",
+    "s05",
+    "s06",
+    "s07",
+    "s08",
+    "s09"
+  ],
+  "canonShas": {
+    "header": "a8ad9e05a2e6",
+    "footer": "11083616d207",
+    "css": "b7e359a8ffed"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Fort Street High School",
+    "description": "Enrol at Fort Street High School. We are a Year 7 to Year 12 Comprehensive Coed Secondary School in PETERSHAM.",
+    "canonical": "https://fortstreet-h.schools.nsw.gov.au/",
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Fort Street High School",
+    "description": "Enrol at Fort Street High School. We are a Year 7 to Year 12 Comprehensive Coed Secondary School in PETERSHAM.",
+    "url": "https://fortstreet-h.schools.nsw.gov.au/"
+  },
+  "migratedAt": "2026-10-21T14:08:04Z",
+  "designMdSha": "c0ae931d3b54",
+  "designJsonSha": "3ff54e7e981f",
+  "sourceCurrentSha": null,
+  "sourceProposedSha": "ef93143c765d",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "reskin-donor-probe",
+    "mobile-adapt-static",
+    "mobile-adapt-runtime",
+    "figma.join",
+    "deployed.content",
+    "deployed.tokens",
+    "deployed.sanity",
+    "deployed.inherited",
+    "deployed.figma.join"
+  ],
+  "gateEvidence": {
+    "reskin-donor-probe": "PASS — stardust/reskin/reports/home-donor-probe.md",
+    "mobile-adapt-static": "PASS",
+    "mobile-adapt-runtime": "PASS",
+    "figma.join": "PASS",
+    "deployed.content": "PASS",
+    "deployed.tokens": "PASS",
+    "deployed.sanity": "PASS",
+    "deployed.inherited": "PASS",
+    "deployed.figma.join": "PASS"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 17,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "index.html",
+  "outputPathDefault": null,
+  "sidecar": "_meta.json",
+  "driverVersion": "1"
+}

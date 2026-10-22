@@ -1,0 +1,196 @@
+{
+  "verdict": "FAIL",
+  "hard": true,
+  "mapped": true,
+  "rows": [
+    {
+      "check": "header",
+      "width": 1440,
+      "value": "64px",
+      "bar": "present, decorated",
+      "status": "PASS",
+      "artifact": null,
+      "detail": null
+    },
+    {
+      "check": "header logo",
+      "width": 1440,
+      "value": "1",
+      "bar": "a loaded image ≥ 16px",
+      "status": "PASS",
+      "artifact": null,
+      "detail": null
+    },
+    {
+      "check": "header height",
+      "width": 1440,
+      "value": "64px",
+      "bar": "≤ 240px, menu closed",
+      "status": "PASS",
+      "artifact": null,
+      "detail": null
+    },
+    {
+      "check": "header/main",
+      "width": 1440,
+      "value": "covers main by 36px",
+      "bar": "covers ≤ 4px, band ≤ 48px",
+      "status": "FAIL",
+      "artifact": null,
+      "detail": "header content ends at 100px, main starts at 64px"
+    },
+    {
+      "check": "header links",
+      "width": 1440,
+      "value": "5/6",
+      "bar": "all mapped, visible",
+      "status": "FAIL",
+      "artifact": null,
+      "detail": "HIDDEN NSW Government → https://fortstreet-h.schools.nsw.gov.au/"
+    },
+    {
+      "check": "icon text",
+      "width": 1440,
+      "value": "4",
+      "bar": "0",
+      "status": "FAIL",
+      "artifact": null,
+      "detail": "header: \"keyboard_arrow_right\" in <a>\nheader: \"keyboard_arrow_right\" in <a>\nheader: \"keyboard_arrow_right\" in <a>\nheader: \"keyboard_arrow_right\" in <a>"
+    },
+    {
+      "check": "footer",
+      "width": 1440,
+      "value": "514px",
+      "bar": "present, decorated",
+      "status": "PASS",
+      "artifact": null,
+      "detail": null
+    },
+    {
+      "check": "footer logo",
+      "width": 1440,
+      "value": "0",
+      "bar": "a loaded image ≥ 16px",
+      "status": "FAIL",
+      "artifact": null,
+      "detail": null
+    },
+    {
+      "check": "footer links",
+      "width": 1440,
+      "value": "7/7",
+      "bar": "all mapped, visible",
+      "status": "PASS",
+      "artifact": null,
+      "detail": null
+    },
+    {
+      "check": "footer text",
+      "width": 1440,
+      "value": "10/10",
+      "bar": "all mapped",
+      "status": "PASS",
+      "artifact": null,
+      "detail": null
+    },
+    {
+      "check": "header",
+      "width": 360,
+      "value": "64px",
+      "bar": "present, decorated",
+      "status": "PASS",
+      "artifact": null,
+      "detail": null
+    },
+    {
+      "check": "header logo",
+      "width": 360,
+      "value": "1",
+      "bar": "a loaded image ≥ 16px",
+      "status": "PASS",
+      "artifact": null,
+      "detail": null
+    },
+    {
+      "check": "header height",
+      "width": 360,
+      "value": "64px",
+      "bar": "≤ 240px, menu closed",
+      "status": "PASS",
+      "artifact": null,
+      "detail": null
+    },
+    {
+      "check": "header/main",
+      "width": 360,
+      "value": "covers main by 204px",
+      "bar": "covers ≤ 4px, band ≤ 48px",
+      "status": "FAIL",
+      "artifact": null,
+      "detail": "header content ends at 268px, main starts at 64px"
+    },
+    {
+      "check": "header links",
+      "width": 360,
+      "value": "6/6",
+      "bar": "all mapped, visible",
+      "status": "PASS",
+      "artifact": null,
+      "detail": null
+    },
+    {
+      "check": "menu toggle",
+      "width": 360,
+      "value": "Open navigation: 5 shown",
+      "bar": "opens the hidden links",
+      "status": "PASS",
+      "artifact": null,
+      "detail": null
+    },
+    {
+      "check": "icon text",
+      "width": 360,
+      "value": "0",
+      "bar": "0",
+      "status": "PASS",
+      "artifact": null,
+      "detail": null
+    },
+    {
+      "check": "footer",
+      "width": 360,
+      "value": "810px",
+      "bar": "present, decorated",
+      "status": "PASS",
+      "artifact": null,
+      "detail": null
+    },
+    {
+      "check": "footer logo",
+      "width": 360,
+      "value": "0",
+      "bar": "a loaded image ≥ 16px",
+      "status": "FAIL",
+      "artifact": null,
+      "detail": null
+    },
+    {
+      "check": "footer links",
+      "width": 360,
+      "value": "7/7",
+      "bar": "all mapped, visible",
+      "status": "PASS",
+      "artifact": null,
+      "detail": null
+    },
+    {
+      "check": "footer text",
+      "width": 360,
+      "value": "10/10",
+      "bar": "all mapped",
+      "status": "PASS",
+      "artifact": null,
+      "detail": null
+    }
+  ]
+}

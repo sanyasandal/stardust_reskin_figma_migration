@@ -1,0 +1,66 @@
+{
+  "chrome": {
+    "model": "stardust/reskin/content-model/_chrome",
+    "header": [
+      "s01"
+    ],
+    "footer": [
+      "s02"
+    ],
+    "footerTone": "light",
+    "navAlign": "center"
+  },
+  "pages": {
+    "school-life-newsletters": {
+      "template": "learning-and-support-wellbeing",
+      "slots": {
+        "s01": {
+          "module": "M1",
+          "layout": "split",
+          "tone": "light",
+          "heading": "display",
+          "bleed": true,
+          "width": "wide"
+        },
+        "s02": {
+          "module": "M3",
+          "layout": "split",
+          "heading": "h3",
+          "width": "wide"
+        },
+        "s03": {
+          "module": "M5",
+          "layout": "stack",
+          "heading": "h2",
+          "width": "wide"
+        },
+        "s04": {
+          "module": "M8",
+          "layout": "stack",
+          "width": "wide"
+        },
+        "s05": {
+          "module": "M4",
+          "layout": "stack",
+          "tone": "light",
+          "heading": "h3",
+          "bleed": true,
+          "width": "wide"
+        },
+        "s06": {
+          "module": "M5",
+          "layout": "stack",
+          "heading": "h2",
+          "width": "wide"
+        },
+        "s07": {
+          "module": "M2",
+          "layout": "cards",
+          "columns": 2,
+          "heading": "h3",
+          "width": "wide"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+
+Block round-trip @ 1280px (profile "eds", blocks, styles/styles.css)
+
+■ planningreporting: ⚠ instance count differs — 1 prototype section(s) vs 2 authored block(s)
+
+■ planningreporting: 6 finding(s), 0 structural 🔴 — EW editable 4/4, dead 0, duplicated 0, exempt 0
+    proto: 0 text nodes — 0 headings, 0 eyebrows, 0 CTAs, 0 body; 0 img
+    EDS: 6 text nodes — 0 headings, 0 eyebrows, 2 CTAs, 4 body; 0 img
+  🟡 EXTRA: EDS body "reporttype" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "report" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "schoolcode" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟡 EXTRA: EDS body "8504" has no proto source — Invented / placeholder-filled copy; confirm it is intended.
+  🟠 EXTRA: EDS cta "2025 Annual Report (PDF 672.3KB)" has no proto source — Unexpected node with no proto source.
+  🟠 EXTRA: EDS cta "2024 Annual Report (PDF 689.7KB)" has no proto source — Unexpected node with no proto source.
+
+EW gate: editable 4/4, dead 0, duplicated 0, exempt 0
+
+✓ all blocks: round-trip closed (0 structural 🔴).

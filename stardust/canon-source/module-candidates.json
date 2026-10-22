@@ -1,0 +1,1362 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:reskin/figma-donor.mjs",
+    "writtenAt": "2026-10-21T12:15:01Z",
+    "readArtifacts": [
+      "stardust/.work/reskin/figma/rsZQmpVzuyn0KhCDA3WN60/2408265627482005963/file.json",
+      "stardust/.work/reskin/figma/rsZQmpVzuyn0KhCDA3WN60/2408265627482005963/nodes.json"
+    ],
+    "synthesizedInputs": []
+  },
+  "frames": [
+    {
+      "node": "12042:106827",
+      "name": "Font Styles",
+      "page": {
+        "node": "11996:36510",
+        "name": "    ↪ Typography"
+      },
+      "slug": "font-styles",
+      "width": 1440,
+      "height": 2122,
+      "sections": [
+        {
+          "node": "12042:106828",
+          "name": ".Page Header",
+          "type": "INSTANCE",
+          "y": 24,
+          "height": 260,
+          "background": "rgb(235, 239, 238)",
+          "backgroundKind": "SOLID",
+          "instanceOf": ".Page Header",
+          "componentProperties": {},
+          "components": [
+            ".Page Header",
+            ".Page Logo"
+          ]
+        },
+        {
+          "node": "12042:106829",
+          "name": "Frame 1",
+          "type": "FRAME",
+          "y": 324,
+          "height": 1758,
+          "background": null,
+          "backgroundKind": "NONE",
+          "instanceOf": null,
+          "componentProperties": null,
+          "components": []
+        }
+      ],
+      "headerRows": []
+    },
+    {
+      "node": "12194:4769",
+      "name": "Font Variables",
+      "page": {
+        "node": "11996:36510",
+        "name": "    ↪ Typography"
+      },
+      "slug": "font-variables",
+      "width": 1440,
+      "height": 2912,
+      "sections": [
+        {
+          "node": "12194:4770",
+          "name": ".Page Header",
+          "type": "INSTANCE",
+          "y": 24,
+          "height": 260,
+          "background": "rgb(235, 239, 238)",
+          "backgroundKind": "SOLID",
+          "instanceOf": ".Page Header",
+          "componentProperties": {},
+          "components": [
+            ".Page Header",
+            ".Page Logo"
+          ]
+        },
+        {
+          "node": "12194:5154",
+          "name": "Frame 2",
+          "type": "FRAME",
+          "y": 324,
+          "height": 2548,
+          "background": null,
+          "backgroundKind": "NONE",
+          "instanceOf": null,
+          "componentProperties": null,
+          "components": [
+            "General Icons"
+          ]
+        }
+      ],
+      "headerRows": []
+    },
+    {
+      "node": "12084:109340",
+      "name": "Colors",
+      "page": {
+        "node": "12084:109339",
+        "name": "    ↪ Colors"
+      },
+      "slug": "colors",
+      "width": 10888,
+      "height": 3636,
+      "sections": [
+        {
+          "node": "12084:109341",
+          "name": ".Page Header",
+          "type": "INSTANCE",
+          "y": 24,
+          "height": 260,
+          "background": "rgb(235, 239, 238)",
+          "backgroundKind": "SOLID",
+          "instanceOf": ".Page Header",
+          "componentProperties": {},
+          "components": [
+            ".Page Header",
+            ".Page Logo"
+          ]
+        },
+        {
+          "node": "12108:1147",
+          "name": "Frame 1",
+          "type": "FRAME",
+          "y": 324,
+          "height": 3272,
+          "background": null,
+          "backgroundKind": "NONE",
+          "instanceOf": null,
+          "componentProperties": null,
+          "components": [
+            "General Icons"
+          ]
+        }
+      ],
+      "headerRows": []
+    },
+    {
+      "node": "12072:107023",
+      "name": "Spacing",
+      "page": {
+        "node": "12072:107022",
+        "name": "    ↪ Spacing"
+      },
+      "slug": "spacing",
+      "width": 1440,
+      "height": 1261,
+      "sections": [
+        {
+          "node": "12072:107024",
+          "name": ".Page Header",
+          "type": "INSTANCE",
+          "y": 24,
+          "height": 260,
+          "background": "rgb(235, 239, 238)",
+          "backgroundKind": "SOLID",
+          "instanceOf": ".Page Header",
+          "componentProperties": {},
+          "components": [
+            ".Page Header",
+            ".Page Logo"
+          ]
+        },
+        {
+          "node": "12072:107025",
+          "name": "Frame 1",
+          "type": "FRAME",
+          "y": 324,
+          "height": 897,
+          "background": null,
+          "backgroundKind": "NONE",
+          "instanceOf": null,
+          "componentProperties": null,
+          "components": []
+        }
+      ],
+      "headerRows": []
+    },
+    {
+      "node": "12077:109024",
+      "name": "Button / Component",
+      "page": {
+        "node": "12077:109023",
+        "name": "    ❖ Button"
+      },
+      "slug": "button-component",
+      "width": 1440,
+      "height": 880,
+      "sections": [
+        {
+          "node": "12077:109025",
+          "name": ".Page Header",
+          "type": "INSTANCE",
+          "y": 24,
+          "height": 284,
+          "background": "rgb(235, 239, 238)",
+          "backgroundKind": "SOLID",
+          "instanceOf": ".Page Header",
+          "componentProperties": {},
+          "components": [
+            ".Page Header",
+            ".Page Logo"
+          ]
+        },
+        {
+          "node": "12084:109282",
+          "name": "Frame 1",
+          "type": "FRAME",
+          "y": 422,
+          "height": 90,
+          "background": null,
+          "backgroundKind": "NONE",
+          "instanceOf": null,
+          "componentProperties": null,
+          "components": [
+            "Button",
+            "General Icons"
+          ]
+        }
+      ],
+      "headerRows": []
+    },
+    {
+      "node": "12387:11655",
+      "name": "Header",
+      "page": {
+        "node": "12349:10215",
+        "name": "    ❏ Header"
+      },
+      "slug": "header",
+      "width": 2871,
+      "height": 3018,
+      "sections": [
+        {
+          "node": "12387:11656",
+          "name": ".Page Header",
+          "type": "INSTANCE",
+          "y": 24,
+          "height": 260,
+          "background": "rgb(235, 239, 238)",
+          "backgroundKind": "SOLID",
+          "instanceOf": ".Page Header",
+          "componentProperties": {},
+          "components": [
+            ".Page Header",
+            ".Page Logo"
+          ]
+        },
+        {
+          "node": "12387:11746",
+          "name": "Frame 1",
+          "type": "FRAME",
+          "y": 398,
+          "height": 552,
+          "background": null,
+          "backgroundKind": "NONE",
+          "instanceOf": null,
+          "componentProperties": null,
+          "components": [
+            "Header",
+            ".Header / Disclaimer",
+            ".Header / Links Selector",
+            ".Header / Contact Selecter Item",
+            ". Header / Language Selector",
+            "Brand Logos",
+            ".Header / Navigation Item",
+            "General Icons",
+            ".Header / Actions",
+            "Button",
+            ".Header / Prescribing Info"
+          ]
+        },
+        {
+          "node": "12387:11725",
+          "name": "Group 1",
+          "type": "GROUP",
+          "y": 2553,
+          "height": 425,
+          "background": null,
+          "backgroundKind": "NONE",
+          "instanceOf": null,
+          "componentProperties": null,
+          "components": [
+            ".Header / Links Selector",
+            ".Header / Contact Selecter Item",
+            ". Header / Language Selector",
+            "Brand Logos",
+            ".Header / Navigation Item",
+            "General Icons",
+            ".Header / Actions",
+            "Button",
+            ".Breakpoint Indicator"
+          ]
+        }
+      ],
+      "headerRows": [
+        {
+          "node": "I12387:11784;12379:10768",
+          "menu": "I12387:11784;12379:10759",
+          "align": "center",
+          "offset": 0,
+          "width": 1180,
+          "screen": "12387:11784"
+        },
+        {
+          "node": "I12387:11836;12379:10768",
+          "menu": "I12387:11836;12379:10759",
+          "align": "center",
+          "offset": 0,
+          "width": 1180,
+          "screen": "12387:11836"
+        },
+        {
+          "node": "I12387:11888;12379:10768",
+          "menu": "I12387:11888;12379:10759",
+          "align": "center",
+          "offset": 0,
+          "width": 1180,
+          "screen": "12387:11888"
+        },
+        {
+          "node": "I12387:11944;12379:10768",
+          "menu": "I12387:11944;12379:10759",
+          "align": "center",
+          "offset": 0,
+          "width": 1180,
+          "screen": "12387:11944"
+        },
+        {
+          "node": "12379:10768",
+          "menu": "12379:10759",
+          "align": "center",
+          "offset": 0,
+          "width": 1180,
+          "screen": "12379:10829"
+        }
+      ]
+    },
+    {
+      "node": "12406:12220",
+      "name": "Footer",
+      "page": {
+        "node": "12387:11993",
+        "name": "    ❏ Footer"
+      },
+      "slug": "footer",
+      "width": 2877,
+      "height": 1243,
+      "sections": [
+        {
+          "node": "12406:12221",
+          "name": ".Page Header",
+          "type": "INSTANCE",
+          "y": 24,
+          "height": 260,
+          "background": "rgb(235, 239, 238)",
+          "backgroundKind": "SOLID",
+          "instanceOf": ".Page Header",
+          "componentProperties": {},
+          "components": [
+            ".Page Header",
+            ".Page Logo"
+          ]
+        },
+        {
+          "node": "12406:12683",
+          "name": "Group 2",
+          "type": "GROUP",
+          "y": 398,
+          "height": 805,
+          "background": null,
+          "backgroundKind": "NONE",
+          "instanceOf": null,
+          "componentProperties": null,
+          "components": [
+            "Brand Logos",
+            "Social Icons",
+            ".Breakpoint Indicator",
+            "General Icons"
+          ]
+        }
+      ],
+      "headerRows": []
+    },
+    {
+      "node": "12950:24869",
+      "name": "Home Hero Branded",
+      "page": {
+        "node": "12950:24783",
+        "name": "    ❏ Home Hero Branded"
+      },
+      "slug": "home-hero-branded",
+      "width": 2871,
+      "height": 1198,
+      "sections": [
+        {
+          "node": "12950:24870",
+          "name": ".Page Header",
+          "type": "INSTANCE",
+          "y": 24,
+          "height": 260,
+          "background": "rgb(235, 239, 238)",
+          "backgroundKind": "SOLID",
+          "instanceOf": ".Page Header",
+          "componentProperties": {},
+          "components": [
+            ".Page Header",
+            ".Page Logo"
+          ]
+        },
+        {
+          "node": "12950:25095",
+          "name": "Group 1",
+          "type": "GROUP",
+          "y": 398,
+          "height": 760,
+          "background": null,
+          "backgroundKind": "NONE",
+          "instanceOf": null,
+          "componentProperties": null,
+          "components": [
+            ".Breakpoint Indicator",
+            "General Icons",
+            "Brand Logos",
+            "Button",
+            "Image Placeholder"
+          ]
+        }
+      ],
+      "headerRows": []
+    },
+    {
+      "node": "12428:14029",
+      "name": "Teaser / Home Hero",
+      "page": {
+        "node": "12417:13114",
+        "name": "    ❏ Teaser"
+      },
+      "slug": "teaser-home-hero",
+      "width": 2871,
+      "height": 3096,
+      "sections": [
+        {
+          "node": "12428:14030",
+          "name": ".Page Header",
+          "type": "INSTANCE",
+          "y": 24,
+          "height": 260,
+          "background": "rgb(235, 239, 238)",
+          "backgroundKind": "SOLID",
+          "instanceOf": ".Page Header",
+          "componentProperties": {},
+          "components": [
+            ".Page Header",
+            ".Page Logo"
+          ]
+        },
+        {
+          "node": "12436:14977",
+          "name": ".Teaser / Blocked Content",
+          "type": "COMPONENT",
+          "y": 1004,
+          "height": 464,
+          "background": null,
+          "backgroundKind": "NONE",
+          "instanceOf": null,
+          "componentProperties": null,
+          "components": [
+            "Button"
+          ]
+        },
+        {
+          "node": "12428:14194",
+          "name": "Group 1",
+          "type": "GROUP",
+          "y": 1582,
+          "height": 1474,
+          "background": null,
+          "backgroundKind": "NONE",
+          "instanceOf": null,
+          "componentProperties": null,
+          "components": [
+            "Image Placeholder",
+            ".Teaser / Hero Content",
+            "Button",
+            ".Breakpoint Indicator",
+            "General Icons"
+          ]
+        }
+      ],
+      "headerRows": []
+    },
+    {
+      "node": "12431:14303",
+      "name": "Teaser / Text + Image",
+      "page": {
+        "node": "12417:13114",
+        "name": "    ❏ Teaser"
+      },
+      "slug": "teaser-text-image",
+      "width": 2872,
+      "height": 1292,
+      "sections": [
+        {
+          "node": "12431:14304",
+          "name": ".Page Header",
+          "type": "INSTANCE",
+          "y": 24,
+          "height": 260,
+          "background": "rgb(235, 239, 238)",
+          "backgroundKind": "SOLID",
+          "instanceOf": ".Page Header",
+          "componentProperties": {},
+          "components": [
+            ".Page Header",
+            ".Page Logo"
+          ]
+        },
+        {
+          "node": "12431:14512",
+          "name": "Group 2",
+          "type": "GROUP",
+          "y": 398,
+          "height": 854,
+          "background": null,
+          "backgroundKind": "NONE",
+          "instanceOf": null,
+          "componentProperties": null,
+          "components": [
+            ".Breakpoint Indicator",
+            "General Icons",
+            "Image Placeholder",
+            ".Title",
+            "Button"
+          ]
+        }
+      ],
+      "headerRows": []
+    },
+    {
+      "node": "12431:14533",
+      "name": "Teaser / Card",
+      "page": {
+        "node": "12417:13114",
+        "name": "    ❏ Teaser"
+      },
+      "slug": "teaser-card",
+      "width": 2865,
+      "height": 1891,
+      "sections": [
+        {
+          "node": "12431:14534",
+          "name": ".Page Header",
+          "type": "INSTANCE",
+          "y": 24,
+          "height": 260,
+          "background": "rgb(235, 239, 238)",
+          "backgroundKind": "SOLID",
+          "instanceOf": ".Page Header",
+          "componentProperties": {},
+          "components": [
+            ".Page Header",
+            ".Page Logo"
+          ]
+        },
+        {
+          "node": "12436:14799",
+          "name": "Group 3",
+          "type": "GROUP",
+          "y": 1153,
+          "height": 698,
+          "background": null,
+          "backgroundKind": "NONE",
+          "instanceOf": null,
+          "componentProperties": null,
+          "components": [
+            ".Breakpoint Indicator",
+            "General Icons",
+            "Image Placeholder",
+            ".Teaser / Card content",
+            ".Teaser / Card Tag",
+            ".Title",
+            "Button"
+          ]
+        }
+      ],
+      "headerRows": []
+    },
+    {
+      "node": "13370:1922",
+      "name": "CTA Banner",
+      "page": {
+        "node": "13370:1452",
+        "name": "    ❏ CTA Banner"
+      },
+      "slug": "cta-banner",
+      "width": 2871,
+      "height": 1354,
+      "sections": [
+        {
+          "node": "13370:1923",
+          "name": ".Page Header",
+          "type": "INSTANCE",
+          "y": 24,
+          "height": 260,
+          "background": "rgb(235, 239, 238)",
+          "backgroundKind": "SOLID",
+          "instanceOf": ".Page Header",
+          "componentProperties": {},
+          "components": [
+            ".Page Header",
+            ".Page Logo"
+          ]
+        },
+        {
+          "node": "13370:2159",
+          "name": "Group 1",
+          "type": "GROUP",
+          "y": 398,
+          "height": 916,
+          "background": null,
+          "backgroundKind": "NONE",
+          "instanceOf": null,
+          "componentProperties": null,
+          "components": [
+            ".Breakpoint Indicator",
+            "General Icons",
+            "Image Placeholder",
+            ".Title",
+            ".Text",
+            "Input Field",
+            ".Buttons Collage",
+            "Button"
+          ]
+        }
+      ],
+      "headerRows": []
+    },
+    {
+      "node": "12552:3653",
+      "name": "Block Content",
+      "page": {
+        "node": "12436:15252",
+        "name": "    ❏ Block Content"
+      },
+      "slug": "block-content",
+      "width": 2893,
+      "height": 9645,
+      "sections": [
+        {
+          "node": "12552:3654",
+          "name": ".Page Header",
+          "type": "INSTANCE",
+          "y": 24,
+          "height": 260,
+          "background": "rgb(235, 239, 238)",
+          "backgroundKind": "SOLID",
+          "instanceOf": ".Page Header",
+          "componentProperties": {},
+          "components": [
+            ".Page Header",
+            ".Page Logo"
+          ]
+        },
+        {
+          "node": "12552:3812",
+          "name": "Group 4",
+          "type": "GROUP",
+          "y": 1535,
+          "height": 7460,
+          "background": null,
+          "backgroundKind": "NONE",
+          "instanceOf": null,
+          "componentProperties": null,
+          "components": [
+            ".Breakpoint Indicator",
+            "General Icons",
+            ".Title",
+            ".Text",
+            "Image Placeholder",
+            "Button",
+            "Teaser / Card",
+            ".Teaser / Card content",
+            ".Teaser / Card Tag",
+            "Teaser / Text + Image",
+            "Links",
+            ".Link",
+            "Input Field",
+            "Chips",
+            ".Buttons Collage",
+            "Teaser",
+            ".Teaser / Hero Content",
+            ".Forms",
+            "Checkbox Form",
+            "Checkbox Input",
+            "Toggle group",
+            "Toggle switches"
+          ]
+        },
+        {
+          "node": "12601:4858",
+          "name": "Group 5",
+          "type": "GROUP",
+          "y": 9109,
+          "height": 496,
+          "background": null,
+          "backgroundKind": "NONE",
+          "instanceOf": null,
+          "componentProperties": null,
+          "components": [
+            ".Breakpoint Indicator",
+            "General Icons",
+            ".Block Element",
+            ".Title",
+            ".Text"
+          ]
+        }
+      ],
+      "headerRows": []
+    },
+    {
+      "node": "12929:23593",
+      "name": "Links",
+      "page": {
+        "node": "12928:23404",
+        "name": "    ❖ Links"
+      },
+      "slug": "links",
+      "width": 2871,
+      "height": 1224,
+      "sections": [
+        {
+          "node": "12929:23594",
+          "name": ".Page Header",
+          "type": "INSTANCE",
+          "y": 24,
+          "height": 260,
+          "background": "rgb(235, 239, 238)",
+          "backgroundKind": "SOLID",
+          "instanceOf": ".Page Header",
+          "componentProperties": {},
+          "components": [
+            ".Page Header",
+            ".Page Logo"
+          ]
+        },
+        {
+          "node": "12929:23940",
+          "name": "Group 1",
+          "type": "GROUP",
+          "y": 644,
+          "height": 540,
+          "background": null,
+          "backgroundKind": "NONE",
+          "instanceOf": null,
+          "componentProperties": null,
+          "components": [
+            ".Breakpoint Indicator",
+            "General Icons",
+            ".Link"
+          ]
+        }
+      ],
+      "headerRows": []
+    },
+    {
+      "node": "12362:10362",
+      "name": "Accordion",
+      "page": {
+        "node": "12360:10285",
+        "name": "    ❖ Accordion"
+      },
+      "slug": "accordion",
+      "width": 2871,
+      "height": 1038,
+      "sections": [
+        {
+          "node": "12362:10363",
+          "name": ".Page Header",
+          "type": "INSTANCE",
+          "y": 24,
+          "height": 260,
+          "background": "rgb(235, 239, 238)",
+          "backgroundKind": "SOLID",
+          "instanceOf": ".Page Header",
+          "componentProperties": {},
+          "components": [
+            ".Page Header",
+            ".Page Logo"
+          ]
+        },
+        {
+          "node": "12473:15780",
+          "name": "Group 1",
+          "type": "GROUP",
+          "y": 398,
+          "height": 600,
+          "background": null,
+          "backgroundKind": "NONE",
+          "instanceOf": null,
+          "componentProperties": null,
+          "components": [
+            ".Breakpoint Indicator",
+            "General Icons",
+            ".Block Element",
+            ".Title",
+            ".Text"
+          ]
+        }
+      ],
+      "headerRows": []
+    }
+  ],
+  "componentSets": [
+    {
+      "node": "12349:10230",
+      "name": ".Breakpoint Indicator",
+      "variantOptions": {
+        "Type": [
+          "Dekstop",
+          "Tablet",
+          "Mobile"
+        ]
+      }
+    },
+    {
+      "node": "13451:672",
+      "name": ".Status",
+      "variantOptions": {}
+    },
+    {
+      "node": "13451:694",
+      "name": "Cover",
+      "variantOptions": {}
+    },
+    {
+      "node": "13496:19403",
+      "name": "Page: Login & Registration",
+      "variantOptions": {}
+    },
+    {
+      "node": "13512:6272",
+      "name": "Page: Emails",
+      "variantOptions": {}
+    },
+    {
+      "node": "13530:18828",
+      "name": "Page: Overlays",
+      "variantOptions": {}
+    },
+    {
+      "node": "11974:36519",
+      "name": "General Icons",
+      "variantOptions": {
+        "Icon name": [
+          "Font-family",
+          "Info-circle",
+          "Font-letter",
+          "Background-Color",
+          "Font-Color",
+          "Chevron-Up",
+          "Chevron-Down",
+          "Search",
+          "User-circle",
+          "Bars",
+          "Device-Desktop",
+          "Device-Tablet",
+          "Device-Mobile",
+          "Close",
+          "Question-circle",
+          "User",
+          "Bookmark-add",
+          "Heart",
+          "Share-nodes",
+          "Eye",
+          "Angle-Down",
+          "Angle-Up"
+        ]
+      }
+    },
+    {
+      "node": "12084:109164",
+      "name": "Button",
+      "variantOptions": {
+        "Size": [
+          "Medium",
+          "Large",
+          "Small"
+        ],
+        "Type": [
+          "Primary",
+          "Secondary",
+          "Tertiary",
+          "Link"
+        ],
+        "Property": [
+          "With text",
+          "Icon Only"
+        ]
+      }
+    },
+    {
+      "node": "12387:11135",
+      "name": "Header",
+      "variantOptions": {
+        "Breakpoint": [
+          "Desktop",
+          "Mobile",
+          "Tablet"
+        ],
+        "Type": [
+          "Full",
+          "Registration"
+        ]
+      }
+    },
+    {
+      "node": "12379:10725",
+      "name": ".Header / Prescribing Info",
+      "variantOptions": {
+        "Breakpoint": [
+          "Desktop",
+          "Tablet",
+          "Mobile"
+        ]
+      }
+    },
+    {
+      "node": "12379:10721",
+      "name": ".Header / Disclaimer",
+      "variantOptions": {
+        "Breakpoint": [
+          "Desktop",
+          "Tablet",
+          "Mobile"
+        ]
+      }
+    },
+    {
+      "node": "12385:11070",
+      "name": ".Header / Links Selector",
+      "variantOptions": {
+        "Links No.": [
+          "2",
+          "1"
+        ]
+      }
+    },
+    {
+      "node": "12379:10704",
+      "name": ".Header / Contact Selecter Item",
+      "variantOptions": {
+        "Type": [
+          "Default",
+          "Active"
+        ]
+      }
+    },
+    {
+      "node": "12379:11025",
+      "name": ". Header / Language Selector",
+      "variantOptions": {
+        "Language No.": [
+          "4",
+          "2",
+          "3"
+        ]
+      }
+    },
+    {
+      "node": "12077:109020",
+      "name": "Brand Logos",
+      "variantOptions": {
+        "Property 1": [
+          "AstraZeneca"
+        ]
+      }
+    },
+    {
+      "node": "12370:10635",
+      "name": ".Header / Navigation Item",
+      "variantOptions": {
+        "Type": [
+          "Sub-nav",
+          "Simple"
+        ],
+        "State": [
+          "Default",
+          "Active"
+        ]
+      }
+    },
+    {
+      "node": "12370:10624",
+      "name": ".Header / Actions",
+      "variantOptions": {
+        "Actions": [
+          "Guest",
+          "Logged In"
+        ]
+      }
+    },
+    {
+      "node": "12406:12187",
+      "name": "Footer",
+      "variantOptions": {
+        "Breakpoint": [
+          "Desktop",
+          "Tablet",
+          "Mobile"
+        ]
+      }
+    },
+    {
+      "node": "11993:36497",
+      "name": "Social Icons",
+      "variantOptions": {
+        "Property 1": [
+          "Linked-In",
+          "Facebook",
+          "YouTube",
+          "Instagram",
+          "X"
+        ]
+      }
+    },
+    {
+      "node": "12950:24836",
+      "name": "Home Hero Branded",
+      "variantOptions": {
+        "Breakpoint": [
+          "Desktop",
+          "Tablet",
+          "Mobile"
+        ]
+      }
+    },
+    {
+      "node": "12421:13777",
+      "name": "Image Placeholder",
+      "variantOptions": {
+        "Image type": [
+          "Blue"
+        ]
+      }
+    },
+    {
+      "node": "12418:13125",
+      "name": ".Teaser / Hero Content",
+      "variantOptions": {
+        "Alignment": [
+          "Left",
+          "Center",
+          "Right"
+        ]
+      }
+    },
+    {
+      "node": "12421:13846",
+      "name": "Teaser",
+      "variantOptions": {
+        "Size": [
+          "Large",
+          "Medium",
+          "Small"
+        ],
+        "Breakpoint": [
+          "Desktop",
+          "Tablet",
+          "Mobile"
+        ]
+      }
+    },
+    {
+      "node": "12431:14282",
+      "name": "Teaser / Text + Image",
+      "variantOptions": {
+        "Breakpoint": [
+          "Desktop",
+          "Tablet",
+          "Mobile"
+        ],
+        "Alignment": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    {
+      "node": "12529:1213",
+      "name": ".Title",
+      "variantOptions": {
+        "Type": [
+          "Teaser",
+          "Introduction",
+          "Content"
+        ],
+        "Alignment": [
+          "Left",
+          "Center",
+          "Right"
+        ]
+      }
+    },
+    {
+      "node": "12436:14681",
+      "name": ".Teaser / Card content",
+      "variantOptions": {
+        "Alignment": [
+          "Left",
+          "Right",
+          "Center"
+        ]
+      }
+    },
+    {
+      "node": "13024:837",
+      "name": ".Teaser / Card Tag",
+      "variantOptions": {
+        "Type": [
+          "Event",
+          "Course",
+          "Product",
+          "News"
+        ]
+      }
+    },
+    {
+      "node": "13032:2302",
+      "name": ".Teaser / Card Chip",
+      "variantOptions": {
+        "Alignment": [
+          "Left",
+          "Center",
+          "Right"
+        ]
+      }
+    },
+    {
+      "node": "12334:9625",
+      "name": "Chips",
+      "variantOptions": {
+        "Size": [
+          "Large"
+        ],
+        "State": [
+          "Dark",
+          "Active",
+          "Light"
+        ]
+      }
+    },
+    {
+      "node": "12436:14752",
+      "name": "Teaser / Card",
+      "variantOptions": {
+        "Breakpoint": [
+          "Desktop",
+          "Tablet",
+          "Mobile"
+        ]
+      }
+    },
+    {
+      "node": "13370:2040",
+      "name": "CTA Banner",
+      "variantOptions": {
+        "Breakpoint": [
+          "Desktop",
+          "Tablet",
+          "Mobile"
+        ]
+      }
+    },
+    {
+      "node": "12534:1263",
+      "name": ".Text",
+      "variantOptions": {
+        "Alignment": [
+          "Left",
+          "Center",
+          "Right"
+        ]
+      }
+    },
+    {
+      "node": "12160:3287",
+      "name": "Input Field",
+      "variantOptions": {
+        "Type": [
+          "Default",
+          "Simple",
+          "Password"
+        ],
+        "State": [
+          "Default"
+        ]
+      }
+    },
+    {
+      "node": "13028:2133",
+      "name": ".Buttons Collage",
+      "variantOptions": {
+        "Alignment": [
+          "Left",
+          "Vertical",
+          "Center",
+          "Right"
+        ]
+      }
+    },
+    {
+      "node": "12534:1413",
+      "name": ".Block Element",
+      "variantOptions": {
+        "Element type": [
+          "Title + Text",
+          "Listing Card",
+          "3 Teasers",
+          "2 Teasers",
+          "Teaser: Text + Image",
+          "Links",
+          "Image",
+          "Like/Save/Share",
+          "Event: Title + Link",
+          "Divider",
+          "Sort Bar",
+          "Chips Filter",
+          "Buttons",
+          "Teaser: Full Image",
+          "Form",
+          "Toggle Group"
+        ],
+        "Breakpoint": [
+          "Desktop",
+          "Tablet",
+          "Mobile"
+        ]
+      }
+    },
+    {
+      "node": "12929:23477",
+      "name": "Links",
+      "variantOptions": {
+        "Breakpoint": [
+          "Desktop",
+          "Tablet",
+          "Mobile"
+        ],
+        "Style": [
+          "Vertical",
+          "Horizontal"
+        ]
+      }
+    },
+    {
+      "node": "12928:23420",
+      "name": ".Link",
+      "variantOptions": {
+        "Type": [
+          "Primary",
+          "Secondary"
+        ],
+        "State": [
+          "Active",
+          "Default"
+        ]
+      }
+    },
+    {
+      "node": "12679:11503",
+      "name": ".Forms",
+      "variantOptions": {
+        "Type": [
+          "Simple"
+        ],
+        "Breakpoint": [
+          "Desktop",
+          "Tablet",
+          "Mobile"
+        ]
+      }
+    },
+    {
+      "node": "12274:6373",
+      "name": "Checkbox Form",
+      "variantOptions": {
+        "Type": [
+          "Default"
+        ],
+        "Status": [
+          "Initial"
+        ]
+      }
+    },
+    {
+      "node": "12265:6347",
+      "name": "Checkbox Input",
+      "variantOptions": {
+        "Type": [
+          "Checkbox"
+        ],
+        "Status": [
+          "Default"
+        ]
+      }
+    },
+    {
+      "node": "12287:8716",
+      "name": "Toggle group",
+      "variantOptions": {
+        "Alignment": [
+          "Right"
+        ],
+        "Type": [
+          "Single Line"
+        ]
+      }
+    },
+    {
+      "node": "12287:8487",
+      "name": "Toggle switches",
+      "variantOptions": {
+        "Checked": [
+          "False"
+        ],
+        "Status": [
+          "Default"
+        ]
+      }
+    },
+    {
+      "node": "12601:4831",
+      "name": "Block Content",
+      "variantOptions": {
+        "Breakpoint": [
+          "Desktop",
+          "Tablet",
+          "Mobile"
+        ]
+      }
+    },
+    {
+      "node": "12360:10305",
+      "name": "Accordion",
+      "variantOptions": {
+        "Type": [
+          "Desktop",
+          "Tablet",
+          "Mobile"
+        ],
+        "State": [
+          "Closed",
+          "Expanded"
+        ]
+      }
+    }
+  ],
+  "remote": [],
+  "missing": []
+}

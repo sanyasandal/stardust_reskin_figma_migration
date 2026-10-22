@@ -1,0 +1,109 @@
+{
+  "chrome": {
+    "model": "stardust/reskin/content-model/_chrome",
+    "header": [
+      "s01"
+    ],
+    "footer": [
+      "s02"
+    ],
+    "footerTone": "light",
+    "navAlign": "center"
+  },
+  "pages": {
+    "school-life-travel-to-school": {
+      "template": "learning-and-support-wellbeing",
+      "slots": {
+        "s01": {
+          "module": "M5",
+          "layout": "stack",
+          "heading": "h2",
+          "width": "wide"
+        },
+        "s02": {
+          "module": "M5",
+          "layout": "stack",
+          "heading": "h2",
+          "width": "wide"
+        },
+        "s03": {
+          "module": "M5",
+          "layout": "stack",
+          "heading": "h2",
+          "width": "wide"
+        },
+        "s04": {
+          "module": "M5",
+          "layout": "stack",
+          "heading": "h2",
+          "width": "wide"
+        },
+        "s05": {
+          "module": "M5",
+          "layout": "stack",
+          "heading": "h3",
+          "width": "wide"
+        },
+        "s06": {
+          "module": "M3",
+          "layout": "split",
+          "heading": "h3",
+          "width": "wide"
+        },
+        "s07": {
+          "module": "M3",
+          "layout": "split",
+          "heading": "h3",
+          "width": "wide"
+        },
+        "s08": {
+          "module": "M5",
+          "layout": "stack",
+          "heading": "h3",
+          "width": "wide"
+        },
+        "s09": {
+          "layout": "stack",
+          "width": "wide"
+        },
+        "s10": {
+          "layout": "stack",
+          "width": "wide"
+        },
+        "s11": {
+          "module": "M5",
+          "layout": "stack",
+          "heading": "h3",
+          "width": "wide"
+        },
+        "s12": {
+          "module": "M3",
+          "layout": "split",
+          "heading": "h3",
+          "width": "wide"
+        },
+        "s13": {
+          "module": "M5",
+          "layout": "stack",
+          "heading": "h2",
+          "width": "wide"
+        },
+        "s14": {
+          "module": "M4",
+          "layout": "stack",
+          "tone": "light",
+          "heading": "h3",
+          "bleed": true,
+          "width": "wide"
+        },
+        "s15": {
+          "module": "M2",
+          "layout": "cards",
+          "columns": 2,
+          "heading": "h3",
+          "width": "wide"
+        }
+      }
+    }
+  }
+}

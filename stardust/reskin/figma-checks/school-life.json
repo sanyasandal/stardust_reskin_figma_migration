@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "page": "school-life",
+  "sections": {
+    "s01": {
+      "node": "12534:1405",
+      "width": 1180,
+      "waive": [
+        {
+          "width": "mobile",
+          "why": "renderer collapses at 900/640px, not the kit's 375 frame; mobile fidelity is measured in the benchmark at 390px"
+        },
+        {
+          "node": "I12534:1397;12534:1254",
+          "why": "the slot is the page title alone (h1 School life); the card grid that follows is s02"
+        }
+      ],
+      "geometry": [
+        {
+          "id": "g1",
+          "selector": ".panel",
+          "measure": "width",
+          "node": "12534:1405",
+          "previewSelector": ".default-content-wrapper"
+        }
+      ],
+      "type": [
+        {
+          "id": "t1",
+          "selector": ".heading",
+          "node": "I12534:1395;12529:1207",
+          "previewSelector": ".default-content-wrapper h1"
+        }
+      ]
+    },
+    "s02": {
+      "skip": "the kit holds only a single 527px Teaser/Card component, no page-width card grid frame to root at 1440; card type is covered by donor-probe (b) and the benchmark pixel compare"
+    }
+  }
+}

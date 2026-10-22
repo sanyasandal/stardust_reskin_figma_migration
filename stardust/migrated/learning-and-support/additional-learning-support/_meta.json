@@ -1,0 +1,64 @@
+{
+  "slug": "learning-and-support-additional-learning-support",
+  "type": "content",
+  "renderBranch": "A'",
+  "template": "learning-and-support-wellbeing",
+  "modules": [
+    "M1",
+    "M5",
+    "M4",
+    "M3",
+    "M8",
+    "M2"
+  ],
+  "slotsFilled": [
+    "s01",
+    "s02",
+    "s03",
+    "s04",
+    "s05",
+    "s06",
+    "s07",
+    "s08",
+    "s09"
+  ],
+  "canonShas": {
+    "header": "a8ad9e05a2e6",
+    "footer": "11083616d207",
+    "css": "b7e359a8ffed"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Additional learning support",
+    "description": "At Fort Street High School, we want every student to feel safe, supported and ready to learn. We support students with disability and additional learning needs so they can take part in all areas of school life.",
+    "canonical": "https://fortstreet-h.schools.nsw.gov.au/learning-and-support/additional-learning-support",
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Additional learning support",
+    "description": "At Fort Street High School, we want every student to feel safe, supported and ready to learn. We support students with disability and additional learning needs so they can take part in all areas of school life.",
+    "url": "https://fortstreet-h.schools.nsw.gov.au/learning-and-support/additional-learning-support"
+  },
+  "migratedAt": "2026-10-21T14:08:04Z",
+  "designMdSha": "c0ae931d3b54",
+  "designJsonSha": "3ff54e7e981f",
+  "sourceCurrentSha": null,
+  "sourceProposedSha": "67b78a1c1e1e",
+  "fidelityTier": "sibling",
+  "archetypeSource": "learning-and-support-wellbeing",
+  "archetypeSha": "5bc769fe32da",
+  "variants": [],
+  "gatesPassed": [],
+  "gateEvidence": {},
+  "contentDeviations": [],
+  "assetsBundled": 5,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "learning-and-support/additional-learning-support/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "learning-and-support/additional-learning-support/_meta.json",
+  "driverVersion": "1"
+}

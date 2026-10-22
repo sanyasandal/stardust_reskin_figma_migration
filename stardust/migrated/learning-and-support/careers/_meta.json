@@ -1,0 +1,57 @@
+{
+  "slug": "learning-and-support-careers",
+  "type": "content",
+  "renderBranch": "A'",
+  "template": "learning-and-support-wellbeing",
+  "modules": [
+    "M5",
+    "M4",
+    "M2"
+  ],
+  "slotsFilled": [
+    "s01",
+    "s02",
+    "s03",
+    "s04",
+    "s05"
+  ],
+  "canonShas": {
+    "header": "a8ad9e05a2e6",
+    "footer": "11083616d207",
+    "css": "b7e359a8ffed"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Careers",
+    "description": "The Careers Adviser provides a range of services to Fortians including individualised careers counselling to assist students to make a well-informed transition from Fort Street into their tertiary studies and their future career paths.",
+    "canonical": "https://fortstreet-h.schools.nsw.gov.au/learning-and-support/careers",
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Careers",
+    "description": "The Careers Adviser provides a range of services to Fortians including individualised careers counselling to assist students to make a well-informed transition from Fort Street into their tertiary studies and their future career paths.",
+    "url": "https://fortstreet-h.schools.nsw.gov.au/learning-and-support/careers"
+  },
+  "migratedAt": "2026-10-21T14:08:04Z",
+  "designMdSha": "c0ae931d3b54",
+  "designJsonSha": "3ff54e7e981f",
+  "sourceCurrentSha": null,
+  "sourceProposedSha": "8c8a2f4268ff",
+  "fidelityTier": "sibling",
+  "archetypeSource": "learning-and-support-wellbeing",
+  "archetypeSha": "5bc769fe32da",
+  "variants": [],
+  "gatesPassed": [],
+  "gateEvidence": {},
+  "contentDeviations": [],
+  "assetsBundled": 11,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "learning-and-support/careers/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "learning-and-support/careers/_meta.json",
+  "driverVersion": "1"
+}

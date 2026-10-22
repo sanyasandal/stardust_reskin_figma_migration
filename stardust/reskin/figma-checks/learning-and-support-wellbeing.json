@@ -1,0 +1,358 @@
+{
+  "version": 1,
+  "page": "learning-and-support-wellbeing",
+  "sections": {
+    "s01": {
+      "node": "12950:24813",
+      "width": 1440,
+      "waive": [
+        {
+          "width": "mobile",
+          "why": "renderer collapses at 900/640px, not the kit's 375 frame; mobile fidelity is measured in the benchmark at 390px"
+        },
+        {
+          "node": "I12950:24789;12077:109144",
+          "why": "the source hero has no call to action; the kit button has no counterpart"
+        }
+      ],
+      "geometry": [
+        {
+          "id": "g1",
+          "selector": ".panel",
+          "measure": "width",
+          "node": "12950:24817",
+          "previewSelector": ".hero-panel"
+        },
+        {
+          "id": "g2",
+          "selector": ".split-img",
+          "measure": "width",
+          "node": "12950:24804",
+          "previewSelector": ".hero-media img"
+        }
+      ],
+      "type": [
+        {
+          "id": "t1",
+          "selector": ".heading",
+          "node": "12950:24787",
+          "previewSelector": ".hero-text h1"
+        },
+        {
+          "id": "t2",
+          "selector": "p.lead",
+          "node": "12950:24788",
+          "previewSelector": ".hero-text > p"
+        }
+      ]
+    },
+    "s02": {
+      "node": "12534:1405",
+      "width": 1180,
+      "waive": [
+        {
+          "width": "mobile",
+          "why": "renderer collapses at 900/640px, not the kit's 375 frame; mobile fidelity is measured in the benchmark at 390px"
+        }
+      ],
+      "geometry": [
+        {
+          "id": "g1",
+          "selector": ".panel",
+          "measure": "width",
+          "node": "12534:1405",
+          "previewSelector": ".default-content-wrapper"
+        }
+      ],
+      "type": [
+        {
+          "id": "t1",
+          "selector": ".heading",
+          "node": "I12534:1395;12529:1207",
+          "previewSelector": ".default-content-wrapper h2"
+        },
+        {
+          "id": "t2",
+          "selector": "p.lead",
+          "node": "I12534:1397;12534:1254",
+          "previewSelector": ".default-content-wrapper p"
+        }
+      ]
+    },
+    "s04": {
+      "node": "12534:1405",
+      "width": 1180,
+      "waive": [
+        {
+          "width": "mobile",
+          "why": "renderer collapses at 900/640px, not the kit's 375 frame; mobile fidelity is measured in the benchmark at 390px"
+        },
+        {
+          "node": "I12534:1397;12534:1254",
+          "why": "the slot is the table caption heading alone (Our Year Advisors); the table is s05"
+        }
+      ],
+      "geometry": [
+        {
+          "id": "g1",
+          "selector": ".panel",
+          "measure": "width",
+          "node": "12534:1405",
+          "previewSelector": ".default-content-wrapper"
+        }
+      ],
+      "type": [
+        {
+          "id": "t1",
+          "selector": ".heading",
+          "node": "I12534:1395;12529:1207",
+          "previewSelector": ".default-content-wrapper h2"
+        }
+      ]
+    },
+    "s06": {
+      "node": "12362:10348",
+      "width": 1440,
+      "waive": [
+        {
+          "width": "mobile",
+          "why": "renderer collapses at 900/640px, not the kit's 375 frame; mobile fidelity is measured in the benchmark at 390px"
+        }
+      ],
+      "geometry": [
+        {
+          "id": "g1",
+          "selector": ".panel",
+          "measure": "width",
+          "node": "12850:21898",
+          "previewSelector": ".accordion"
+        }
+      ],
+      "type": [
+        {
+          "id": "t1",
+          "selector": ".btn",
+          "node": "12362:10350",
+          "previewSelector": ".accordion-title"
+        },
+        {
+          "id": "t2",
+          "selector": ".heading",
+          "node": "I12850:21898;12534:1395;12529:1207",
+          "previewSelector": ".accordion-panel h2"
+        },
+        {
+          "id": "t3",
+          "selector": "p.lead",
+          "node": "I12850:21898;12534:1397;12534:1254",
+          "previewSelector": ".accordion-panel p"
+        }
+      ]
+    },
+    "s07": {
+      "node": "12534:1405",
+      "width": 1180,
+      "waive": [
+        {
+          "width": "mobile",
+          "why": "renderer collapses at 900/640px, not the kit's 375 frame; mobile fidelity is measured in the benchmark at 390px"
+        }
+      ],
+      "geometry": [
+        {
+          "id": "g1",
+          "selector": ".panel",
+          "measure": "width",
+          "node": "12534:1405",
+          "previewSelector": ".default-content-wrapper"
+        }
+      ],
+      "type": [
+        {
+          "id": "t1",
+          "selector": ".heading",
+          "node": "I12534:1395;12529:1207",
+          "previewSelector": ".default-content-wrapper h2"
+        },
+        {
+          "id": "t2",
+          "selector": "p.lead",
+          "node": "I12534:1397;12534:1254",
+          "previewSelector": ".default-content-wrapper p"
+        }
+      ]
+    },
+    "s08": {
+      "node": "12362:10348",
+      "width": 1440,
+      "waive": [
+        {
+          "width": "mobile",
+          "why": "renderer collapses at 900/640px, not the kit's 375 frame; mobile fidelity is measured in the benchmark at 390px"
+        },
+        {
+          "node": "I12850:21898;12534:1395;12529:1207",
+          "why": "the source panels carry h3 sub-headings only (no h2-level panel title); h3 takes the donor type.h3 role, the kit Block Element title is the 46/50 h2 role with no h3 counterpart"
+        }
+      ],
+      "geometry": [
+        {
+          "id": "g1",
+          "selector": ".panel",
+          "measure": "width",
+          "node": "12850:21898",
+          "previewSelector": ".accordion"
+        }
+      ],
+      "type": [
+        {
+          "id": "t1",
+          "selector": ".btn",
+          "node": "12362:10350",
+          "previewSelector": ".accordion-title"
+        },
+        {
+          "id": "t3",
+          "selector": "p.lead",
+          "node": "I12850:21898;12534:1397;12534:1254",
+          "previewSelector": ".accordion-panel p"
+        }
+      ]
+    },
+    "s09": {
+      "node": "12534:1405",
+      "width": 1180,
+      "waive": [
+        {
+          "width": "mobile",
+          "why": "renderer collapses at 900/640px, not the kit's 375 frame; mobile fidelity is measured in the benchmark at 390px"
+        }
+      ],
+      "geometry": [
+        {
+          "id": "g1",
+          "selector": ".panel",
+          "measure": "width",
+          "node": "12534:1405",
+          "previewSelector": ".default-content-wrapper"
+        }
+      ],
+      "type": [
+        {
+          "id": "t1",
+          "selector": ".heading",
+          "node": "I12534:1395;12529:1207",
+          "previewSelector": ".default-content-wrapper h2"
+        },
+        {
+          "id": "t2",
+          "selector": "p.lead",
+          "node": "I12534:1397;12534:1254",
+          "previewSelector": ".default-content-wrapper p"
+        }
+      ]
+    },
+    "s10": {
+      "node": "12362:10348",
+      "width": 1440,
+      "waive": [
+        {
+          "width": "mobile",
+          "why": "renderer collapses at 900/640px, not the kit's 375 frame; mobile fidelity is measured in the benchmark at 390px"
+        },
+        {
+          "node": "I12850:21898;12534:1395;12529:1207",
+          "why": "the source panels (First Aid and Sick Bay, Medication) carry paragraphs and links only, no heading"
+        }
+      ],
+      "geometry": [
+        {
+          "id": "g1",
+          "selector": ".panel",
+          "measure": "width",
+          "node": "12850:21898",
+          "previewSelector": ".accordion"
+        }
+      ],
+      "type": [
+        {
+          "id": "t1",
+          "selector": ".btn",
+          "node": "12362:10350",
+          "previewSelector": ".accordion-title"
+        },
+        {
+          "id": "t3",
+          "selector": "p.lead",
+          "node": "I12850:21898;12534:1397;12534:1254",
+          "previewSelector": ".accordion-panel p"
+        }
+      ]
+    },
+    "s11": {
+      "node": "13370:1909",
+      "width": 1440,
+      "waive": [
+        {
+          "width": "mobile",
+          "why": "renderer collapses at 900/640px, not the kit's 375 frame"
+        },
+        {
+          "node": "I13370:1868;12128:3258",
+          "why": "source has no supportive caption"
+        },
+        {
+          "node": "I13370:1892;13028:1785;12077:109144",
+          "why": "source carries a text link (Contact us), not buttons"
+        },
+        {
+          "node": "I13370:1892;13028:1786;12084:109167",
+          "why": "source has no secondary action"
+        },
+        {
+          "node": "I13370:1892;13028:1787;12084:109180",
+          "why": "source has no tertiary action"
+        },
+        {
+          "node": "I13370:1868;12128:3183",
+          "why": "source has no supportive caption (required-asterisk style)"
+        },
+        {
+          "node": "I13370:1868;12128:3187",
+          "why": "source has no supportive caption (placeholder style)"
+        }
+      ],
+      "geometry": [
+        {
+          "id": "g1",
+          "selector": ":scope",
+          "measure": "width",
+          "node": "13370:1909"
+        },
+        {
+          "id": "g2",
+          "selector": ":scope",
+          "measure": "paddingTop",
+          "node": "13370:1909"
+        }
+      ],
+      "type": [
+        {
+          "id": "t1",
+          "selector": "h2.heading",
+          "node": "I13370:1456;12529:1209",
+          "previewSelector": ".columns-text h2"
+        },
+        {
+          "id": "t2",
+          "selector": "p.lead",
+          "node": "I13370:1865;12534:1254",
+          "previewSelector": ".columns-text > p"
+        }
+      ]
+    },
+    "s12": {
+      "skip": "renderer residual R1: findRepeat needs a period >= 2, so 2 single listItem cards render as a stacked list, not M2 cards; and the kit has no page-width card grid frame"
+    }
+  }
+}

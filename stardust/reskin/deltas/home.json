@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "blocking": false,
+  "text": {
+    "allow": [
+      {
+        "id": "t1",
+        "from": " east",
+        "to": "",
+        "why": "the source runtime appends a Material Symbols ligature span (text 'east', rendered as an arrow glyph) to every teaser/quick-link list item; it is not in the source .plain.html (not authored content), so the DA document does not carry it"
+      }
+    ]
+  },
+  "images": "count+alt+width",
+  "links": { "localize": { "sourceHost": "fortstreet-h.schools.nsw.gov.au" } },
+  "metadata": {
+    "ignore": ["canonical", "og:url", "og:image", "og:image:secure_url", "twitter:image"],
+    "jsonLd": "count-only",
+    "absent": []
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "slug": "about-us-facilities-and-resources",
+  "type": "content",
+  "renderBranch": "A'",
+  "template": "learning-and-support-wellbeing",
+  "modules": [
+    "M1",
+    "M5",
+    "M3",
+    "M2"
+  ],
+  "slotsFilled": [
+    "s01",
+    "s02",
+    "s03",
+    "s04",
+    "s05"
+  ],
+  "canonShas": {
+    "header": "a8ad9e05a2e6",
+    "footer": "11083616d207",
+    "css": "b7e359a8ffed"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Facilities and resources",
+    "description": "At Fort Street High School, we offer a wide range of spaces, tools and resources to support student learning. Our modern facilities help students build skills, try new things and stay engaged. Whether it’s for study, sport, creativity or technology, we give students what they need to succeed.",
+    "canonical": "https://fortstreet-h.schools.nsw.gov.au/about-us/facilities-and-resources",
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Facilities and resources",
+    "description": "At Fort Street High School, we offer a wide range of spaces, tools and resources to support student learning. Our modern facilities help students build skills, try new things and stay engaged. Whether it’s for study, sport, creativity or technology, we give students what they need to succeed.",
+    "url": "https://fortstreet-h.schools.nsw.gov.au/about-us/facilities-and-resources"
+  },
+  "migratedAt": "2026-10-21T14:08:04Z",
+  "designMdSha": "c0ae931d3b54",
+  "designJsonSha": "3ff54e7e981f",
+  "sourceCurrentSha": null,
+  "sourceProposedSha": "f505e2dd4593",
+  "fidelityTier": "sibling",
+  "archetypeSource": "learning-and-support-wellbeing",
+  "archetypeSha": "5bc769fe32da",
+  "variants": [],
+  "gatesPassed": [],
+  "gateEvidence": {},
+  "contentDeviations": [],
+  "assetsBundled": 17,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "https://fortstreet-h.schools.nsw.gov.au/contact-us.html",
+      "reason": "not-in-inventory"
+    }
+  ],
+  "outputPath": "about-us/facilities-and-resources/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "about-us/facilities-and-resources/_meta.json",
+  "driverVersion": "1"
+}

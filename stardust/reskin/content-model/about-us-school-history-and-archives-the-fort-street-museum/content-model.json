@@ -1,0 +1,396 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:reskin/capture-content.mjs",
+    "capturedAt": "2026-10-21T13:44:19.822Z",
+    "url": "https://fortstreet-h.schools.nsw.gov.au/about-us/school-history-and-archives/the-fort-street-museum",
+    "viewport": "1440x900",
+    "scope": "main > div:nth-child(1) > div:nth-child(1)!,main > div:nth-child(2) > div:nth-child(1)!,main > div:nth-child(3) > div:nth-child(1)!",
+    "normalize": {
+      "source": "/Users/ssandal/repos/EDS customer repos/copilot-worktrees/stardust_reskin_figma_migration/ssandal-adobe-redesigned-potato/stardust/reskin/normalize/about-us-school-history-and-archives-the-fort-street-museum.mjs",
+      "ledger": [
+        {
+          "id": "N-D1",
+          "what": "remove cookie/consent chrome (OneTrust, Cookiebot, Usercentrics, generic cookie-banner ids/classes, any cookie/consent/gdpr-named element inside a fixed/sticky/high-z overlay)",
+          "why": "overlay chrome injected by a CMP, not page content; re-added at deploy time"
+        },
+        {
+          "id": "N-D2",
+          "what": "de-carousel slick/swiper/splide/glide: remove clone slides, force real slides visible+static, drop dots/arrows",
+          "why": "hidden slides are absent from innerText and clones duplicate it — rotating carousels break byte determinism; the reskin renders all slides statically in DOM order"
+        },
+        {
+          "id": "N2",
+          "what": "remove main .back-to-top (floating back-to-top control)",
+          "why": "UI chrome injected by the source theme, no content bytes; donor kit has its own Back to Top module"
+        },
+        {
+          "id": "N3",
+          "what": "expand every main .nsw-accordion: drop hidden=\"until-found\" from .nsw-accordion__content and set the button aria-expanded=\"true\"",
+          "why": "collapsed panels are authored content absent from innerText (hidden); without expansion the byte reference silently drops every accordion body. Same rule as the default de-carousel (N-D2): interactive disclosure is normalized to all-open, and the reskin renders each item title followed by its panel statically in DOM order"
+        }
+      ]
+    },
+    "nav": {
+      "live": true,
+      "waitUntil": "domcontentloaded",
+      "headed": false
+    }
+  },
+  "metadata": {
+    "title": "The Fort Street Museum",
+    "description": "Our Archives and Museum exists to preserve the rich history and colourful stories of our teachers and students, told through their experiences in the classroom and in the schoolyard, at work and play for over 170 years.",
+    "canonical": "https://fortstreet-h.schools.nsw.gov.au/about-us/school-history-and-archives/the-fort-street-museum",
+    "ogTags": {
+      "og:title": "The Fort Street Museum",
+      "og:description": "Our Archives and Museum exists to preserve the rich history and colourful stories of our teachers and students, told through their experiences in the classroom and in the schoolyard, at work and play for over 170 years.",
+      "og:url": "https://fortstreet-h.schools.nsw.gov.au/about-us/school-history-and-archives/the-fort-street-museum",
+      "og:image": "https://fortstreet-h.schools.nsw.gov.au/about-us/school-history-and-archives/media_1952bcd427ce2a18d9cfed7babafcbaea69970944.jpg?width=1200&format=pjpg&optimize=medium",
+      "og:image:secure_url": "https://fortstreet-h.schools.nsw.gov.au/about-us/school-history-and-archives/media_1952bcd427ce2a18d9cfed7babafcbaea69970944.jpg?width=1200&format=pjpg&optimize=medium",
+      "og:image:alt": "Fort St Public School; December 2021"
+    },
+    "twitterTags": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "The Fort Street Museum",
+      "twitter:description": "Our Archives and Museum exists to preserve the rich history and colourful stories of our teachers and students, told through their experiences in the classroom and in the schoolyard, at work and play for over 170 years.",
+      "twitter:image": "https://fortstreet-h.schools.nsw.gov.au/about-us/school-history-and-archives/media_1952bcd427ce2a18d9cfed7babafcbaea69970944.jpg?width=1200&format=pjpg&optimize=medium"
+    },
+    "jsonLd": [],
+    "lang": "en",
+    "favicon": null
+  },
+  "scope": [
+    {
+      "sel": "main > div:nth-child(1) > div:nth-child(1)",
+      "whole": true
+    },
+    {
+      "sel": "main > div:nth-child(2) > div:nth-child(1)",
+      "whole": true
+    },
+    {
+      "sel": "main > div:nth-child(3) > div:nth-child(1)",
+      "whole": true
+    }
+  ],
+  "visibleTextNormalized": "The Fort Street Museum The Ron Horan Museum Originally established as the Ron Horan Room by generous donations by the Boys’ Class of 1955, it has now been expanded to The Ron Horan Museum (RHM). The museum space comprises of the adaptive reuse of the heritage Wilkins Building, which includes the Old Principal’s Office and the Administration Reception. It also contains the original ornate stairwell known as the Preston Gallery, housing part of the school’s extensive art collection. As one of the oldest schools in Australia, students and staff from Fort Street have made significant contributions to the national and world stage. The Ron Horan Museum (RHM) makes accessible the notable archival exhibitions celebrating the achievements of Fortians from the past and present. The Fort Street Archives creates an environment to protect, preserve, communicate public school history and contribute to the national memory. As a freely accessible educational resource, the RHM will assist students and the community in its research of the history and heritage of NSW. Most of the archives collection is preserved in a climate-controlled repository in the Library, but a changing program in the RHM articulates Fortian stories through documents, images and objects. A visit to the RHM is regularly a part of alumni reunions and other events. The RHM has been funded by generous donations from various Fortian reunion groups and individuals. Fort Street Archives has also received grants from the Inner West Council, the WestConnex Community Grant Program and from the Royal Australian Historical Society. Who is Ron Horan and why is there a museum after him? Ron Horan OAM was a Fortian (1940) who returned to be a teacher and deputy principal from 1950 to 1984. He also served as the school’s first Archivist. He wrote many books including on the history of Fort Street. The RHM honours his crucial role and many achievements in building, preserving and promoting the school’s archives for many decades. Without Ron Horan, much of Fort Street’s history would have been lost. For more information Or to express your interest in this role, please contact our archivist Mr Iain Wallace (Thursday and Friday only) here (opens in new window) Fort Street Archives See our rich history east The Fortian Digitised Discover this resource which has been chronicling the lives and achievements of students and staff since 1899. east",
+  "coverage": {
+    "bodyTextLen": 3528,
+    "scopeTextLen": 2419,
+    "ratio": 0.686,
+    "h1Text": "The Fort Street Museum",
+    "h1InScope": true
+  },
+  "sections": [
+    {
+      "slot": "s01",
+      "rootTag": "div",
+      "rootClass": "default-content-wrapper",
+      "visibleText": "The Fort Street Museum The Ron Horan Museum Originally established as the Ron Horan Room by generous donations by the Boys’ Class of 1955, it has now been expanded to The Ron Horan Museum (RHM). The museum space comprises of the adaptive reuse of the heritage Wilkins Building, which includes the Old Principal’s Office and the Administration Reception. It also contains the original ornate stairwell known as the Preston Gallery, housing part of the school’s extensive art collection. As one of the oldest schools in Australia, students and staff from Fort Street have made significant contributions to the national and world stage. The Ron Horan Museum (RHM) makes accessible the notable archival exhibitions celebrating the achievements of Fortians from the past and present. The Fort Street Archives creates an environment to protect, preserve, communicate public school history and contribute to the national memory. As a freely accessible educational resource, the RHM will assist students and the community in its research of the history and heritage of NSW. Most of the archives collection is preserved in a climate-controlled repository in the Library, but a changing program in the RHM articulates Fortian stories through documents, images and objects. A visit to the RHM is regularly a part of alumni reunions and other events. The RHM has been funded by generous donations from various Fortian reunion groups and individuals. Fort Street Archives has also received grants from the Inner West Council, the WestConnex Community Grant Program and from the Royal Australian Historical Society. Who is Ron Horan and why is there a museum after him? Ron Horan OAM was a Fortian (1940) who returned to be a teacher and deputy principal from 1950 to 1984. He also served as the school’s first Archivist. He wrote many books including on the history of Fort Street. The RHM honours his crucial role and many achievements in building, preserving and promoting the school’s archives for many decades. Without Ron Horan, much of Fort Street’s history would have been lost.",
+      "headings": [
+        {
+          "level": "h1",
+          "text": "The Fort Street Museum"
+        },
+        {
+          "level": "h2",
+          "text": "The Ron Horan Museum"
+        },
+        {
+          "level": "h3",
+          "text": "Who is Ron Horan and why is there a museum after him?"
+        }
+      ],
+      "paragraphs": [
+        "Originally established as the Ron Horan Room by generous donations by the Boys’ Class of 1955, it has now been expanded to The Ron Horan Museum (RHM). The museum space comprises of the adaptive reuse of the heritage Wilkins Building, which includes the Old Principal’s Office and the Administration Reception. It also contains the original ornate stairwell known as the Preston Gallery, housing part of the school’s extensive art collection.",
+        "As one of the oldest schools in Australia, students and staff from Fort Street have made significant contributions to the national and world stage. The Ron Horan Museum (RHM) makes accessible the notable archival exhibitions celebrating the achievements of Fortians from the past and present.",
+        "The Fort Street Archives creates an environment to protect, preserve, communicate public school history and contribute to the national memory. As a freely accessible educational resource, the RHM will assist students and the community in its research of the history and heritage of NSW. Most of the archives collection is preserved in a climate-controlled repository in the Library, but a changing program in the RHM articulates Fortian stories through documents, images and objects. A visit to the RHM is regularly a part of alumni reunions and other events.",
+        "The RHM has been funded by generous donations from various Fortian reunion groups and individuals. Fort Street Archives has also received grants from the Inner West Council, the WestConnex Community Grant Program and from the Royal Australian Historical Society.",
+        "Ron Horan OAM was a Fortian (1940) who returned to be a teacher and deputy principal from 1950 to 1984. He also served as the school’s first Archivist. He wrote many books including on the history of Fort Street. The RHM honours his crucial role and many achievements in building, preserving and promoting the school’s archives for many decades. Without Ron Horan, much of Fort Street’s history would have been lost."
+      ],
+      "listItems": [],
+      "ctas": [],
+      "images": [
+        {
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/school-history-and-archives/media_1952bcd427ce2a18d9cfed7babafcbaea69970944.jpg?width=2000&format=webply&optimize=medium",
+          "alt": "Fort St Public School; December 2021",
+          "w": 2000,
+          "h": 1381
+        },
+        {
+          "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/school-history-and-archives/media_1062c375ee6078bd9df8618c52795bcdb99bbf364.jpg?width=2000&format=webply&optimize=medium",
+          "alt": "",
+          "w": 1280,
+          "h": 1154
+        }
+      ],
+      "formControls": [],
+      "leftovers": [],
+      "ordered": [
+        {
+          "kind": "heading",
+          "text": "The Fort Street Museum",
+          "display": "block",
+          "level": "h1",
+          "sep": ""
+        },
+        {
+          "kind": "heading",
+          "text": "The Ron Horan Museum",
+          "display": "block",
+          "level": "h2",
+          "sep": " "
+        },
+        {
+          "kind": "paragraph",
+          "text": "",
+          "display": "block",
+          "children": [
+            {
+              "kind": "image",
+              "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/school-history-and-archives/media_1952bcd427ce2a18d9cfed7babafcbaea69970944.jpg?width=2000&format=webply&optimize=medium",
+              "alt": "Fort St Public School; December 2021"
+            }
+          ],
+          "sep": ""
+        },
+        {
+          "kind": "paragraph",
+          "text": "Originally established as the Ron Horan Room by generous donations by the Boys’ Class of 1955, it has now been expanded to The Ron Horan Museum (RHM). The museum space comprises of the adaptive reuse of the heritage Wilkins Building, which includes the Old Principal’s Office and the Administration Reception. It also contains the original ornate stairwell known as the Preston Gallery, housing part of the school’s extensive art collection.",
+          "display": "block",
+          "sep": " "
+        },
+        {
+          "kind": "paragraph",
+          "text": "As one of the oldest schools in Australia, students and staff from Fort Street have made significant contributions to the national and world stage. The Ron Horan Museum (RHM) makes accessible the notable archival exhibitions celebrating the achievements of Fortians from the past and present.",
+          "display": "block",
+          "sep": " "
+        },
+        {
+          "kind": "paragraph",
+          "text": "The Fort Street Archives creates an environment to protect, preserve, communicate public school history and contribute to the national memory. As a freely accessible educational resource, the RHM will assist students and the community in its research of the history and heritage of NSW. Most of the archives collection is preserved in a climate-controlled repository in the Library, but a changing program in the RHM articulates Fortian stories through documents, images and objects. A visit to the RHM is regularly a part of alumni reunions and other events.",
+          "display": "block",
+          "sep": " "
+        },
+        {
+          "kind": "paragraph",
+          "text": "The RHM has been funded by generous donations from various Fortian reunion groups and individuals. Fort Street Archives has also received grants from the Inner West Council, the WestConnex Community Grant Program and from the Royal Australian Historical Society.",
+          "display": "block",
+          "sep": " "
+        },
+        {
+          "kind": "heading",
+          "text": "Who is Ron Horan and why is there a museum after him?",
+          "display": "block",
+          "level": "h3",
+          "sep": " "
+        },
+        {
+          "kind": "paragraph",
+          "text": "Ron Horan OAM was a Fortian (1940) who returned to be a teacher and deputy principal from 1950 to 1984. He also served as the school’s first Archivist. He wrote many books including on the history of Fort Street. The RHM honours his crucial role and many achievements in building, preserving and promoting the school’s archives for many decades. Without Ron Horan, much of Fort Street’s history would have been lost.",
+          "display": "block",
+          "sep": " "
+        },
+        {
+          "kind": "paragraph",
+          "text": "",
+          "display": "block",
+          "children": [
+            {
+              "kind": "image",
+              "currentSrc": "https://fortstreet-h.schools.nsw.gov.au/about-us/school-history-and-archives/media_1062c375ee6078bd9df8618c52795bcdb99bbf364.jpg?width=2000&format=webply&optimize=medium",
+              "alt": ""
+            }
+          ],
+          "sep": ""
+        }
+      ],
+      "orderedVerified": true
+    },
+    {
+      "slot": "s02",
+      "rootTag": "div",
+      "rootClass": "default-content-wrapper",
+      "visibleText": "For more information Or to express your interest in this role, please contact our archivist Mr Iain Wallace (Thursday and Friday only) here (opens in new window)",
+      "headings": [
+        {
+          "level": "h2",
+          "text": "For more information"
+        }
+      ],
+      "paragraphs": [
+        "Or to express your interest in this role, please contact our archivist Mr Iain Wallace (Thursday and Friday only) here (opens in new window)"
+      ],
+      "listItems": [],
+      "ctas": [
+        {
+          "text": "here (opens in new window)",
+          "href": "mailto:iain.wallace@det.nsw.edu.au",
+          "absHref": "mailto:iain.wallace@det.nsw.edu.au",
+          "classes": ""
+        }
+      ],
+      "images": [],
+      "formControls": [],
+      "leftovers": [],
+      "ordered": [
+        {
+          "kind": "heading",
+          "text": "For more information",
+          "display": "block",
+          "level": "h2",
+          "sep": ""
+        },
+        {
+          "kind": "paragraph",
+          "text": "Or to express your interest in this role, please contact our archivist Mr Iain Wallace (Thursday and Friday only) here (opens in new window)",
+          "display": "block",
+          "children": [
+            {
+              "kind": "text",
+              "text": "Or to express your interest in this role, please contact our archivist",
+              "parentTag": "p",
+              "parentClass": "",
+              "sep": ""
+            },
+            {
+              "kind": "text",
+              "text": "Mr Iain Wallace",
+              "parentTag": "strong",
+              "parentClass": "",
+              "sep": " "
+            },
+            {
+              "kind": "text",
+              "text": "(Thursday and Friday only)",
+              "parentTag": "p",
+              "parentClass": "",
+              "sep": " "
+            },
+            {
+              "kind": "cta",
+              "text": "here (opens in new window)",
+              "display": "inline",
+              "href": "mailto:iain.wallace@det.nsw.edu.au",
+              "absHref": "mailto:iain.wallace@det.nsw.edu.au",
+              "classes": "",
+              "children": [
+                {
+                  "kind": "text",
+                  "text": "here",
+                  "parentTag": "a",
+                  "parentClass": "",
+                  "sep": ""
+                },
+                {
+                  "kind": "text",
+                  "text": "(opens in new window)",
+                  "parentTag": "span",
+                  "parentClass": "sr-only",
+                  "sep": " "
+                }
+              ],
+              "sep": " "
+            }
+          ],
+          "sep": " "
+        }
+      ],
+      "orderedVerified": true
+    },
+    {
+      "slot": "s03",
+      "rootTag": "div",
+      "rootClass": "card-container-wrapper",
+      "visibleText": "Fort Street Archives See our rich history east The Fortian Digitised Discover this resource which has been chronicling the lives and achievements of students and staff since 1899. east",
+      "headings": [],
+      "paragraphs": [
+        "See our rich history",
+        "Discover this resource which has been chronicling the lives and achievements of students and staff since 1899."
+      ],
+      "listItems": [
+        "Fort Street Archives See our rich history east",
+        "The Fortian Digitised Discover this resource which has been chronicling the lives and achievements of students and staff since 1899. east"
+      ],
+      "ctas": [
+        {
+          "text": "Fort Street Archives",
+          "href": "/about-us/school-history-and-archives/fort-street-archives",
+          "absHref": "https://fortstreet-h.schools.nsw.gov.au/about-us/school-history-and-archives/fort-street-archives",
+          "classes": ""
+        },
+        {
+          "text": "The Fortian Digitised",
+          "href": "/about-us/school-history-and-archives/the-fortian-digitised",
+          "absHref": "https://fortstreet-h.schools.nsw.gov.au/about-us/school-history-and-archives/the-fortian-digitised",
+          "classes": ""
+        }
+      ],
+      "images": [],
+      "formControls": [],
+      "leftovers": [],
+      "ordered": [
+        {
+          "kind": "listItem",
+          "text": "Fort Street Archives See our rich history east",
+          "display": "list-item",
+          "children": [
+            {
+              "kind": "cta",
+              "text": "Fort Street Archives",
+              "display": "inline",
+              "href": "/about-us/school-history-and-archives/fort-street-archives",
+              "absHref": "https://fortstreet-h.schools.nsw.gov.au/about-us/school-history-and-archives/fort-street-archives",
+              "classes": "",
+              "sep": ""
+            },
+            {
+              "kind": "paragraph",
+              "text": "See our rich history",
+              "display": "block",
+              "sep": " "
+            },
+            {
+              "kind": "text",
+              "text": "east",
+              "parentTag": "span",
+              "parentClass": "material-icons nsw-material-icons",
+              "sep": " "
+            }
+          ],
+          "sep": ""
+        },
+        {
+          "kind": "listItem",
+          "text": "The Fortian Digitised Discover this resource which has been chronicling the lives and achievements of students and staff since 1899. east",
+          "display": "list-item",
+          "children": [
+            {
+              "kind": "cta",
+              "text": "The Fortian Digitised",
+              "display": "inline",
+              "href": "/about-us/school-history-and-archives/the-fortian-digitised",
+              "absHref": "https://fortstreet-h.schools.nsw.gov.au/about-us/school-history-and-archives/the-fortian-digitised",
+              "classes": "",
+              "sep": ""
+            },
+            {
+              "kind": "paragraph",
+              "text": "Discover this resource which has been chronicling the lives and achievements of students and staff since 1899.",
+              "display": "block",
+              "sep": " "
+            },
+            {
+              "kind": "text",
+              "text": "east",
+              "parentTag": "span",
+              "parentClass": "material-icons nsw-material-icons",
+              "sep": " "
+            }
+          ],
+          "sep": " "
+        }
+      ],
+      "orderedVerified": true
+    }
+  ]
+}

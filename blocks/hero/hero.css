@@ -1,37 +1,57 @@
-.hero-container .hero-wrapper {
-  max-width: unset;
-  padding: 0;
+main .section.hero-container {
+  background: var(--palette-light-band-bg);
 }
 
-.hero {
-  position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+.hero .hero-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--layout-column-gap);
+  align-items: center;
 }
 
-.hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
+.hero .hero-panel:not(:has(.hero-media)) {
+  grid-template-columns: minmax(0, 1fr);
 }
 
-.hero picture {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
+.hero .hero-media {
+  display: contents;
 }
 
-.hero img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+/* the picture is display: contents, so its <source> children would become grid items */
+.hero .hero-media source {
+  display: none;
 }
 
-@media (width >= 900px) {
-  .hero {
-    padding: 40px 32px;
+.hero .hero-media img {
+  justify-self: end;
+  max-width: 100%;
+  max-height: 520px;
+  width: auto;
+  height: auto;
+}
+
+@media (width <= 900px) {
+  .hero .hero-panel {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero .hero-panel > * {
+    min-width: 0;
+  }
+
+  .hero .hero-media img {
+    justify-self: center;
+  }
+}
+
+/* light bleed band (prototype tone-light bleed): keeps the section padding and pads the panel on small screens */
+@media (width <= 640px) {
+  main .section.hero-container {
+    padding-top: var(--layout-section-padding-y);
+    padding-bottom: var(--layout-section-padding-y);
+  }
+
+  .hero .hero-panel {
+    padding: 32px 20px;
   }
 }

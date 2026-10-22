@@ -1,0 +1,58 @@
+{
+  "slug": "school-life-bell-times",
+  "type": "content",
+  "renderBranch": "A'",
+  "template": "learning-and-support-wellbeing",
+  "modules": [
+    "M1",
+    "M5",
+    "M4",
+    "M2"
+  ],
+  "slotsFilled": [
+    "s01",
+    "s02",
+    "s03",
+    "s04",
+    "s05"
+  ],
+  "canonShas": {
+    "header": "a8ad9e05a2e6",
+    "footer": "11083616d207",
+    "css": "b7e359a8ffed"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Bell times",
+    "description": "At Fort Street High School, our school day is structured around a clear timetable. We have set times for learning sessions, activities and lunch. Learn more about our bell times.",
+    "canonical": "https://fortstreet-h.schools.nsw.gov.au/school-life/bell-times",
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Bell times",
+    "description": "At Fort Street High School, our school day is structured around a clear timetable. We have set times for learning sessions, activities and lunch. Learn more about our bell times.",
+    "url": "https://fortstreet-h.schools.nsw.gov.au/school-life/bell-times"
+  },
+  "migratedAt": "2026-10-21T14:08:04Z",
+  "designMdSha": "c0ae931d3b54",
+  "designJsonSha": "3ff54e7e981f",
+  "sourceCurrentSha": null,
+  "sourceProposedSha": "4dd830774b9f",
+  "fidelityTier": "sibling",
+  "archetypeSource": "learning-and-support-wellbeing",
+  "archetypeSha": "5bc769fe32da",
+  "variants": [],
+  "gatesPassed": [],
+  "gateEvidence": {},
+  "contentDeviations": [],
+  "assetsBundled": 4,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "school-life/bell-times/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "school-life/bell-times/_meta.json",
+  "driverVersion": "1"
+}

@@ -1,0 +1,34 @@
+PASS content
+FAIL tokens 6/48
+  heading color: got rgb(60, 66, 66), want rgb(131, 0, 81)
+  primary button bg: selector "main a.button.primary" matched nothing
+  primary button fg: selector "main a.button.primary" matched nothing
+  primary button radius: selector "main a.button.primary" matched nothing
+  primary button padding (±2px): selector "main a.button.primary" matched nothing
+  primary button font size: selector "main a.button.primary" matched nothing
+  SKIP layout.containerMaxWidth: measured by parity cap-probe
+PASS parity
+  ADVISORY chrome-parity @1440: 17 delta(s): header 5, footer 12
+  header REGION STYLE backgroundColor rgba(0, 0, 0, 0) → rgb(255, 255, 255)
+  header PAIR "search" tag <button> → <a>; Δw -4px (86→82)
+  header PAIR "Show" tag <button> → <a>; Δw -3px (77→74)
+  header PAIR "Search" tag <button> → <a>; Δw -2px (87→85)
+  header ICON icon #0: signature "logo.png" → "media_1d2306b30b47d8695b41bfe097064af3be"
+  footer REGION BOX Δy +10px (1953→1963)
+  footer PAIR "Fort Street High School" Δy +10px (2059→2069)
+  footer PAIR "General enquiries" Δy +10px (2105→2115)
+  footer PAIR "8585 1600" Δy +10px (2151→2161)
+  footer PAIR "620 PARRAMATTA ROAD, NSW 2049 PETERSHAM" Δy +10px (2197→2207)
+  … 7 more in stardust/.work/reskin/gates/school-life/deployed/parity/chrome-parity-1440.json
+PASS sanity
+PASS inherited
+  by deploy (localize-links --check, davids-model-lint, block-roundtrip --ew)
+FAIL figma: join FAIL
+  join: FAIL
+  geometry: not run: section drift
+  ramp: not run: section drift
+  pixel: not run: section drift
+  register: mandated 0 · waived 0 · unmandated 0 · out-of-kit 0 · conflict 36 · pre-existing 0
+  coverage: not run: section drift
+  report: stardust/.work/reskin/gates/school-life/figma-preview/register.md
+summary written: stardust/.work/reskin/gates/school-life/deployed/summary.json (its ledgerFragment is pages.school-life.gates.deployed in ledger.json)

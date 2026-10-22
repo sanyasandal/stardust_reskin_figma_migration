@@ -1,0 +1,55 @@
+{
+  "variantName": "columns",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-10-21T14:55:19.228Z",
+  "visualCharacteristics": {
+    "purpose": "media-text-split",
+    "imagePattern": "image"
+  },
+  "contentPattern": {
+    "structure": "media-text split"
+  },
+  "variants": [
+    "light"
+  ],
+  "usage": {
+    "pagesUsing": [
+      "about-us/enrol",
+      "about-us/facilities-and-resources",
+      "about-us/our-principal-and-staff",
+      "about-us/policies-and-reports",
+      "about-us/school-history-and-archives",
+      "about-us/school-history-and-archives/the-fortian-digitised",
+      "about-us/stories-and-highlights",
+      "about-us/transition-to-high-school",
+      "about-us/why-choose-us",
+      "contact-us",
+      "index",
+      "learning-and-support/additional-learning-support",
+      "learning-and-support/high-potential-and-gifted-education",
+      "learning-and-support/wellbeing",
+      "our-community/foundation",
+      "school-life/bell-times",
+      "school-life/bring-your-own-device",
+      "school-life/events",
+      "school-life/forms",
+      "school-life/house-and-merit-system",
+      "school-life/lockers-and-lost-property",
+      "school-life/newsletters",
+      "school-life/parent-portal",
+      "school-life/student-opportunities-and-activities",
+      "school-life/student-opportunities-and-activities/academic-competitions",
+      "school-life/student-opportunities-and-activities/clubs-and-committees",
+      "school-life/student-opportunities-and-activities/creative-and-performing-arts",
+      "school-life/student-opportunities-and-activities/debating-and-public-speaking",
+      "school-life/student-opportunities-and-activities/instrumental-music-program",
+      "school-life/student-opportunities-and-activities/robotics-and-maker-society",
+      "school-life/student-opportunities-and-activities/sport",
+      "school-life/travel-to-school",
+      "school-life/uniform"
+    ],
+    "reuseCount": 33,
+    "lastUsed": "2026-10-21T14:55:19.228Z"
+  }
+}

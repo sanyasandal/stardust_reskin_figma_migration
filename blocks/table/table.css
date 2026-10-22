@@ -1,0 +1,48 @@
+/* table: no kit module — donor type.body, palette.bodyFg / headingFg / lightBandBg, layout spacing */
+.table {
+  margin: 0 0 24px;
+}
+
+.table .table-scroll {
+  overflow-x: auto;
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--type-body-font-size);
+  line-height: var(--type-body-line-height);
+}
+
+.table th,
+.table td {
+  padding: 16px;
+  border-bottom: 1px solid var(--palette-light-band-bg);
+  text-align: left;
+  vertical-align: top;
+}
+
+.table th {
+  background: var(--palette-light-band-bg);
+  color: var(--palette-heading-fg);
+  font-weight: 700;
+}
+
+.table :is(th, td) p {
+  margin: 0;
+}
+
+.table.bordered table {
+  border: 1px solid var(--palette-light-band-bg);
+}
+
+.table.bordered :is(th, td) {
+  border: 1px solid var(--palette-light-band-bg);
+}
+
+@media (width <= 640px) {
+  .table th,
+  .table td {
+    padding: 8px;
+  }
+}

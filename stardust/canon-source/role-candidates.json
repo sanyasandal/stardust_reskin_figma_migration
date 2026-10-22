@@ -1,0 +1,556 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:reskin/figma-donor.mjs",
+    "writtenAt": "2026-10-21T12:15:01Z",
+    "readArtifacts": [
+      "stardust/.work/reskin/figma/rsZQmpVzuyn0KhCDA3WN60/2408265627482005963/nodes.json"
+    ],
+    "synthesizedInputs": [],
+    "note": "candidates only: the agent authors reskin/curation-rules.json roles from these"
+  },
+  "palette.pageBg": [
+    {
+      "from": "colors/rgb-255-255-255",
+      "count": 15,
+      "evidence": [
+        "12042:106827",
+        "12194:4769",
+        "12084:109340",
+        "12072:107023",
+        "12077:109024"
+      ]
+    }
+  ],
+  "palette.bodyFg": [
+    {
+      "from": "colors/rgb-60-66-66",
+      "count": 588,
+      "chars": 16851,
+      "evidence": [
+        "I12042:106828;11974:36429",
+        "12072:107002",
+        "12072:107021",
+        "I12194:4770;11974:36429",
+        "12194:5162"
+      ]
+    },
+    {
+      "from": "colors/rgb-141-143-143",
+      "count": 280,
+      "chars": 5180,
+      "evidence": [
+        "I12042:106828;11974:36467",
+        "12072:106954",
+        "12072:106967",
+        "12072:106973",
+        "12072:106979"
+      ]
+    },
+    {
+      "from": "colors/rgb-208-0-111",
+      "count": 160,
+      "chars": 1552,
+      "evidence": [
+        "I12084:109276;12084:109167",
+        "12084:109167",
+        "15035:2212",
+        "I13370:1868;12128:3183",
+        "I13370:1892;13028:1786;12084:109167"
+      ]
+    },
+    {
+      "from": "colors/rgb-178-180-180",
+      "count": 65,
+      "chars": 1325,
+      "evidence": [
+        "I12042:106828;11974:36428",
+        "I12042:106828;11974:36684",
+        "I12194:4770;11974:36428",
+        "I12194:4770;11974:36684",
+        "I12084:109341;11974:36428"
+      ]
+    },
+    {
+      "from": "colors/rgb-255-255-255",
+      "count": 71,
+      "chars": 947,
+      "evidence": [
+        "I12084:109270;12077:109144",
+        "12077:109144",
+        "15035:2206",
+        "I12950:24789;12077:109144",
+        "I12950:24845;12077:109144"
+      ]
+    }
+  ],
+  "palette.headingFg": [
+    {
+      "from": "colors/rgb-60-66-66",
+      "count": 126,
+      "evidence": [
+        "I12042:106828;11974:36427",
+        "12072:106982",
+        "12072:106958",
+        "12072:106969",
+        "12072:106975"
+      ]
+    },
+    {
+      "from": "colors/rgb-131-0-81",
+      "count": 44,
+      "evidence": [
+        "12950:24787",
+        "12950:24843",
+        "12950:24859",
+        "I12534:1355;12529:1209",
+        "I12534:1361;12529:1209"
+      ]
+    },
+    {
+      "from": "colors/rgb-208-0-111",
+      "count": 21,
+      "evidence": [
+        "I12534:1264;12529:1209",
+        "I12534:1348;12529:1229",
+        "I12534:1340;12529:1229",
+        "I12436:14698;12534:1264;12529:1209",
+        "I12436:14756;12534:1264;12529:1209"
+      ]
+    },
+    {
+      "from": "colors/rgb-255-255-255",
+      "count": 16,
+      "evidence": [
+        "12418:13115",
+        "12418:13127",
+        "12418:13134",
+        "12436:14979",
+        "I12421:13789;12418:13115"
+      ]
+    }
+  ],
+  "type.family": [
+    {
+      "from": "typography/body-body",
+      "count": 1356,
+      "chars": 31877,
+      "evidence": [
+        "I12042:106828;11974:36428",
+        "I12042:106828;11974:36429",
+        "I12042:106828;11974:36467",
+        "I12042:106828;11974:36684",
+        "12042:106830"
+      ]
+    },
+    {
+      "from": "typography/headings-h4",
+      "count": 267,
+      "chars": 3934,
+      "evidence": [
+        "I12042:106828;11974:36427",
+        "12072:106982",
+        "12072:106958",
+        "12072:106969",
+        "12072:106975"
+      ]
+    }
+  ],
+  "type.body.fontSize": [
+    {
+      "from": "typography/body-body",
+      "count": 920,
+      "chars": 22836,
+      "evidence": [
+        "I12042:106828;11974:36428",
+        "I12042:106828;11974:36429",
+        "I12042:106828;11974:36467",
+        "I12042:106828;11974:36684",
+        "12072:106954"
+      ]
+    },
+    {
+      "from": "typography/body-body-large",
+      "count": 48,
+      "chars": 4412,
+      "evidence": [
+        "12072:107009",
+        "12950:24788",
+        "12950:24844",
+        "12950:24860",
+        "12418:13116"
+      ]
+    },
+    {
+      "from": "typography/inter-16-700",
+      "count": 207,
+      "chars": 2946,
+      "evidence": [
+        "12194:5501",
+        "12194:5533",
+        "I12084:109270;12077:109144",
+        "I12084:109276;12084:109167",
+        "I12084:109283;12084:109174"
+      ]
+    },
+    {
+      "from": "typography/headings-h4",
+      "count": 132,
+      "chars": 2202,
+      "evidence": [
+        "12072:106982",
+        "12072:106981",
+        "12072:106996",
+        "12108:502",
+        "12108:546"
+      ]
+    },
+    {
+      "from": "typography/body-details",
+      "count": 24,
+      "chars": 806,
+      "evidence": [
+        "12072:107015",
+        "I12387:11784;12379:10813;12379:10709",
+        "I12387:11836;12379:10822;12379:10728",
+        "I12387:11836;12379:10822;12379:10738",
+        "I12387:11836;12379:10822;12379:10739"
+      ]
+    }
+  ],
+  "type.display.fontWeight": [
+    {
+      "from": "typography/headings-h1",
+      "count": 14,
+      "evidence": [
+        "12072:106958",
+        "12950:24787",
+        "12950:24843",
+        "12418:13115",
+        "12418:13127"
+      ]
+    },
+    {
+      "from": "typography/headings-h2",
+      "count": 25,
+      "evidence": [
+        "I12042:106828;11974:36427",
+        "12072:106969",
+        "I12194:4770;11974:36427",
+        "I12084:109341;11974:36427",
+        "I12072:107024;11974:36427"
+      ]
+    },
+    {
+      "from": "typography/headings-h3",
+      "count": 33,
+      "evidence": [
+        "12072:106975",
+        "12108:501",
+        "12108:896",
+        "12108:1301",
+        "12108:1506"
+      ]
+    },
+    {
+      "from": "typography/headings-h4",
+      "count": 132,
+      "evidence": [
+        "12072:106982",
+        "12072:106981",
+        "12072:106996",
+        "12108:502",
+        "12108:546"
+      ]
+    },
+    {
+      "from": "typography/headings-h5",
+      "count": 3,
+      "evidence": [
+        "12072:106989",
+        "12534:1391",
+        "12552:4011"
+      ]
+    }
+  ],
+  "buttons.primary.background": [
+    {
+      "from": "components/button-medium-primary-with-text",
+      "count": 63,
+      "evidence": [
+        "12084:109270",
+        "12084:109155",
+        "12950:24789",
+        "12950:24845",
+        "12950:24861"
+      ]
+    },
+    {
+      "from": "components/button-medium-primary-icon-only",
+      "count": 2,
+      "evidence": [
+        "12084:109295",
+        "12084:109184"
+      ]
+    },
+    {
+      "from": "components/button-large-primary-with-text",
+      "count": 1,
+      "evidence": [
+        "15035:2204"
+      ]
+    },
+    {
+      "from": "components/button-small-primary-with-text",
+      "count": 1,
+      "evidence": [
+        "12084:109208"
+      ]
+    },
+    {
+      "from": "components/button-large-primary-icon-only",
+      "count": 1,
+      "evidence": [
+        "15035:2208"
+      ]
+    }
+  ],
+  "buttons.primary.color": [
+    {
+      "from": "components/button-medium-primary-with-text",
+      "count": 63,
+      "evidence": [
+        "12084:109270",
+        "12084:109155",
+        "12950:24789",
+        "12950:24845",
+        "12950:24861"
+      ]
+    },
+    {
+      "from": "components/button-medium-primary-icon-only",
+      "count": 2,
+      "evidence": [
+        "12084:109295",
+        "12084:109184"
+      ]
+    },
+    {
+      "from": "components/button-large-primary-with-text",
+      "count": 1,
+      "evidence": [
+        "15035:2204"
+      ]
+    },
+    {
+      "from": "components/button-small-primary-with-text",
+      "count": 1,
+      "evidence": [
+        "12084:109208"
+      ]
+    },
+    {
+      "from": "components/button-large-primary-icon-only",
+      "count": 1,
+      "evidence": [
+        "15035:2208"
+      ]
+    }
+  ],
+  "buttons.primary.borderRadius": [
+    {
+      "from": "components/button-medium-primary-with-text",
+      "count": 63,
+      "evidence": [
+        "12084:109270",
+        "12084:109155",
+        "12950:24789",
+        "12950:24845",
+        "12950:24861"
+      ]
+    },
+    {
+      "from": "components/button-medium-primary-icon-only",
+      "count": 2,
+      "evidence": [
+        "12084:109295",
+        "12084:109184"
+      ]
+    },
+    {
+      "from": "components/button-large-primary-with-text",
+      "count": 1,
+      "evidence": [
+        "15035:2204"
+      ]
+    },
+    {
+      "from": "components/button-small-primary-with-text",
+      "count": 1,
+      "evidence": [
+        "12084:109208"
+      ]
+    },
+    {
+      "from": "components/button-large-primary-icon-only",
+      "count": 1,
+      "evidence": [
+        "15035:2208"
+      ]
+    }
+  ],
+  "buttons.primary.padding": [
+    {
+      "from": "components/button-medium-primary-with-text",
+      "count": 63,
+      "evidence": [
+        "12084:109270",
+        "12084:109155",
+        "12950:24789",
+        "12950:24845",
+        "12950:24861"
+      ]
+    },
+    {
+      "from": "components/button-medium-primary-icon-only",
+      "count": 2,
+      "evidence": [
+        "12084:109295",
+        "12084:109184"
+      ]
+    },
+    {
+      "from": "components/button-large-primary-with-text",
+      "count": 1,
+      "evidence": [
+        "15035:2204"
+      ]
+    },
+    {
+      "from": "components/button-small-primary-with-text",
+      "count": 1,
+      "evidence": [
+        "12084:109208"
+      ]
+    },
+    {
+      "from": "components/button-large-primary-icon-only",
+      "count": 1,
+      "evidence": [
+        "15035:2208"
+      ]
+    }
+  ],
+  "buttons.primary.fontSize": [
+    {
+      "from": "components/button-medium-primary-with-text",
+      "count": 63,
+      "evidence": [
+        "12084:109270",
+        "12084:109155",
+        "12950:24789",
+        "12950:24845",
+        "12950:24861"
+      ]
+    },
+    {
+      "from": "components/button-medium-primary-icon-only",
+      "count": 2,
+      "evidence": [
+        "12084:109295",
+        "12084:109184"
+      ]
+    },
+    {
+      "from": "components/button-large-primary-with-text",
+      "count": 1,
+      "evidence": [
+        "15035:2204"
+      ]
+    },
+    {
+      "from": "components/button-small-primary-with-text",
+      "count": 1,
+      "evidence": [
+        "12084:109208"
+      ]
+    },
+    {
+      "from": "components/button-large-primary-icon-only",
+      "count": 1,
+      "evidence": [
+        "15035:2208"
+      ]
+    }
+  ],
+  "layout.containerMaxWidth": [
+    {
+      "from": "spacing/width-1180",
+      "count": 18,
+      "evidence": [
+        "I12387:11784;12379:10803",
+        "I12387:11784;12379:10768",
+        "I12387:11836;12379:10803",
+        "I12387:11836;12379:10768",
+        "I12387:11888;12379:10803"
+      ]
+    },
+    {
+      "from": "spacing/max-width-1180",
+      "count": 12,
+      "evidence": [
+        "I12387:11784;12379:10813;12379:10718",
+        "I12387:11836;12379:10822;12379:10727",
+        "12379:10718",
+        "12387:11554",
+        "12379:10723"
+      ]
+    },
+    {
+      "from": "spacing/width-1220",
+      "count": 1,
+      "evidence": [
+        "I13370:1868;12157:3265"
+      ]
+    },
+    {
+      "from": "spacing/width-2893",
+      "count": 1,
+      "evidence": [
+        "12552:3653"
+      ]
+    },
+    {
+      "from": "spacing/width-136",
+      "count": 15,
+      "evidence": [
+        "I12387:11784;12379:10779",
+        "I12387:11784;12379:10780",
+        "I12387:11836;12379:10779",
+        "I12387:11836;12379:10780",
+        "I12387:11888;12379:10779"
+      ]
+    }
+  ],
+  "layout.sectionPaddingY": [
+    {
+      "from": "spacing/pad-40",
+      "count": 15,
+      "evidence": [
+        "12042:106828",
+        "12194:4770",
+        "12084:109341",
+        "12072:107024",
+        "12077:109025"
+      ]
+    },
+    {
+      "from": "spacing/pad-24",
+      "count": 3,
+      "evidence": [
+        "12084:109282",
+        "12387:11746",
+        "12436:14977"
+      ]
+    }
+  ]
+}

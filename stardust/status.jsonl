@@ -1,0 +1,37 @@
+{"ts":"2026-10-21T12:13:17Z","skill":"stardust:reskin","phase":"setup","event":"end","detail":"flow reskin, hands-off, home archetype"}
+{"ts":"2026-10-21T12:13:21Z","skill":"stardust:reskin","phase":"ingest-donor","event":"start"}
+{"ts":"2026-10-21T12:15:39Z","skill":"stardust:reskin","phase":"content-capture","event":"start"}
+{"ts":"2026-10-21T12:18:19Z","skill":"stardust:reskin","phase":"ingest-donor","event":"end"}
+{"ts":"2026-10-21T12:18:19Z","skill":"stardust:reskin","phase":"content-capture","event":"end"}
+{"ts":"2026-10-21T12:18:19Z","skill":"stardust:reskin","phase":"mapping-brief","event":"start"}
+{"ts":"2026-10-21T12:19:18Z","skill":"stardust:reskin","phase":"mapping-brief","event":"end"}
+{"ts":"2026-10-21T12:19:18Z","skill":"stardust:reskin","phase":"programmatic-render","event":"start"}
+{"ts":"2026-10-21T12:29:47Z","skill":"stardust:reskin","phase":"programmatic-render","event":"end"}
+{"ts":"2026-10-21T12:37:22Z","skill":"stardust:reskin","phase":"gates","event":"start","detail":"Phase 5 (e) deployed leg home"}
+{"ts":"2026-10-21T12:37:22Z","skill":"stardust:deploy","phase":"runtime-probe","event":"start"}
+{"ts":"2026-10-21T12:37:25Z","skill":"stardust:deploy","phase":"runtime-probe","event":"end","artifact":"stardust/runtime-contract.json"}
+{"ts":"2026-10-21T12:37:26Z","skill":"stardust:deploy","phase":"2b-section","event":"start"}
+{"ts":"2026-10-21T12:53:10Z","skill":"stardust:deploy","phase":"2b-section","event":"end","artifact":"stardust/eds-schema/home.json"}
+{"ts":"2026-10-21T12:53:10Z","skill":"stardust:deploy","phase":"3-foundation","event":"start"}
+{"ts":"2026-10-21T12:53:10Z","skill":"stardust:deploy","phase":"3-foundation","event":"end","artifact":"styles/styles.css"}
+{"ts":"2026-10-21T12:53:10Z","skill":"stardust:deploy","phase":"5-lean","event":"start"}
+{"ts":"2026-10-21T12:53:10Z","skill":"stardust:deploy","phase":"5-lean","event":"end","detail":"stock decorateButtons kept (strong=primary, em=secondary)"}
+{"ts":"2026-10-21T12:53:10Z","skill":"stardust:deploy","phase":"6-chrome","event":"start"}
+{"ts":"2026-10-21T12:53:10Z","skill":"stardust:deploy","phase":"6-chrome","event":"end","artifact":"blocks/header/header.js"}
+{"ts":"2026-10-21T12:53:10Z","skill":"stardust:deploy","phase":"7-blocks","event":"start"}
+{"ts":"2026-10-21T12:53:10Z","skill":"stardust:deploy","phase":"7-blocks","event":"end","detail":"hero, cards, columns restyled in-session (no parallel agents: 1 page)"}
+{"ts":"2026-10-21T12:53:10Z","skill":"stardust:deploy","phase":"9-content","event":"start"}
+{"ts":"2026-10-21T12:58:14Z","skill":"stardust:deploy","phase":"9-content","event":"end"}
+{"ts":"2026-10-21T12:58:14Z","skill":"stardust:deploy","phase":"local-qa","event":"start"}
+{"ts":"2026-10-21T13:03:57Z","skill":"stardust:deploy","phase":"local-qa","event":"end"}
+{"ts":"2026-10-21T13:05:48Z","skill":"stardust:reskin","phase":"gates","event":"end"}
+{"ts":"2026-10-21T13:06:06Z","skill":"stardust:reskin","phase":"gates","event":"start","detail":"deployed leg: resumed (an early end was logged at 13:05:48 by mistake, before deployed-gate all)"}
+{"ts":"2026-10-21T13:06:06Z","skill":"stardust:deploy","phase":"10-reconcile","event":"start","detail":"deployed-gate all + Step 10"}
+{"ts":"2026-10-21T13:17:02Z","skill":"stardust:reskin","phase":"programmatic-render","event":"end","artifact":"stardust/reskin/pages/learning-and-support-wellbeing.html"}
+{"ts":"2026-10-21T13:27:16Z","skill":"stardust:deploy","phase":"10-reconcile","event":"end","detail":"deployed-gate all (3rd run, parity reference self-contained): content PASS, tokens 48/48, parity FAIL 1/9 (accepted residual), sanity PASS, inherited PASS, figma geometry 1/13 + ramp 4/125 (accepted residuals); step10 eyeball adopted, CLS 0/0, header unresolved (needs-owner)","artifact":"stardust/.work/reskin/gates/home/deployed/summary.json"}
+{"ts":"2026-10-21T13:27:16Z","skill":"stardust:reskin","phase":"gates","event":"end","detail":"Phase 5 (e) deployed leg for home closed; ledger pages.home.gates.deployed + step10 recorded","artifact":"stardust/reskin/ledger.json"}
+{"ts":"2026-10-21T13:33:28Z","skill":"stardust:migrate","phase":"plan","event":"start"}
+{"ts":"2026-10-21T13:33:28Z","skill":"stardust:migrate","phase":"plan","event":"end"}
+{"ts":"2026-10-21T13:33:28Z","skill":"stardust:reskin","phase":"sibling-capture-render","event":"start"}
+{"ts":"2026-10-21T14:05:01Z","skill":"stardust:reskin","phase":"migrate-render","event":"start"}
+{"ts":"2026-10-21T14:13:38Z","skill":"stardust:reskin","phase":"migrate-render","event":"end"}

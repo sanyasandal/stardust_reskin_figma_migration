@@ -1,0 +1,305 @@
+{
+  "pass": true,
+  "results": [
+    {
+      "check": "page bg = rgb(255, 255, 255)",
+      "label": "page bg",
+      "status": "PASS",
+      "detail": "rgb(255, 255, 255)"
+    },
+    {
+      "check": "body fg = rgb(60, 66, 66)",
+      "label": "body fg",
+      "status": "PASS",
+      "detail": "rgb(60, 66, 66)"
+    },
+    {
+      "check": "font-family token string = Inter, Arial, sans-serif",
+      "label": "font-family token string",
+      "status": "PASS",
+      "detail": "inter, inter-fallback, sans-serif"
+    },
+    {
+      "check": "body font size = 18px",
+      "label": "body font size",
+      "status": "PASS",
+      "detail": "18px"
+    },
+    {
+      "check": "display weight = 400",
+      "label": "display weight",
+      "status": "PASS",
+      "detail": "400"
+    },
+    {
+      "check": "heading color = rgb(131, 0, 81)",
+      "label": "heading color",
+      "status": "PASS",
+      "detail": "rgb(131, 0, 81)"
+    },
+    {
+      "check": "primary button bg = rgb(208, 0, 111)",
+      "label": "primary button bg",
+      "status": "PASS",
+      "detail": "rgb(208, 0, 111)"
+    },
+    {
+      "check": "primary button fg = rgb(255, 255, 255)",
+      "label": "primary button fg",
+      "status": "PASS",
+      "detail": "rgb(255, 255, 255)"
+    },
+    {
+      "check": "primary button radius = 4px",
+      "label": "primary button radius",
+      "status": "PASS",
+      "detail": "4px"
+    },
+    {
+      "check": "primary button padding (±2px) = 0px 16px",
+      "label": "primary button padding (±2px)",
+      "status": "PASS",
+      "detail": "0px 16px"
+    },
+    {
+      "check": "primary button font size = 16px",
+      "label": "primary button font size",
+      "status": "PASS",
+      "detail": "16px"
+    },
+    {
+      "check": "section rhythm (±16px) = 40px",
+      "label": "section rhythm (±16px)",
+      "status": "PASS",
+      "detail": "all 9 matches: 40px"
+    },
+    {
+      "check": "section rhythm bottom (±16px) = 40px",
+      "label": "section rhythm bottom (±16px)",
+      "status": "PASS",
+      "detail": "all 9 matches: 40px"
+    },
+    {
+      "check": ":root --heading-font-family = Lexia, Georgia, serif",
+      "label": ":root --heading-font-family",
+      "status": "PASS",
+      "detail": "Lexia, Georgia, serif"
+    },
+    {
+      "check": ":root --body-font-family = Inter, Arial, sans-serif",
+      "label": ":root --body-font-family",
+      "status": "PASS",
+      "detail": "Inter, Arial, sans-serif"
+    },
+    {
+      "check": ":root --heading-xxl = 56px",
+      "label": ":root --heading-xxl",
+      "status": "PASS",
+      "detail": "56px"
+    },
+    {
+      "check": ":root --heading-xl = 46px",
+      "label": ":root --heading-xl",
+      "status": "PASS",
+      "detail": "46px"
+    },
+    {
+      "check": ":root --heading-lg = 26px",
+      "label": ":root --heading-lg",
+      "status": "PASS",
+      "detail": "26px"
+    },
+    {
+      "check": ":root --heading-md = 24px",
+      "label": ":root --heading-md",
+      "status": "PASS",
+      "detail": "24px"
+    },
+    {
+      "check": ":root --body = 18px",
+      "label": ":root --body",
+      "status": "PASS",
+      "detail": "18px"
+    },
+    {
+      "check": ":root --line-height-heading = 1.071",
+      "label": ":root --line-height-heading",
+      "status": "PASS",
+      "detail": "1.071"
+    },
+    {
+      "check": ":root --line-height-body = 28px",
+      "label": ":root --line-height-body",
+      "status": "PASS",
+      "detail": "28px"
+    },
+    {
+      "check": ":root --color-bg = rgb(255, 255, 255)",
+      "label": ":root --color-bg",
+      "status": "PASS",
+      "detail": "rgb(255, 255, 255)"
+    },
+    {
+      "check": ":root --color-fg = rgb(60, 66, 66)",
+      "label": ":root --color-fg",
+      "status": "PASS",
+      "detail": "rgb(60, 66, 66)"
+    },
+    {
+      "check": ":root --color-accent = rgb(208, 0, 111)",
+      "label": ":root --color-accent",
+      "status": "PASS",
+      "detail": "rgb(208, 0, 111)"
+    },
+    {
+      "check": ":root --section-padding = 40px",
+      "label": ":root --section-padding",
+      "status": "PASS",
+      "detail": "40px"
+    },
+    {
+      "check": ":root --max-width = 1180px",
+      "label": ":root --max-width",
+      "status": "PASS",
+      "detail": "1180px"
+    },
+    {
+      "check": ":root --radius = 4px",
+      "label": ":root --radius",
+      "status": "PASS",
+      "detail": "4px"
+    },
+    {
+      "check": ":root --type-display-size = 56px",
+      "label": ":root --type-display-size",
+      "status": "PASS",
+      "detail": "56px"
+    },
+    {
+      "check": ":root --type-display-line-height = 1.071",
+      "label": ":root --type-display-line-height",
+      "status": "PASS",
+      "detail": "1.071"
+    },
+    {
+      "check": ":root --type-display-weight = 400",
+      "label": ":root --type-display-weight",
+      "status": "PASS",
+      "detail": "400"
+    },
+    {
+      "check": ":root --type-display-letter-spacing = normal",
+      "label": ":root --type-display-letter-spacing",
+      "status": "PASS",
+      "detail": "normal"
+    },
+    {
+      "check": ":root --type-h2-size = 46px",
+      "label": ":root --type-h2-size",
+      "status": "PASS",
+      "detail": "46px"
+    },
+    {
+      "check": ":root --type-h2-line-height = 1.087",
+      "label": ":root --type-h2-line-height",
+      "status": "PASS",
+      "detail": "1.087"
+    },
+    {
+      "check": ":root --type-h2-weight = 400",
+      "label": ":root --type-h2-weight",
+      "status": "PASS",
+      "detail": "400"
+    },
+    {
+      "check": ":root --type-h2-letter-spacing = normal",
+      "label": ":root --type-h2-letter-spacing",
+      "status": "PASS",
+      "detail": "normal"
+    },
+    {
+      "check": ":root --type-h3-size = 26px",
+      "label": ":root --type-h3-size",
+      "status": "PASS",
+      "detail": "26px"
+    },
+    {
+      "check": ":root --type-h3-line-height = 1.308",
+      "label": ":root --type-h3-line-height",
+      "status": "PASS",
+      "detail": "1.308"
+    },
+    {
+      "check": ":root --type-h3-weight = 400",
+      "label": ":root --type-h3-weight",
+      "status": "PASS",
+      "detail": "400"
+    },
+    {
+      "check": ":root --type-h3-letter-spacing = normal",
+      "label": ":root --type-h3-letter-spacing",
+      "status": "PASS",
+      "detail": "normal"
+    },
+    {
+      "check": ":root --type-h4-size = 24px",
+      "label": ":root --type-h4-size",
+      "status": "PASS",
+      "detail": "24px"
+    },
+    {
+      "check": ":root --type-h4-line-height = 1.167",
+      "label": ":root --type-h4-line-height",
+      "status": "PASS",
+      "detail": "1.167"
+    },
+    {
+      "check": ":root --type-h4-weight = 400",
+      "label": ":root --type-h4-weight",
+      "status": "PASS",
+      "detail": "400"
+    },
+    {
+      "check": ":root --type-h4-letter-spacing = normal",
+      "label": ":root --type-h4-letter-spacing",
+      "status": "PASS",
+      "detail": "normal"
+    },
+    {
+      "check": ":root --type-body-size = 18px",
+      "label": ":root --type-body-size",
+      "status": "PASS",
+      "detail": "18px"
+    },
+    {
+      "check": ":root --type-body-line-height = 28px",
+      "label": ":root --type-body-line-height",
+      "status": "PASS",
+      "detail": "28px"
+    },
+    {
+      "check": ":root --type-body-weight = 400",
+      "label": ":root --type-body-weight",
+      "status": "PASS",
+      "detail": "400"
+    },
+    {
+      "check": ":root --type-body-letter-spacing = normal",
+      "label": ":root --type-body-letter-spacing",
+      "status": "PASS",
+      "detail": "normal"
+    },
+    {
+      "check": "no horizontal overflow @1440",
+      "label": null,
+      "status": "PASS",
+      "detail": "overflow=0px"
+    },
+    {
+      "check": "no horizontal overflow @360",
+      "label": null,
+      "status": "PASS",
+      "detail": "overflow=0px"
+    }
+  ]
+}

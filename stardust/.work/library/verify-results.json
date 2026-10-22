@@ -1,0 +1,90 @@
+[
+  {
+    "block": "accordion",
+    "instances": 1,
+    "loaded": 1,
+    "libMeta": 1,
+    "imgs": 0,
+    "brokenImgs": 0
+  },
+  {
+    "block": "cards",
+    "instances": 7,
+    "loaded": 7,
+    "libMeta": 7,
+    "imgs": 18,
+    "brokenImgs": 0
+  },
+  {
+    "block": "columns",
+    "instances": 2,
+    "loaded": 2,
+    "libMeta": 2,
+    "imgs": 2,
+    "brokenImgs": 0
+  },
+  {
+    "block": "content-container",
+    "instances": 1,
+    "loaded": 1,
+    "libMeta": 1,
+    "imgs": 3,
+    "brokenImgs": 0
+  },
+  {
+    "block": "embed",
+    "instances": 1,
+    "loaded": 1,
+    "libMeta": 1,
+    "imgs": 0,
+    "brokenImgs": 0
+  },
+  {
+    "block": "facebook-feed",
+    "instances": 1,
+    "loaded": 1,
+    "libMeta": 1,
+    "imgs": 0,
+    "brokenImgs": 0
+  },
+  {
+    "block": "fragment",
+    "instances": 0,
+    "loaded": 0,
+    "libMeta": 1,
+    "imgs": 1,
+    "brokenImgs": 0
+  },
+  {
+    "block": "gallery",
+    "instances": 1,
+    "loaded": 1,
+    "libMeta": 1,
+    "imgs": 3,
+    "brokenImgs": 0
+  },
+  {
+    "block": "hero",
+    "instances": 1,
+    "loaded": 1,
+    "libMeta": 1,
+    "imgs": 1,
+    "brokenImgs": 0
+  },
+  {
+    "block": "planningreporting",
+    "instances": 1,
+    "loaded": 1,
+    "libMeta": 1,
+    "imgs": 0,
+    "brokenImgs": 0
+  },
+  {
+    "block": "table",
+    "instances": 3,
+    "loaded": 3,
+    "libMeta": 3,
+    "imgs": 0,
+    "brokenImgs": 0
+  }
+]

@@ -1,0 +1,90 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:reskin/figma-donor.mjs",
+    "writtenAt": "2026-10-21T12:15:01Z",
+    "readArtifacts": [
+      "stardust/.work/reskin/figma/rsZQmpVzuyn0KhCDA3WN60/2408265627482005963/manifest.json"
+    ],
+    "synthesizedInputs": []
+  },
+  "discovery": {
+    "method": "figma-rest",
+    "fetchTechnique": "figma-rest",
+    "fileKey": "rsZQmpVzuyn0KhCDA3WN60",
+    "version": "2408265627482005963",
+    "totalDiscovered": 15,
+    "selected": [
+      "12042:106827",
+      "12194:4769",
+      "12084:109340",
+      "12072:107023",
+      "12077:109024",
+      "12387:11655",
+      "12406:12220",
+      "12950:24869",
+      "12428:14029",
+      "12431:14303",
+      "12431:14533",
+      "13370:1922",
+      "12552:3653",
+      "12929:23593",
+      "12362:10362"
+    ],
+    "cut": [],
+    "missing": []
+  },
+  "consent": null,
+  "crawl": {
+    "endpoints": [
+      {
+        "name": "files",
+        "status": "ok"
+      },
+      {
+        "name": "nodes",
+        "status": "ok",
+        "calls": 3
+      },
+      {
+        "name": "variables",
+        "status": "ok"
+      },
+      {
+        "name": "images",
+        "status": "ok",
+        "calls": 3
+      }
+    ],
+    "planTier": null
+  },
+  "visionCheck": [],
+  "siblingCandidates": [],
+  "notBrowserRendered": {
+    "stardust/canon-source/foundation/colors.json": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/foundation/typography.json": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/foundation/effects.json": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/foundation/radii.json": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/foundation/spacing.json": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/foundation/components.json": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/role-candidates.json": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/module-candidates.json": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/spec-tables.json": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/assets/screenshots/font-styles.png": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/assets/screenshots/font-variables.png": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/assets/screenshots/colors.png": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/assets/screenshots/spacing.png": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/assets/screenshots/button-component.png": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/assets/screenshots/header.png": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/assets/screenshots/footer.png": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/assets/screenshots/home-hero-branded.png": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/assets/screenshots/teaser-home-hero.png": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/assets/screenshots/teaser-text-image.png": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/assets/screenshots/teaser-card.png": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/assets/screenshots/cta-banner.png": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/assets/screenshots/block-content.png": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/assets/screenshots/links.png": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/assets/screenshots/accordion.png": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/assets/screenshots/index.json": "authored from Figma REST node data, not browser-rendered",
+    "stardust/canon-source/_crawl-log.json": "authored from Figma REST node data, not browser-rendered"
+  }
+}

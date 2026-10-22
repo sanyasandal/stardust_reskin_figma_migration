@@ -1,0 +1,262 @@
+{
+  "about-us": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "school-life": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "learning-and-support-wellbeing": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "home": {
+    "dom": 1,
+    "slot": 1,
+    "probe": 0
+  },
+  "about-us-enrol": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "about-us-facilities-and-resources": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "about-us-hsc-results": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "about-us-our-principal-and-staff": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "about-us-policies-and-reports": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "about-us-policies-and-reports-nsw-public-school-information": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "about-us-school-history-and-archives": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "about-us-school-history-and-archives-fort-street-archives": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "about-us-school-history-and-archives-the-fort-street-museum": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "about-us-school-history-and-archives-the-fortian-digitised": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "about-us-stories-and-highlights": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "about-us-transition-to-high-school": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "about-us-why-choose-us": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "contact-us": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "learning-and-support": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "learning-and-support-additional-learning-support": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "learning-and-support-careers": {
+    "dom": 1,
+    "slot": 1,
+    "probe": 0
+  },
+  "learning-and-support-high-potential-and-gifted-education": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "learning-and-support-learning": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "our-community": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "our-community-alumni": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "our-community-fortians-union": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "our-community-foundation-tertiary-bursaries": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "our-community-foundation": {
+    "dom": 1,
+    "slot": 1,
+    "probe": 0
+  },
+  "our-community-pandc": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 1
+  },
+  "school-life-bell-times": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "school-life-bring-your-own-device": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "school-life-canteen": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "school-life-events": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "school-life-forms": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "school-life-house-and-merit-system": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "school-life-lockers-and-lost-property": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "school-life-newsletters": {
+    "dom": 1,
+    "slot": 1,
+    "probe": 0
+  },
+  "school-life-parent-portal": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "school-life-stationery": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "school-life-student-opportunities-and-activities": {
+    "dom": 0,
+    "slot": 1,
+    "probe": 0
+  },
+  "school-life-student-opportunities-and-activities-academic-competitions": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "school-life-student-opportunities-and-activities-clubs-and-committees": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "school-life-student-opportunities-and-activities-creative-and-performing-arts": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "school-life-student-opportunities-and-activities-debating-and-public-speaking": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "school-life-student-opportunities-and-activities-duke-of-edinburgh-award": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "school-life-student-opportunities-and-activities-robotics-and-maker-society": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "school-life-student-opportunities-and-activities-instrumental-music-program": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "school-life-student-opportunities-and-activities-sport": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "school-life-student-opportunities-and-activities-student-leadership-opportunities": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "school-life-travel-to-school": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "school-life-uniform": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  },
+  "school-life-uniform-uniform-shop": {
+    "dom": 0,
+    "slot": 0,
+    "probe": 0
+  }
+}
